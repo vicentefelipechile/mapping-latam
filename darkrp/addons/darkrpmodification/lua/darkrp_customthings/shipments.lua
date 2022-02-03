@@ -275,7 +275,7 @@ DarkRP.createShipment("Ruger", {
 DarkRP.createShipment("Magnunson 4000", {
     model = "models/weapons/w_sw_model_500.mdl",
     entity = "m9k_model500",
-    price = 200000,
+    price = 6000000,
     amount = 3,
     separate = false,
     noship = false,
