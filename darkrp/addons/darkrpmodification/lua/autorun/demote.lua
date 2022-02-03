@@ -2,8 +2,6 @@ hook.Add( "PlayerDeath", "Auto-Demote", function( ply, wep, killer )
         if( ply:Team() == TEAM_MAYOR ) then
                 if killer:Nick() ~= nil then
                 ply:changeTeam( TEAM_CITIZEN, true )
-                ply:SetMaxHealth(100)
-                ply:SetMaxArmor(100)
         end
         for k,v in pairs( player.GetAll() ) do
                 if killer:Nick() ~= nil then

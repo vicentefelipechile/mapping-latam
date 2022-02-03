@@ -36,7 +36,7 @@ CH_Farming.Config.EntitiesHealth = { -- Set healths for different entities in th
 -- To get a grass material on the map, take out the shovel as superadmin & right click on the grass you found. (then add to the list below)
 CH_Farming.Config.DistanceToDigHole = 3500 -- Distance between players aim and their position before allowing to dig a hole in grass.
 CH_Farming.Config.NearbyHoleDistance = 1000 -- Distance between holes before being able to dig one. If there is a hole too close.
-CH_Farming.Config.PlayerMaxHoles = 100 -- How many holes is a player allowed to dig at once?
+CH_Farming.Config.PlayerMaxHoles = 8 -- How many holes is a player allowed to dig at once?
 
 -- List of actual materials you can dig in. This works somewhere, and sometimes it does not (depending on the map).
 -- You can use the shovel as an admin to debug what material and material type the surface you're aiming at is. Press 'Reload' while aiming at a surface.
@@ -146,11 +146,11 @@ CH_Farming.Config.CropsGramsAmount = { -- This defines the MINIMUM and MAXIMUM a
 }
 
 CH_Farming.Config.CropsGrowTime = { -- How long does it take (by default, before weeds) for each crop to grow 100% - IN SECONDS
-	["Lettuce"] = 60,
-	["Pepper"] = 80,
-	["Corn"] = 90,
-	["Tomato"] = 90,
-	["Wheat"] = 60
+	["Lettuce"] = 240,
+	["Pepper"] = 220,
+	["Corn"] = 240,
+	["Tomato"] = 210,
+	["Wheat"] = 240
 }
 
 --[[
@@ -161,11 +161,11 @@ CH_Farming.Config.SellDistance = 40000 -- Distance between crate of crops, playe
 CH_Farming.Config.RandomizePayoutInterval = 300 -- Every 300 second it will randomize how much crops are worth (per gram) - see table below!
 
 CH_Farming.Config.CropsGramsWorth = { -- How much ONE gram is worth for the different crops. Minimum and maximum and it randomizes the payout.
-	["Lettuce"] = { 0.5, 2 },
-	["Pepper"] = { 0.5, 2 },
-	["Corn"] = { 1.5, 3 },
-	["Tomato"] = { 0.5, 2 },
-	["Wheat"] = { 1, 3 }
+	["Lettuce"] = { 20, 25 },
+	["Pepper"] = { 20, 28 },
+	["Corn"] = { 22, 29 },
+	["Tomato"] = { 22, 30 },
+	["Wheat"] = { 24, 31 }
 }
 
 -- XP SUPPORT
