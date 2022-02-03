@@ -31,6 +31,12 @@ function ENT:SetupDataTables()
 	BaseClass.SetupDataTables( self )
 
 	self:NetworkVar( "String", 1, "MediaThumbnail" )
+	self:NetworkVar( "Entity", 0, "owning_ent" )
+end
+
+
+function ENT:Initialize()
+	self:CPPISetOwner( self:Getowning_ent() )
 end
 
 if SERVER then
