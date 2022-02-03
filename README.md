@@ -1,1 +1,2 @@
-# mapping-latam
+# Mapping Latam
+Estas son las configuraciones publicas del servidor.
