@@ -1,14 +1,6 @@
-hook.Add( "PlayerDeath", "Auto-Demote", function( ply, wep, killer )
-        if( ply:Team() == TEAM_MAYOR ) then
-                if killer:Nick() ~= nil then
-                ply:changeTeam( TEAM_CITIZEN, true )
-        end
-        for k,v in pairs( player.GetAll() ) do
-                if killer:Nick() ~= nil then
-                DarkRP.notify(v, 1, 4, "El Alcalde ha sido asesinado!" )
-                else
-                DarkRP.notify(v, 1, 4, "El Alcalde se murisio!" )
-                end
-        end
-end
+hook.Add("PlayerDeath", "DarkRP_Mayor_AutoDemote", function(ply, wep, killer)
+    if (ply:Team() == TEAM_MAYOR) then
+        if killer:Nick() then ply:changeTeam(TEAM_CITIZEN, true) end
+        DarkRP.notifyAll(v, 1, 4, killer:Nick() and "El Alcalde ha sido asesinado." or "El Alcalde se suicidó.")
+    end
 end)
