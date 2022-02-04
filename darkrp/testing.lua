@@ -1,3 +1,3 @@
-if CLIENT and SERVER then
+if CLIENT then
   return true
 end
