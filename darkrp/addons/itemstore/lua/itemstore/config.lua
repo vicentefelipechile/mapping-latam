@@ -228,9 +228,6 @@ itemstore.config.DisabledItems = {
     ["bb_glock_cp"] = true,
     ["weapon_r_cuffed"] = true,
     ["weapon_r_handcuffs"] = true,
-    ["weapon_ak47_beast"] = true,
-    ["weapon_deagle_bornbeast"] = true,
-    ["weapon_m4a1_beast"] = true,
     ["bm2_bitminer_1"] = true,
     ["bm2_bitminer_2"] = true,
     ["bm2_bitminer_rack"] = true,
@@ -267,7 +264,7 @@ itemstore.config.DisabledItems = {
     ["radio_microphone_darkp"] = true,
     ["radio_receiver_darkp"] = true,
     ["bm2_generator_vip"] = true,
-    
+
     ["eml_buyer"] = true,
     ["eml_buyer_text"] = true,
     ["eml_ciodine"] = true,

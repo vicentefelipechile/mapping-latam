@@ -108,7 +108,7 @@ DarkRP.createCategory{
 
 DarkRP.createCategory{
     name = "Armas VIPs",
-    categorises = "shipments",
+    categorises = "entities",
     startExpanded = true,
     color = Color(100, 0, 100, 255),
     canSee = function(ply) return true end,

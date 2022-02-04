@@ -106,3 +106,35 @@ DarkRP.createEntity("Gas", {
     allowed = {TEAM_FARMEROILEGAL, TEAM_STAFF},
     category = "Cocina Meta"
 })
+
+-- Armas vips
+
+DarkRP.createEntity("AK47 - VIP", {
+    ent = "models/cf/w_ak47_beast.mdl",
+    model = "weapon_ak47_beast",
+    price = 24000,
+    max = 1,
+    cmd = "comprarakvip",
+    category = "Armas VIPs",
+    customCheck = function(ply) return ply:IsUserGroup("vip") or ply:IsUserGroup("mod+") or ply:IsAdmin() or ply:IsSuperAdmin() end,
+})
+
+DarkRP.createEntity("Deagle - VIP", {
+    ent = "weapon_deagle_bornbeast",
+    model = "models/cf/w_deagle_beast.mdl",
+    price = 12000,
+    max = 1,
+    cmd = "comprardeaglevip",
+    category = "Armas VIPs",
+    customCheck = function(ply) return ply:IsUserGroup("vip") or ply:IsUserGroup("mod+") or ply:IsAdmin() or ply:IsSuperAdmin() end,
+})
+
+DarkRP.createEntity("M4A1 - VIP", {
+    ent = "models/cf/w_m4a1_beast.mdl",
+    model = "weapon_m4a1_beast",
+    price = 20000,
+    max = 1,
+    cmd = "comprarm4vip",
+    category = "Armas VIPs",
+    customCheck = function(ply) return ply:IsUserGroup("vip") or ply:IsUserGroup("mod+") or ply:IsAdmin() or ply:IsSuperAdmin() end,
+})
