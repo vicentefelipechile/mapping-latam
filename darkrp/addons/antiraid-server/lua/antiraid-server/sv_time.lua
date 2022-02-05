@@ -1,22 +1,23 @@
--- local timing = os.date("%H%M%S", time)  <---  Esto incluia segundos
+local cooldown = 86400 -- 24 hours in seconds (24*60*60)
 
-local time = os.time()
-local timing = os.date("%H%M", time)
+local function OneAmTime()
+	RunConsoleCommand("sbox_maxprops", 20)
+end
 
-local time_start = 100
-local time_end = 900
+local function ElevenAmTime()
+	RunConsoleCommand("sbox_maxprops", 50)
+end
 
-local blockedmodels = {}
+local function myFunc()
+	local nextUse = cookie.GetNumber( "myFuncNextUse", 0 )
+	local time = os.time()
 
-if timing >= time_start then
-	sbox_maxprops 20
-
-
-
-elseif timing <= time_end then
-
-
-
-else
-	print("Wotefok?!")
+	if time < nextUse then
+		print( "The event is on cooldown and has not been triggered" )
+		local nextUseString = os.date( "%Y/%m/%d - %H:%M:%S" , nextUse ) -- Format the next use time nicely
+		print( "The event will be available for use again on: " .. nextUseString )
+	else
+		print( "The event has been successfully triggered!" )
+		cookie.Set( "myFuncNextUse", time + cooldown )
+	end
 end
