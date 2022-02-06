@@ -1,9 +1,14 @@
 if CLIENT then
 	local path = "mapping-latam/outfitter/"
 
+	if !file.Exists("mapping-latam", "DATA") then
+		file.CreateDir("mapping-latam")
+		file.CreateDir("mapping-latam/outfitter")
+	end
+
 	-- Establecer tamaño maximo
 	if !file.Exists( path .. "maxsize.txt", "DATA") then
-		file.Write( path .. "maxsize.txt", 10) -- 4 MB
+		file.Write( path .. "maxsize.txt", 10) -- 10 MB
 	end
 	
 	local maxsize = file.Read( path .. "maxsize.txt", "DATA")
@@ -11,7 +16,7 @@ if CLIENT then
 
 	-- Activar outfitter
 	if !file.Exists( path .. "enabled.txt", "DATA") then
-		file.Write( path .. "enabled.txt", 0)
+		file.Write( path .. "enabled.txt", 1)
 	end
 
 	local function MappingLatamOutfitterEnable()

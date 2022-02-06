@@ -287,10 +287,16 @@ TEAM_MAYOR = DarkRP.createJob("Alcalde", {
     hasLicense = true,
     mayor = true,
     ammo = {
-        ["pistol"] = 160,
-        ["ar2"] = 450
+        ["pistol"] = 200,
+        ["ar2"] = 900
     },
     category = "Civil Protection",
+    PlayerSpawn = function(ply)
+        ply:SetMaxArmor(200)
+        ply:SetMaxHealth(200)
+        ply:SetHealth(200)
+        ply:SetArmor(200)
+    end,
 })
 
 TEAM_POLICE = DarkRP.createJob("Policia", {
