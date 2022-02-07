@@ -14,12 +14,12 @@ VOTING.Settings = {}
 --
 -- Mayor Voting Settings
 --
-VOTING.Settings.VotingTitle = "Mayor Election" --Main title
-VOTING.Settings.ResultsTitle = "Our NEWLY Elected Mayor!" --Main title for results
-VOTING.Settings.NoticePrefix = "[ELECTIONS]" --Chat text prefix
+VOTING.Settings.VotingTitle = "Elecciones a Alcalde" --Main title
+VOTING.Settings.ResultsTitle = "Nuestro NUEVO Alcalde!" --Main title for results
+VOTING.Settings.NoticePrefix = "[ELECCIONES]" --Chat text prefix
 
 VOTING.Settings.NPCEnabled = true --Spawn Mayor Elections NPC?
-VOTING.Settings.NPCTitleText = "Mayors Secretary" --NPC Title above head
+VOTING.Settings.NPCTitleText = "Secretaria del Alcalde" --NPC Title above head
 VOTING.Settings.NPCModel = "models/player/mossman.mdl" --NPC Player model
 VOTING.Settings.NPCSequence = "pose_standing_01" --NPC pose default pose_standing_01
 
@@ -37,7 +37,7 @@ VOTING.Settings.VoteResultsSound = "ui/achievement_earned.wav" --Vote results so
 -- Mayor Voting Configuration Options
 --
 
-VOTING.MayorTeamName = "Mayor" --DarkRP mayor team name i.e. (name after AddExtraTeam)
+VOTING.MayorTeamName = "Alcalde" --DarkRP mayor team name i.e. (name after AddExtraTeam)
 VOTING.MaximumCandidates = 4 --Maximum candidates allowed in vote
 VOTING.MinimumCandidates = 2 --Minimum candidates needed to trigger vote
 VOTING.AboutToBeginTime = 60 --Time (in seconds) between vote triggered and started
