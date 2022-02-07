@@ -358,7 +358,7 @@ TEAM_DISTURBE = DarkRP.createJob("Grupo Anti-Disturbios", {
     hasLicense = true,
     ammo = {
         ["pistol"] = 120,
-        ["ar2"] = 300
+        ["ar2"] = 900
     },
     category = "Civil Protection",
 })
