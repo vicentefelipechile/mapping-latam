@@ -28,7 +28,7 @@ GM.Config.allowjobswitch                = true
 -- allowrpnames - Allow Players to Set their RP names using the /rpname command.
 GM.Config.allowrpnames                  = true
 -- allowsprays - Enable/disable the use of sprays on the server.
-GM.Config.allowsprays                   = true
+GM.Config.allowsprays                   = false
 -- allowvehicleowning - Enable/disable whether people can own vehicles.
 GM.Config.allowvehicleowning            = true
 -- allowvnocollide - Enable/disable the ability to no-collide a vehicle (for security).
@@ -118,7 +118,7 @@ GM.Config.showname                      = true
 -- showhealth - Whether or not to display a player's health above their head in-game.
 GM.Config.showhealth                    = true
 -- needwantedforarrest - Enable/disable Cops can only arrest wanted people.
-GM.Config.needwantedforarrest           = true
+GM.Config.needwantedforarrest           = false
 -- noguns - Enabling this feature bans Guns and Gun Dealers.
 GM.Config.noguns                        = false
 -- norespawn - Enable/Disable that people don't have to respawn when they change job.
