@@ -47,4 +47,9 @@ if CLIENT then
 
 	maxdistance = file.Read( path .. "maxdistance.txt", "DATA")
 	RunConsoleCommand("outfitter_distance", maxdistance)
+
+	concommand.Add("mappinglatam_outfitter_maxdistance", function(ply, cmd, args)
+		file.Write( path .. "maxsize.txt", args)
+		RunConsoleCommand("outfitter_distance", args)
+	end)
 end
