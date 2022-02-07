@@ -1,33 +1,23 @@
--- local timing = os.date("%H%M%S", time)  <---  Esto incluia segundos
+local cooldown = 86400 -- 24 hours in seconds (24*60*60)
 
---[[
-local time = os.time()
-local timing = os.date("%H%M", time)
+local function OneAmTime()
+	RunConsoleCommand("sbox_maxprops", 20)
+end
 
-local time_start = 100
-local time_end = 900
+local function ElevenAmTime()
+	RunConsoleCommand("sbox_maxprops", 50)
+end
 
-local blockedmodels = {}
+local function myFunc()
+	local nextUse = cookie.GetNumber( "myFuncNextUse", 0 )
+	local time = os.time()
 
-if timing >= time_start then
-	sbox_maxprops 20
-
-
-
-elseif timing <= time_end then
-
-
-
-else
-	print("Wotefok?!")
-end]]--
-
-local time_cooldown = (24 * (60 * 60)) -- Each 24 hours
-local function MP_RunTimer()
-	local system_time = os.time() -- Current system's time
-	local system_Time_next = cookie.GetNumber("MPCookie_ServerTime", 0) -- Saved next system's time for checking
-	if (system_time >= system_time_next) then -- The cooldown ended?
-		cookie.Set("MPCookie_ServerTime", system_time + time_cooldown) -- Okay, reset the cooldown back to 24 hours
+	if time < nextUse then
+		print( "The event is on cooldown and has not been triggered" )
+		local nextUseString = os.date( "%Y/%m/%d - %H:%M:%S" , nextUse ) -- Format the next use time nicely
+		print( "The event will be available for use again on: " .. nextUseString )
+	else
+		print( "The event has been successfully triggered!" )
+		cookie.Set( "myFuncNextUse", time + cooldown )
 	end
 end
-hook.Add("Tick", "MP_AutoTimer", MP_RunTimer) -- Hook to keep it running

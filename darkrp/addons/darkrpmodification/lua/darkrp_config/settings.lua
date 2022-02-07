@@ -108,7 +108,7 @@ GM.Config.license                       = false
 -- lockdown - Enable/Disable initiating lockdowns for mayors.
 GM.Config.lockdown                      = true
 -- lockpickfading - Enable/disable the lockpicking of fading doors.
-GM.Config.lockpickfading                = true
+GM.Config.lockpickfading                = false
 -- logging - Enable/disable logging everything that happens.
 GM.Config.logging                       = true
 -- lottery - Enable/disable creating lotteries for mayors.
