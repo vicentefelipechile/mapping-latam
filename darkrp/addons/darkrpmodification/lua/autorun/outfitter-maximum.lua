@@ -7,12 +7,18 @@ if CLIENT then
 	end
 
 	-- Establecer tamaño maximo
+
 	if !file.Exists( path .. "maxsize.txt", "DATA") then
 		file.Write( path .. "maxsize.txt", 10) -- 10 MB
 	end
 	
 	local maxsize = file.Read( path .. "maxsize.txt", "DATA")
 	RunConsoleCommand("outfitter_maxsize", maxsize)
+
+	concommand.Add("mappinglatam_outfitter_maxsize", function(ply, cmd, args)
+		file.Write( path .. "maxsize.txt", args)
+		RunConsoleCommand("outfitter_maxsize", args)
+	end)
 
 	-- Activar outfitter
 	if !file.Exists( path .. "enabled.txt", "DATA") then
@@ -21,10 +27,12 @@ if CLIENT then
 
 	local function MappingLatamOutfitterEnable()
 		file.Write(  path .. "enabled.txt", 1)
+		RunConsoleCommand("outfitter_enabled", 1)
 	end
 
 	local function MappingLatamOutfitterDisable()
 		file.Write( path .. "enabled.txt", 0)
+		RunConsoleCommand("outfitter_enabled", 0)
 	end
 	local enabled = file.Read( path .. "enabled.txt", "DATA")
 	RunConsoleCommand("outfitter_enabled", enabled)
