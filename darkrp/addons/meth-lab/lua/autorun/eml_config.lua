@@ -71,7 +71,7 @@ EML_Meth_Salesman_NoMeth = {
 	"¡No tienes metanfetamina! ¡Fuera de aquí!",
 	"¡Tráeme más de esta cosa azul!",
 	"Meta, meta, meta?",
-	"Meta!"
+	"¡Meta!"
 	};
 -- Salesman sounds if player don't have meth.
 EML_Meth_Salesman_NoMeth_Sound = {
@@ -83,8 +83,8 @@ EML_Meth_Salesman_NoMeth_Sound = {
 -- Salesman phrases if player got meth.
 EML_Meth_Salesman_GotMeth = {
 	"¡Vaya que increible!",
-	"Aaagh, se siente bien",
-	"Carajo!",
+	"Aaagh, se siente bien.",
+	"¡Carajo!",
 	"¡Eres genial! ¡Traer más!"
 	};	
 -- Salesman phrases if player don't have meth.	
