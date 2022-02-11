@@ -4,11 +4,14 @@ if SERVER then
 end
 
 -- Hooks
-hook.Add( "CanPlayerSuicide", "AllowOwnerSuicide", function( ply ) -- Desactiva el Suicidio
+
+-- Desactiva el Suicidio
+hook.Add( "CanPlayerSuicide", "AllowOwnerSuicide", function( ply )
 	return ply:IsSuperAdmin()
 end )
 
-hook.Add( "PhysgunPickup", "AllowPlayerPickup", function( ply, ent ) -- Desactiva el tomar la camara con la physgun
+-- Desactiva el tomar la camara con la physgun
+hook.Add( "PhysgunPickup", "AllowPlayerPickup", function( ply, ent )
 	if ent:GetClass() == "gmod_cameraprop" then
 		if ply:IsSuperAdmin() then
 			return true
@@ -18,7 +21,8 @@ hook.Add( "PhysgunPickup", "AllowPlayerPickup", function( ply, ent ) -- Desactiv
 	end
 end )
 
-hook.Add( "CanPlayerEnterVehicle", "AllowEnterVehicle", function( ply, vehicle, role ) -- Desactiva el entrar a vehiculos si se encuentra desactivado
+-- Desactiva el entrar a vehiculos si se encuentra desactivado
+hook.Add( "CanPlayerEnterVehicle", "AllowEnterVehicle", function( ply, vehicle, role )
 	if GetConVar("mappinglatam_allowvehicles"):GetInt() == 0 then
 		return false
 	elseif GetConVar("mappinglatam_allowvehicles"):GetInt() == 1 then
@@ -26,11 +30,19 @@ hook.Add( "CanPlayerEnterVehicle", "AllowEnterVehicle", function( ply, vehicle, 
 	end
 end)
 
-
-hook.Add( "PlayerNoClip", "FeelFreeToTurnItOff", function( ply, desiredState ) -- Solo Vicentefelipechile puede tener noclip aun sin superadmin
+-- Solo Vicentefelipechile puede tener noclip aun sin superadmin
+hook.Add( "PlayerNoClip", "FeelFreeToTurnItOff", function( ply, desiredState )
 	if desiredState == false then
 		return true
 	elseif ply:SteamID() == "STEAM_0:1:194224658" then
 		return true
+	end
+end )
+
+hook.Add( "PlayerSpray", "DisablePlayerSpray", function( ply )
+	if ply:IsAdmin() or ply:IsUserGroup("vip") or ply:IsUserGroup("mod+") or ply:IsUserGroup("modt+") then
+		return true
+	else
+		return false
 	end
 end )
