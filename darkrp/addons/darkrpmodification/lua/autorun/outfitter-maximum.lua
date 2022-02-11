@@ -1,14 +1,14 @@
 if CLIENT then
 	local path = "mapping-latam/outfitter/"
 
-	if !file.Exists("mapping-latam", "DATA") then
+	if not file.Exists("mapping-latam", "DATA") then
 		file.CreateDir("mapping-latam")
 		file.CreateDir("mapping-latam/outfitter")
 	end
 
 	-- Establecer tamaño maximo
 
-	if !file.Exists( path .. "maxsize.txt", "DATA") then
+	if not file.Exists( path .. "maxsize.txt", "DATA") then
 		file.Write( path .. "maxsize.txt", 10) -- 10 MB
 	end
 	
@@ -21,7 +21,7 @@ if CLIENT then
 	end)
 
 	-- Activar outfitter
-	if !file.Exists( path .. "enabled.txt", "DATA") then
+	if not file.Exists( path .. "enabled.txt", "DATA") then
 		file.Write( path .. "enabled.txt", 1)
 	end
 
@@ -41,7 +41,7 @@ if CLIENT then
 	concommand.Add("mappinglatam_outfitter_disable", MappingLatamOutfitterDisable, nil, "Activa el outfitter cada vez que entres al servidor.")
 
 	-- Maxima distancia
-	if !file.Exists( path .. "maxdistance.txt", "DATA") then
+	if not file.Exists( path .. "maxdistance.txt", "DATA") then
 		file.Write( path .. "maxdistance.txt", 512) -- 512 Unidades Hammer
 	end
 

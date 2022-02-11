@@ -5,6 +5,6 @@ hook.Add("PlayerDeath", "DarkRP_Mayor_AutoDemote", function(ply, wep, killer)
             ply:SetMaxArmor(100)
             ply:SetMaxHealth(100)
         end
-        DarkRP.notifyAll(v, 1, 4, killer:Nick() and "El Alcalde ha sido asesinado." or "El Alcalde se suicidó.")
+        DarkRP.notifyAll(v, 4, killer:Nick() and "El Alcalde ha sido asesinado." or "El Alcalde se suicidó.")
     end
 end)

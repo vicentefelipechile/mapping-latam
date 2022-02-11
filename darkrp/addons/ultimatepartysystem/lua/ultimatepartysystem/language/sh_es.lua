@@ -1,54 +1,54 @@
 -- Translation by Vicentefelipechile
 -- https://www.gmodstore.com/users/Livaco
 UltimatePartySystem.Languages["es"] = {
-    netCooldown = "Estas enviando demasiadas solicitudes al servidor. Por favor espera un poco.", -- Message to a user who is trying to spam net messages like a bad boi.
+    netCooldown = "Estas enviando demasiadas solicitudes al servidor. Por favor espere un poco.", -- Message to a user who is trying to spam net messages like a bad boi.
 
     --
     -- Chat Messages
     --
-    openingWindow = "Abriendo la ventana Party...", -- Message when the user is opening the Party Window.
-    noPermission = "No tienes permiso para acceder a esto.", -- No permission.
+    openingWindow = "Abriendo partys...", -- Message when the user is opening the Party Window.
+    noPermission = "No tienes permiso.", -- No permission.
     configUpdate = "La configuración se ha actualizado.", -- Config updated.
     configReset = "La configuración se ha restablecido correctamente.", -- Config reset.
 
-    partyCreationAlreadyOwned = "Ya tienes una Party.", -- User trying to make a party while already owning one.
-    partyCreationNameTooLong = "Tu nombre es demasiado largo, no debe ser más largo que %s caracteres.", -- Party name is too long. %s is the amount of characters.
-    partyCreationTooManySlots = "Tu Party no puede tener más de %s slots.", -- Party tried to have too many slots. %s is the amount of slots.
-    partyCreationTooLittleSlots = "Tu Party no puede tener menos de 2 slots.", -- Party tried to have less than 2 slots.
-    partyCreationCannotAfford = "No puedes pagar la tarifa de %s para crear una Party.", -- Can't afford to make a party. %s is the fee for making a party.
-    partyCreationSuccessfull = "Se ha creado tu Party '%s'.", -- Party created. %s is the name of the party.
+    partyCreationAlreadyOwned = "Ya tienes una party.", -- User trying to make a party while already owning one.
+    partyCreationNameTooLong = "El nombre es demasiado largo, no debe ser más largo de %s caracteres.", -- Party name is too long. %s is the amount of characters.
+    partyCreationTooManySlots = "La party no puede tener más de %s espacios.", -- Party tried to have too many slots. %s is the amount of slots.
+    partyCreationTooLittleSlots = "La party no puede tener menos de 2 espacios.", -- Party tried to have less than 2 slots.
+    partyCreationCannotAfford = "No puedes pagar lo suficiente (%s) para crear una party.", -- Can't afford to make a party. %s is the fee for making a party.
+    partyCreationSuccessfull = "Party creata: %s", -- Party created. %s is the name of the party.
 
-    partyInviteOof = "No eres dueño de una Party.", -- Player tries to invite a player to a party when they don't own one.
-    partyInviteAlreadyIn = "%s ya está en una Party.", -- Player invited to party when they are already in a party. %s is the player name.
-    partyInviteDone = "%s invito a %s a la Party.", -- Player invites another player to a lobby. %s is the invitee, followed by the invited.
-    partyInvited = "%s te ha invitado a '%s'. Acepta esta invitacion en el menu de Partys.", -- Player invited to party. %s is the invitee, followed by the party name.
+    partyInviteOof = "No eres dueño de una party.", -- Player tries to invite a player to a party when they don't own one.
+    partyInviteAlreadyIn = "%s ya está en una party.", -- Player invited to party when they are already in a party. %s is the player name.
+    partyInviteDone = "%s invito a %s a la party.", -- Player invites another player to a lobby. %s is the invitee, followed by the invited.
+    partyInvited = "%s te ha invitado a '%s'. Acepta esta invitacion en el menu de partys.", -- Player invited to party. %s is the invitee, followed by the party name.
     partyInviteTimeout = "Se agotó el tiempo de espera de la invitación de %s.", -- Party invite timed out. %s is the inviter.
-    partyInviteTimeoutOwner = "Se agotó el tiempo de espera de tu invitación a la Party de %s.", -- Owner informed Party invite timed out. %s is the invited.
+    partyInviteTimeoutOwner = "Se agotó el tiempo de espera de tu invitación a la party de %s.", -- Owner informed Party invite timed out. %s is the invited.
 
-    partyJoinAlreadyIn = "Ya estás en una Party.", -- Player tries to join a party while already being in one.
-    partyJoinDoesNotExist = "Esta Party no existe.", -- Player tries to join a party that doesn't exist.
-    partyJoinIsFull = "Esa Party está llena.", -- Party is full.
-    partyJoinSuccess = "Te has unido a la Party '%s'.", -- Player joined a party. %s is the party name.
+    partyJoinAlreadyIn = "Ya estás en una party.", -- Player tries to join a party while already being in one.
+    partyJoinDoesNotExist = "La party no existe.", -- Player tries to join a party that doesn't exist.
+    partyJoinIsFull = "La party está llena.", -- Party is full.
+    partyJoinSuccess = "Entrastes a la party '%s'.", -- Player joined a party. %s is the party name.
 
-    partyLeaveSuccess = "Te has ido de la Party '%s'.", -- Player leaving a party. %s is the party name.
-    partyLeaveFromKicked = "Te han expulsado de la Party '%s'.", -- Player being kicked from a party. %s is the party name.
+    partyLeaveSuccess = "Has salido de la Party '%s'.", -- Player leaving a party. %s is the party name.
+    partyLeaveFromKicked = "Te han expulsado de la party '%s'.", -- Player being kicked from a party. %s is the party name.
 
-    partyLeaveDisbanded = "La Party '%s' se ha disuelto, por lo que has sido eliminado.", -- Party has been deleted. %s is the party name.
+    partyLeaveDisbanded = "La party '%s' se ha disuelto, por lo que has sido eliminado.", -- Party has been deleted. %s is the party name.
 
-    partyOwnerPlayerJoin = "%s se ha unido a tu Party.", -- Player joined a party. %s is the party name.
-    partyOwnerPlayerLeave = "'%s' ha dejado tu Party.", -- Player leaving a party. %s is the users name.
-    partyOwnerPlayerDisconnect = "%s se ha desconectado y se ha ido de la party.", -- Player disconnected forcing them out the party. %s is the player name.
+    partyOwnerPlayerJoin = "%s se ha unido a la party.", -- Player joined a party. %s is the party name.
+    partyOwnerPlayerLeave = "'%s' ha dejado la party.", -- Player leaving a party. %s is the users name.
+    partyOwnerPlayerDisconnect = "%s se ha desconectado y se fue de la party.", -- Player disconnected forcing them out the party. %s is the player name.
     partyOwnerPlayerKicked = "%s has sido expulsado.", -- Player kicked from the party. %s is the name.
-    partyOwnerPartyDisband = "Tu Party '%s' se ha disuelto.", -- Party disbanded. %s is the party name.
+    partyOwnerPartyDisband = "La party '%s' se ha disuelto.", -- Party disbanded. %s is the party name.
 
     partyOwnerEditOof = "No eres dueño de esta Party.", -- Player tries to change party without owning it.
-    partyOwnerEditNotEnoughSlotsForPlayers = "Tu recuento de slots no puede ser menor que la cantidad de jugadores en tu Party.", -- Player tries to change party slots to be lower than the player count.
-    partyOwnerEditSuccess = "Tu Party ha sido actualizada.", -- Player updates their party's settings successfully.
+    partyOwnerEditNotEnoughSlotsForPlayers = "No puedes cambiar los espacios de la party a un numero menor de los miembros de la party.", -- Player tries to change party slots to be lower than the player count.
+    partyOwnerEditSuccess = "Party actualizada.", -- Player updates their party's settings successfully.
 
-    partyOwnerDeleteOof = "No eres dueño de esta Party.", -- Player tries to delete a party without owning it.
+    partyOwnerDeleteOof = "No eres dueño de esta party.", -- Player tries to delete a party without owning it.
 
-    partyOwnerKickNotFound = "No se pudo encontrar ese jugador.", -- Player tries to kick a nonexistent player from their party.
-    partyOwnerKickOof = "No eres dueño de esta Party.", -- Player tries to kick a player from their party without owning one.
+    partyOwnerKickNotFound = "No se pudo encontrar al jugador.", -- Player tries to kick a nonexistent player from their party.
+    partyOwnerKickOof = "No eres dueño de esta party.", -- Player tries to kick a player from their party without owning one.
 
     partyChatPrefix = "[UPS] %s >>", -- Party Chat prefix. %s is the player's name.
 
@@ -56,52 +56,52 @@ UltimatePartySystem.Languages["es"] = {
     --
     -- VGUI
     --
-    primaryWindowTitle = "PARTY SYSTEM", -- Main Window title. All caps for a s t e t i c s.
-    primaryWindowViewPartiesTab = "Ver Partys", -- View Parties button.
-    primaryWindowCreatePartyTab = "Crear Party", -- Create Party button.
-    primaryWindowViewPartyTab = "Ver Party", -- View Party button.
+    primaryWindowTitle = "SISTEMA DE PARTY", -- Main Window title. All caps for a s t e t i c s.
+    primaryWindowViewPartiesTab = "Ver partys", -- View Parties button.
+    primaryWindowCreatePartyTab = "Crear party", -- Create Party button.
+    primaryWindowViewPartyTab = "Ver party", -- View Party button.
     primaryWindowSettingsTab = "Configuración", -- Settings button.
 
     viewPartyOwnedBy = "Propiedad de %s", -- Party owned by text. %s is the user's name.
     viewPartyInside = "Ya estás en una Party.", -- Text is user is viewing a party they're in.
-    viewPartySlots = "%s/%s Slots", -- Party slots text. %s is the players in the party, followed by the total slots.
+    viewPartySlots = "%s de %s espacios", -- Party slots text. %s is the players in the party, followed by the total slots.
     viewPartyJoin = "ENTRAR PARTY", -- Join Party text.
-    viewPartyAcceptInvite = "ACEPTAR INVITACION", -- Accept Invite text.
+    viewPartyAcceptInvite = "ACEPTAR INVITACIÓN", -- Accept Invite text.
     viewPartyLeave = "SALIR", -- Leave button.
-    thereIsNoPartyTakeOffYourClothes = "No hay Partys ahora mismo.", -- No partys.
+    thereIsNoPartyTakeOffYourClothes = "No hay partys ahora mismo.", -- No partys.
 
-    createPartyName = "¿Nombre de tu Party?", -- Name of a new party field.
+    createPartyName = "¿Nombre de tu party?", -- Name of a new party field.
     createPartyPrivate = "¿Party Privada?", -- Private party field.
-    createPartySlots = "Numero de Slots", -- Slots field.
-    createPartyOwners = "Agregar propietarios", -- Other Owners header.
+    createPartySlots = "Numero de espacios", -- Slots field.
+    createPartyOwners = "Añadir propietarios", -- Other Owners header.
     createPartySubmit = "CREAR PARTY", -- Create Party button.
-    createPartySubmitCostly = "CREAR PARTY (COSTO %s)", -- Create Party button if there is a cost too. %s it the formatted cost.
+    createPartySubmitCostly = "CREAR PARTY (COSTE %s)", -- Create Party button if there is a cost too. %s it the formatted cost.
 
     viewPartyEditHeader = "EDITAR PARTY", -- Edit Party header when viewing your own party.
     viewPartyEditPrivate = "¿Party Privada?", -- Edit Party private party header.
-    viewPartyEditSlots = "Numero de Slots", -- Edit Party slots header.
+    viewPartyEditSlots = "Numero de espacios", -- Edit Party slots header.
     viewPartyEditSaveButton = "GUARDAR AJUSTES", -- Save party settings button.
     viewPartyEditDeleteButton = "BORRAR PARTY", -- Delete party button.
-    viewPartyPlayerListHeader = "PLAYER LIST", -- Player List.
+    viewPartyPlayerListHeader = "LISTA DE JUGADORES", -- Player List.
     viewPartyPlayerListOwner = "(Dueño)", -- Owner on the Player List.
     viewPartyPlayerListInvite = "INVITAR JUGADORES", -- Invite Players button.
 
-    deletePartyTitle = "Borrar Party?", -- Title for the delete party vgui.
+    deletePartyTitle = "¿Borrar Party?", -- Title for the delete party vgui.
     deletePartyButton = "Confirmar", -- Confirm Button for the delete party vgui.
 
-    invitePlayerTitle = "Invita a un jugador a tu Party", -- Invite a player vgui title.
-    invitePlayerMessage = "Selecciona un jugador para invitar.", -- Message inside the VGUI.
+    invitePlayerTitle = "Invita a un jugador", -- Invite a player vgui title.
+    invitePlayerMessage = "Selecciona un jugador.", -- Message inside the VGUI.
     invitePlayerButton = "Enviar invitacion", -- Message inside the VGUI.
 
-    configWindowTitle = "ULTIMATE PARTY SYSTEM CONFIG", -- Config Window title
-    configResetHeader = "¿Estás seguro de que quieres restablecer toda la configuración?", -- Config Reset Header
-    configResetSubHeader = "Esto no se puede deshacer.", -- Config Reset Sub-Header
+    configWindowTitle = "AJUSTES DEL ULTIMATE PARTY SYSTEM", -- Config Window title
+    configResetHeader = "¿Estás seguro en restablecer la configuración?", -- Config Reset Header
+    configResetSubHeader = "No se puede deshacer.", -- Config Reset Sub-Header
     configResetConfirmButton = "Confirmar", -- Config Reset Button
 
-    actionMenuTitle = "ACTION MENU", -- Action Menu
-    actionMenuCreateMarker = "Crear Marcador", -- Create Marker
-    actionMenuClearMarker = "Borrar Marcador", -- Clear Marker
-    actionMenuRadioToggle = "Alternar Radio", -- Toggle Radio
+    actionMenuTitle = "MENU DE ACCIONES", -- Action Menu
+    actionMenuCreateMarker = "Crear marcador", -- Create Marker
+    actionMenuClearMarker = "Borrar marcador", -- Clear Marker
+    actionMenuRadioToggle = "Alternar radio", -- Toggle Radio
 
     cancelButton = "Cancelar", -- Cancel button.
 
@@ -111,32 +111,33 @@ UltimatePartySystem.Languages["es"] = {
     --
     -- Fuck off if you think for a SECOND im commenting all this fucking shit. Figure it out youself. I'm writing these localisation vars at 2:20am on a school night, gimme a fuckin break.
     -- Translater: XD
+    -- Lugent: Do better translation.
 
     -- General
-    configPrefixName = "Prefijo",
-    configPrefixDescription = "The prefix for all chat messages.",
+    configPrefixName = "Prefijo de la party",
+    configPrefixDescription = "El prefijo de todos los mensajes en chat.",
 
-    configPrefixColorName = "Prefijo Color",
-    configPrefixColorDescription = "The color of the prefix.",
+    configPrefixColorName = "Color del prefijo",
+    configPrefixColorDescription = "El color del prefijo.",
 
-    configMessageColorName = "Mensaje Color",
-    configMessageColorDescription = "The color of the rest of a message.",
+    configMessageColorName = "Color del mensaje",
+    configMessageColorDescription = "El color del resto del mensaje.",
 
-    configThemeColorName = "Tema Color",
-    configThemeColorDescription = "The theme color of every UI.",
+    configThemeColorName = "Colo del tema",
+    configThemeColorDescription = "El color del tema de cada interfaz.",
 
-    configMoneyFormatName = "Formato Dinero",
-    configMoneyFormatDescription = "How money is formatted. %s is the amount of money with commas.",
+    configMoneyFormatName = "Formato monetario",
+    configMoneyFormatDescription = "Como sera el formato monetario, %s es la cantidad de dinero en comas.",
 
     -- User Interface
-    configChatCommandName = "Chat Comando",
-    configChatCommandDescription = "El comando para abrir el menu.",
+    configChatCommandName = "Comando del chat",
+    configChatCommandDescription = "El comando para abrir el menu de partys.",
 
-    configHideCommandName = "Ocultar Chat Comando",
-    configHideCommandDescription = "Si el comando debe ocultarse del chat cuando se usa.",
+    configHideCommandName = "Ocultar comando del chat",
+    configHideCommandDescription = "Si ocultarse del chat cuando se usa.",
 
-    configUIMessageName = "Mostrar UI Mensaje de apertura",
-    configHideCommandDescription = "Si el addon debe enviar un mensaje de chat cuando se abre el menu.",
+    configUIMessageName = "Mostrar mensaje al abrir interfaz",
+    configHideCommandDescription = "Si enviar un mensaje en chat cuando se abre el menu.",
 
     -- Parties
     configMaxNameLengthName = "Longitud máxima del nombre de la Party",
@@ -145,50 +146,50 @@ UltimatePartySystem.Languages["es"] = {
     configAllowPrivatePartiesName = "Permitir Partys Privadas",
     configAllowPrivatePartiesDescription = "Si los usuarios pueden hacer Partys privadas.",
 
-    configMaxSlotsName = "Slots Maximos",
-    configMaxSlotsDescription = "Los espacios/slots máximos que puede tener una Party.",
+    configMaxSlotsName = "Maximo de espacios",
+    configMaxSlotsDescription = "El limite de espacios de una party.",
 
-    configDefaultSlotsName = "Slots Predeterminados",
-    configDefaultSlotsDescription = "La cantidad predeterminada de espacios/slots que tiene una Party.",
+    configDefaultSlotsName = "Espacios por defecto",
+    configDefaultSlotsDescription = "La cantidad de espacios por defecto de una Party.",
 
-    configPartyCreationCostName = "Costo para Crear Party",
-    configPartyCreationCostDescription = "Cuánto cuesta crear una Party. Establece esto en cero para dejarlo sin costo alguno.",
+    configPartyCreationCostName = "Coste de creación de la party",
+    configPartyCreationCostDescription = "El costo de crear una party. Si el coste es cero, no se cobrara nada",
 
     -- Misc
-    configRadioEnabledName = "Radio Activa",
-    configRadioEnabledDescription = "Habilita la función de radio.",
+    configRadioEnabledName = "Radio activada",
+    configRadioEnabledDescription = "Habilita la radio.",
 
-    configMarkerEnabledName = "Marcador Activo",
-    configMarkerEnabledDescription = "Habilita la función de Marcador.",
+    configMarkerEnabledName = "Marcador activado",
+    configMarkerEnabledDescription = "Habilita los marcadores.",
 
-    configInviteTimeoutName = "Party Invite Timeout",
-    configInviteTimeoutDescription = "Cuánto tiempo debe pasar antes de que se agote el tiempo de espera de una invitación a una fiesta en segundos.",
+    configInviteTimeoutName = "Maximo tiempo de espera de la invitación",
+    configInviteTimeoutDescription = "El tiempo limite de espera de una invitación a la party en segundos.",
 
-    configEnableFriendlyFireName = "Activar Friendly Fire",
-    configEnableFriendlyFireDescription = "Si el addon debe permitir el fuego amigo para dos personas en el mismo grupo.",
+    configEnableFriendlyFireName = "Fuego amigo habilitado",
+    configEnableFriendlyFireDescription = "Habilitar fuego amigo en la party.",
 
-    configEnablePartyChatName = "Activar Party Chat",
-    configEnablePartyChatDescription = "Si el addon debe habilitar la función de chat de grupo.",
+    configEnablePartyChatName = "Chat de la party activado",
+    configEnablePartyChatDescription = "Habilita el chat de la party.",
 
-    configPartyChatCommandName = "Party Chat Comando",
-    configPartyChatCommandDescription = "El comando para enviar un menasje a Party Chat.",
+    configPartyChatCommandName = "Comando del chat de la party",
+    configPartyChatCommandDescription = "El comando para enviar un mensaje al chat de la party.",
 
     -- Client Based Settings
-    clientConfigDrawHUDName = "Dibujar HUD",
-    clientConfigDrawHUDDescription = "Dibujar Party HUD.",
+    clientConfigDrawHUDName = "Mostrar HUD",
+    clientConfigDrawHUDDescription = "Mostrar HUD de la party.",
 
-    clientConfigHUDXName = "HUD Eje X",
-    clientConfigHUDXDescription = "El desplazamiento de la posición Eje X para el HUD.",
+    clientConfigHUDXName = "Posición X del HUD",
+    clientConfigHUDXDescription = "La posición X del HUD.",
 
-    clientConfigHUDYName = "HUD Eje Y",
-    clientConfigHUDYDescription = "El desplazamiento de la posición Eje Y para el HUD.",
+    clientConfigHUDYName = "Posición Y del HUD",
+    clientConfigHUDYDescription = "La posición Y del HUD.",
 
-    clientConfigHUDOpacityName = "Transparencia del HUD",
-    clientConfigHUDOpacityDescription = "La transparencia del HUD.",
+    clientConfigHUDOpacityName = "Translucencia del HUD",
+    clientConfigHUDOpacityDescription = "La translucencia del HUD.",
 
-    clientConfigDrawMarkersName = "Dibujar Marcadores",
-    clientConfigDrawMarkersDescription = "Si el addon debe dibujar los marcadores.",
+    clientConfigDrawMarkersName = "Mostrar Marcadores",
+    clientConfigDrawMarkersDescription = "Mostrar los marcadores de los miembros de la party.",
 
-    clientConfigDisplayPartyChatName = "Desactivar Party Chat",
-    clientConfigDisplayPartyChatDescription = "Si el addon debe mostrar mensajes de chat de grupo.",
+    clientConfigDisplayPartyChatName = "Desactivar chat de party",
+    clientConfigDisplayPartyChatDescription = "Alternar el chat de la party.",
 }
