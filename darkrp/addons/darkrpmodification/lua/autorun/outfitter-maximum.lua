@@ -1,15 +1,18 @@
 if CLIENT then
 	local path = "mapping-latam/outfitter/"
+	local version = 1
+	local mp_maxsize = 10		-- 10MB
+	local mp_maxdistance = 512	-- 512 UH
 
-	if not file.Exists("mapping-latam", "DATA") then
+	if !file.Exists("mapping-latam", "DATA") then
 		file.CreateDir("mapping-latam")
 		file.CreateDir("mapping-latam/outfitter")
 	end
 
 	-- Establecer tamaño maximo
 
-	if not file.Exists( path .. "maxsize.txt", "DATA") then
-		file.Write( path .. "maxsize.txt", 10) -- 10 MB
+	if !file.Exists( path .. "maxsize.txt", "DATA") then
+		file.Write( path .. "maxsize.txt", mp_maxsize) -- 10 MB
 	end
 	
 	local maxsize = file.Read( path .. "maxsize.txt", "DATA")
@@ -21,7 +24,7 @@ if CLIENT then
 	end)
 
 	-- Activar outfitter
-	if not file.Exists( path .. "enabled.txt", "DATA") then
+	if !file.Exists( path .. "enabled.txt", "DATA") then
 		file.Write( path .. "enabled.txt", 1)
 	end
 
@@ -41,8 +44,8 @@ if CLIENT then
 	concommand.Add("mappinglatam_outfitter_disable", MappingLatamOutfitterDisable, nil, "Activa el outfitter cada vez que entres al servidor.")
 
 	-- Maxima distancia
-	if not file.Exists( path .. "maxdistance.txt", "DATA") then
-		file.Write( path .. "maxdistance.txt", 512) -- 512 Unidades Hammer
+	if !file.Exists( path .. "maxdistance.txt", "DATA") then
+		file.Write( path .. "maxdistance.txt", mp_maxdistance) -- 512 Unidades Hammer
 	end
 
 	maxdistance = file.Read( path .. "maxdistance.txt", "DATA")
@@ -52,4 +55,15 @@ if CLIENT then
 		file.Write( path .. "maxsize.txt", args)
 		RunConsoleCommand("outfitter_distance", args)
 	end)
+
+	-- Version
+
+	if file.Read( path .. "version.txt", "DATA") != version then
+		if !file.Exists( path .. "version.txt", "DATA") then
+			file.Write( path .. "version.txt", version)
+
+			file.Write( path .. "maxdistance.txt", mp_maxdistance)
+			file.Write( path .. "maxsize.txt", mp_maxsize)
+		end
+	end
 end
