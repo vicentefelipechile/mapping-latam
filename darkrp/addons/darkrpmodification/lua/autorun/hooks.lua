@@ -27,6 +27,8 @@ hook.Add( "CanPlayerEnterVehicle", "AllowEnterVehicle", function( ply, vehicle, 
 		return false
 	elseif GetConVar("mappinglatam_allowvehicles"):GetInt() == 1 then
 		return true
+	elseif ply:IsAdmin() or ply:IsUserGroup("mod") or ply:IsUserGroup("mod+") or ply:IsUserGroup("modt") or ply:IsUserGroup("modt+") then
+		return true
 	end
 end)
 
