@@ -46,3 +46,12 @@ hook.Add( "PlayerSpray", "DisablePlayerSpray", function( ply )
 		return false
 	end
 end )
+
+-- Habilita el sprays solo a los vips y admins
+hook.Add( "PlayerSpray", "DisablePlayerSpray", function( ply )
+	if ply:IsSuperAdmin() or ply:IsAdmin() or ply:IsUserGroup("vip") or ply:IsUserGroup("mod+") or ply:IsUserGroup("modt+") then
+		return false
+	else
+		return true
+	end
+end )
