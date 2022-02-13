@@ -1,5 +1,5 @@
 function ARMORY_AddDarkRPEntities()
-	AddCustomShipment("Armory Lockpick", {
+	AddCustomShipment("Ganzúas", {
 		model = "models/craphead_scripts/armory_robbery2/w_lockpick.mdl",
 		entity = "armory_lockpick",
 		price = 5000,
