@@ -1,4 +1,5 @@
--- Ignore these two lines:
+---NOTA La linea 368 da error lua no entiendo por que alguien lo puede solucionas porfavor
+--- Ignore these two lines:
 local weapon = weapons.GetStored
 local function edit()
 --[[
@@ -104,7 +105,7 @@ weapon "bb_fiveseven_alt".ViewModelFOV = 90
 weapon "bb_fiveseven_alt".SelectiveFire = false
 
 -- P90
-weapon "bb_p90_alt".Primary.Damage = 17
+weapon "bb_p90_alt".Primary.Damage = 5
 weapon "bb_p90_alt".Primary.Spread = .25
 weapon "bb_p90_alt".Primary.RPM = 700
 weapon "bb_p90_alt".ViewModelFOV = 90
@@ -122,8 +123,9 @@ weapon "bb_g3sg1_alt".ViewModelFOV = 90
 weapon "bb_g3sg1_alt".SelectiveFire = false
 
 -- GALIG
-weapon "bb_galil_alt".Primary.Damage = 20
+weapon "bb_galil_alt".Primary.Damage = 11
 weapon "bb_galil_alt".Primary.Spread = .17
+weapon "bb_galil_alt".Primary.RPM = 682
 weapon "bb_galil_alt".ViewModelFOV = 90
 weapon "bb_galil_alt".SelectiveFire = false
 
@@ -193,8 +195,8 @@ weapon "bb_m4a1_cp".ViewModelFOV = 90
 weapon "bb_m4a1_cp".SelectiveFire = false
 
 -- MAC10
-weapon "bb_mac10_alt".Primary.Damage = 8
-weapon "bb_mac10_alt".Primary.Spread = .22
+weapon "bb_mac10_alt".Primary.Damage = 5
+weapon "bb_mac10_alt".Primary.RPM = 750
 weapon "bb_mac10_alt".ViewModelFOV = 90
 weapon "bb_mac10_alt".SelectiveFire = false
 
@@ -234,8 +236,8 @@ weapon "m9k_acr".Primary.RPM = 600
 weapon "m9k_acr".ViewModelFOV = 90
 
 -- SPAS
-weapon "m9k_spas12".Primary.Damage = 2
-weapon "m9k_spas12".Primary.RPM = 55
+weapon "m9k_spas12".Primary.Damage = 3
+weapon "m9k_spas12".Primary.RPM = 100
 weapon "m9k_spas12".ViewModelFOV = 90
 
 -- Magnunson 4000
@@ -271,6 +273,134 @@ weapon "m9k_m14sp".Primary.RPM = 750
 weapon "m9k_m14sp".Primary.ClipSize = 8
 weapon "m9k_m14sp".ViewModelFOV = 90
 
+--mossberg590
+weapon "m9k_mossberg590".Primary.Damage = 5
+weapon "m9k_mossberg590".Primary.RPM = 75
+weapon "m9k_mossberg590".ViewModelFOV = 90
+
+--HK 416
+weapon "m9k_m416".Primary.Damage = 15
+weapon "m9k_m416".Primary.RPM = 700
+weapon "m9k_m416".ViewModelFOV = 90
+
+--MP5sd
+weapon "m9k_mp5sd".Primary.Damage = 25
+weapon "m9k_mp5sd".Primary.RPM = 700
+weapon "m9k_mp5sd".ViewModelFOV = 90
+
+--mini guardian
+weapon "m9k_guardian".Primary.Damage = 25
+weapon "m9k_guardian".Primary.RPM = 700
+weapon "m9k_guardian".ViewModelFOV = 90
+
+--Colt 1911
+weapon "m9k_colt1911".Primary.Damage = 15
+weapon "m9k_colt1911".Primary.RPM = 500
+weapon "m9k_colt1911".ViewModelFOV = 90
+
+--HK mp5
+weapon "m9k_mp5".Primary.Damage = 10
+weapon "m9k_mp5".Primary.RPM = 600
+weapon "m9k_mp5".ViewModelFOV = 90
+
+--HK ump45
+weapon "m9k_ump45".Primary.Damage = 13
+weapon "m9k_ump45".Primary.RPM = 600
+weapon "m9k_ump45".ViewModelFOV = 90
+
+--Kac Pdw
+weapon "m9k_kac_pdw".Primary.Damage = 12
+weapon "m9k_kac_pdw".Primary.RPM = 600
+weapon "m9k_kac_pdw".ViewModelFOV = 90
+
+--MP9
+weapon "m9k_mp9".Primary.Damage = 7
+weapon "m9k_mp9".Primary.RPM = 800
+weapon "m9k_mp9".ViewModelFOV = 90
+
+--ACR
+weapon "m9k_acr".Primary.Damage = 10
+weapon "m9k_acr".Primary.RPM = 600
+weapon "m9k_acr".ViewModelFOV = 90
+
+--AS val
+weapon "m9k_val".Primary.Damage = 9
+weapon "m9k_val".Primary.RPM = 600
+weapon "m9k_val".ViewModelFOV = 90
+
+--m14
+weapon "m9k_m14sp".Primary.Damage = 14
+weapon "m9k_m14sp".Primary.RPM = 750
+weapon "m9k_m14sp".ViewModelFOV = 90
+weapon "m9k_m14sp".SelectiveFire = false
+
+--m9k m24
+weapon "m9k_m24".Primary.Damage = 80
+weapon "m9k_m24".Primary.RPM = 40
+weapon "m9k_m24".ViewModelFOV = 90
+
+--model627
+weapon "m9k_model627".Primary.Damage = 12
+weapon "m9k_model627".Primary.RPM = 100
+weapon "m9k_model627".ViewModelFOV = 90
+
+--luger
+weapon "m9k_luger".Primary.Damage = 15
+weapon "m9k_luger".Primary.RPM = 850
+weapon "m9k_luger".ViewModelFOV = 90
+
+--coltpython
+weapon "m9k_coltpython".Primary.Damage = 22
+weapon "m9k_coltpython".Primary.RPM = 115
+weapon "m9k_coltpython".ViewModelFOV = 90
+
+--bizonpp19
+weapon "m9k_bizonp19".Primary.Damage = 6
+weapon "m9k_bizonp19".Primary.RPM = 675
+weapon "m9k_bizonp19".ViewModelFOV = 90
+
+--Tommy gun
+weapon "m9k_thompson".Primary.Damage = 8
+weapon "m9k_thompson".Primary.RPM = 700
+weapon "m9k_thompson".ViewModelFOV = 90
+
+--tec 9
+weapon "m9k_tec9".Primary.Damage = 14
+weapon "m9k_tec9".Primary.RPM = 750
+weapon "m9k_tec9".ViewModelFOV = 90
+
+--Ak 47
+weapon "m9k_ak47".Primary.Damage = 13
+weapon "m9k_ak47".Primary.RPM = 600
+weapon "m9k_ak47".ViewModelFOV = 90
+
+--Ak 74
+weapon "m9k_ak74".Primary.Damage = 16
+weapon "m9k_ak74".Primary.RPM = 500
+weapon "m9k_ak74".ViewModelFOV = 90
+
+--FAL
+weapon "m9k_fal".Primary.Damage = 14
+weapon "m9k_fal".Primary.RPM = 750
+weapon "m9k_fal".ViewModelFOV = 90
+
+--vikhr
+weapon "m9k_vikhr".Primary.Damage = 9
+weapon "m9k_vikhr".Primary.RPM = 900
+weapon "m9k_vikhr".ViewModelFOV = 90
+
+--svt40
+weapon "m9k_svt40".Primary.Damage = 55
+weapon "m9k_svt40".Primary.RPM = 350
+weapon "m9k_svt40".ViewModelFOV = 90
+
+--browningauto5
+weapon "m9k_browningauto5".Primary.Damage = 4
+weapon "m9k_browningauto5".Primary.RPM = 150
+weapon "m9k_browningauto5".ViewModelFOV = 90
+
+
+
 -- Armas VIPs
 
 weapon "weapon_ak47_beast".Primary.Damage = 20
@@ -292,7 +422,6 @@ weapon "weapon_m4a1_beast".MeleeAttack = 0.4
 weapon "pocket".PrintName = "Bolsillo"
 weapon "itemstore_pickup".PrintName = "Inventario"
 weapon "keys".PrintName = "Llaves"
-
 --------------------------------------------
 -- ADD WEAPON SETTINGS ABOVE THIS LINE
 -- Also ignore the lines below. They are needed to make this work.
