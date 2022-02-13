@@ -28,7 +28,7 @@ GM.Config.allowjobswitch                = true
 -- allowrpnames - Allow Players to Set their RP names using the /rpname command.
 GM.Config.allowrpnames                  = true
 -- allowsprays - Enable/disable the use of sprays on the server.
-GM.Config.allowsprays                   = false
+GM.Config.allowsprays                   = true
 -- allowvehicleowning - Enable/disable whether people can own vehicles.
 GM.Config.allowvehicleowning            = true
 -- allowvnocollide - Enable/disable the ability to no-collide a vehicle (for security).
@@ -76,7 +76,7 @@ GM.Config.decalcleaner                  = false
 -- disallowClientsideScripts - Clientside scripts can be very useful for customizing the HUD or to aid in building. This option bans those scripts.
 GM.Config.disallowClientsideScripts     = true
 -- doorwarrants - Enable/disable Warrant requirement to enter property.
-GM.Config.doorwarrants                  = false
+GM.Config.doorwarrants                  = true
 -- dropmoneyondeath - Enable/disable whether people drop money on death.
 GM.Config.dropmoneyondeath              = false
 -- droppocketarrest - Enable/disable whether people drop the stuff in their pockets when they get arrested.
