@@ -9,3 +9,4 @@ https://discord.gg/2pMzDXZQxJ
 - [**chomp**](https://github.com/feliS317)
 - [**eckholtN**](https://github.com/eckholtN)
 - [**Macpato**](https://github.com/macpato231)
+- [**Slow35**] (https://github.com/Slow35)
