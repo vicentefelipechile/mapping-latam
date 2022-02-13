@@ -15,21 +15,7 @@ https://darkrp.miraheze.org/wiki/DarkRP:CustomJobFields
 
 Add your custom jobs under the following line:
 ---------------------------------------------------------------------------]]
-
-MaxPlayers = game.MaxPlayers()
-
-TEAM_NONE = DarkRP.createJob("none", {
-    color = Color(0, 0, 0, 255),
-    model = "models/player/raphtalia_low/default_p.mdl",
-    description = "None",
-    command = "none",
-    max = 0,
-    salary = 0,
-    admin = 1,
-    customCheck = function(ply) return ply:IsSuperAdmin() end,
-    category = "non_exist"
-})
-
+-----------------------legales-------------------
 TEAM_CITIZEN = DarkRP.createJob("Ciudadano", {
     color = Color(20, 150, 20, 255),
     model = {
@@ -97,34 +83,51 @@ TEAM_CITIZEN_VIP = DarkRP.createJob("Ciudadano Clase Alta", {
     customCheck = function(ply) return ply:IsUserGroup("vip") or ply:IsUserGroup("mod+") or ply:IsAdmin() or ply:IsSuperAdmin() end,
     CustomCheckFailMsg = "Este trabajo es solo pa vips po."
 })
+TEAM_GUN = DarkRP.createJob("Armero", {
+    color = Color(255, 140, 0, 255),
+    model = "models/player/monk.mdl",
+    description = "Un comerciante de armas\n\n- Eres la única persona que puede vender armas a otras personas.",
+    weapons = {},
+    command = "armero",
+    max = 3,
+    salary = GAMEMODE.Config.normalsalary * 2,
+    admin = 0,
+    vote = false,
+    hasLicense = true,
+    category = "Citizens",
+})
 
-TEAM_STAFF = DarkRP.createJob("STAFF", {
-    color = Color(30, 30, 30, 255),
-    model = {
-        "models/player/combine_super_soldier.mdl",
-        "models/custom/cmankarthecat/helluvaboss/moxxie_pm.mdl",
-        "models/player/raphtalia_low/default_p.mdl"
-    },
-    description = [[Este job es para administrar el servidor, nada mas.]],
-    weapons = {
-        "door_ram",
-        "arrest_stick",
-        "unarrest_stick",
-        "stunstick",
-        "weaponchecker"
-    },
-    command = "staff",
+TEAM_HOBO = DarkRP.createJob("Vagabundo", {
+    color = Color(80, 45, 0, 255),
+    model = "models/player/corpse1.mdl",
+    description = "Persona de escasos recursos\n\n- Todo el mundo se ríe de ti.\n- No tienes hogar.\n- Ruega por tu comida y dinero.\n- Crea tu propia casa de madera en algún lugar en una esquina o afuera de la casa de otra persona",
+    weapons = {"weapon_bugbait"},
+    command = "vagabundo",
     max = 0,
     salary = 0,
     admin = 0,
     vote = false,
-    hasLicense = true,
+    hasLicense = false,
     candemote = false,
-    category = "Staff y Moderación",
-    customCheck = function(ply) return ply:IsUserGroup("mod") or ply:IsUserGroup("mod+") or ply:IsAdmin() or ply:IsSuperAdmin() end,
-    CustomCheckFailMsg = "El pepe"
+    hobo = true,
+    category = "Citizens",
 })
 
+TEAM_MEDIC = DarkRP.createJob("Medico", {
+    color = Color(47, 79, 79, 255),
+    model = "models/player/kleiner.mdl",
+    description = "Medico que cura a la gente\n\n- Con tu conocimiento médico, trabaja para restaurar la salud de los jugadores.\n- Sin un médico, la gente no se puede curar.\n- Clic izquierdo con el Kit médico para curar a otros jugadores.\n- Clic derecho con el Kit médico para curarte.",
+    weapons = {"med_kit"},
+    command = "medico",
+    max = 3,
+    salary = GAMEMODE.Config.normalsalary * 2,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    medic = true,
+    category = "Citizens",
+})
+---------------------Ilegales---------------------
 TEAM_MOB = DarkRP.createJob("Lider Criminal Xetas", {
     color = Color(25, 25, 25, 255),
     model = "models/player/niko/niko_bellic/nik0.mdl",
@@ -178,20 +181,6 @@ TEAM_SICARIO = DarkRP.createJob("Sicario", {
     category = "Gangsters",
 })
 
-TEAM_GUN = DarkRP.createJob("Armero", {
-    color = Color(255, 140, 0, 255),
-    model = "models/player/monk.mdl",
-    description = "Un comerciante de armas\n\n- Eres la única persona que puede vender armas a otras personas.",
-    weapons = {},
-    command = "armero",
-    max = 3,
-    salary = GAMEMODE.Config.normalsalary * 2,
-    admin = 0,
-    vote = false,
-    hasLicense = true,
-    category = "Citizens",
-})
-
 TEAM_GUN_CLANDESTINO = DarkRP.createJob("Armero Clandestino", {
     color = Color(255, 140, 0, 255),
     model = {
@@ -209,20 +198,6 @@ TEAM_GUN_CLANDESTINO = DarkRP.createJob("Armero Clandestino", {
     category = "Gangsters",
 })
 
-TEAM_MEDIC = DarkRP.createJob("Medico", {
-    color = Color(47, 79, 79, 255),
-    model = "models/player/kleiner.mdl",
-    description = "Medico que cura a la gente\n\n- Con tu conocimiento médico, trabaja para restaurar la salud de los jugadores.\n- Sin un médico, la gente no se puede curar.\n- Clic izquierdo con el Kit médico para curar a otros jugadores.\n- Clic derecho con el Kit médico para curarte.",
-    weapons = {"med_kit"},
-    command = "medico",
-    max = 3,
-    salary = GAMEMODE.Config.normalsalary * 2,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    medic = true,
-    category = "Citizens",
-})
 
 TEAM_MEDIC_CRIMINAL = DarkRP.createJob("Medico Clandestino", {
     color = Color(47, 79, 79, 255),
@@ -238,7 +213,45 @@ TEAM_MEDIC_CRIMINAL = DarkRP.createJob("Medico Clandestino", {
     medic = true,
     category = "Gangsters",
 })
+TEAM_GANG = DarkRP.createJob("Criminal", {
+    color = Color(75, 75, 75, 255),
+    model = {
+        "models/gang_groove/gang_1.mdl",
+        "models/gang_chem/gang_groove_chem.mdl",
+        "models/gang_groove/gang_1_blu.mdl",
+        "models/gang_chem/gang_groove_chem_blu.mdl"
+    },
+    description = "La persona más baja del crimen\n\n- Un criminal que trabaja para el Mob Boss, quien dirige la familia del crimen.",
+    weapons = {
+        "lockpick",
+        "keypad_cracker"
+    },
+    command = "criminal",
+    max = 10,
+    salary = GAMEMODE.Config.normalsalary * 0.75,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Gangsters",
+})
 
+TEAM_FARMEROILEGAL = DarkRP.createJob("Farmero Ilegal", {
+    color = Color(75, 75, 75, 255),
+    model = "models/player/hostage/hostage_04.mdl",
+    description = "El farmero de polvo magico\n\n- Trabajas solo o para cualquier grupo criminal.\n- Puedes comprar materiales para hacer tus polvitos magicos.\n- Puedes ser contratado por el grupo de trabajo CRIMINALES.",
+    weapons = {
+        "lockpick",
+        "keypad_cracker"
+    },
+    command = "farmeroilegal",
+    max = 4,
+    salary = GAMEMODE.Config.normalsalary,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Gangsters",
+})
+--------------------------gubernamentales----------------------
 TEAM_CHIEF = DarkRP.createJob("Teniente Protección Civil", {
     color = Color(20, 20, 255, 255),
     model = "models/player/combine_soldier_prisonguard.mdl",
@@ -349,6 +362,7 @@ TEAM_DISTURBE = DarkRP.createJob("Grupo Anti-Disturbios", {
         "weaponchecker",
         "weapon_cuff_police",
         "riot_shield"
+      "heavy_shield"
     },
     command = "ad",
     max = 10,
@@ -361,63 +375,52 @@ TEAM_DISTURBE = DarkRP.createJob("Grupo Anti-Disturbios", {
         ["ar2"] = 900
     },
     category = "Civil Protection",
+        PlayerSpawn = function(ply)
+        ply:SetMaxHealth(100)
+        ply:SetHealth(100)
+        ply:SetArmor(200)
+    end
 })
-
-TEAM_GANG = DarkRP.createJob("Criminal", {
-    color = Color(75, 75, 75, 255),
+---------------otros------------
+TEAM_STAFF = DarkRP.createJob("STAFF", {
+    color = Color(30, 30, 30, 255),
     model = {
-        "models/gang_groove/gang_1.mdl",
-        "models/gang_chem/gang_groove_chem.mdl",
-        "models/gang_groove/gang_1_blu.mdl",
-        "models/gang_chem/gang_groove_chem_blu.mdl"
+        "models/player/combine_super_soldier.mdl",
+        "models/custom/cmankarthecat/helluvaboss/moxxie_pm.mdl",
+        "models/player/raphtalia_low/default_p.mdl"
     },
-    description = "La persona más baja del crimen\n\n- Un criminal que trabaja para el Mob Boss, quien dirige la familia del crimen.",
+    description = [[Este job es para administrar el servidor, nada mas.]],
     weapons = {
-        "lockpick",
-        "keypad_cracker"
+        "door_ram",
+        "arrest_stick",
+        "unarrest_stick",
+        "stunstick",
+        "weaponchecker"
     },
-    command = "criminal",
-    max = 10,
-    salary = GAMEMODE.Config.normalsalary * 0.75,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Gangsters",
-})
-
-TEAM_FARMEROILEGAL = DarkRP.createJob("Farmero Ilegal", {
-    color = Color(75, 75, 75, 255),
-    model = "models/player/hostage/hostage_04.mdl",
-    description = "El farmero de polvo magico\n\n- Trabajas solo o para cualquier grupo criminal.\n- Puedes comprar materiales para hacer tus polvitos magicos.\n- Puedes ser contratado por el grupo de trabajo CRIMINALES.",
-    weapons = {
-        "lockpick",
-        "keypad_cracker"
-    },
-    command = "farmeroilegal",
-    max = 4,
-    salary = GAMEMODE.Config.normalsalary,
-    admin = 0,
-    vote = false,
-    hasLicense = false,
-    category = "Gangsters",
-})
-
-TEAM_HOBO = DarkRP.createJob("Vagabundo", {
-    color = Color(80, 45, 0, 255),
-    model = "models/player/corpse1.mdl",
-    description = "Persona de escasos recursos\n\n- Todo el mundo se ríe de ti.\n- No tienes hogar.\n- Ruega por tu comida y dinero.\n- Crea tu propia casa de madera en algún lugar en una esquina o afuera de la casa de otra persona",
-    weapons = {"weapon_bugbait"},
-    command = "vagabundo",
+    command = "staff",
     max = 0,
     salary = 0,
     admin = 0,
     vote = false,
-    hasLicense = false,
+    hasLicense = true,
     candemote = false,
-    hobo = true,
-    category = "Citizens",
+    category = "Staff y Moderación",
+    customCheck = function(ply) return ply:IsUserGroup("mod") or ply:IsUserGroup("mod+") or ply:IsAdmin() or ply:IsSuperAdmin() end,
+    CustomCheckFailMsg = "El pepe"
 })
+MaxPlayers = game.MaxPlayers()
 
+TEAM_NONE = DarkRP.createJob("none", {
+    color = Color(0, 0, 0, 255),
+    model = "models/player/raphtalia_low/default_p.mdl",
+    description = "None",
+    command = "none",
+    max = 0,
+    salary = 0,
+    admin = 1,
+    customCheck = function(ply) return ply:IsSuperAdmin() end,
+    category = "non_exist"
+})
 --[[---------------------------------------------------------------------------
 Define which team joining players spawn into and what team you change to if demoted
 ---------------------------------------------------------------------------]]
