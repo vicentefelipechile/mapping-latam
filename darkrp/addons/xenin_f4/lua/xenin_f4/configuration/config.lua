@@ -35,7 +35,7 @@ cfg:SetLanguage("spanish", [[
                     "name": "General",
                     
                     "online": {
-                        "title": "En linea",
+                        "title": "Jugadores conectados",
                         "data": ":online:/:max:"
                     },
                     "totalMoney": {
@@ -128,7 +128,7 @@ cfg:SetLanguage("spanish", [[
                 "categoryName": "Vehiculos"  
             },
             "top": {
-                "search": "Buscarp or nombre",
+                "search": "Buscar por nombre",
                 "sort": {
                     "default": "Clasificación por defecto",
                     "alphabetically": "Alfabeticamente",
@@ -339,7 +339,7 @@ cfg:SetRichestPlayerConfig({
 
 -- Setup the order of how tabs should be in the items menu
 cfg:SetItemsOrder({
-	"Entidades", "Armas", "Envios", "Munición", "Vehiculos", "Comida"
+	"Entities", "Weapons", "Shipments", "Ammo", "Vehicles", "Food"
 })
 
 -- Sort order for jobs. This will determine the order of "sort by" dropdown for jobs
@@ -357,7 +357,7 @@ cfg:SetItemsSortOrder({
 -- Sort order for the dashboard tabs.
 -- If you want to remove a tab, just remove the "string" here
 cfg:SetDashboardTabOrder({
-	"General", "economia"
+	"General", "Economy"
 })
 
 -- Sort order for the circle graphs in the dashboard in the general tab
