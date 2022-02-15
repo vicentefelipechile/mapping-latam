@@ -288,8 +288,7 @@ TEAM_MAYOR = DarkRP.createJob("Alcalde", {
     },
     description = "El alcalde de la ciudad\n\n- Crea leyes para gobernar la ciudad.\n- El alcalde, puede crear y aceptar órdenes judiciales.\n- Escribe /wanted <name>  para crear una orden judicial a un jugador.\n- Escribe /lockdown Para iniciar un toque de queda.\n- La policía patrulla la zona.\n- Escribe /unlockdown para terminar un toque de queda.",
     weapons = {
-        "bb_glock_cp",
-        "bb_m4a1_cp",
+        "m9k_guardian",
         "weapon_cuff_police",
     },
     command = "alcalde",
@@ -321,8 +320,7 @@ TEAM_POLICE = DarkRP.createJob("Policia", {
     },
     description = "El protector de la ciudad.\n\n- Tienes el poder de arrestar a criminales y proteger a los inocentes.\n- Esposa a un jugador y llevalo a la comisaria para arrestarlo.\n- Golpea a un jugador con el bastón paralizante y puede que aprenda a obedecer la ley.\n- El ariete puede derribar la puerta de un criminal, con una orden de arresto.\n- El ariete también puede descongelar props congelados.\n- Escribe /wanted <nombre> para alertar al público de la presencia de un delincuente.",
     weapons = {
-        "bb_glock_cp",
-        "bb_m4a1_cp",
+        "m9k_m92beretta",
         "door_ram",
         "weaponchecker",
         "weapon_cuff_police"
@@ -356,13 +354,12 @@ TEAM_DISTURBE = DarkRP.createJob("Grupo Anti-Disturbios", {
     },
     description = "Cuerpo Anti-Disturbios\n\nEL USO INNECESARIO O NINGUNA SEÑAL CRIMINAL SERA SANCIONADO\n- Cuando haya golpe de estado o intentos de derrocar al gobierno, debes usar este job.\n- Cuando el alcalde pida que este el Grupo Anti-Disturbios debes usar este job.\n- Tienes el deber de controlar todos los disturbios en la ciudad.\n- Obedece las ordenes del alcalde para realizar tus actividades.\n- Golpea a un jugador con el bastón paralizante y puede que aprenda a obedecer la ley.\n- El ariete puede derribar la puerta de un criminal, con una orden de arresto.\n- El ariete también puede descongelar props congelados.\n- Escribe /wanted <nombre> para alertar al público de la presencia de un delincuente.",
     weapons = {
-        "bb_glock_cp",
-        "bb_m4a1_cp",
+        "m9k_hk45"
+        "m9k_mp5sd"
         "door_ram",
         "weaponchecker",
         "weapon_cuff_police",
         "riot_shield"
-      "heavy_shield"
     },
     command = "ad",
     max = 10,
