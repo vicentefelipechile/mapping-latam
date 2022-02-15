@@ -68,8 +68,8 @@ cfg:SetLanguage("spanish", [[
                 "none": "Ningun trabajo favorito"
             },
             "onlineStaff": {
-                "title": "Personal en-linea",
-                "none": "Ningun personal en-linea"
+                "title": "Personal conectado",
+                "none": "Ningun personal conectado"
             }
         },
         "jobs": {
@@ -94,7 +94,7 @@ cfg:SetLanguage("spanish", [[
                 },
                 "levelRequirement": "Nivel: :level:",
                 "prestigeRequirement": "Prestigio: :prestige:",
-                "donatorJob": "Traajo donador",
+                "donatorJob": "Trabajo de donador",
                 "button": {
                     "become": "SER",
                     "areThisJob": "ESTAS EN ESTE TRABAJO",
