@@ -35,56 +35,56 @@ cfg:SetLanguage("spanish", [[
                     "name": "General",
                     
                     "online": {
-                        "title": "Online",
+                        "title": "Jugadores conectados",
                         "data": ":online:/:max:"
                     },
                     "totalMoney": {
                         "title": "Dinero total"
                     },
                     "jobDistribution": {
-                        "title": "Distribución de jobs"
+                        "title": "Distribución de trabajos"
                     },
                     "richestPlayer": {
-                        "title": "Millonario",
-                        "economy": ":percentage:% of economy"
+                        "title": "Jugador mas rico",
+                        "economy": ":percentage:% de la economia"
                     }
                 },
                 "economy": {
-                    "name": "Economy graph",
-                    "noData": "No Data",
+                    "name": "Grafica de la economia",
+                    "noData": "Sin datos",
                     "days": [
-                        "Today",
-                        "1 day ago",
-                        "2 days ago",
-                        "3 days ago",
-                        "4 days ago",
-                        "5 days ago",
-                        "6 days ago"
+                        "Hoy",
+                        "Ayer",
+                        "Anteayer",
+                        "Hace 3 dias",
+                        "Hace 4 dias",
+                        "Hace 5 dias",
+                        "Hace 6 dias"
                     ]
                 }
             },
             "favouriteJobs": {
-                "title": "Favourite jobs",
-                "none": "No favourite jobs"
+                "title": "Trabajos favoritos",
+                "none": "Ningun trabajo favorito"
             },
             "onlineStaff": {
-                "title": "Staff Online",
-                "none": "Ningun staff online"
+                "title": "Personal en-linea",
+                "none": "Ningun personal en-linea"
             }
         },
         "jobs": {
             "top": {
                 "search": "Buscar por nombre",
                 "sort": {
-                    "default": "Orden predeterminado",
+                    "default": "Por defecto",
                     "alphabetically": "Alfabetico",
                     "highestSalary": "Salario mas alto",
                     "lowestSalary": "Salario mas bajo",
-                    "mostPeople": "Mayor gente",
-                    "leastPeople": "Menor gente"
+                    "mostPeople": "Mayoria gente",
+                    "leastPeople": "Minoria gente"
                 },
-                "showRecentJobs": "Show recent jobs",
-                "showFavouriteJobs": "Show favourite jobs"
+                "showRecentJobs": "Mostrar trabajos recientes",
+                "showFavouriteJobs": "Mostrar trabajos favoritos"
             },
             "slideout": {
                 "tabs": {
@@ -94,23 +94,23 @@ cfg:SetLanguage("spanish", [[
                 },
                 "levelRequirement": "Nivel: :level:",
                 "prestigeRequirement": "Prestigio: :prestige:",
-                "donatorJob": "Donator Job!",
+                "donatorJob": "Traajo donador",
                 "button": {
-                    "become": "BECOME",
-                    "areThisJob": "YOU ARE THIS JOB",
-                    "jobIsFull": "JOB IS FULL",
-                    "customCheckFailed": "CHECK FAILED",
-                    "tooLowLevel": "TOO LOW LEVEL",
-                    "tooLowPrestige": "TOO LOW PRESTIGE"
+                    "become": "SER",
+                    "areThisJob": "ESTAS EN ESTE TRABAJO",
+                    "jobIsFull": "EL TRABAJO ESTA LLENO",
+                    "customCheckFailed": "VERIFICACIÓN FALLIDA",
+                    "tooLowLevel": "NIVEL MUY BAJO",
+                    "tooLowPrestige": "PESTIGIO MUY BAJO"
                 },
                 "anHour": "/h",
                 "ranks": {
-                    "title": "Ranks that can access this job"
+                    "title": "Rangos que pueden acceder a este trabajo"
                 }
             },
-            "favouriteJobs": "Favourite jobs",
-            "recentJobs": "Recent jobs",
-            "salary": "Salary: :money:"
+            "favouriteJobs": "Trabajos favoritos",
+            "recentJobs": "Trabajos recientes",
+            "salary": "Salario: :money:"
         },
         "items": {
             "tabs": {
@@ -122,117 +122,117 @@ cfg:SetLanguage("spanish", [[
                 "food": "Comida"
             },
             "food": {
-                "categoryName": "Food"
+                "categoryName": "Comida"
             },
             "vehicles": {
-                "categoryName": "Vehicles"  
+                "categoryName": "Vehiculos"  
             },
             "top": {
-                "search": "Search by name",
+                "search": "Buscar por nombre",
                 "sort": {
-                    "default": "Default sort",
-                    "alphabetically": "Alphabetically",
-                    "highestPrice": "Highest price",
-                    "lowestPrice": "Lowest price"
+                    "default": "Clasificación por defecto",
+                    "alphabetically": "Alfabeticamente",
+                    "highestPrice": "Mayor precio",
+                    "lowestPrice": "Menor precio"
                 },
-                "showFavourite": "Show favourite"
+                "showFavourite": "Mostrar favoritos"
             },
-            "favourites": "Favourites"
+            "favourites": "favoritos"
         },
         "options": {
             "general": {
                 "name": "General",
                 
                 "dropMoney": {
-                    "name": "Drop Money",
-                    "desc": "Amount of money you want to drop",
+                    "name": "Soltar dinero",
+                    "desc": "Cantidad de dinero a soltar",
                     "placeholder": "$1000"
                 },
                 "giveMoney": {
-                    "name": "Give Money",
-                    "desc": "Give money to the person you are facing",
+                    "name": "Dar dinero",
+                    "desc": "Cantidad de dinero dar a la persona que estas mirando",
                     "placeholder": "$1000"
                 },
                 "changeName": {
-                    "name": "Change Name",
-                    "desc": "Type your new name out",
-                    "placeholder": "Name"
+                    "name": "Cambiar nombre",
+                    "desc": "Escribe tu nuevo nombre",
+                    "placeholder": "Nombre"
                 },
                 "changeJobTitle": {
-                    "name": "Change Job Title",
-                    "desc": "Type your new job title",
-                    "placeholder": "Job title"
+                    "name": "Cambiar titulo del trabajo",
+                    "desc": "Escribe el titulo del trabajo",
+                    "placeholder": "Titulo de trabajo"
                 },
                 "requestGunLicense": {
-                    "name": "Request Gun License"
+                    "name": "Solicitar licencia de armas"
                 },
                 "sellAllDoors": {
-                    "name": "Sell All Doors"
+                    "name": "Vender todas las puertas"
                 },
                 "dropWeapon": {
-                    "name": "Drop Weapon"
+                    "name": "Soltar arma"
                 },
                 "cheque": {
                     "name": "Cheque",
-                    "desc": "Write a cheque to a specific player",
+                    "desc": "Escribe un cheque a un jugador especifico",
                     "amount": "$1000"
                 }
             },
             "mayor": {
-                "name": "Mayor",
+                "name": "Alcalde",
                 
                 "startLockdown": { 
-                    "name": "Start Lockdown"
+                    "name": "Iniciar toque de queda"
                 },
                 "stopLockdown": {
-                    "name": "Stop Lockdown"
+                    "name": "Terminar toque de queda"
                 },
                 "giveLicense": {
-                    "name": "Give License"
+                    "name": "Dar licencia de armas"
                 },
                 "addLaw": {
-                    "name": "Add Law",
-                    "desc": "Add a law",
-                    "placeholder": "Law"
+                    "name": "Añadir ley",
+                    "desc": "Añade una ley",
+                    "placeholder": "Ley"
                 },
                 "removeLaw": {
-                    "name": "Remove Law",
-                    "desc": "Remove a law",
-                    "placeholder": "Law"
+                    "name": "Remover ley",
+                    "desc": "Remover una ley",
+                    "placeholder": "Ley"
                 },
                 "resetLaws": {
-                    "name": "Reset Laws"
+                    "name": "Reiniciar leyes"
                 },
                 "placeLawboard": {
-                    "name": "Place Lawboard"
+                    "name": "Colocar panel de leyer"
                 },
                 "broadcastToCity": {
-                    "name": "Broadcast to the city",
-                    "desc": "What message would you like to broadcast?",
-                    "placeholder": "Message"
+                    "name": "Transmitir a la ciudad",
+                    "desc": "Cual mensaje quieres transmitir?",
+                    "placeholder": "Mensaje"
                 },
                 "startLottery": {
-                    "name": "Start Lottery",
-                    "desc": "How much money to enter the lottery?",
+                    "name": "Iniciar loteria",
+                    "desc": "Cuando dinero para entrar a la loteria?",
                     "placeholder": "$1000"
                 }
             },
             "police": {
-                "name": "Police",
+                "name": "Policia",
                 
                 "wanted": {
-                    "name": "Make Wanted",
-                    "desc": "Write the reason & select a player",
-                    "placeholder": "Reason"
+                    "name": "Hacer buscado",
+                    "desc": "Escriba la razón y selecciona el jugador",
+                    "placeholder": "Razón"
                 },
                 "warrant": {
-                    "name": "Make a warrant",
-                    "desc": "Write the reason & select a player",
-                    "placeholder": "Reason"
+                    "name": "Hacer una orden",
+                    "desc": "Escriba la razón y selecciona el jugador",
+                    "placeholder": "Razón"
                 },
                 "unwarrant": {
-                    "name": "Remove a warrant",
-                    "desc": "Select a player"
+                    "name": "Remover una orden",
+                    "desc": "selecciona un jugador"
                 }
             }
         }
@@ -245,7 +245,7 @@ cfg:SetLanguage("spanish", [[
 -- Or it can be a function
 -- e.g. function() return "Xenin F4 - " .. LocalPlayer():getDarkRPVar("money") end
 -- A function will refresh every 10 seconds, so you can have things that change
-cfg:SetTitle("Xenin F4")
+cfg:SetTitle("Xenin F4 - Mapping Latam")
 
 -- Lets set the amount of columns per row for jobs & items
 cfg:SetColumnsPerRow(2)
@@ -387,7 +387,12 @@ cfg:SetColors({
 -- Essentially, you could do:
 -- cfg:AddStaff("owner", "Owner", Color(255, 0, 0), 999)
 -- That would make it so owner would always be at the top, unless you have another rank with a sortOrder above 999
-cfg:AddStaff("superadmin", "Super Admin", XeninUI.Theme.Blue)
+cfg:AddStaff("superadmin", "Super Admin", XeninUI.Theme.Blue, 999)
+cfg:AddStaff("admin", "Admin", XeninUI.Theme.Blue, 998)
+cfg:AddStaff("mod+", "Mod+", XeninUI.Theme.Blue, 997)
+cfg:AddStaff("mod", "Mod", XeninUI.Theme.Blue, 996)
+cfg:AddStaff("modt+", "Sub Mod+", XeninUI.Theme.Blue, 995)
+cfg:AddStaff("modt", "Sub Mod", XeninUI.Theme.Blue, 994)
 
 -- Set the tab that'll it will open up on when you open the menu first time
 cfg:SetActiveTab("Dashboard")
