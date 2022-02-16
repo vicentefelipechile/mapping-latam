@@ -7,7 +7,7 @@ function ARMORY_AddDarkRPEntities()
 		seperate = true,
 		pricesep = 500,
 		noship = false,
-		allowed = {TEAM_GUN, TEAM_GANG, TEAM_MOB},
+		allowed = {TEAM_GUN_CLANDESTINO},
 	})
 end
 hook.Add( "loadCustomDarkRPItems", "ARMORY_AddDarkRPEntities", ARMORY_AddDarkRPEntities )
