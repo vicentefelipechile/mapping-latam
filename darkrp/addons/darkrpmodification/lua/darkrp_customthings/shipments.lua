@@ -26,319 +26,423 @@ only_adms       = function(ply) return ply:IsUserGroup("mod") or ply:IsUserGroup
 -- Custom Weapons --
 --------------------
 
--- Armas CSS M9k
+-- Armas M9k
+------Armero normal--------
 
-DarkRP.createShipment("AK-47", {
-    model = "models/weapons/3_rif_ak47.mdl",
-    entity = "bb_ak47_alt",
-    price = 6000,
+---pistolas
+
+DarkRP.createShipment("bren ten", {
+    model = "models/weapons/bren_ten/w_pist_p228.mdl",
+    entity = "m9k_bren_ten",
+    price = 4500,
     amount = 10,
     separate = false,
     noship = false,
-    allowed = {TEAM_GUN, TEAM_GUN_CLANDESTINO, TEAM_STAFF},
-    category = "Rifles",
+    allowed = {TEAM_GUN, TEAM_STAFF},
+    category = "Pistolas",
 })
-
-DarkRP.createShipment("M4A1", {
-    model = "models/weapons/3_rif_m4a1.mdl",
-    entity = "bb_m4a1_alt",
-    price = 6000,
+DarkRP.createShipment("Colt1911", {
+    model = "models/weapons/colts/w_pist_fiveseven.mdl",
+    entity = "m9k_colt1911",
+    price = 7500,
     amount = 10,
     separate = false,
     noship = false,
-    allowed = {TEAM_GUN, TEAM_GUN_CLANDESTINO, TEAM_STAFF},
-    category = "Rifles",
+    allowed = {TEAM_GUN, TEAM_STAFF},
+    category = "Pistolas",
 })
-
-DarkRP.createShipment("AWP", {
-    model = "models/weapons/3_snip_awp.mdl",
-    entity = "bb_awp_alt",
-    price = 10000,
+DarkRP.createShipment("HK usp", {
+    model = "models/weapons/3_pist_usp.mdl",
+    entity = "m9k_usp",
+    price = 6700,
     amount = 10,
     separate = false,
     noship = false,
-    allowed = {TEAM_GUN, TEAM_GUN_CLANDESTINO, TEAM_STAFF},
-    category = "Rifle Francotirador",
+    allowed = {TEAM_GUN, TEAM_STAFF},
+    category = "Pistolas",
 })
+DarkRP.createShipment("model Omega 500", {
+    model = "models/weapons/3_pist_usp.mdl",
+    entity = "m9k_usp",
+    price = 500000,
+    amount = 5,
+    separate = false,
+    noship = false,
+    allowed = {TEAM_GUN, TEAM_STAFF},
+    category = "Pistolas",
+})
+
+
+-------Sub-Fusiles-----------
+
+DarkRP.createShipment("HK MP5", {
+    model = "models/weapons/w_hk_mp5.mdl",
+    entity = "m9k_mp5",
+    price = 15000,
+    amount = 10,
+    separate = false,
+    noship = false,
+    allowed = {TEAM_GUN, TEAM_STAFF},
+    category = "Sub-fusil",
+})
+DarkRP.createShipment("UPM45", {
+    model = "models/weapons/w_hk_ump45.mdl",
+    entity = "m9k_ump45",
+    price = 14500,
+    amount = 10,
+    separate = false,
+    noship = false,
+    allowed = {TEAM_GUN, TEAM_STAFF},
+    category = "Sub-fusil",
+})
+DarkRP.createShipment("kac pdw", {
+    model = "models/weapons/w_kac_pdw.mdl",
+    entity = "m9k_kac_pdw",
+    price = 16000,
+    amount = 10,
+    separate = false,
+    noship = false,
+    allowed = {TEAM_GUN, TEAM_STAFF},
+    category = "Sub-fusil",
+})
+DarkRP.createShipment("mp9", {
+    model = "models/weapons/w_brugger_thomet_mp9.mdl",
+    entity = "m9k_mp9",
+    price = 17500,
+    amount = 10,
+    separate = false,
+    noship = false,
+    allowed = {TEAM_GUN, TEAM_STAFF},
+    category = "Sub-fusil",
+})
+
+-------Rifles-------
 
 DarkRP.createShipment("Winchester", {
     model = "models/weapons/w_winchester_1873.mdl",
     entity = "m9k_winchester73",
-    price = 12000,
-    amount = 10,
-    separate = false,
-    noship = false,
-    allowed = {TEAM_GUN, TEAM_GUN_CLANDESTINO, TEAM_STAFF},
-    category = "Rifle Francotirador",
-})
-
-DarkRP.createShipment("Desert Eagle", {
-    model = "models/weapons/3_pist_deagle.mdl",
-    entity = "bb_deagle_alt",
-    price = 4700,
-    amount = 10,
-    separate = false,
-    noship = false,
-    allowed = {TEAM_GUN, TEAM_GUN_CLANDESTINO, TEAM_STAFF},
-    category = "Pistolas",
-})
-
-DarkRP.createShipment("Famas", {
-    model = "models/weapons/3_rif_famas.mdl",
-    entity = "bb_famas_alt",
-    price = 6800,
-    amount = 10,
-    separate = false,
-    noship = false,
-    allowed = {TEAM_GUN, TEAM_GUN_CLANDESTINO, TEAM_STAFF},
-    category = "Rifles",
-})
-
-DarkRP.createShipment("Five Seven", {
-    model = "models/weapons/3_pist_fiveseven.mdl",
-    entity = "bb_fiveseven_alt",
-    price = 3450,
-    amount = 10,
-    separate = false,
-    noship = false,
-    allowed = {TEAM_GUN, TEAM_GUN_CLANDESTINO, TEAM_STAFF},
-    category = "Pistolas",
-})
-
-DarkRP.createShipment("P90", {
-    model = "models/weapons/3_smg_p90.mdl",
-    entity = "bb_p90_alt",
-    price = 9100,
-    amount = 10,
-    separate = false,
-    noship = false,
-    allowed = {TEAM_GUN, TEAM_GUN_CLANDESTINO, TEAM_STAFF},
-    category = "Sub-fusil",
-})
-
-DarkRP.createShipment("G3SG1", {
-    model = "models/weapons/3_snip_g3sg1.mdl",
-    entity = "bb_g3sg1_alt",
-    price = 13000,
-    amount = 10,
-    separate = false,
-    noship = false,
-    allowed = {TEAM_GUN, TEAM_GUN_CLANDESTINO, TEAM_STAFF},
-    category = "Rifle Francotirador",
-})
-
-DarkRP.createShipment("Galil", {
-    model = "models/weapons/3_rif_galil.mdl",
-    entity = "bb_galil_alt",
-    price = 8700,
-    amount = 10,
-    separate = false,
-    noship = false,
-    allowed = {TEAM_GUN, TEAM_GUN_CLANDESTINO, TEAM_STAFF},
-    category = "Rifles",
-})
-
-DarkRP.createShipment("Glock", {
-    model = "models/weapons/3_pist_glock18.mdl",
-    entity = "bb_glock_alt",
-    price = 4800,
-    amount = 10,
-    separate = false,
-    noship = false,
-    allowed = {TEAM_GUN, TEAM_GUN_CLANDESTINO, TEAM_STAFF},
-    category = "Pistolas",
-})
-
-DarkRP.createShipment("HK UMP45", {
-    model = "models/weapons/3_smg_ump45.mdl",
-    entity = "bb_ump45_alt",
-    price = 7400,
-    amount = 10,
-    separate = false,
-    noship = false,
-    allowed = {TEAM_GUN, TEAM_GUN_CLANDESTINO, TEAM_STAFF},
-    category = "Sub-fusil",
-})
-
-DarkRP.createShipment("HK USP", {
-    model = "models/weapons/3_pist_usp.mdl",
-    entity = "bb_usp_alt",
-    price = 4550,
-    amount = 10,
-    separate = false,
-    noship = false,
-    allowed = {TEAM_GUN, TEAM_GUN_CLANDESTINO, TEAM_STAFF},
-    category = "Pistolas",
-})
-
-DarkRP.createShipment("Cuchillo", {
-    model = "models/weapons/3_knife_t.mdl",
-    entity = "bb_css_knife_alt",
-    price = 3000,
-    amount = 10,
-    separate = false,
-    noship = false,
-    allowed = {TEAM_GUN, TEAM_GUN_CLANDESTINO, TEAM_STAFF},
-    category = "Cuchillos",
-})
-
-DarkRP.createShipment("M249.", {
-    model = "models/weapons/3_mach_m249para.mdl",
-    entity = "bb_m249_alt",
-    price = 14000,
-    amount = 4,
-    separate = false,
-    noship = false,
-    allowed = {TEAM_GUN, TEAM_GUN_CLANDESTINO, TEAM_STAFF},
-    category = "Submetralladoras",
-    customCheck = function(ply) return ply:IsUserGroup("vip") or ply:IsUserGroup("mod+") or ply:IsAdmin() or ply:IsSuperAdmin() end,
-    customCheckFailMsg = "Necesitas ser vip para comprar este producto."
-})
-
-DarkRP.createShipment("M3", {
-    model = "models/weapons/3_shot_m3super90.mdl",
-    entity = "bb_m3_alt",
-    price = 7000,
-    amount = 10,
-    separate = false,
-    noship = false,
-    allowed = {TEAM_GUN, TEAM_GUN_CLANDESTINO, TEAM_STAFF},
-    category = "Escopetas",
-})
-
-DarkRP.createShipment("ACR", {
-    model = "models/weapons/w_masada_acr.mdl",
-    entity = "m9k_acr",
-    price = 8300,
-    amount = 10,
-    separate = false,
-    noship = false,
-    allowed = {TEAM_GUN, TEAM_GUN_CLANDESTINO, TEAM_STAFF},
-    category = "Rifles",
-})
-
-DarkRP.createShipment("MAC10", {
-    model = "models/weapons/3_smg_mac10.mdl",
-    entity = "bb_mac10_alt",
-    price = 4500,
-    amount = 10,
-    separate = false,
-    noship = false,
-    allowed = {TEAM_GUN, TEAM_GUN_CLANDESTINO, TEAM_STAFF},
-    category = "Sub-fusil",
-})
-
-DarkRP.createShipment("AUG A3", {
-    model = "models/weapons/w_auga3.mdl",
-    entity = "m9k_auga3",
-    price = 10300,
-    amount = 10,
-    separate = false,
-    noship = false,
-    allowed = {TEAM_GUN, TEAM_GUN_CLANDESTINO, TEAM_STAFF},
-    category = "Rifles",
-})
-
-DarkRP.createShipment("M14", {
-    model = "models/weapons/w_snip_m14sp.mdl",
-    entity = "m9k_m14sp",
-    price = 11000,
-    amount = 10,
-    separate = false,
-    noship = false,
-    allowed = {TEAM_GUN, TEAM_GUN_CLANDESTINO, TEAM_STAFF},
-    category = "Rifles",
-})
-
-DarkRP.createShipment("Colt Scoped", {
-    model = "models/weapons/colts/w_pist_fiveseven.mdl",
-    entity = "m9k_coltscoped",
-    price = 4500,
-    amount = 10,
-    separate = false,
-    noship = false,
-    allowed = {TEAM_GUN, TEAM_GUN_CLANDESTINO, TEAM_STAFF},
-    category = "Pistolas",
-})
-
-DarkRP.createShipment("Ruger", {
-    model = "models/weapons/ruger/w_pist_fiveseven.mdl",
-    entity = "m9k_ruger",
-    price = 5100,
-    amount = 10,
-    separate = false,
-    noship = false,
-    allowed = {TEAM_GUN, TEAM_GUN_CLANDESTINO, TEAM_STAFF},
-    category = "Pistolas",
-})
-
-DarkRP.createShipment("Magnunson 4000", {
-    model = "models/weapons/w_sw_model_500.mdl",
-    entity = "m9k_model500",
-    price = 200000,
-    amount = 3,
-    separate = false,
-    noship = false,
-    allowed = {TEAM_GUN, TEAM_GUN_CLANDESTINO, TEAM_STAFF},
-    category = "Pistolas",
-})
-
-DarkRP.createShipment("Glock (VIP)", {
-    model = "models/weapons/w_dmg_glock.mdl",
-    entity = "m9k_glock18_extclip",
-    price = 20000,
-    amount = 10,
-    separate = false,
-    noship = false,
-    allowed = {TEAM_GUN, TEAM_GUN_CLANDESTINO, TEAM_STAFF},
-    category = "Pistolas",
-    customCheck = function(ply) return ply:IsUserGroup("vip") or ply:IsUserGroup("mod+") or ply:IsAdmin() or ply:IsSuperAdmin() end,
-    customCheckFailMsg = "Necesitas ser vip para comprar este producto."
-})
-
-DarkRP.createShipment("Winchester Doom", {
-    model = "models/weapons/w_winchester_1897_trench.mdl",
-    entity = "m9k_1897winchester",
-    price = 70000,
-    amount = 3,
-    separate = false,
-    noship = false,
-    allowed = {TEAM_GUN, TEAM_GUN_CLANDESTINO, TEAM_STAFF},
-    category = "Escopetas",
-})
-
-DarkRP.createShipment("Spas 12", {
-    model = "models/weapons/w_spas_12.mdl",
-    entity = "m9k_spas12",
     price = 25000,
     amount = 10,
     separate = false,
     noship = false,
     allowed = {TEAM_GUN, TEAM_GUN_CLANDESTINO, TEAM_STAFF},
-    category = "Escopetas",
+    category = "Rifle Francotirador",
 })
-
-DarkRP.createShipment("Jack Hammer", {
-    model = "models/weapons/w_pancor_jackhammer.mdl",
-    entity = "m9k_jackhammer",
-    price = 21000,
+DarkRP.createShipment("ACR", {
+    model = "models/weapons/w_masada_acr.mdl",
+    entity = "m9k_acr",
+    price = 23500,
     amount = 10,
     separate = false,
     noship = false,
-    allowed = {TEAM_GUN, TEAM_GUN_CLANDESTINO, TEAM_STAFF},
+    allowed = {TEAM_GUN, TEAM_STAFF},
+    category = "Rifles",
+})
+DarkRP.createShipment("AS Val", {
+    model = "models/weapons/w_dmg_vally.mdl",
+    entity = "m9k_val",
+    price = 24500,
+    amount = 10,
+    separate = false,
+    noship = false,
+    allowed = {TEAM_GUN, TEAM_STAFF},
+    category = "Rifles",
+})
+DarkRP.createShipment("m14", {
+    model = "models/weapons/w_snip_m14sp.mdl",
+    entity = "m9k_m14sp",
+    price = 22500,
+    amount = 10,
+    separate = false,
+    noship = false,
+    allowed = {TEAM_GUN, TEAM_STAFF},
+    category = "Rifles",
+})
+
+-----francontiradores-----
+
+DarkRP.createShipment("M24", {
+    model = "models/weapons/w_snip_m24_6.mdl",
+    entity = "m9k_m24",
+    price = 28000,
+    amount = 10,
+    separate = false,
+    noship = false,
+    allowed = {TEAM_GUN, TEAM_STAFF},
+    category = "Rifle Francotirador",
+})
+DarkRP.createShipment("ALT Scout", {
+    model = "models/weapons/3_snip_scout.mdl",
+    entity = "bb_scout_alt",
+    price = 26000,
+    amount = 10,
+    separate = false,
+    noship = false,
+    allowed = {TEAM_GUN, TEAM_STAFF},
+    category = "Rifle Francotirador",
+})
+
+-----escopetas-----
+
+DarkRP.createShipment("remington870", {
+    model = "models/weapons/w_remington_870_tact.mdl",
+    entity = "m9k_remington870",
+    price = 26000,
+    amount = 10,
+    separate = false,
+    noship = false,
+    allowed = {TEAM_GUN, TEAM_STAFF},
+    category = "Escopetas",
+})
+DarkRP.createShipment("Ithacam37", {
+    model = "models/weapons/w_ithaca_m37.mdl",
+    entity = "m9k_ithacam37",
+    price = 27000,
+    amount = 10,
+    separate = false,
+    noship = false,
+    allowed = {TEAM_GUN, TEAM_STAFF},
     category = "Escopetas",
 })
 
-DarkRP.createShipment("Tompson", {
-    model = "models/weapons/w_tommy_gun.mdl",
-    entity = "m9k_thompson",
-    price = 21000,
+-----armero clandestino-----
+
+-----pistolas-----
+
+DarkRP.createShipment("MINI Guardian", {
+    model = "models/weapons/guardian/w_pist_p228.mdl",
+    entity = "m9k_guardian",
+    price = 4500,
     amount = 10,
     separate = false,
     noship = false,
     allowed = {TEAM_GUN_CLANDESTINO, TEAM_STAFF},
+    category = "Pistolas",
+})
+DarkRP.createShipment("model627", {
+    model = "models/weapons/w_sw_model_627.mdl",
+    entity = "m9k_model627",
+    price = 6500,
+    amount = 10,
+    separate = false,
+    noship = false,
+    allowed = {TEAM_GUN_CLANDESTINO, TEAM_STAFF},
+    category = "Pistolas",
+})
+DarkRP.createShipment("Mr96", {
+    model = "models/weapons/mr96/w_pist_deagle.mdl",
+    entity = "m9k_mr96",
+    price = 6000,
+    amount = 10,
+    separate = false,
+    noship = false,
+    allowed = {TEAM_GUN_CLANDESTINO, TEAM_STAFF},
+    category = "Pistolas",
+})
+DarkRP.createShipment("ATL P228", {
+    model = "models/weapons/3_pist_p228.mdl",
+    entity = "bb_p228_alt",
+    price = 30200,
+    amount = 10,
+    separate = false,
+    noship = false,
+    allowed = {TEAM_GUN_CLANDESTINO, TEAM_STAFF},
+    category = "Pistolas",
+})
+DarkRP.createShipment("Luger", {
+    model = "models/weapons/w_luger_p08.mdl",
+    entity = "m9k_luger",
+    price = 8500,
+    amount = 10,
+    separate = false,
+    noship = false,
+    allowed = {TEAM_GUN_CLANDESTINO, TEAM_STAFF},
+    category = "Pistolas",
+})
+DarkRP.createShipment("ruger", {
+    model = "models/weapons/ruger/w_pist_fiveseven.mdl",
+    entity = "m9k_ruger",
+    price = 12000,
+    amount = 10,
+    separate = false,
+    noship = false,
+    allowed = {TEAM_GUN_CLANDESTINO, TEAM_STAFF},
+    category = "Pistolas",
+})
+
+-----Sub-Fusiles-----
+
+DarkRP.createShipment("bizonp19", {
+    model = "models/weapons/w_pp19_bizon.mdl",
+    entity = "m9k_bizonp19",
+    price = 24000,
+    amount = 10,
+    separate = false,
+    noship = false,
+    allowed = {TEAM_GUN, TEAM_STAFF},
     category = "Sub-fusil",
 })
+DarkRP.createShipment("Thompson", {
+    model = "models/weapons/us_thompson.mdl",
+    entity = "m9k_thompson",
+    price = 26000,
+    amount = 10,
+    separate = false,
+    noship = false,
+    allowed = {TEAM_GUN, TEAM_STAFF},
+    category = "Sub-fusil",
+})
+DarkRP.createShipment("Tec 9", {
+    model = "models/weapons/w_intratec_tec9.mdl",
+    entity = "m9k_tec9",
+    price = 27000,
+    amount = 10,
+    separate = false,
+    noship = false,
+    allowed = {TEAM_GUN, TEAM_STAFF},
+    category = "Sub-fusil",
+})
+DarkRP.createShipment("Mac10", {
+    model = "models/weapons/3_smg_mac10.mdl",
+    entity = "bb_mac10_alt",
+    price = 24000,
+    amount = 10,
+    separate = false,
+    noship = false,
+    allowed = {TEAM_GUN, TEAM_STAFF},
+    category = "Sub-fusil",
+})
+
+-----Rifles-----
+
+DarkRP.createShipment("AK47", {
+    model = "models/weapons/w_ak47_m9k.mdl",
+    entity = "m9k_ak47",
+    price = 31000,
+    amount = 10,
+    separate = false,
+    noship = false,
+    allowed = {TEAM_GUN_CLANDESTINO, TEAM_STAFF},
+    category = "Rifles",
+})
+DarkRP.createShipment("AK74", {
+    model = "models/weapons/w_tct_ak47.mdl",
+    entity = "m9k_ak74",
+    price = 36000,
+    amount = 10,
+    separate = false,
+    noship = false,
+    allowed = {TEAM_GUN_CLANDESTINO, TEAM_STAFF},
+    category = "Rifles",
+})
+DarkRP.createShipment("Fal", {
+    model = "models/weapons/w_fn_fal.mdl",
+    entity = "m9k_fal",
+    price = 38000,
+    amount = 10,
+    separate = false,
+    noship = false,
+    allowed = {TEAM_GUN_CLANDESTINO, TEAM_STAFF},
+    category = "Rifles",
+})
+DarkRP.createShipment("Vikhr", {
+    model = "models/weapons/w_dmg_vikhr.mdl",
+    entity = "m9k_vikhr",
+    price = 33000,
+    amount = 10,
+    separate = false,
+    noship = false,
+    allowed = {TEAM_GUN_CLANDESTINO, TEAM_STAFF},
+    category = "Rifles",
+})
+DarkRP.createShipment("Galil", {
+    model = "models/weapons/3_rif_galil.mdl",
+    entity = "bb_galil_alt",
+    price = 30000,
+    amount = 10,
+    separate = false,
+    noship = false,
+    allowed = {TEAM_GUN_CLANDESTINO, TEAM_STAFF},
+    category = "Rifles",
+})
+
+-----Rifles Franco Tirador-----
+
+DarkRP.createShipment("Svt 40", {
+    model = "models/weapons/w_svt_40.mdl",
+    entity = "m9k_svt40",
+    price = 39500,
+    amount = 10,
+    separate = false,
+    noship = false,
+    allowed = {TEAM_GUN_CLANDESTINO, TEAM_STAFF},
+    category = "Rifle Francotirador",
+})
+DarkRP.createShipment("Barret m82", {
+    model = "models/weapons/w_barret_m82.mdl",
+    entity = "m9k_barret_m82",
+    price = 48000,
+    amount = 5,
+    separate = false,
+    noship = false,
+    allowed = {TEAM_GUN_CLANDESTINO, TEAM_STAFF},
+    category = "Rifle Francotirador",
+})
+DarkRP.createShipment("Contender", {
+    model = "models/weapons/w_g2_contender.mdl",
+    entity = "m9k_contender",
+    price = 42000,
+    amount = 10,
+    separate = false,
+    noship = false,
+    allowed = {TEAM_GUN_CLANDESTINO, TEAM_STAFF},
+    category = "Rifle Francotirador",
+})
+
+-----Escopestas-----
+
+DarkRP.createShipment("Browning auto", {
+    model = "models/weapons/w_browning_auto.mdl",
+    entity = "m9k_browningauto5",
+    price = 38000,
+    amount = 10,
+    separate = false,
+    noship = false,
+    allowed = {TEAM_GUN_CLANDESTINO, TEAM_STAFF},
+    category = "Escopetas",
+})
+DarkRP.createShipment("Winchester 1897", {
+    model = "models/weapons/w_winchester_1897_trench.mdl",
+    entity = "m9k_1897winchester",
+    price = 90000,
+    amount = 5,
+    separate = false,
+    noship = false,
+    allowed = {TEAM_GUN_CLANDESTINO, TEAM_STAFF},
+    category = "Escopetas",
+})
+DarkRP.createShipment("Spas12", {
+    model = "models/weapons/w_spas_12.mdl",
+    entity = "m9k_spas12",
+    price = 70000,
+    amount = 5,
+    separate = false,
+    noship = false,
+    allowed = {TEAM_GUN_CLANDESTINO, TEAM_STAFF},
+    category = "Escopetas",
+})
+
+
+
+
+
+
+
+
+
+
+
+
 
 -- Otros
 
@@ -397,7 +501,7 @@ DarkRP.createEntity("Microfono", {
     category = "Locutor de Radio"
 })
 
-DarkRP.createEntity("Televisión", {
+DarkRP.createEntity("TelevisiÃ³n", {
     ent = "mediaplayer_tv_darkrp",
     model = "models/gmod_tower/suitetv_large.mdl",
     price = 5000,
@@ -405,4 +509,45 @@ DarkRP.createEntity("Televisión", {
     cmd = "comprartelevisor",
     allowed = {TEAM_RADIO, TEAM_STAFF},
     category = "Locutor de Radio"
+})
+
+-- Armas VIPs
+
+DarkRP.createShipment("AK47 - VIP", {
+    model = "models/cf/w_ak47_beast.mdl",
+    entity = "weapon_ak47_beast",
+    price = 24000,
+    amount = 1,
+    separate = true,
+    pricesep = 20000,
+    noship = true,
+    allowed = {},
+    category = "Armas VIPs",
+    customCheck = function(ply) return ply:IsUserGroup("vip") or ply:IsUserGroup("mod+") or ply:IsAdmin() or ply:IsSuperAdmin() end,
+})
+
+DarkRP.createShipment("Deagle - VIP", {
+    model = "models/cf/w_deagle_beast.mdl",
+    entity = "weapon_deagle_bornbeast",
+    price = 16000,
+    amount = 1,
+    separate = true,
+    pricesep = 12000,
+    noship = true,
+    allowed = {},
+    category = "Armas VIPs",
+    customCheck = function(ply) return ply:IsUserGroup("vip") or ply:IsUserGroup("mod+") or ply:IsAdmin() or ply:IsSuperAdmin() end,
+})
+
+DarkRP.createShipment("M4A1 - VIP", {
+    model = "models/cf/w_m4a1_beast.mdl",
+    entity = "weapon_m4a1_beast",
+    price = 24000,
+    amount = 1,
+    separate = true,
+    pricesep = 20000,
+    noship = true,
+    allowed = {},
+    category = "Armas VIPs",
+    customCheck = function(ply) return ply:IsUserGroup("vip") or ply:IsUserGroup("mod+") or ply:IsAdmin() or ply:IsSuperAdmin() end,
 })
