@@ -7,17 +7,21 @@ TCF.Config.Language = "es" -- Set the language of the script.
  
 -- GENERAL TEAM CONFIGURATION
 TCF.Config.CriminalTeams = { -- These teams are allowed to interact with the cocaine buyer NPC.
-	"Zaawansowany Producent Kokainy" -- THE LAST TEAM SHOULD NOT HAVE A COMMA
+	"Lider Criminal Xetas",
+	"Lider Criminal Yetas",
+	"Criminal",
+	"Farmero de Coca"
 }
 
 TCF.Config.PoliceTeams = { -- Police teams. These teams are NOT allowed to use the cocaine buyer NPC and can also confiscate packed boxes with cocaine.
-	"Policjant",
-	"Funkcjonariusz SWAT",
-	"Heavy SWAT [VIP]" -- THE LAST TEAM SHOULD NOT HAVE A COMMA
+	"Teniente Protección Civil",
+	"Alcalde",
+	"Policia",
+	"Grupo Anti-Disturbios"
 }
 
 -- COCAINE BUYER NPC
-TCF.Config.NPCDisplayName = "DROGADICTO" -- The display name shown above the NPC
+TCF.Config.NPCDisplayName = "Comprador de Coca" -- The display name shown above the NPC
 TCF.Config.NPCDisplayDescription = "dame harina" -- The description displayed above the NPC.
 
 TCF.Config.SellDistance = 150 -- How far away can the NPC detect your drug holder.
@@ -88,11 +92,9 @@ TCF.Config.EnableDonatorBonus = true -- If this feature should be enabled or not
 
 TCF.Config.DonatorBonuses = {
 	{ ULXGroup = "vip", Bonus = 2 },
-	{ ULXGroup = "superadmin", Bonus = 2 },
-	{ ULXGroup = "owner", Bonus = 2 },
-	{ ULXGroup = "operator vip", Bonus = 2 },
-	{ ULXGroup = "moderator vip", Bonus = 2 },
-	{ ULXGroup = "admin vip", Bonus = 2 },
+	{ ULXGroup = "mod+", Bonus = 2 },
+	{ ULXGroup = "modt+", Bonus = 2 },
+	{ ULXGroup = "admin", Bonus = 2 },
 }
 
 -- DarkRP Fire System ( https://www.gmodstore.com/market/view/302 )

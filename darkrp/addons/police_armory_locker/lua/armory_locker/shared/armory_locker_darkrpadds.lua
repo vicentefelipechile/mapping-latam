@@ -1,3 +1,4 @@
+/*
 function ARMORY_AddDarkRPEntities()
 	AddCustomShipment("Ganzúas", {
 		model = "models/craphead_scripts/armory_robbery2/w_lockpick.mdl",
@@ -11,3 +12,4 @@ function ARMORY_AddDarkRPEntities()
 	})
 end
 hook.Add( "loadCustomDarkRPItems", "ARMORY_AddDarkRPEntities", ARMORY_AddDarkRPEntities )
+*/

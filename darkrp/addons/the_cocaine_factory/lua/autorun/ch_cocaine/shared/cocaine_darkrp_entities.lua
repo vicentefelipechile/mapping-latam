@@ -3,7 +3,7 @@
 function SH_COCAINE_DarkRPAdds()
 	-- Category
 	DarkRP.createCategory{
-		name = "Cocaine Factory",
+		name = "Cocina de Coca",
 		categorises = "entities",
 		startExpanded = true,
 		color = Color(0, 107, 0, 255),
@@ -12,114 +12,114 @@ function SH_COCAINE_DarkRPAdds()
 	}
 
 	-- Entities
-	DarkRP.createEntity("Butelka Wody", {
+	DarkRP.createEntity("Agua", {
         ent = "cocaine_water",
         model = "models/craphead_scripts/the_cocaine_factory/utility/water.mdl",
-        price = 75,
-        max = 5,
-		category = "Cocaine Factory",
+        price = 20000,
+        max = 2,
+		category = "Cocina de Coca",
         cmd = "buywater",
-	allowed = TEAM_KOKA
+	allowed = TEAM_FARMEROCOCA
     })
 
-    DarkRP.createEntity("Kuchenka", {
+    DarkRP.createEntity("Cocina", {
         ent = "cocaine_stove",
         model = "models/craphead_scripts/the_cocaine_factory/stove/gas_stove.mdl",
-        price = 1500,
-        max = 2,
-		category = "Cocaine Factory",
+        price = 50000,
+        max = 1,
+		category = "Cocina de Coca",
         cmd = "buystove",
-	allowed = TEAM_KOKA
+	allowed = TEAM_FARMEROCOCA
     })
 
-    DarkRP.createEntity("Garnek", {
+    DarkRP.createEntity("Olla", {
         ent = "cocaine_cooking_pot",
         model = "models/craphead_scripts/the_cocaine_factory/utility/pot.mdl",
-        price = 50,
-        max = 10,
-		category = "Cocaine Factory",
+        price = 5000,
+        max = 8,
+		category = "Cocina de Coca",
         cmd = "buypot",
-	allowed = TEAM_KOKA
+	allowed = TEAM_FARMEROCOCA
     })
 	
-	DarkRP.createEntity("Wiadro", {
+	DarkRP.createEntity("Cubo", {
         ent = "cocaine_bucket",
         model = "models/craphead_scripts/the_cocaine_factory/utility/bucket.mdl",
-        price = 75,
-        max = 10,
-		category = "Cocaine Factory",
+        price = 10000,
+        max = 1,
+		category = "Cocina de Coca",
         cmd = "buybucket",
-	allowed = TEAM_KOKA
+	allowed = TEAM_FARMEROCOCA
     })
 
-    DarkRP.createEntity("Liscie", {
+    DarkRP.createEntity("Hojas Especiales", {
         ent = "cocaine_leaves",
         model = "models/craphead_scripts/the_cocaine_factory/utility/leaves.mdl",
-        price = 50,
+        price = 10000,
         max = 10,
-		category = "Cocaine Factory",
+		category = "Cocina de Coca",
         cmd = "buyleaves",
-	allowed = TEAM_KOKA
+	allowed = TEAM_FARMEROCOCA
     })
 
-    DarkRP.createEntity("Butla z gazem", {
+    DarkRP.createEntity("Gas", {
         ent = "cocaine_gas",
         model = "models/craphead_scripts/the_cocaine_factory/utility/gas_tank.mdl",
-        price = 350,
-        max = 8,
-		category = "Cocaine Factory",
+        price = 5000,
+        max = 4,
+		category = "Cocina de Coca",
         cmd = "buygas",
-	allowed = TEAM_KOKA
+	allowed = TEAM_FARMEROCOCA
     })
 
-    DarkRP.createEntity("Szuszarnia", {
+    DarkRP.createEntity("Secador", {
         ent = "cocaine_drying_rack",
         model = "models/craphead_scripts/the_cocaine_factory/drying_rack/drying_rack.mdl",
-        price = 1500,
-        max = 2,
-		category = "Cocaine Factory",
+        price = 35000,
+        max = 1,
+		category = "Cocina de Coca",
         cmd = "buydryingrack",
-	allowed = TEAM_KOKA
+	allowed = TEAM_FARMEROCOCA
     })
 
-    DarkRP.createEntity("Pudelko z kokaina", {
+    DarkRP.createEntity("Caja de Coca", {
         ent = "cocaine_box",
         model = "models/craphead_scripts/the_cocaine_factory/utility/cocaine_box.mdl",
-        price = 100,
-        max = 4,
-		category = "Cocaine Factory",
+        price = 4000,
+        max = 1,
+		category = "Cocina de Coca",
 		cmd = "buycocainebox",
-	allowed = TEAM_KOKA
+	allowed = TEAM_FARMEROCOCA
 	})
 
-	DarkRP.createEntity("Plyta grzewcza", {
+	DarkRP.createEntity("Puerto de Gas", {
         ent = "cocaine_cooking_plate",
         model = "models/craphead_scripts/the_cocaine_factory/utility/stove_upgrade.mdl",
-        price = 250,
+        price = 10000,
         max = 4,
-		category = "Cocaine Factory",
+		category = "Cocina de Coca",
         cmd = "buyplateupgrade",
-	allowed = TEAM_KOKA
+	allowed = TEAM_FARMEROCOCA
     })
 
-    DarkRP.createEntity("Ekstraktor Kokainy", {
+    DarkRP.createEntity("Extractor de Coca", {
         ent = "cocaine_extractor",
         model = "models/craphead_scripts/the_cocaine_factory/extractor/extractor.mdl",
-        price = 1750,
-        max = 2,
-		category = "Cocaine Factory",
+        price = 30000,
+        max = 1,
+		category = "Cocina de Coca",
         cmd = "buyextractor",
-	allowed = TEAM_KOKA
+	allowed = TEAM_FARMEROCOCA
     })
 
-    DarkRP.createEntity("Proszek do Pieczenia", {
+    DarkRP.createEntity("Soda de Coca", {
         ent = "cocaine_baking_soda",
         model = "models/craphead_scripts/the_cocaine_factory/utility/soda.mdl",
-        price = 50,
+        price = 6000,
         max = 5,
-		category = "Cocaine Factory",
+		category = "Cocina de Coca",
         cmd = "buybakingsoda",
-	allowed = TEAM_KOKA
+	allowed = TEAM_FARMEROCOCA
     })
 end
 hook.Add( "loadCustomDarkRPItems", "SH_COCAINE_DarkRPAdds", SH_COCAINE_DarkRPAdds )

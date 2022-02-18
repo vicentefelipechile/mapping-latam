@@ -66,14 +66,14 @@ TEAM_RADIO = DarkRP.createJob("Locutor de radio", {
 TEAM_GDSEGURIDAD = DarkRP.createJob("Guardia de Seguridad", {
     color = Color(20, 150, 20, 255),
     model = "models/player/odessa.mdl",
-    description = "Eres un Guardia de Seguridad\n\n- Puedes ser contratado para proteger.\n- para ser contratado mediante advert.",
+    description = "El protector de trabajos privados.\n\n- Puedes ser contratado para proteger lugares.\n- Tienes que ser contratado por /advert.\n- Tienes un scanner de armas en caso de que lo necesites.",
     weapons = { "weaponchecker" },
     command = "guardiadeseguridad",
     max = 4,
     salary = GAMEMODE.Config.normalsalary * 2,
     admin = 0,
     vote = false,
-    hasLicense = false,
+    hasLicense = true,
     candemote = true,
     category = "Citizens",
 })
@@ -197,10 +197,7 @@ TEAM_SICARIO = DarkRP.createJob("Sicario", {
 
 TEAM_GUN_CLANDESTINO = DarkRP.createJob("Armero Clandestino", {
     color = Color(255, 140, 0, 255),
-    model = {
-        "models/merchant.mdl",
-        "models/player/phoenix.mdl"
-    },
+    model = "models/player/phoenix.mdl",
     description = "Un comerciante de armas clandestino\n\n- Eres la única persona que puede vender armas a los criminales.\n- No tienes licencia asique ten cuidado cuando vendas tus armas.\n- Solo te limitas a crear una tienda cerca o dentro del grupo de criminales.\n- No puedes asistir en raids, pero puedes proveerles armas y demas a los criminales.",
     weapons = {},
     command = "armeroclandestino",
@@ -258,7 +255,24 @@ TEAM_FARMEROILEGAL = DarkRP.createJob("Farmero Ilegal", {
         "keypad_cracker"
     },
     command = "farmeroilegal",
-    max = 4,
+    max = 2,
+    salary = GAMEMODE.Config.normalsalary,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    category = "Gangsters",
+})
+
+TEAM_FARMEROCOCA = DarkRP.createJob("Farmero de Coca", {
+    color = Color(75, 75, 75, 255),
+    model = "models/player/hostage/hostage_04.mdl",
+    description = "El farmero de Coca (cola)\n\n- Trabajas solo o para cualquier grupo criminal.\n- Puedes comprar materiales para hacer tus coca colas.\n- Puedes ser contratado por el grupo de trabajo CRIMINALES.",
+    weapons = {
+        "lockpick",
+        "keypad_cracker"
+    },
+    command = "farmerococa",
+    max = 2,
     salary = GAMEMODE.Config.normalsalary,
     admin = 0,
     vote = false,
@@ -328,11 +342,7 @@ TEAM_MAYOR = DarkRP.createJob("Alcalde", {
 
 TEAM_POLICE = DarkRP.createJob("Policia", {
     color = Color(25, 25, 170, 255),
-    model = {
-        "models/gta5/player/armoredcitycoppm.mdl",
-        "models/gta5/player/citycoppm.mdl",
-        "models/gta5/player/deputypm.mdl"
-    },
+    model = "models/gta5/player/citycoppm.mdl",
     description = "El protector de la ciudad.\n\n- Tienes el poder de arrestar a criminales y proteger a los inocentes.\n- Esposa a un jugador y llevalo a la comisaria para arrestarlo.\n- Golpea a un jugador con el bastón paralizante y puede que aprenda a obedecer la ley.\n- El ariete puede derribar la puerta de un criminal, con una orden de arresto.\n- El ariete también puede descongelar props congelados.\n- Escribe /wanted <nombre> para alertar al público de la presencia de un delincuente.",
     weapons = {
         "m9k_m92beretta",
@@ -356,7 +366,6 @@ TEAM_POLICE = DarkRP.createJob("Policia", {
 TEAM_DISTURBE = DarkRP.createJob("Grupo Anti-Disturbios", {
     color = Color(25, 25, 170, 255),
     model = {
-        "models/gta5/player/swatpm.mdl",
         "models/bloocobalt/player/l4d/riot_01.mdl",
         "models/bloocobalt/player/l4d/riot_02.mdl",
         "models/bloocobalt/player/l4d/riot_03.mdl",
@@ -417,7 +426,7 @@ TEAM_STAFF = DarkRP.createJob("STAFF", {
     hasLicense = true,
     candemote = false,
     category = "Staff y Moderación",
-    customCheck = function(ply) return ply:IsUserGroup("mod") or ply:IsUserGroup("mod+") or ply:IsAdmin() or ply:IsSuperAdmin() end,
+    customCheck = function(ply) return ply:IsUserGroup("mod") or ply:IsUserGroup("mod+")  or ply:IsUserGroup("modt") or ply:IsUserGroup("modt+")or ply:IsAdmin() end,
     CustomCheckFailMsg = "El pepe"
 })
 MaxPlayers = game.MaxPlayers()

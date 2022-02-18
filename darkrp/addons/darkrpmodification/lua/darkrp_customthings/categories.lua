@@ -22,20 +22,11 @@ Add new categories under the next line!
 ---------------------------------------------------------------------------]]
 
 DarkRP.createCategory{
-    name = "non_exist",
-    categorises = "jobs",
-    startExpanded = false,
-    color = Color(0, 0, 0, 255),
-    canSee = function(ply) return false end,
-    sortOrder = 1000,
-}
-
-DarkRP.createCategory{
     name = "Citizens VIPs",
     categorises = "jobs",
     startExpanded = true,
     color = Color(100, 0, 100, 255),
-    canSee = function(ply) return ply:IsUserGroup("vip") or ply:IsUserGroup("mod") or ply:IsUserGroup("mod+") or ply:IsAdmin() or ply:IsSuperAdmin() end,
+    canSee = function(ply) return ply:IsUserGroup("vip") or ply:IsUserGroup("mod+") or ply:IsUserGroup("modt+") or ply:IsAdmin() end,
 }
 
 DarkRP.createCategory{
@@ -113,6 +104,10 @@ DarkRP.createCategory{
     color = Color(100, 0, 100, 255),
     canSee = function(ply) return true end,
 }
+
+---------------------
+----     Jobs    ----
+---------------------
 
 DarkRP.createCategory{
     name = "Locutor de Radio",

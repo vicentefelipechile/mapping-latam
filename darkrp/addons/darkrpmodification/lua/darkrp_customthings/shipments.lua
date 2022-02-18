@@ -1,4 +1,4 @@
---[[---------------------------------------------------------------------------
+﻿--[[---------------------------------------------------------------------------
 DarkRP custom shipments and guns
 ---------------------------------------------------------------------------
 
@@ -432,122 +432,15 @@ DarkRP.createShipment("Spas12", {
     category = "Escopetas",
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
 -- Otros
 
-DarkRP.createShipment("Chaleco Antibalas", {
-    model = "models/combine_vests/militaryvest.mdl",
-    entity = "chaleco",
-    price = 6000,
-    amount = 4,
-    separate = false,
-    pricesep = nil,
-    noship = false,
-    allowed = {TEAM_GUN, TEAM_GUN_CLANDESTINO, TEAM_STAFF},
-    category = "Other",
-})
-
-DarkRP.createShipment("Chaleco Antibalas - VIP", {
-    model = "models/combine_vests/militaryvest_vip.mdl",
-    entity = "chaleco_vip",
-    price = 10000,
-    amount = 4,
-    separate = false,
-    pricesep = nil,
-    noship = false,
-    allowed = {TEAM_GUN, TEAM_GUN_CLANDESTINO, TEAM_STAFF},
-    category = "Other",
-    customCheck = function(ply) return ply:IsUserGroup("vip") or ply:IsUserGroup("mod+") or ply:IsUserGroup("admin+") or ply:IsSuperAdmin() end,
-})
-
-DarkRP.createEntity("Radio de Musica", {
-    ent = "sent_streamradio_darkrp",
-    model = "models/props/cs_office/tv_plasma.mdl",
-    price = 500,
-    max = 2,
-    cmd = "comprarradiomusica",
-    allowed = {TEAM_RADIO, TEAM_STAFF},
-    category = "Locutor de Radio"
-})
-
-DarkRP.createEntity("Radio", {
-    ent = "radio_receiver_darkp",
-    model = "models/props_lab/citizenradio.mdl",
-    price = 100,
-    max = 8,
-    cmd = "comprarradio",
-    allowed = {TEAM_RADIO, TEAM_STAFF},
-    category = "Locutor de Radio"
-})
-
-DarkRP.createEntity("Microfono", {
-    ent = "radio_microphone_darkp",
-    model = "models/mic.mdl",
-    price = 100,
-    max = 1,
-    cmd = "comprarmicrofono",
-    allowed = {TEAM_RADIO, TEAM_STAFF},
-    category = "Locutor de Radio"
-})
-
-DarkRP.createEntity("TelevisiÃ³n", {
-    ent = "mediaplayer_tv_darkrp",
-    model = "models/gmod_tower/suitetv_large.mdl",
-    price = 5000,
-    max = 4,
-    cmd = "comprartelevisor",
-    allowed = {TEAM_RADIO, TEAM_STAFF},
-    category = "Locutor de Radio"
-})
-
--- Armas VIPs
-
-DarkRP.createShipment("AK47 - VIP", {
-    model = "models/cf/w_ak47_beast.mdl",
-    entity = "weapon_ak47_beast",
-    price = 24000,
-    amount = 1,
-    separate = true,
-    pricesep = 20000,
-    noship = true,
-    allowed = {},
-    category = "Armas VIPs",
-    customCheck = function(ply) return ply:IsUserGroup("vip") or ply:IsUserGroup("mod+") or ply:IsAdmin() or ply:IsSuperAdmin() end,
-})
-
-DarkRP.createShipment("Deagle - VIP", {
-    model = "models/cf/w_deagle_beast.mdl",
-    entity = "weapon_deagle_bornbeast",
-    price = 16000,
-    amount = 1,
-    separate = true,
-    pricesep = 12000,
-    noship = true,
-    allowed = {},
-    category = "Armas VIPs",
-    customCheck = function(ply) return ply:IsUserGroup("vip") or ply:IsUserGroup("mod+") or ply:IsAdmin() or ply:IsSuperAdmin() end,
-})
-
-DarkRP.createShipment("M4A1 - VIP", {
-    model = "models/cf/w_m4a1_beast.mdl",
-    entity = "weapon_m4a1_beast",
-    price = 24000,
-    amount = 1,
-    separate = true,
-    pricesep = 20000,
-    noship = true,
-    allowed = {},
-    category = "Armas VIPs",
-    customCheck = function(ply) return ply:IsUserGroup("vip") or ply:IsUserGroup("mod+") or ply:IsAdmin() or ply:IsSuperAdmin() end,
+DarkRP.createShipment("Ganzúas", {
+	model = "models/craphead_scripts/armory_robbery2/w_lockpick.mdl",
+	entity = "armory_lockpick",
+	price = 5000,
+	amount = 10,
+	seperate = true,
+	pricesep = 500,
+	noship = false,
+	allowed = {TEAM_GUN_CLANDESTINO},
 })
