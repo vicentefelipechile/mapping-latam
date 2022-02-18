@@ -39,7 +39,7 @@ local my_language = {
     reset_money = "%s renicio el dinero de todos.",
     has_given = "%s te ha dado %s",
     you_gave = "Te dio %s %s",
-    npc_killpay = "%s por matar un NPC.",
+    npc_killpay = "Ganastes %s por matar un NPC.",
     profit = "beneficio",
     loss = "perdida",
     Donate = "Donar",
@@ -68,7 +68,7 @@ local my_language = {
     signed = "Firmado: %s",
 
     found_cash = "Obtuvistes %s%d.", -- backwards compatibility
-    found_money = "Obtuvistes %s!",
+    found_money = "Obtuvistes %s.",
 
     owner_poor = "El dueño de %s es muy pobre para subvencionar esta venta.",
 
@@ -140,7 +140,7 @@ local my_language = {
     meteor_enabled = "Tormentas de meteoros activado.",
     meteor_disabled = "Tormentas de meteoros desactivado.",
     earthquake_report = "Terremoto reportado de magnitud %sMw.",
-    earthtremor_report = "Temblor repordado de magnitud %sMw.",
+    earthtremor_report = "Temblor reportado de magnitud %sMw.",
 
     -- Keys, vehicles and doors
     keys_allowed_to_coown = "Puedes ser co-propietario de esto.\n(Usa Recargar con llaves o F2)\n",
@@ -184,15 +184,15 @@ local my_language = {
     gun = "arma",
     microwave = "microondas",
     food = "comida",
-    Food = "Comina",
-    money_printer = "Impresira de dinero",
+    Food = "Comida",
+    money_printer = "Impresora de dinero",
     tip_jar = "Jarra de propinas",
 
     sign_this_letter = "Firmar este cartel",
-    signed_yours = "Tuyo,",
+    signed_yours = "Tu,",
 
     money_printer_exploded = "Tu impresora exploto.",
-    money_printer_overheating = "Tu impresora esta sobre-calentando.",
+    money_printer_overheating = "Tu impresora esta sobre-calentanda.",
 
     contents = "Contenidos: ",
     amount = "Cantidad: ",
@@ -205,7 +205,7 @@ local my_language = {
     pocket_no_items = "Tu bosillo no tiene objetos.",
     drop_item = "Soltar objeto",
 
-    bonus_destroying_entity = "Destruir entidad illegal.",
+    bonus_destroying_entity = "Destruistes una entidad illegal.",
 
     switched_burst = "Modo Rafaga.",
     switched_fully_auto = "Modo Automatico.",
@@ -478,8 +478,8 @@ local my_language = {
 
     -- Vote Restrictions
     hobos_no_rights = "Los vagabundos no tienen derechos de votación.",
-    gangsters_cant_vote_for_government = "Los criminales no pueden votar cosas gubernamentales.",
-    government_cant_vote_for_gangsters = "Los oficiales del gobierno no pueden votar por cosas criminales.",
+    gangsters_cant_vote_for_government = "Los criminales no pueden votar en cosas gubernamentales.",
+    government_cant_vote_for_gangsters = "Los oficiales del gobierno no pueden votar en cosas criminales.",
 
     -- VGUI and some more doors/vehicles
     vote = "Vota",
@@ -532,9 +532,9 @@ local my_language = {
     set_jailpos = "Set the jail position",
     add_jailpos = "Add a jail position",
 
-    set_custom_job = "Colocar trabajo personalizado (preciona intro para activar)",
+    set_custom_job = "Poner un trabajo personalizado (preciona intro para activar)",
 
-    set_agenda = "Colocar la agenda (preciona intro para activar)",
+    set_agenda = "Poner a la agenda (preciona intro para activar)",
 
     initiate_lockdown = "Iniciar toque de queda",
     stop_lockdown = "Terminar toque de queda",
@@ -542,11 +542,11 @@ local my_language = {
     give_license_lookingat = "Give <lookingat> a gun license",
 
     laws_of_the_land = "LEYES DEL LUGAR",
-    law_added = "Ley agregada.",
+    law_added = "Nueva ley agregada.",
     law_removed = "Ley removida.",
-    law_reset = "Leyes restablecidas a predeterminado.",
+    law_reset = "Las leyes han sido restablecidas al predeterminado.",
     law_too_short = "La ley es muy corta.",
-    laws_full = "Las leyes estan llenas.",
+    laws_full = "No hay mas espacio en le cartel de leyes.",
     default_law_change_denied = "No tienes permitido cambiar las leyes por defecto.",
 
     -- Second tab
