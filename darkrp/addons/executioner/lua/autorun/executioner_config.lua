@@ -53,8 +53,14 @@
     }
 
     Executioner.Config.Clean_Ranks = { -- Translates a usergroup into a nicer string for the first interface.
-        [ 'superadmin' ] = 'Super Admin', [ 'admin' ] = 'Admin', [ 'mod' ] = 'Mod',
-        [ 'mod+' ] = 'Mod+', [ 'user' ] = 'Usuario', [ 'vip' ] = 'Vip'
+        [ 'superadmin' ] = 'Super Admin',
+        [ 'admin' ] = 'Admin',
+        [ 'mod+' ] = 'Mod+',
+        [ 'mod' ] = 'Mod',
+        [ 'modt+' ] = 'Sub Mod+',
+        [ 'modt' ] = 'Sub Mod',
+        [ 'vip' ] = 'Vip',
+        [ 'user' ] = 'Usuario'
     }
 
     --[[
