@@ -69,7 +69,7 @@ TEAM_GDSEGURIDAD = DarkRP.createJob("Guardia de Seguridad", {
         "models/player/odessa.mdl"
     },
     description = "Eres un Guardia de Seguridad\n\n- Puedes ser contratado para proteger.\n- para ser contratado mediante advert."
-    weapons = {weaponchecker},
+    weapons = { "weaponchecker" },
     command = "guardiadeseguridad",
     max = 4,
     salary = GAMEMODE.Config.normalsalary * 4,
@@ -268,6 +268,7 @@ TEAM_FARMEROILEGAL = DarkRP.createJob("Farmero Ilegal", {
     category = "Gangsters",
 })
 --------------------------gubernamentales----------------------
+
 TEAM_CHIEF = DarkRP.createJob("Teniente Protección Civil", {
     color = Color(20, 20, 255, 255),
     model = "models/player/combine_soldier_prisonguard.mdl",
