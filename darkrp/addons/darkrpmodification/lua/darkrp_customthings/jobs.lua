@@ -369,8 +369,8 @@ TEAM_DISTURBE = DarkRP.createJob("Grupo Anti-Disturbios", {
     },
     description = "Cuerpo Anti-Disturbios\n\nEL USO INNECESARIO O NINGUNA SEÑAL CRIMINAL SERA SANCIONADO\n- Cuando haya golpe de estado o intentos de derrocar al gobierno, debes usar este job.\n- Cuando el alcalde pida que este el Grupo Anti-Disturbios debes usar este job.\n- Tienes el deber de controlar todos los disturbios en la ciudad.\n- Obedece las ordenes del alcalde para realizar tus actividades.\n- Golpea a un jugador con el bastón paralizante y puede que aprenda a obedecer la ley.\n- El ariete puede derribar la puerta de un criminal, con una orden de arresto.\n- El ariete también puede descongelar props congelados.\n- Escribe /wanted <nombre> para alertar al público de la presencia de un delincuente.",
     weapons = {
-        "m9k_hk45"
-        "m9k_mp5sd"
+        "m9k_hk45",
+        "m9k_mp5sd",
         "door_ram",
         "weaponchecker",
         "weapon_cuff_police",
