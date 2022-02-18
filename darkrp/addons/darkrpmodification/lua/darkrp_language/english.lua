@@ -23,8 +23,8 @@ Make sure the convar gmod_language is set to your language code. You can do that
 
 local my_language = {
     -- Admin things
-    need_admin = "Necesitas privilegios de administrador para usar %s.", --"You need admin privileges in order to be able to %s",
-    need_sadmin = "Necesitas privilegios de super administrador para usar %s.", --"You need super admin privileges in order to be able to %s",
+    need_admin = "Necesita privilegios de administrador para usar %s.", --"You need admin privileges in order to be able to %s",
+    need_sadmin = "Necesita privilegios de super administrador para usar %s.", --"You need super admin privileges in order to be able to %s",
     no_privilege = "No tienes privilegios para hacer esta acción.", --"You don't have the right privileges to perform this action",
     no_jail_pos = "No hay posiciones de la carcel establecidas.", --"No jail position",
     invalid_x = "%s invalido. %s", --"Invalid %s! %s",
@@ -39,7 +39,7 @@ local my_language = {
     reset_money = "%s renicio el dinero de todos.",
     has_given = "%s te ha dado %s",
     you_gave = "Te dio %s %s",
-    npc_killpay = "%s por matar un NPC.",
+    npc_killpay = "Ganaste %s por matar un NPC.",
     profit = "beneficio",
     loss = "perdida",
     Donate = "Donar",
@@ -53,13 +53,13 @@ local my_language = {
     deducted_money = "Deducido %s",
     need_money = "Necesita %s",
 
-    payday_message = "Recibistes %s.",
-    payday_unemployed = "No recibistes salario por estas desempleado.",
-    payday_missed = "No recibistes nada. Estas arrestado.",
+    payday_message = "Recibiste %s.",
+    payday_unemployed = "No recibiste salario por Esta desempleado.",
+    payday_missed = "No recibiste nada. Esta arrestado.",
 
     property_tax = "Impuesto de propiedad de %s",
-    property_tax_cant_afford = "No pagastes impuestos. Tu propiedad a sido removido.",
-    taxday = "Dia de impuestos. Pagastes %s%%.",
+    property_tax_cant_afford = "No pagaste impuestos. Tu propiedad a sido removido.",
+    taxday = "Dia de impuestos. Pagaste %s%%.",
 
     found_cheque = "Encontrastes %s%s en un cheque hecho para ti por %s.",
     cheque_details = "El cheque esta hecho por %s.",
@@ -67,15 +67,15 @@ local my_language = {
     cheque_pay = "Pago: %s",
     signed = "Firmado: %s",
 
-    found_cash = "Obtuvistes %s%d.", -- backwards compatibility
-    found_money = "Obtuvistes %s!",
+    found_cash = "Obtuviste %s%d.", -- backwards compatibility
+    found_money = "Obtuviste %s.",
 
     owner_poor = "El dueño de %s es muy pobre para subvencionar esta venta.",
 
     -- Police
     Wanted_text = "Buscado",
     wanted = "Buscado por la policia.\nRazón: %s",
-    youre_arrested = "Estas arrestado por %d segundos.",
+    youre_arrested = "Esta arrestado por %d segundos.",
     youre_arrested_by = "Arrestado por %s.",
     youre_unarrested_by = "Desarrestado por %s.",
     hes_arrested = "%s fue arrestado por %d segundos.",
@@ -84,21 +84,21 @@ local my_language = {
     warrant_request = "%s pide una orden para %s\nRazón: %s",
     warrant_request2 = "Orden enviado al Alcalde %s!",
     warrant_approved = "El Alcalde %s aprovo la orden.\nRazón: %s\nSolicitado por: %s",
-    warrant_approved2 = "Ahora puedes buscar en su casa.",
+    warrant_approved2 = "Ahora puede buscar en su casa.",
     warrant_denied = "El Alcalde %s rechazo su petición del orden.",
     warrant_expired = "La orden para %s ha expirado.",
-    warrant_required = "Necesitas una orden para poder abrir esta puerta.",
-    warrant_required_unfreeze = "Necesitas una orden para poder descongelar este prop.",
-    warrant_required_unweld = "Necesitas una orden para poder desoldar este prop.",
+    warrant_required = "Necesita una orden para poder abrir esta puerta.",
+    warrant_required_unfreeze = "Necesita una orden para poder descongelar este prop.",
+    warrant_required_unweld = "Necesita una orden para poder desoldar este prop.",
     wanted_by_police = "%s esta buscado por la policia\nRazón: %s\nSolicitado por: %s",
     wanted_by_police_print = "%s hizo %s buscado, razón: %s",
     wanted_expired = "%s no esta buscado por la policia.",
     wanted_revoked = "%s no esta buscado por la policia.\nRevocado por: %s",
-    cant_arrest_other_cp = "No puedes arrestar otros policias.",
+    cant_arrest_other_cp = "No puede arrestar otros policias.",
     must_be_wanted_for_arrest = "El jugador debe estar buscado para poder arrestarlo.",
-    cant_arrest_fadmin_jailed = "No puedes arrestar a un jugador la cual esta encarcelado por un administrador.",
-    cant_arrest_no_jail_pos = "No puedes arrestar jugadores desde que no hay posiciones de la carcel establecidas",
-    cant_arrest_spawning_players = "No puedes arrestar jugadores que estan apareciendo.",
+    cant_arrest_fadmin_jailed = "No puede arrestar a un jugador la cual esta encarcelado por un administrador.",
+    cant_arrest_no_jail_pos = "No puede arrestar jugadores desde que no hay posiciones de la carcel establecidas",
+    cant_arrest_spawning_players = "No puede arrestar jugadores que estan apareciendo.",
 
     suspect_doesnt_exist = "El sospechoso no existe.",
     actor_doesnt_exist = "El actor no existe.",
@@ -127,9 +127,9 @@ local my_language = {
     player = "Jugador",
 
     -- Teams
-    need_to_be_before = "Necesitas ser %s primero para poder ser %s.",
-    need_to_make_vote = "Necesitas hacer una votación para poder ser %s.",
-    team_limit_reached = "No puedes ser %s debido a limites.",
+    need_to_be_before = "Necesita ser %s primero para poder ser %s.",
+    need_to_make_vote = "Necesita hacer una votación para poder ser %s.",
+    team_limit_reached = "No puede ser %s debido a limites.",
     wants_to_be = "%s\nquiere ser\n%s",
     has_not_been_made_team = "%s no se volvio %s.",
     job_has_become = "%s se ha vuelto %s.",
@@ -140,28 +140,28 @@ local my_language = {
     meteor_enabled = "Tormentas de meteoros activado.",
     meteor_disabled = "Tormentas de meteoros desactivado.",
     earthquake_report = "Terremoto reportado de magnitud %sMw.",
-    earthtremor_report = "Temblor repordado de magnitud %sMw.",
+    earthtremor_report = "Temblor reportado de magnitud %sMw.",
 
     -- Keys, vehicles and doors
-    keys_allowed_to_coown = "Puedes ser co-propietario de esto.\n(Usa Recargar con llaves o F2)\n",
+    keys_allowed_to_coown = "puede ser co-propietario de esto.\n(Usa Recargar con llaves o F2)\n",
     keys_other_allowed = "Co-propietario permitidos:",
     keys_allow_ownership = "(Usa Recargar con llaves o F2 para permitir propietarios)",
     keys_disallow_ownership = "(Usa Recargar con llaves o F2 para denegar propietarios)",
     keys_owned_by = "Propietario de:",
     keys_unowned = "Sin propietario\n(Usa Recargar con llaves o F2 para reclamarlo)",
     keys_everyone = "(Usa Recargar con llaves o F2 para permitir a todos)",
-    door_unown_arrested = "No puedes poseer o carecer cosas mientras estas arrestado.",
+    door_unown_arrested = "No puede poseer o carecer cosas mientras Esta arrestado.",
     door_unownable = "Esta puerta no puede ser reclamado o vendido.",
-    door_sold = "Vendistes esto por %s",
+    door_sold = "Vendiste esto por %s",
     door_already_owned = "Esta puerta ya lo reclamo alguien.",
-    door_cannot_afford = "No puedes comprar esta puerta.",
-    door_hobo_unable = "No puedes comprar esta puerta siendo Vagabundo.",
-    vehicle_cannot_afford = "No puedes comprar este vehiculo.",
-    door_bought = "Comprastes la puerta por %s%s",
-    vehicle_bought = "Comprastes este vehiculo por %s%s",
-    door_need_to_own = "Necesitas poseer esta puerta para hacer %s",
-    door_rem_owners_unownable = "No puedes remover propietarios si la puerta no es reclamable",
-    door_add_owners_unownable = "No puedes añadir propietarios si la puerta no es reclamable",
+    door_cannot_afford = "No puede comprar esta puerta.",
+    door_hobo_unable = "No puede comprar esta puerta siendo Vagabundo.",
+    vehicle_cannot_afford = "No puede comprar este vehiculo.",
+    door_bought = "Compraste la puerta por %s%s",
+    vehicle_bought = "Compraste este vehiculo por %s%s",
+    door_need_to_own = "Necesita poseer esta puerta para hacer %s",
+    door_rem_owners_unownable = "No puede remover propietarios si la puerta no es reclamable",
+    door_add_owners_unownable = "No puede añadir propietarios si la puerta no es reclamable",
     rp_addowner_already_owns_door = "%s ya posee (o ya esta permitido poseer) esta pueta.",
     add_owner = "Añadir propietario",
     remove_owner = "Remover propietario",
@@ -172,8 +172,8 @@ local my_language = {
     door_groups = "Grupos",
     door_group_doesnt_exist = "Este grupo no existe.",
     door_group_set = "Grupo cambiado.",
-    sold_x_doors_for_y = "Vendistes %d puertas por %s%d.", -- backwards compatibility
-    sold_x_doors = "Vendistes %d puertas por %s.",
+    sold_x_doors_for_y = "Vendiste %d puertas por %s%d.", -- backwards compatibility
+    sold_x_doors = "Vendiste %d puertas por %s.",
 
     -- Entities
     drugs = "drogas",
@@ -184,28 +184,28 @@ local my_language = {
     gun = "arma",
     microwave = "microondas",
     food = "comida",
-    Food = "Comina",
-    money_printer = "Impresira de dinero",
+    Food = "Comida",
+    money_printer = "Impresora de dinero",
     tip_jar = "Jarra de propinas",
 
     sign_this_letter = "Firmar este cartel",
-    signed_yours = "Tuyo,",
+    signed_yours = "Tu,",
 
     money_printer_exploded = "Tu impresora exploto.",
-    money_printer_overheating = "Tu impresora esta sobre-calentando.",
+    money_printer_overheating = "Tu impresora esta sobre-calentanda.",
 
     contents = "Contenidos: ",
     amount = "Cantidad: ",
 
     picking_lock = "Forzando cerradura",
 
-    cannot_pocket_x = "No puedes poner esto en tu bosillo.",
+    cannot_pocket_x = "No puede poner esto en tu bosillo.",
     object_too_heavy = "Este objeto es muy pesado.",
     pocket_full = "Tu bosillo esta lleno.",
     pocket_no_items = "Tu bosillo no tiene objetos.",
     drop_item = "Soltar objeto",
 
-    bonus_destroying_entity = "Destruir entidad illegal.",
+    bonus_destroying_entity = "Destruiste una entidad illegal.",
 
     switched_burst = "Modo Rafaga.",
     switched_fully_auto = "Modo Automatico.",
@@ -272,16 +272,16 @@ local my_language = {
     limit = "Llegastes al limite de %s.",
     have_to_wait = "Espera otros %d antes de usar %s.",
     must_be_looking_at = "Debes estar mirando a %s.",
-    incorrect_job = "No puedes cambiar tu trabajo a %s.",
+    incorrect_job = "No puede cambiar tu trabajo a %s.",
     unavailable = "%s no esta disponible",
-    unable = "No puedes %s. %s",
-    cant_afford = "No puedes comprar %s",
+    unable = "No puede %s. %s",
+    cant_afford = "No puede comprar %s",
     created_x = "%s creo %s",
     cleaned_up = "Tus %s fueron eliminados.",
-    you_bought_x = "Comprastes %s por %s%d.", -- backwards compatibility
-    you_bought = "Comprastes %s por %s.",
-    you_got_yourself = "Obtuvistes %s.",
-    you_received_x = "Obtuvistes %s por %s.",
+    you_bought_x = "Compraste %s por %s%d.", -- backwards compatibility
+    you_bought = "Compraste %s por %s.",
+    you_got_yourself = "Obtuviste %s.",
+    you_received_x = "Obtuviste %s por %s.",
 
     created_first_jailpos = "You have created the first jail position!",
     added_jailpos = "You have added one extra jail position!",
@@ -290,7 +290,7 @@ local my_language = {
     updated_spawnpos = "You have removed all spawn positions for %s and added a new one here.",
     remove_spawnpos = "You have removed all spawn positions for %s.",
     do_not_own_ent = "No posees esta entidad",
-    cannot_drop_weapon = "No puedes soltar esta arma.",
+    cannot_drop_weapon = "No puede soltar esta arma.",
     job_switch = "Trabajos cambiado.",
     job_switch_question = "Cambiar trabajos con %s?",
     job_switch_requested = "Cambio de trabajo solicitado.",
@@ -328,7 +328,7 @@ local my_language = {
     demoted_not = "%s no ha sido degradado",
     demote_vote_started = "%s empezo una votación de degradar a %s",
     demote_vote_text = "Razón:\n%s", -- '%s' is the reason here
-    cant_demote_self = "No puedes degradarte a ti mismo.",
+    cant_demote_self = "No puede degradarte a ti mismo.",
     i_want_to_demote_you = "Te quiero demotear. Razón: %s",
     tried_to_avoid_demotion = "Intentastes escapar de la degradación. Fallastes y has sido degradado.", -- naughty boy!
     lockdown_started = "Toque de queda.",
@@ -343,8 +343,8 @@ local my_language = {
     gunlicense_not_removed = "La licencia de armas %s no fue removida.",
     vote_specify_reason = "Especifica una razón.",
     vote_started = "Votación creada",
-    vote_alone = "Ganastes la votación porque estas solo.",
-    you_cannot_vote = "No puedes votar",
+    vote_alone = "Ganaste la votación porque Esta solo.",
+    you_cannot_vote = "No puede votar",
     x_cancelled_vote = "%s cancelo el ultimo voto.",
     cant_cancel_vote = "No se pudo cancelar el ultimo voto porque hay no hay un ultimo voto para cancelar.",
     jail_punishment = "Castigado por desconectarte. Encarcelado por: %d segundos.",
@@ -368,11 +368,11 @@ local my_language = {
     data_not_loaded_one = "Tus datos no cargaron aun. Por favor espere.",
     data_not_loaded_two = "Si esto persiste, intenta reconectarte o contactar a un administrador.",
 
-    cant_spawn_weapons = "No puedes aparecer armas.",
+    cant_spawn_weapons = "No puede aparecer armas.",
     drive_disabled = "Conducción desactivado por ahora.",
     property_disabled = "Propiedad desactivado por ahora.",
 
-    not_allowed_to_purchase = "No puedes comprar esto.",
+    not_allowed_to_purchase = "No puede comprar esto.",
 
     rp_teamban_hint = "rp_teamban [player name/ID] [team name/id]. Use this to ban a player from a certain team.",
     rp_teamunban_hint = "rp_teamunban [player name/ID] [team name/id]. Use this to unban a player from a certain team.",
@@ -404,7 +404,7 @@ local my_language = {
     -- The lottery
     lottery_started = "Loteria, participar por %s%d?", -- backwards compatibility
     lottery_has_started = "Loteria, participar por %s?",
-    lottery_entered = "Entrastes a la loteria por %s",
+    lottery_entered = "Entraste a la loteria por %s",
     lottery_not_entered = "%s no entro a la loteria",
     lottery_noone_entered = "Nadie entro a la loteria",
     lottery_won = "%s gano la loteria y se llevo %s",
@@ -478,8 +478,8 @@ local my_language = {
 
     -- Vote Restrictions
     hobos_no_rights = "Los vagabundos no tienen derechos de votación.",
-    gangsters_cant_vote_for_government = "Los criminales no pueden votar cosas gubernamentales.",
-    government_cant_vote_for_gangsters = "Los oficiales del gobierno no pueden votar por cosas criminales.",
+    gangsters_cant_vote_for_government = "Los criminales no pueden votar en cosas gubernamentales.",
+    government_cant_vote_for_gangsters = "Los oficiales del gobierno no pueden votar en cosas criminales.",
 
     -- VGUI and some more doors/vehicles
     vote = "Vota",
@@ -495,7 +495,7 @@ local my_language = {
     x_options = "%s opciones",
     sell_x = "Vender %s",
     set_x_title = "Colocar titulo de %s",
-    set_x_title_long = "Colocar titulo de %s al que estas mirando.",
+    set_x_title_long = "Colocar titulo de %s al que esta mirando.",
     jobs = "Trabajos",
     buy_x = "Comprar %s",
 
@@ -532,9 +532,9 @@ local my_language = {
     set_jailpos = "Set the jail position",
     add_jailpos = "Add a jail position",
 
-    set_custom_job = "Colocar trabajo personalizado (preciona intro para activar)",
+    set_custom_job = "Poner un trabajo personalizado (preciona intro para activar)",
 
-    set_agenda = "Colocar la agenda (preciona intro para activar)",
+    set_agenda = "Poner a la agenda (preciona intro para activar)",
 
     initiate_lockdown = "Iniciar toque de queda",
     stop_lockdown = "Terminar toque de queda",
@@ -542,11 +542,11 @@ local my_language = {
     give_license_lookingat = "Give <lookingat> a gun license",
 
     laws_of_the_land = "LEYES DEL LUGAR",
-    law_added = "Ley agregada.",
+    law_added = "Nueva ley agregada.",
     law_removed = "Ley removida.",
-    law_reset = "Leyes restablecidas a predeterminado.",
+    law_reset = "Las leyes han sido restablecidas al predeterminado.",
     law_too_short = "La ley es muy corta.",
-    laws_full = "Las leyes estan llenas.",
+    laws_full = "No hay mas espacio en le cartel de leyes.",
     default_law_change_denied = "No tienes permitido cambiar las leyes por defecto.",
 
     -- Second tab
