@@ -111,7 +111,7 @@ CITYWORKER.Config.Electric.Enabled = true
 CITYWORKER.Config.Electric.Time = { min = 40, max = 60 }
 
 -- Payout per second it takes to fix an electrical problem.
-CITYWORKER.Config.Electric.Payout = 12
+CITYWORKER.Config.Electric.Payout = 120
 
 ----------------------------
 -- LANGUAGE CONFIGURATION --

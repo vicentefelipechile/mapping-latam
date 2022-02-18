@@ -21,7 +21,7 @@ DarkRP.createEntity("Cocina", {
     ent = "eml_stove",
     model = "models/props_c17/furnitureStove001a.mdl",
     price = 500,
-    max = 1,
+    max = 2,
     cmd = "comprarcocinailegal",
     allowed = {TEAM_FARMEROILEGAL, TEAM_STAFF},
     category = "Cocina Meta"

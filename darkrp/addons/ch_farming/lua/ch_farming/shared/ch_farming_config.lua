@@ -131,17 +131,17 @@ CH_Farming.Config.CrateDonatorWeight = {
 	{ UserGroup = "mod", CrateGrams = 2000 },
 	{ UserGroup = "mod+", CrateGrams = 4000 },
 	{ UserGroup = "admin", CrateGrams = 8000 },
-	{ UserGroup = "superadmin", CrateGrams = 2000 },
+	{ UserGroup = "superadmin", CrateGrams = 8000 },
 }
 
 --[[
 	Crops
 --]]
 CH_Farming.Config.CropsGramsAmount = { -- This defines the MINIMUM and MAXIMUM amount of grams the crops can weight when harvested.
-	["Lettuce"] = { 50, 200 }, -- So for example lettuce will weight between 50 and 200 grams (randomly) when harvested.
-	["Pepper"] = { 50, 180 },
+	["Lettuce"] = { 100, 200 }, -- So for example lettuce will weight between 50 and 200 grams (randomly) when harvested.
+	["Pepper"] = { 100, 180 },
 	["Corn"] = { 50, 100 },
-	["Tomato"] = { 25, 75 },
+	["Tomato"] = { 50, 75 },
 	["Wheat"] = { 25, 50 }
 }
 
@@ -163,9 +163,9 @@ CH_Farming.Config.RandomizePayoutInterval = 300 -- Every 300 second it will rand
 CH_Farming.Config.CropsGramsWorth = { -- How much ONE gram is worth for the different crops. Minimum and maximum and it randomizes the payout.
 	["Lettuce"] = { 20, 25 },
 	["Pepper"] = { 20, 28 },
-	["Corn"] = { 22, 29 },
-	["Tomato"] = { 22, 30 },
-	["Wheat"] = { 24, 31 }
+	["Corn"] = { 44, 58 },
+	["Tomato"] = { 55, 75 },
+	["Wheat"] = { 80, 100 }
 }
 
 -- XP SUPPORT

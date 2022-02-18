@@ -53,7 +53,7 @@ EML_Water_Amount = 3;
 EML_Water_Color = Color(133, 202, 219, 255);
 
 -- Meth value modifier. (1500/lbs)
-EML_Meth_ValueModifier = 1500;
+EML_Meth_ValueModifier = 1000;
 -- Meth addicted person (I don't like NPCs at all).
 EML_Meth_UseSalesman = true;
 
