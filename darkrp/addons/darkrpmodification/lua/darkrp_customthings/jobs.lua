@@ -80,7 +80,7 @@ TEAM_CITIZEN_VIP = DarkRP.createJob("Ciudadano Clase Alta", {
     hasLicense = false,
     candemote = false,
     category = "Citizens",
-    customCheck = function(ply) return ply:IsUserGroup("vip") or ply:IsUserGroup("mod+") or ply:IsAdmin() or ply:IsSuperAdmin() end,
+    customCheck = function(ply) return ply:IsUserGroup("vip") or ply:IsUserGroup("mod+") or ply:IsUserGroup("modt+") or ply:IsAdmin() or ply:IsSuperAdmin() end,
     CustomCheckFailMsg = "Este trabajo es solo pa vips po."
 })
 TEAM_GUN = DarkRP.createJob("Armero", {
