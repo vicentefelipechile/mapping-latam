@@ -1,5 +1,5 @@
 hook.Add("PlayerDeath", "DarkRP_Mayor_AutoDemote", function(ply, wep, killer)
-    if ply:Team() == TEAM_MAYOR then -- Voy a romperle el oyo al que le ponga parentesis
+    if ply:Team() == TEAM_MAYOR then
         if killer:Nick() then
             ply:changeTeam(TEAM_CITIZEN, true)
             ply:SetMaxArmor(100)
