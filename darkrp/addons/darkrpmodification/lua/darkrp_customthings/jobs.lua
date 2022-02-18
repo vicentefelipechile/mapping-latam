@@ -68,7 +68,7 @@ TEAM_GDSEGURIDAD = DarkRP.createJob("Guardia de Seguridad", {
     model = {
         "models/player/odessa.mdl"
     },
-    description = "Eres un Guardia de Seguridad\n\n- Puedes ser contratado para proteger.\n- para ser contratado mediante advert .
+    description = "Eres un Guardia de Seguridad\n\n- Puedes ser contratado para proteger.\n- para ser contratado mediante advert."
     weapons = {weaponchecker},
     command = "guardiadeseguridad",
     max = 4,
