@@ -68,8 +68,8 @@ cfg:SetLanguage("spanish", [[
                 "none": "Ningun trabajo favorito"
             },
             "onlineStaff": {
-                "title": "Personal conectado",
-                "none": "Ningun personal conectado"
+                "title": "Staff conectado",
+                "none": "Ningun staff conectado"
             }
         },
         "jobs": {
@@ -80,8 +80,8 @@ cfg:SetLanguage("spanish", [[
                     "alphabetically": "Alfabetico",
                     "highestSalary": "Salario mas alto",
                     "lowestSalary": "Salario mas bajo",
-                    "mostPeople": "Mayoria gente",
-                    "leastPeople": "Minoria gente"
+                    "mostPeople": "Mayor gente",
+                    "leastPeople": "Menor gente"
                 },
                 "showRecentJobs": "Mostrar trabajos recientes",
                 "showFavouriteJobs": "Mostrar trabajos favoritos"
@@ -96,7 +96,7 @@ cfg:SetLanguage("spanish", [[
                 "prestigeRequirement": "Prestigio: :prestige:",
                 "donatorJob": "Trabajo de donador",
                 "button": {
-                    "become": "CONVERTIRSE",
+                    "become": "Pedir Trabajo",
                     "areThisJob": "ESTAS EN ESTE TRABAJO",
                     "jobIsFull": "EL TRABAJO ESTA LLENO",
                     "customCheckFailed": "VERIFICACIÓN FALLIDA",
@@ -135,9 +135,9 @@ cfg:SetLanguage("spanish", [[
                     "highestPrice": "Mayor precio",
                     "lowestPrice": "Menor precio"
                 },
-                "showFavourite": "Mostrar favoritos"
+                "showFavourite": "Mostrar Favoritos"
             },
-            "favourites": "favoritos"
+            "favourites": "Favoritos"
         },
         "options": {
             "general": {
@@ -207,7 +207,7 @@ cfg:SetLanguage("spanish", [[
                     "name": "Colocar panel de leyes"
                 },
                 "broadcastToCity": {
-                    "name": "Transmitir a la ciudad",
+                    "name": "Emitir mensaje a la ciudad",
                     "desc": "Cual mensaje quieres transmitir?",
                     "placeholder": "Mensaje"
                 },
@@ -221,13 +221,13 @@ cfg:SetLanguage("spanish", [[
                 "name": "Policia",
                 
                 "wanted": {
-                    "name": "Hacer buscado",
-                    "desc": "Escriba la razón y selecciona el jugador",
+                    "name": "Crear orden de Busqueda",
+                    "desc": "Escribe la razón y selecciona el jugador",
                     "placeholder": "Razón"
                 },
                 "warrant": {
                     "name": "Hacer una orden",
-                    "desc": "Escriba la razón y selecciona el jugador",
+                    "desc": "Escribe la razón y selecciona el jugador",
                     "placeholder": "Razón"
                 },
                 "unwarrant": {
