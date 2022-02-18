@@ -65,14 +65,12 @@ TEAM_RADIO = DarkRP.createJob("Locutor de radio", {
 })
 TEAM_GDSEGURIDAD = DarkRP.createJob("Guardia de Seguridad", {
     color = Color(20, 150, 20, 255),
-    model = {
-        "models/player/odessa.mdl"
-    },
-    description = "Eres un Guardia de Seguridad\n\n- Puedes ser contratado para proteger.\n- para ser contratado mediante advert."
+    model = "models/player/odessa.mdl",
+    description = "Eres un Guardia de Seguridad\n\n- Puedes ser contratado para proteger.\n- para ser contratado mediante advert.",
     weapons = { "weaponchecker" },
     command = "guardiadeseguridad",
     max = 4,
-    salary = GAMEMODE.Config.normalsalary * 4,
+    salary = GAMEMODE.Config.normalsalary * 2,
     admin = 0,
     vote = false,
     hasLicense = false,
