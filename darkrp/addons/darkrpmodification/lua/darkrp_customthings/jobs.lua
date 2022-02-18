@@ -96,7 +96,7 @@ TEAM_CITIZEN_VIP = DarkRP.createJob("Ciudadano Clase Alta", {
     hasLicense = false,
     candemote = false,
     category = "Citizens",
-    customCheck = function(ply) return ply:IsUserGroup("vip") or ply:IsUserGroup("mod+") or ply:IsAdmin() or ply:IsSuperAdmin() end,
+    customCheck = function(ply) return ply:IsUserGroup("vip") or ply:IsUserGroup("mod+") or ply:IsUserGroup("modt+") or ply:IsAdmin() or ply:IsSuperAdmin() end,
     CustomCheckFailMsg = "Este trabajo es solo pa vips po."
 })
 TEAM_GUN = DarkRP.createJob("Armero", {
@@ -422,18 +422,6 @@ TEAM_STAFF = DarkRP.createJob("STAFF", {
     CustomCheckFailMsg = "El pepe"
 })
 MaxPlayers = game.MaxPlayers()
-
-TEAM_NONE = DarkRP.createJob("none", {
-    color = Color(0, 0, 0, 255),
-    model = "models/player/raphtalia_low/default_p.mdl",
-    description = "None",
-    command = "none",
-    max = 0,
-    salary = 0,
-    admin = 1,
-    customCheck = function(ply) return ply:IsSuperAdmin() end,
-    category = "non_exist"
-})
 --[[---------------------------------------------------------------------------
 Define which team joining players spawn into and what team you change to if demoted
 ---------------------------------------------------------------------------]]
