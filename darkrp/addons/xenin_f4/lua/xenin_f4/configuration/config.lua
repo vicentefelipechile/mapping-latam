@@ -96,7 +96,7 @@ cfg:SetLanguage("spanish", [[
                 "prestigeRequirement": "Prestigio: :prestige:",
                 "donatorJob": "Trabajo de donador",
                 "button": {
-                    "become": "SER",
+                    "become": "CONVERTIRSE",
                     "areThisJob": "ESTAS EN ESTE TRABAJO",
                     "jobIsFull": "EL TRABAJO ESTA LLENO",
                     "customCheckFailed": "VERIFICACIÓN FALLIDA",
@@ -204,7 +204,7 @@ cfg:SetLanguage("spanish", [[
                     "name": "Reiniciar leyes"
                 },
                 "placeLawboard": {
-                    "name": "Colocar panel de leyer"
+                    "name": "Colocar panel de leyes"
                 },
                 "broadcastToCity": {
                     "name": "Transmitir a la ciudad",
