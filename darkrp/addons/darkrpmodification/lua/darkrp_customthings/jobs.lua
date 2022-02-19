@@ -289,7 +289,8 @@ TEAM_CHIEF = DarkRP.createJob("Teniente Protección Civil", {
         "door_ram",
         "weaponchecker",
         "weapon_cuff_police",
-        "riot_shield"
+        "riot_shield",
+        "nightstickv"
     },
     command = "lidercp",
     max = 1,
@@ -346,7 +347,8 @@ TEAM_POLICE = DarkRP.createJob("Policia", {
         "m9k_m92beretta",
         "door_ram",
         "weaponchecker",
-        "weapon_cuff_police"
+        "weapon_cuff_police",
+        "nightstickv"
     },
     command = "policia",
     max = 10,
@@ -381,7 +383,8 @@ TEAM_DISTURBE = DarkRP.createJob("Grupo Anti-Disturbios", {
         "door_ram",
         "weaponchecker",
         "weapon_cuff_police",
-        "riot_shield"
+        "riot_shield",
+        "nightstickv"
     },
     command = "ad",
     max = 10,
@@ -414,7 +417,8 @@ TEAM_STAFF = DarkRP.createJob("STAFF", {
         "arrest_stick",
         "unarrest_stick",
         "stunstick",
-        "weaponchecker"
+        "weaponchecker",
+        "nightstickv"
     },
     command = "staff",
     max = 0,
