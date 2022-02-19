@@ -118,7 +118,7 @@ DarkRP.createEntity("Deagle - VIP", {
     price = 12000,
     max = 1,
     cmd = "comprardeaglevip",
-    category = "Cocina Meta"
+    category = "Armas VIPs"
     customCheck = function(ply) return ply:IsUserGroup("vip") or ply:IsUserGroup("mod+") or ply:IsUserGroup("modt+") or ply:IsAdmin() end,
 })
 
@@ -128,7 +128,7 @@ DarkRP.createEntity("M4A1 - VIP", {
     price = 24000,
     max = 1,
     cmd = "comparm4a1vip",
-    category = "Cocina Meta"
+    category = "Armas VIPs"
     customCheck = function(ply) return ply:IsUserGroup("vip") or ply:IsUserGroup("mod+") or ply:IsUserGroup("modt+") or ply:IsAdmin() end,
 })
 
@@ -138,7 +138,7 @@ DarkRP.createEntity("AK47 - VIP", {
     price = 24000,
     max = 1,
     cmd = "comprarak47vip",
-    category = "Cocina Meta"
+    category = "Armas VIPs"
     customCheck = function(ply) return ply:IsUserGroup("vip") or ply:IsUserGroup("mod+") or ply:IsUserGroup("modt+") or ply:IsAdmin() end,
 })
 
