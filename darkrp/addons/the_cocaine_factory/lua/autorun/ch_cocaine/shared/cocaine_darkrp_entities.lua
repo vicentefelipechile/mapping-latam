@@ -19,7 +19,7 @@ function SH_COCAINE_DarkRPAdds()
         max = 2,
 		category = "Cocina de Coca",
         cmd = "buywater",
-	allowed = TEAM_FARMEROCOCA
+	allowed = TEAM_STAFF
     })
 
     DarkRP.createEntity("Cocina", {
@@ -29,7 +29,7 @@ function SH_COCAINE_DarkRPAdds()
         max = 1,
 		category = "Cocina de Coca",
         cmd = "buystove",
-	allowed = TEAM_FARMEROCOCA
+	allowed = TEAM_STAFF
     })
 
     DarkRP.createEntity("Olla", {
@@ -39,7 +39,7 @@ function SH_COCAINE_DarkRPAdds()
         max = 8,
 		category = "Cocina de Coca",
         cmd = "buypot",
-	allowed = TEAM_FARMEROCOCA
+	allowed = TEAM_STAFF
     })
 	
 	DarkRP.createEntity("Cubo", {
@@ -49,7 +49,7 @@ function SH_COCAINE_DarkRPAdds()
         max = 1,
 		category = "Cocina de Coca",
         cmd = "buybucket",
-	allowed = TEAM_FARMEROCOCA
+	allowed = TEAM_STAFF
     })
 
     DarkRP.createEntity("Hojas Especiales", {
@@ -59,7 +59,7 @@ function SH_COCAINE_DarkRPAdds()
         max = 10,
 		category = "Cocina de Coca",
         cmd = "buyleaves",
-	allowed = TEAM_FARMEROCOCA
+	allowed = TEAM_STAFF
     })
 
     DarkRP.createEntity("Gas", {
@@ -69,7 +69,7 @@ function SH_COCAINE_DarkRPAdds()
         max = 4,
 		category = "Cocina de Coca",
         cmd = "buygas",
-	allowed = TEAM_FARMEROCOCA
+	allowed = TEAM_STAFF
     })
 
     DarkRP.createEntity("Secador", {
@@ -79,7 +79,7 @@ function SH_COCAINE_DarkRPAdds()
         max = 1,
 		category = "Cocina de Coca",
         cmd = "buydryingrack",
-	allowed = TEAM_FARMEROCOCA
+	allowed = TEAM_STAFF
     })
 
     DarkRP.createEntity("Caja de Coca", {
@@ -89,7 +89,7 @@ function SH_COCAINE_DarkRPAdds()
         max = 1,
 		category = "Cocina de Coca",
 		cmd = "buycocainebox",
-	allowed = TEAM_FARMEROCOCA
+	allowed = TEAM_STAFF
 	})
 
 	DarkRP.createEntity("Puerto de Gas", {
@@ -99,7 +99,7 @@ function SH_COCAINE_DarkRPAdds()
         max = 4,
 		category = "Cocina de Coca",
         cmd = "buyplateupgrade",
-	allowed = TEAM_FARMEROCOCA
+	allowed = TEAM_STAFF
     })
 
     DarkRP.createEntity("Extractor de Coca", {
@@ -109,7 +109,7 @@ function SH_COCAINE_DarkRPAdds()
         max = 1,
 		category = "Cocina de Coca",
         cmd = "buyextractor",
-	allowed = TEAM_FARMEROCOCA
+	allowed = TEAM_STAFF
     })
 
     DarkRP.createEntity("Soda de Coca", {
@@ -119,7 +119,7 @@ function SH_COCAINE_DarkRPAdds()
         max = 5,
 		category = "Cocina de Coca",
         cmd = "buybakingsoda",
-	allowed = TEAM_FARMEROCOCA
+	allowed = TEAM_STAFF
     })
 end
 hook.Add( "loadCustomDarkRPItems", "SH_COCAINE_DarkRPAdds", SH_COCAINE_DarkRPAdds )
