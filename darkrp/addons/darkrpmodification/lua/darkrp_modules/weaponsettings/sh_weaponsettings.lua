@@ -383,6 +383,7 @@ weapon "m9k_ak74".ViewModelFOV = 90
 weapon "m9k_fal".Primary.Damage = 14
 weapon "m9k_fal".Primary.RPM = 750
 weapon "m9k_fal".ViewModelFOV = 90
+weapon "m9k_fal".SelectiveFire = false
 
 --vikhr
 weapon "m9k_vikhr".Primary.Damage = 9
