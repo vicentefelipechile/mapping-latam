@@ -283,7 +283,7 @@ DarkRP.createShipment("Bizon P19", {
     category = "Sub-fusil",
 })
 DarkRP.createShipment("Thompson", {
-    model = "models/weapons/us_thompson.mdl",
+    model = "models/weapons/w_tommy_gun.mdl",
     entity = "m9k_thompson",
     price = 26000,
     amount = 10,
