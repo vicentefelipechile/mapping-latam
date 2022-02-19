@@ -49,3 +49,11 @@ hook.Add( "PlayerSpray", "DisablePlayerSpray", function( ply )
 		return true
 	end
 end )
+
+-- Deshabilita el que los users normales tomen las armas
+hook.Add( "PlayerCanPickupWeapon", "NoVipUsers", function( ply, weapon )
+	if ply:IsSuperAdmin() or ply:IsAdmin() or ply:IsUserGroup("vip") or ply:IsUserGroup("mod+") or ply:IsUserGroup("modt+") then return end
+    if weapon:GetClass() == ( "weapon_deagle_bornbeast" or "weapon_m4a1_beast" or "weapon_ak47_beast" ) then
+		return false
+	end
+end )
