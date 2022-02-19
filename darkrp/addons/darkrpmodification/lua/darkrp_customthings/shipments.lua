@@ -96,7 +96,7 @@ DarkRP.createShipment("UMP 45", {
     category = "Sub-fusil",
 })
 DarkRP.createShipment("KaC PDW", {
-    model = "models/weapons/w_kac_pdw.mdl",
+    model = "models/weapons/fnp/w_pist_fiveseven.mdl",
     entity = "m9k_kac_pdw",
     price = 16000,
     amount = 10,
