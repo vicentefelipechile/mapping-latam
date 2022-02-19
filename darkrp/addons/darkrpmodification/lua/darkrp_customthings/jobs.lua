@@ -263,6 +263,7 @@ TEAM_FARMEROILEGAL = DarkRP.createJob("Farmero Ilegal", {
     category = "Gangsters",
 })
 
+/*
 TEAM_FARMEROCOCA = DarkRP.createJob("Farmero de Coca", {
     color = Color(75, 75, 75, 255),
     model = "models/player/hostage/hostage_04.mdl",
@@ -279,6 +280,8 @@ TEAM_FARMEROCOCA = DarkRP.createJob("Farmero de Coca", {
     hasLicense = false,
     category = "Gangsters",
 })
+*/
+
 --------------------------gubernamentales----------------------
 
 TEAM_CHIEF = DarkRP.createJob("Teniente Protección Civil", {
