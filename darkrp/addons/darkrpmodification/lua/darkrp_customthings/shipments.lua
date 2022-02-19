@@ -279,7 +279,7 @@ DarkRP.createShipment("Bizon P19", {
     amount = 10,
     separate = false,
     noship = false,
-    allowed = {TEAM_GUN, TEAM_STAFF},
+    allowed = {TEAM_GUN_CLANDESTINO, TEAM_STAFF},
     category = "Sub-fusil",
 })
 DarkRP.createShipment("Thompson", {
@@ -289,7 +289,7 @@ DarkRP.createShipment("Thompson", {
     amount = 10,
     separate = false,
     noship = false,
-    allowed = {TEAM_GUN, TEAM_STAFF},
+    allowed = {TEAM_GUN_CLANDESTINO, TEAM_STAFF},
     category = "Sub-fusil",
 })
 DarkRP.createShipment("Tec 9", {
@@ -299,7 +299,7 @@ DarkRP.createShipment("Tec 9", {
     amount = 10,
     separate = false,
     noship = false,
-    allowed = {TEAM_GUN, TEAM_STAFF},
+    allowed = {TEAM_GUN_CLANDESTINO, TEAM_STAFF},
     category = "Sub-fusil",
 })
 DarkRP.createShipment("Mac10", {
@@ -309,7 +309,7 @@ DarkRP.createShipment("Mac10", {
     amount = 10,
     separate = false,
     noship = false,
-    allowed = {TEAM_GUN, TEAM_STAFF},
+    allowed = {TEAM_GUN_CLANDESTINO, TEAM_STAFF},
     category = "Sub-fusil",
 })
 
