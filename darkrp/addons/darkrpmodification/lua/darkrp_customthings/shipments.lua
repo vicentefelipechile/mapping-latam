@@ -31,7 +31,7 @@ only_adms       = function(ply) return ply:IsUserGroup("mod") or ply:IsUserGroup
 
 ---pistolas
 
-DarkRP.createShipment("bren ten", {
+DarkRP.createShipment("Bren 10", {
     model = "models/weapons/bren_ten/w_pist_p228.mdl",
     entity = "m9k_bren_ten",
     price = 4500,
@@ -41,7 +41,7 @@ DarkRP.createShipment("bren ten", {
     allowed = {TEAM_GUN, TEAM_STAFF},
     category = "Pistolas",
 })
-DarkRP.createShipment("Colt1911", {
+DarkRP.createShipment("Colt .1911", {
     model = "models/weapons/colts/w_pist_fiveseven.mdl",
     entity = "m9k_colt1911",
     price = 7500,
@@ -51,7 +51,7 @@ DarkRP.createShipment("Colt1911", {
     allowed = {TEAM_GUN, TEAM_STAFF},
     category = "Pistolas",
 })
-DarkRP.createShipment("HK usp", {
+DarkRP.createShipment("HK USP", {
     model = "models/weapons/3_pist_usp.mdl",
     entity = "m9k_usp",
     price = 6700,
@@ -60,7 +60,7 @@ DarkRP.createShipment("HK usp", {
     noship = false,
     allowed = {TEAM_GUN, TEAM_STAFF},
     category = "Pistolas",
-})
+})/*
 DarkRP.createShipment("model Omega 500", {
     model = "models/weapons/3_pist_usp.mdl",
     entity = "m9k_usp",
@@ -71,7 +71,7 @@ DarkRP.createShipment("model Omega 500", {
     allowed = {TEAM_GUN, TEAM_STAFF},
     category = "Pistolas",
 })
-
+*/
 
 -------Sub-Fusiles-----------
 
@@ -85,7 +85,7 @@ DarkRP.createShipment("HK MP5", {
     allowed = {TEAM_GUN, TEAM_STAFF},
     category = "Sub-fusil",
 })
-DarkRP.createShipment("UPM45", {
+DarkRP.createShipment("UMP 45", {
     model = "models/weapons/w_hk_ump45.mdl",
     entity = "m9k_ump45",
     price = 14500,
@@ -95,7 +95,7 @@ DarkRP.createShipment("UPM45", {
     allowed = {TEAM_GUN, TEAM_STAFF},
     category = "Sub-fusil",
 })
-DarkRP.createShipment("kac pdw", {
+DarkRP.createShipment("KaC PDW", {
     model = "models/weapons/w_kac_pdw.mdl",
     entity = "m9k_kac_pdw",
     price = 16000,
@@ -105,7 +105,7 @@ DarkRP.createShipment("kac pdw", {
     allowed = {TEAM_GUN, TEAM_STAFF},
     category = "Sub-fusil",
 })
-DarkRP.createShipment("mp9", {
+DarkRP.createShipment("MP9", {
     model = "models/weapons/w_brugger_thomet_mp9.mdl",
     entity = "m9k_mp9",
     price = 17500,
@@ -148,7 +148,7 @@ DarkRP.createShipment("AS Val", {
     allowed = {TEAM_GUN, TEAM_STAFF},
     category = "Rifles",
 })
-DarkRP.createShipment("m14", {
+DarkRP.createShipment("M14", {
     model = "models/weapons/w_snip_m14sp.mdl",
     entity = "m9k_m14sp",
     price = 22500,
@@ -171,7 +171,7 @@ DarkRP.createShipment("M24", {
     allowed = {TEAM_GUN, TEAM_STAFF},
     category = "Rifle Francotirador",
 })
-DarkRP.createShipment("ALT Scout", {
+DarkRP.createShipment("Alt Scout", {
     model = "models/weapons/3_snip_scout.mdl",
     entity = "bb_scout_alt",
     price = 26000,
@@ -184,7 +184,7 @@ DarkRP.createShipment("ALT Scout", {
 
 -----escopetas-----
 
-DarkRP.createShipment("remington870", {
+DarkRP.createShipment("Remington 870", {
     model = "models/weapons/w_remington_870_tact.mdl",
     entity = "m9k_remington870",
     price = 26000,
@@ -194,7 +194,7 @@ DarkRP.createShipment("remington870", {
     allowed = {TEAM_GUN, TEAM_STAFF},
     category = "Escopetas",
 })
-DarkRP.createShipment("Ithacam37", {
+DarkRP.createShipment("Ithacam .37", {
     model = "models/weapons/w_ithaca_m37.mdl",
     entity = "m9k_ithacam37",
     price = 27000,
@@ -209,7 +209,7 @@ DarkRP.createShipment("Ithacam37", {
 
 -----pistolas-----
 
-DarkRP.createShipment("MINI Guardian", {
+DarkRP.createShipment("Pocket Guardian", {
     model = "models/weapons/guardian/w_pist_p228.mdl",
     entity = "m9k_guardian",
     price = 4500,
@@ -219,7 +219,7 @@ DarkRP.createShipment("MINI Guardian", {
     allowed = {TEAM_GUN_CLANDESTINO, TEAM_STAFF},
     category = "Pistolas",
 })
-DarkRP.createShipment("model627", {
+DarkRP.createShipment("Model .627", {
     model = "models/weapons/w_sw_model_627.mdl",
     entity = "m9k_model627",
     price = 6500,
@@ -229,7 +229,7 @@ DarkRP.createShipment("model627", {
     allowed = {TEAM_GUN_CLANDESTINO, TEAM_STAFF},
     category = "Pistolas",
 })
-DarkRP.createShipment("Mr96", {
+DarkRP.createShipment("Mister .96", {
     model = "models/weapons/mr96/w_pist_deagle.mdl",
     entity = "m9k_mr96",
     price = 6000,
@@ -239,7 +239,7 @@ DarkRP.createShipment("Mr96", {
     allowed = {TEAM_GUN_CLANDESTINO, TEAM_STAFF},
     category = "Pistolas",
 })
-DarkRP.createShipment("ATL P228", {
+DarkRP.createShipment("Alt P228", {
     model = "models/weapons/3_pist_p228.mdl",
     entity = "bb_p228_alt",
     price = 30200,
@@ -259,7 +259,7 @@ DarkRP.createShipment("Luger", {
     allowed = {TEAM_GUN_CLANDESTINO, TEAM_STAFF},
     category = "Pistolas",
 })
-DarkRP.createShipment("ruger", {
+DarkRP.createShipment("Ruger", {
     model = "models/weapons/ruger/w_pist_fiveseven.mdl",
     entity = "m9k_ruger",
     price = 12000,
@@ -272,7 +272,7 @@ DarkRP.createShipment("ruger", {
 
 -----Sub-Fusiles-----
 
-DarkRP.createShipment("bizonp19", {
+DarkRP.createShipment("Bizon P19", {
     model = "models/weapons/w_pp19_bizon.mdl",
     entity = "m9k_bizonp19",
     price = 24000,
