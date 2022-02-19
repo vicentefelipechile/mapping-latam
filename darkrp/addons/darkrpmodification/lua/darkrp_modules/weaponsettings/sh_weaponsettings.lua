@@ -139,7 +139,7 @@ weapon "bb_glock_alt".Slot = 2
 weapon "bb_glock_alt".SelectiveFire = false
 
 weapon "bb_glock_cp".Primary.Damage = 8
-weapon "bb_glock_cp".Primary.Spread = .08
+weapon "bb_glock_cp".Primary.Spread = .04
 weapon "bb_glock_cp".Primary.RPM = 550
 weapon "bb_glock_cp".Primary.ClipSize = 14
 weapon "bb_glock_cp".Slot = 2
@@ -187,7 +187,7 @@ weapon "bb_m4a1_alt".ViewModelFOV = 90
 weapon "bb_m4a1_alt".SelectiveFire = false
 
 weapon "bb_m4a1_cp".Primary.Damage = 22
-weapon "bb_m4a1_cp".Primary.Spread = .08
+weapon "bb_m4a1_cp".Primary.Spread = .04
 weapon "bb_m4a1_cp".Primary.NumShots = 0.7
 weapon "bb_m4a1_cp".Primary.RPM = 500
 weapon "bb_m4a1_cp".Primary.Delay = 0.1
