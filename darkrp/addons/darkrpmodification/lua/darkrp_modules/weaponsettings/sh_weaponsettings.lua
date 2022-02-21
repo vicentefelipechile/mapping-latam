@@ -401,7 +401,7 @@ weapon "m9k_browningauto5".Primary.RPM = 150
 weapon "m9k_browningauto5".ViewModelFOV = 90
 
 --barret
-weapon "m9k_barret_m82".Primary.Damage = 4
+weapon "m9k_barret_m82".Primary.Damage = 90
 weapon "m9k_barret_m82".Primary.RPM = 150
 weapon "m9k_barret_m82".ViewModelFOV = 90
 weapon "m9k_barret_m82".Primary.Ammo = "SniperRound"
