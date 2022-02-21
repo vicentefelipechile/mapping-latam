@@ -148,7 +148,7 @@ DarkRP.createEntity("AK47 - VIP", {
 DarkRP.createShipment("Chaleco Antibalas", {
     model = "models/combine_vests/militaryvest.mdl",
     entity = "chaleco",
-    price = 6000,
+    price = 16000,
     amount = 4,
     separate = false,
     pricesep = nil,
@@ -160,7 +160,7 @@ DarkRP.createShipment("Chaleco Antibalas", {
 DarkRP.createShipment("Chaleco Antibalas - VIP", {
     model = "models/combine_vests/militaryvest_vip.mdl",
     entity = "chaleco_vip",
-    price = 10000,
+    price = 25000,
     amount = 4,
     separate = false,
     pricesep = nil,

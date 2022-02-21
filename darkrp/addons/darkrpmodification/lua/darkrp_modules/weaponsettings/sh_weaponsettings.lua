@@ -274,12 +274,12 @@ weapon "m9k_m14sp".Primary.ClipSize = 8
 weapon "m9k_m14sp".ViewModelFOV = 90
 
 --mossberg590
-weapon "m9k_mossberg590".Primary.Damage = 5
+weapon "m9k_mossberg590".Primary.Damage = 7
 weapon "m9k_mossberg590".Primary.RPM = 75
 weapon "m9k_mossberg590".ViewModelFOV = 90
 
 --HK 416
-weapon "m9k_m416".Primary.Damage = 15
+weapon "m9k_m416".Primary.Damage = 18
 weapon "m9k_m416".Primary.RPM = 700
 weapon "m9k_m416".ViewModelFOV = 90
 
@@ -289,7 +289,7 @@ weapon "m9k_mp5sd".Primary.RPM = 700
 weapon "m9k_mp5sd".ViewModelFOV = 90
 
 --mini guardian
-weapon "m9k_guardian".Primary.Damage = 25
+weapon "m9k_guardian".Primary.Damage = 12
 weapon "m9k_guardian".Primary.RPM = 700
 weapon "m9k_guardian".ViewModelFOV = 90
 
@@ -400,6 +400,11 @@ weapon "m9k_browningauto5".Primary.Damage = 4
 weapon "m9k_browningauto5".Primary.RPM = 150
 weapon "m9k_browningauto5".ViewModelFOV = 90
 
+--barret
+weapon "m9k_barret_m82".Primary.Damage = 4
+weapon "m9k_barret_m82".Primary.RPM = 150
+weapon "m9k_barret_m82".ViewModelFOV = 90
+weapon "m9k_barret_m82".Primary.Ammo = "SniperRound"
 
 
 -- Armas VIPs
@@ -421,8 +426,8 @@ weapon "weapon_m4a1_beast".MeleeDamage = 3
 weapon "weapon_m4a1_beast".MeleeAttack = 0.4
 
 weapon "pocket".PrintName = "Bolsillo"
-weapon "itemstore_pickup".PrintName = "Inventario"
 weapon "keys".PrintName = "Llaves"
+weapon "nightstick".PrintName = "Macana"
 --------------------------------------------
 -- ADD WEAPON SETTINGS ABOVE THIS LINE
 -- Also ignore the lines below. They are needed to make this work.

@@ -31,16 +31,6 @@ only_adms       = function(ply) return ply:IsUserGroup("mod") or ply:IsUserGroup
 
 ---pistolas
 
-DarkRP.createShipment("Bren 10", {
-    model = "models/weapons/bren_ten/w_pist_p228.mdl",
-    entity = "m9k_bren_ten",
-    price = 4500,
-    amount = 10,
-    separate = false,
-    noship = false,
-    allowed = {TEAM_GUN, TEAM_STAFF},
-    category = "Pistolas",
-})
 DarkRP.createShipment("Colt .1911", {
     model = "models/weapons/colts/w_pist_fiveseven.mdl",
     entity = "m9k_colt1911",
@@ -381,7 +371,7 @@ DarkRP.createShipment("Svt 40", {
 DarkRP.createShipment("Barret m82", {
     model = "models/weapons/w_barret_m82.mdl",
     entity = "m9k_barret_m82",
-    price = 48000,
+    price = 65000,
     amount = 5,
     separate = false,
     noship = false,
