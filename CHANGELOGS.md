@@ -1,5 +1,8 @@
 Changelogs
 
+[v1.004]
+- Se actualizo el archivo darkrp.html
+
 [v1.003]
 - Se actualizo el archivo reglas.html
 - Se actualizo el archivo css\reglas.css
