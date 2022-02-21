@@ -6,7 +6,8 @@ CH_Armory_Locker.Design = {}
 CH_Armory_Locker.Config.GovernmentTeams = { -- These are your government teams. They will receive messages of robbery and can access the police locker. Use the actual team name, as shown below.
 	"Policia",
 	"Alcalde",
-	"Grupo Anti-Disturbios"
+	"Grupo Anti-Disturbios",
+	"Teniente Protección Civil"
 }
 
 CH_Armory_Locker.Config.AllowedTeams = { -- These are the teams that are allowed to rob the armory.

@@ -1,5 +1,8 @@
 Changelogs
 
+[v1.002]
+- Se arreglo que el Teniente no pueda acceder al Armario Policial
+
 [v1.001]
 - Se les agrego la macana a los policias
 
