@@ -1,5 +1,8 @@
 Changelogs
 
+[v1.005]
+- se le subio el daño al barret que tenia 3 por error de configuracion
+
 [v1.004]
 - Se actualizo el archivo darkrp.html
 
