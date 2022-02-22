@@ -52,8 +52,16 @@ end )
 
 -- Deshabilita el que los users normales tomen las armas
 hook.Add( "PlayerCanPickupWeapon", "NoVipUsers", function( ply, weapon )
-	if ply:IsSuperAdmin() or ply:IsAdmin() or ply:IsUserGroup("vip") or ply:IsUserGroup("mod+") or ply:IsUserGroup("modt+") then return end
-    if weapon:GetClass() == ( "weapon_deagle_bornbeast" or "weapon_m4a1_beast" or "weapon_ak47_beast" ) then
+	if ply:IsSuperAdmin() or ply:IsAdmin() or ply:IsUserGroup("vip") or ply:IsUserGroup("mod+") or ply:IsUserGroup("modt+") then
+		return true
+	elseif weapon:GetClass() == ( "weapon_deagle_bornbeast" or "weapon_m4a1_beast" or "weapon_ak47_beast" ) then
 		return false
 	end
+end )
+
+-- Deshabilita el usar la herramienta creador si contiene una SteamID Exacta
+hook.Add( "CanTool", "CanToolRemove", function( ply, tr, toolname )
+   if toolname == "creator" and ply:SteamID() == "STEAM_0:1:61873778" then
+      return false
+   end
 end )

@@ -1,7 +1,12 @@
 Changelogs
 
+[v1.006]
+- Se cambio la base de las armas vips ("weapon_deagle_bornbeast", "weapon_m4a1_beast" y "weapon_ak47_beast") por las M9K
+- Se añadio un hook que restringe el uso de la herramienta "Creator" al SteamID "STEAM_0:1:61873778"
+- Se removio una funcion extra del sv_hooks.lua
+
 [v1.005]
-- se le subio el daño al barret que tenia 3 por error de configuracion
+- Se le subio el daño al barret que tenia 3 por error de configuración
 
 [v1.004]
 - Se actualizo el archivo darkrp.html
