@@ -22,6 +22,7 @@ hook.Add( "PhysgunPickup", "AllowPlayerPickup", function( ply, ent )
 end )
 
 -- Desactiva el entrar a vehiculos si se encuentra desactivado
+/*
 hook.Add( "CanPlayerEnterVehicle", "AllowEnterVehicle", function( ply, vehicle, role )
 	if GetConVar("mappinglatam_allowvehicles"):GetInt() == 0 then
 		return false
@@ -31,6 +32,7 @@ hook.Add( "CanPlayerEnterVehicle", "AllowEnterVehicle", function( ply, vehicle, 
 		return true
 	end
 end)
+*/
 
 -- Solo Vicentefelipechile puede tener noclip aun sin superadmin
 hook.Add( "PlayerNoClip", "FeelFreeToTurnItOff", function( ply, desiredState )
@@ -43,7 +45,7 @@ end )
 
 -- Habilita el sprays solo a los vips y admins
 hook.Add( "PlayerSpray", "DisablePlayerSpray", function( ply )
-	if ply:IsSuperAdmin() or ply:IsAdmin() or ply:IsUserGroup("vip") or ply:IsUserGroup("mod+") or ply:IsUserGroup("modt+") then
+	if ply:IsAdmin() or ply:IsUserGroup("vip") or ply:IsUserGroup("mod+") or ply:IsUserGroup("modt+") then
 		return false
 	else
 		return true
@@ -52,9 +54,9 @@ end )
 
 -- Deshabilita el que los users normales tomen las armas
 hook.Add( "PlayerCanPickupWeapon", "NoVipUsers", function( ply, weapon )
-	if ply:IsSuperAdmin() or ply:IsAdmin() or ply:IsUserGroup("vip") or ply:IsUserGroup("mod+") or ply:IsUserGroup("modt+") then
+	if ply:IsAdmin() or ply:IsUserGroup("vip") or ply:IsUserGroup("mod+") or ply:IsUserGroup("modt+") then
 		return true
-	elseif weapon:GetClass() == ( "weapon_deagle_bornbeast" or "weapon_m4a1_beast" or "weapon_ak47_beast" ) then
+	elseif weapon:GetClass() == ( "weapon_vip_deagle_bornbeast" or "weapon_vip_m4a1_beast" or "weapon_vip_ak47_beast" ) then
 		return false
 	end
 end )

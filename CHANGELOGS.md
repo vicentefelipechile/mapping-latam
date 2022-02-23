@@ -1,5 +1,10 @@
 Changelogs
 
+[v1.009]
+- Se actualizo el hook que evitaba dropear las armas VIPs
+- Se elimino de manera temporal el hook que evitaba subirle a vehiculos
+- Se elimino codigo extra
+
 [v1.008]
 - Se elimino codigo extra
 
