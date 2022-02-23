@@ -1,5 +1,10 @@
 Changelogs
 
+[v1.010]
+- Se añadio configuración del Pac3
+- Se añadio que solo los VIPs y rangos superiores puedan aplicar cambios del Pac3
+- Se restringio el uso de la camara del Pac3
+
 [v1.009]
 - Se actualizo el hook que evitaba dropear las armas VIPs
 - Se elimino de manera temporal el hook que evitaba subirle a vehiculos
