@@ -113,7 +113,7 @@ DarkRP.createEntity("Gas", {
 -- Armas VIPs
 
 DarkRP.createEntity("Deagle - VIP", {
-    ent = "weapon_deagle_bornbeast",
+    ent = "weapon_vip_deagle_bornbeast",
     model = "models/cf/w_deagle_beast.mdl",
     price = 12000,
     max = 1,
@@ -123,7 +123,7 @@ DarkRP.createEntity("Deagle - VIP", {
 })
 
 DarkRP.createEntity("M4A1 - VIP", {
-    ent = "weapon_m4a1_beast",
+    ent = "weapon_vip_m4a1_beast",
     model = "models/cf/w_m4a1_beast.mdl",
     price = 24000,
     max = 1,
@@ -133,7 +133,7 @@ DarkRP.createEntity("M4A1 - VIP", {
 })
 
 DarkRP.createEntity("AK47 - VIP", {
-    ent = "weapon_ak47_beast",
+    ent = "weapon_vip_ak47_beast",
     model = "models/cf/w_ak47_beast.mdl",
     price = 24000,
     max = 1,

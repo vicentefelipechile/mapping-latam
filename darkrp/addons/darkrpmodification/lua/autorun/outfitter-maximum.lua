@@ -1,7 +1,7 @@
 if CLIENT then
 	local path = "mapping-latam/outfitter/"
-	local version = 1
-	local mp_maxsize = 10		-- 10MB
+	local version = 2
+	local mp_maxsize = 12		-- 10MB
 	local mp_maxdistance = 512	-- 512 UH
 
 	if !file.Exists("mapping-latam", "DATA") then
@@ -12,7 +12,7 @@ if CLIENT then
 	-- Establecer tamaño maximo
 
 	if !file.Exists( path .. "maxsize.txt", "DATA") then
-		file.Write( path .. "maxsize.txt", mp_maxsize) -- 10 MB
+		file.Write( path .. "maxsize.txt", mp_maxsize) -- 12 MB
 	end
 	
 	local maxsize = file.Read( path .. "maxsize.txt", "DATA")
