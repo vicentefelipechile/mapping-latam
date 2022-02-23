@@ -1,5 +1,8 @@
 Changelogs
 
+[v1.008]
+- Se elimino codigo extra
+
 [v1.007]
 - Se cambio el nombre del arma "weapon_deagle_bornbeast" por "weapon_vip_deagle_bornbeast"
 - Se cambio el nombre del arma "weapon_m4a1_beast" por "weapon_vip_m4a1_beast"
