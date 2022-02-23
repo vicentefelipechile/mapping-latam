@@ -1,5 +1,8 @@
 Changelogs
 
+[v1.011]
+- Se añadio que solo los VIPs y rangos superiores puedan abrir el editor del Pac3
+
 [v1.010]
 - Se añadio configuración del Pac3
 - Se añadio que solo los VIPs y rangos superiores puedan aplicar cambios del Pac3

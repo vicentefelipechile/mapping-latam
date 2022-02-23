@@ -7,6 +7,12 @@ local ranks = {
 }
 hook.Add("PrePACConfigApply", "PACRankRestrict", function(ply)
 	if not ranks[ply:GetUserGroup()] then
-              return false,"Rango insuficiente para usar el Pac3"
-        end
+		return false,"Rango insuficiente para usar el Pac3"
+	end
 end)
+
+hook.Add( "PrePACEditorOpen", "PACRankRestrictOpen", function(ply)
+	if not ranks[ply:GetUserGroup()] then
+		return false,"Rango insuficiente para usar el Pac3"
+	end
+end )
