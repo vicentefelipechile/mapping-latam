@@ -174,7 +174,7 @@ DarkRP.createEntity("Radio de Musica", {
     ent = "sent_streamradio_darkrp",
     model = "models/props/cs_office/tv_plasma.mdl",
     price = 500,
-    max = 2,
+    max = 10,
     cmd = "comprarradiomusica",
     allowed = {TEAM_RADIO, TEAM_STAFF},
     category = "Locutor de Radio"

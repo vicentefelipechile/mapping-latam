@@ -1,5 +1,8 @@
 Changelogs
 
+[v1.014]
+- Se aumento la cantidad de Radios de musica que puede vender el job Locutor de radio
+
 [v1.013]
 - Se devolvio las armas VIPs normales debido a problemas de compatibilidad
 
