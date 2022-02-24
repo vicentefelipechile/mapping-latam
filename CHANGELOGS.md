@@ -1,5 +1,8 @@
 Changelogs
 
+[v1.013]
+- Se devolvio las armas VIPs normales debido a problemas de compatibilidad
+
 [v1.012]
 - Se arreglo el armario policial subiendo el tiempo de cooldown entre lockping de 60 ah 300 y arreglando algunas configs
 - Ithaca nerfeada
