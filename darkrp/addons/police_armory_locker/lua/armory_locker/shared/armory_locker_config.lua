@@ -18,14 +18,14 @@ CH_Armory_Locker.Config.AllowedTeams = { -- These are the teams that are allowed
 
 -- General Config
 CH_Armory_Locker.Config.WeaponsArmoryEnabled = true -- Should the weapon armory for police jobs be enabled or not? true/false option. [Default = true]
-CH_Armory_Locker.Config.RetrieveCooldown = 5 -- Amount of minutes between being able to retrieve a weapon from the police armory as a government official. [Default = 5]
-CH_Armory_Locker.Config.PoliceKillRobberReward = 1250 -- Amount of money police officers get when killing someone that is lockpicking the armory. [Default = 1250]
+CH_Armory_Locker.Config.RetrieveCooldown = 1 -- Amount of minutes between being able to retrieve a weapon from the police armory as a government official. [Default = 5]
+CH_Armory_Locker.Config.PoliceKillRobberReward = 5000 -- Amount of money police officers get when killing someone that is lockpicking the armory. [Default = 1250]
 CH_Armory_Locker.Config.KillRobberReward = 250 -- Amount of money anyone else get when killing someone that is lockpicking the armory. [Default = 250]
 
 -- Lockpicking Config
 CH_Armory_Locker.Config.LockpickTime = 15 -- Amount of seconds to lockpick the armory. [Default = 15]
-CH_Armory_Locker.Config.LockpickCooldown = 60 -- Amount of seconds after having lockpicked a door, before being able to lockpick another door. [Default = 60]
-CH_Armory_Locker.Config.DoorCooldown = 320 -- Amount of seconds a door is on a cooldown after being lockpicked. The above config still applies for the individual user. [Default = 120]
+CH_Armory_Locker.Config.LockpickCooldown = 300 -- Amount of seconds after having lockpicked a door, before being able to lockpick another door. [Default = 60]
+CH_Armory_Locker.Config.DoorCooldown = 120 -- Amount of seconds a door is on a cooldown after being lockpicked. The above config still applies for the individual user. [Default = 120]
 CH_Armory_Locker.Config.NotifyPolice = true -- Should police jobs be notified when someone has lockpicked the armory and leaves? true/false.
 
 -- Display 3D2D Config
@@ -48,10 +48,10 @@ CH_Armory_Locker.Weapons = {
 	{ Weapon = "m9k_mossberg590", Name = "Mossberg", Desc = "El nombre Mossberg cubre toda una familia de escopetas correderas diseñadas para cartuchos magnum de 3 pulgadas (76 mm).", EntType = "weapon", Model = "models/weapons/w_mossberg_590.mdl", AmmoType = "buckshot", AmmoAmt = 16 },
 	
 	-- Default Ammo
-	{ Weapon = "ammo_pistol", Name = "Cartuchos de Pistola", Desc = "Munición de Pistola.", EntType = "ammo", Model = "models/Items/357ammo.mdl", AmmoType = "pistol", AmmoAmt = 50 },
-	{ Weapon = "ammo_buckshot", Name = "Perdigones", Desc = "Munición de Escopeta.", EntType = "ammo", Model = "models/Items/BoxBuckshot.mdl", AmmoType = "buckshot", AmmoAmt = 24 },
-	{ Weapon = "ammo_smg1", Name = "Cartuchos de Subfusil", Desc = "Munición de Arma Subfusil.", EntType = "ammo", Model = "models/Items/BoxMRounds.mdl", AmmoType = "smg1", AmmoAmt = 25 },
-	{ Weapon = "ammo_ar2", Name = "Cartuchos de Rifle", Desc = "Munición de Rifle Automatico y Semi-Automatico.", EntType = "ammo", Model = "models/Items/BoxSRounds.mdl", AmmoType = "ar2", AmmoAmt = 50 },
+	{ Weapon = "ammo_pistol", Name = "Cartuchos de Pistola", Desc = "Munición de Pistola.", EntType = "ammo", Model = "models/Items/357ammo.mdl", AmmoType = "pistol", AmmoAmt = 350 },
+	{ Weapon = "ammo_buckshot", Name = "Perdigones", Desc = "Munición de Escopeta.", EntType = "ammo", Model = "models/Items/BoxBuckshot.mdl", AmmoType = "buckshot", AmmoAmt = 350 },
+	{ Weapon = "ammo_smg1", Name = "Cartuchos de Subfusil", Desc = "Munición de Arma Subfusil.", EntType = "ammo", Model = "models/Items/BoxMRounds.mdl", AmmoType = "smg1", AmmoAmt = 350 },
+	{ Weapon = "ammo_ar2", Name = "Cartuchos de Rifle", Desc = "Munición de Rifle Automatico y Semi-Automatico.", EntType = "ammo", Model = "models/Items/BoxSRounds.mdl", AmmoType = "ar2", AmmoAmt = 350 },
 
 	-- Default Health & Armor
 	{ Weapon = "armor_100", Name = "Armadura completa", Desc = "Ropa protectora diseñado para absorder o desviar ataques fisicos.", EntType = "armor", Model = "models/Items/combine_rifle_ammo01.mdl", AmmoType = "none", AmmoAmt = 100 },

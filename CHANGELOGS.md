@@ -1,5 +1,11 @@
 Changelogs
 
+[v1.012]
+- Se arreglo el armario policial subiendo el tiempo de cooldown entre lockping de 60 ah 300 y arreglando algunas configs
+- Ithaca nerfeada
+- Bufeo de la winchert doom
+- Bufeo de la spas
+
 [v1.011]
 - Se añadio que solo los VIPs y rangos superiores puedan abrir el editor del Pac3
 

@@ -211,7 +211,7 @@ weapon "m9k_winchester73".Primary.Ammo = "SniperRound"
 weapon "m9k_winchester73".ViewModelFOV = 90
 weapon "m9k_winchester73".SelectiveFire = false
 
--- Winchester
+-- ACR
 weapon "m9k_acr".Primary.Damage = 15
 -- weapon "m9k_acr".Primary.Spread = .4
 weapon "m9k_acr".Primary.RPM = 500
@@ -230,14 +230,14 @@ weapon "m9k_auga3".Primary.Damage = 8
 weapon "m9k_auga3".Primary.RPM = 1000
 weapon "m9k_auga3".ViewModelFOV = 90
 
--- ACR
-weapon "m9k_acr".Primary.Damage = 8
-weapon "m9k_acr".Primary.RPM = 600
-weapon "m9k_acr".ViewModelFOV = 90
+-- Winchester doom
+weapon "m9k_1897winchester".Primary.Damage = 9
+weapon "m9k_1897winchester".Primary.RPM = 50
+weapon "m9k_1897winchester".ViewModelFOV = 90
 
 -- SPAS
 weapon "m9k_spas12".Primary.Damage = 3
-weapon "m9k_spas12".Primary.RPM = 100
+weapon "m9k_spas12".Primary.RPM = 350
 weapon "m9k_spas12".ViewModelFOV = 90
 
 -- Magnunson 4000
@@ -406,6 +406,10 @@ weapon "m9k_barret_m82".Primary.RPM = 150
 weapon "m9k_barret_m82".ViewModelFOV = 90
 weapon "m9k_barret_m82".Primary.Ammo = "SniperRound"
 
+--barret
+weapon "m9k_ithacam37".Primary.Damage = 8
+weapon "m9k_ithacam37".Primary.RPM = 60
+weapon "m9k_ithacam37".ViewModelFOV = 90
 
 -- Armas VIPs
 
