@@ -187,13 +187,15 @@ DarkRP.createShipment("Remington 870", {
 DarkRP.createShipment("Ithacam .37", {
     model = "models/weapons/w_ithaca_m37.mdl",
     entity = "m9k_ithacam37",
-    price = 27000,
+    price = 31000,
     amount = 10,
     separate = false,
     noship = false,
     allowed = {TEAM_GUN, TEAM_STAFF},
     category = "Escopetas",
 })
+
+
 
 -----armero clandestino-----
 

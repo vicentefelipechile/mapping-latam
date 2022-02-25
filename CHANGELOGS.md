@@ -1,5 +1,9 @@
 Changelogs
 
+[v1.024]
+- se le implemento la macana a todos los gubermentales menos el alcalde
+- Se le subio el precio ah la Ithaca de 27000 ah 31000
+- Se le añidio el escudo anti'balas al anti disturbios
 [v1.023]
 - Se implemento el sistema AFK, cuando pasen 7 minutos el jugador sera demoteado
 - Se aumento la cantidad de dinero inicial a 4500 (600)

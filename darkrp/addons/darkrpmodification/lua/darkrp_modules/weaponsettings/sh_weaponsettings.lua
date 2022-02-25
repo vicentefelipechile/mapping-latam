@@ -406,7 +406,7 @@ weapon "m9k_barret_m82".Primary.RPM = 150
 weapon "m9k_barret_m82".ViewModelFOV = 90
 weapon "m9k_barret_m82".Primary.Ammo = "SniperRound"
 
---barret
+--Ithacam
 weapon "m9k_ithacam37".Primary.Damage = 8
 weapon "m9k_ithacam37".Primary.RPM = 60
 weapon "m9k_ithacam37".ViewModelFOV = 90

@@ -281,7 +281,7 @@ TEAM_FARMEROCOCA = DarkRP.createJob("Farmero de Coca", {
 })
 */
 
---------------------------GOVIERNO----------------------
+--------------------------GOBIERNO----------------------
 TEAM_CHIEF = DarkRP.createJob("Teniente Policial", {
     color = Color(20, 20, 255, 255),
     model = "models/bloocobalt/science/jusmc_07.mdl",
@@ -351,7 +351,7 @@ TEAM_POLICE = DarkRP.createJob("Policia", {
         "door_ram",
         "weaponchecker",
         "weapon_cuff_police",
-        "nightstickv"
+        "nightstick"
     },
     command = "policia",
     max = 10,
@@ -380,8 +380,8 @@ TEAM_DISTURBE = DarkRP.createJob("Grupo Anti-Disturbios", {
         "door_ram",
         "weaponchecker",
         "weapon_cuff_police",
-        "riot_shield",
-        "nightstickv"
+        "deployable_shield",
+        "nightstick"
     },
     command = "ad",
     max = 10,
