@@ -14,11 +14,6 @@ hook.Add("canSleep", "NoSleep", function (ply, force)
 	return false, DarkRP.getPhrase("locked")
 end)
 
--- Desactivar el hecho de que la gente gane dinero por matar NPCs
-hook.Add("canEarnNPCKillPay", "NoNPCKillCash", function (ply, npc)
-	return false
-end)
-
 -- Desactiva el Suicidio
 hook.Add( "CanPlayerSuicide", "AllowOwnerSuicide", function( ply )
 	return ply:IsSuperAdmin()

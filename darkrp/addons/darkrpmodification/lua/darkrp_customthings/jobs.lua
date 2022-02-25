@@ -402,7 +402,9 @@ TEAM_DISTURBE = DarkRP.createJob("Grupo Anti-Disturbios", {
         ply:SetMaxHealth(100)
         ply:SetHealth(100)
         ply:SetArmor(200)
-    end
+    end,
+    customCheck = function(ply) return GetGlobalBool("DarkRP_LockDown") end,
+    CustomCheckFailMsg = "No disponible"
 })
 
 ---------------OTROS------------

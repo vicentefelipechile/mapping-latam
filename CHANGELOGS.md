@@ -1,5 +1,9 @@
 Changelogs
 
+[v1.019]
+- Revertido el cambio al obtener dinero al matar NPCs.
+- Ahora solo se puede ser Anti-Disturbio cuando haya un toque de queda.
+
 [v1.018]
 - Cambio de algunas frases del DarkRP.
 - Desabilitado el poder obtener dinero al matar NPCs.
