@@ -1,5 +1,15 @@
 Changelogs
 
+[v1.021]
+- Se añadio traducción del F4
+- Se añadio una nueva categoria llamada **Otros - Criminal**
+- Se cambio la categoria del arma **Ganzúas**
+- Se cambio la descripción del job **Grupo Anti-Disturbios**
+- Se redujo el sueldo del job **Locutor de radio** (125 x 3)
+- Se redujo el sueldo del job **Pizzero** (125 x 3)
+- Se redujo la cantidad maxima del job **Pizzero** a 3 (4)
+- Se elimino las herramientas de raideo al job **Farmero Ilegal**
+
 [v1.020]
 - Se cambio el "No-Rol".
 

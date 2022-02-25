@@ -433,4 +433,5 @@ DarkRP.createShipment("Ganzúas", {
 	pricesep = 500,
 	noship = false,
 	allowed = {TEAM_GUN_CLANDESTINO},
+    category = "Otros - Criminal"
 })

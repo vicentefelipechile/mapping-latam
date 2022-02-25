@@ -105,6 +105,14 @@ DarkRP.createCategory{
     canSee = function(ply) return true end,
 }
 
+DarkRP.createCategory{
+    name = "Otros - Criminal",
+    categorises = "shipments",
+    startExpanded = false,
+    color = Color(100, 0, 100, 255),
+    canSee = function(ply) return true end,
+}
+
 ---------------------
 ----     Jobs    ----
 ---------------------

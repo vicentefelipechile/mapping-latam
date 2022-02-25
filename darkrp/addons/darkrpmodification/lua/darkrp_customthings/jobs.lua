@@ -56,7 +56,7 @@ TEAM_RADIO = DarkRP.createJob("Locutor de radio", {
     description = "El locutor de radio del pueblo\n\n- Puedes comprar una radio con una playlist predeterminada.\n- La musica que retrasmites desde la radio hasta el microfono no se escuchara.\n- Puedes comprar un microfono para trasmitir lo que tengas que decir.\n- Puedes trabajar de manera privada con gente que te necesite.",
     command = "locutorradio",
     max = 1,
-    salary = GAMEMODE.Config.normalsalary * 4,
+    salary = GAMEMODE.Config.normalsalary * 3,
     admin = 0,
     vote = false,
     hasLicense = false,
@@ -253,10 +253,6 @@ TEAM_FARMEROILEGAL = DarkRP.createJob("Farmero Ilegal", {
     color = Color(75, 75, 75, 255),
     model = "models/industrial_uniforms/pm_industrial_uniform.mdl",
     description = "El farmero de polvo magico\n\n- Trabajas solo o para cualquier grupo criminal.\n- Puedes comprar materiales para hacer tus polvitos magicos.\n- Puedes ser contratado por el grupo de trabajo CRIMINALES.",
-    weapons = {
-        "lockpick",
-        "keypad_cracker"
-    },
     command = "farmeroilegal",
     max = 2,
     salary = GAMEMODE.Config.normalsalary,
@@ -377,7 +373,7 @@ TEAM_DISTURBE = DarkRP.createJob("Grupo Anti-Disturbios", {
         "models/bloocobalt/player/l4d/riot_01.mdl",
         "models/bloocobalt/player/l4d/riot_02.mdl"
     },
-    description = "Cuerpo Anti-Disturbios\n\nEL USO INNECESARIO O NINGUNA SEÑAL CRIMINAL SERA SANCIONADO\n- Cuando haya golpe de estado o intentos de derrocar al gobierno, debes usar este job.\n- Cuando el alcalde pida que este el Grupo Anti-Disturbios debes usar este job.\n- Tienes el deber de controlar todos los disturbios en la ciudad.\n- Obedece las ordenes del alcalde para realizar tus actividades.\n- Golpea a un jugador con el bastón paralizante y puede que aprenda a obedecer la ley.\n- El ariete puede derribar la puerta de un criminal, con una orden de arresto.\n- El ariete también puede descongelar props congelados.\n- Escribe /wanted <nombre> para alertar al público de la presencia de un delincuente.",
+    description = "Cuerpo Anti-Disturbios\n\nEL USO INNECESARIO O NINGUNA SEÑAL CRIMINAL SERA SANCIONADO\n- Cuando haya toque de queda, debes usar este job.\n- Tienes el deber de controlar todos los disturbios en la ciudad.\n- Obedece las ordenes del alcalde para realizar tus actividades.\n- Golpea a un jugador con el bastón paralizante y puede que aprenda a obedecer la ley.\n- El ariete puede derribar la puerta de un criminal, con una orden de arresto.\n- El ariete también puede descongelar props congelados.\n- Escribe /wanted <nombre> para alertar al público de la presencia de un delincuente.",
     weapons = {
         "m9k_hk45",
         "m9k_mp5sd",

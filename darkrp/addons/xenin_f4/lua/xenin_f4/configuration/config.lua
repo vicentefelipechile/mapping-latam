@@ -99,7 +99,7 @@ cfg:SetLanguage("spanish", [[
                     "become": "Pedir Trabajo",
                     "areThisJob": "ESTAS EN ESTE TRABAJO",
                     "jobIsFull": "EL TRABAJO ESTA LLENO",
-                    "customCheckFailed": "VERIFICACIÓN FALLIDA",
+                    "customCheckFailed": "NO DISPONIBLE",
                     "tooLowLevel": "NIVEL MUY BAJO",
                     "tooLowPrestige": "PESTIGIO MUY BAJO"
                 },
