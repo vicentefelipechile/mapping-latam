@@ -15,7 +15,9 @@ https://darkrp.miraheze.org/wiki/DarkRP:CustomJobFields
 
 Add your custom jobs under the following line:
 ---------------------------------------------------------------------------]]
------------------------legales-------------------
+
+-----------------------LEGALES-------------------
+
 TEAM_CITIZEN = DarkRP.createJob("Ciudadano", {
     color = Color(20, 150, 20, 255),
     model = {
@@ -63,7 +65,17 @@ TEAM_RADIO = DarkRP.createJob("Locutor de radio", {
 })
 TEAM_GDSEGURIDAD = DarkRP.createJob("Guardia de Seguridad", {
     color = Color(20, 150, 20, 255),
-    model = "models/player/odessa.mdl",
+    model = {
+        "models/player/guard_pack/guard_01.mdl",
+        "models/player/guard_pack/guard_02.mdl",
+        "models/player/guard_pack/guard_03.mdl",
+        "models/player/guard_pack/guard_04.mdl",
+        "models/player/guard_pack/guard_05.mdl",
+        "models/player/guard_pack/guard_06.mdl",
+        "models/player/guard_pack/guard_07.mdl",
+        "models/player/guard_pack/guard_08.mdl",
+        "models/player/guard_pack/guard_09.mdl"
+    },
     description = "El protector de trabajos privados.\n\n- Puedes ser contratado para proteger lugares.\n- Tienes que ser contratado por /advert.\n- Tienes un scanner de armas en caso de que lo necesites.",
     weapons = {"weaponchecker"},
     command = "guardiadeseguridad",
@@ -109,7 +121,7 @@ TEAM_GUN = DarkRP.createJob("Armero", {
 
 TEAM_HOBO = DarkRP.createJob("Vagabundo", {
     color = Color(80, 45, 0, 255),
-    model = "models/player/corpse1.mdl",
+    model = "models/jessev92/player/l4d/m9-hunter.mdl",
     description = "Persona de escasos recursos\n\n- Todo el mundo se ríe de ti.\n- No tienes hogar.\n- Ruega por tu comida y dinero.\n- Crea tu propia casa de madera en algún lugar en una esquina o afuera de la casa de otra persona",
     weapons = {"weapon_bugbait"},
     command = "vagabundo",
@@ -137,7 +149,8 @@ TEAM_MEDIC = DarkRP.createJob("Medico", {
     medic = true,
     category = "Citizens",
 })
----------------------Ilegales---------------------
+
+---------------------ILEGALES---------------------
 TEAM_MOB = DarkRP.createJob("Lider Criminal Xetas", {
     color = Color(25, 25, 25, 255),
     model = "models/player/niko/niko_bellic/nik0.mdl",
@@ -221,12 +234,7 @@ TEAM_MEDIC_CRIMINAL = DarkRP.createJob("Medico Clandestino", {
 })
 TEAM_GANG = DarkRP.createJob("Criminal", {
     color = Color(75, 75, 75, 255),
-    model = {
-        "models/gang_groove/gang_1.mdl",
-        "models/gang_chem/gang_groove_chem.mdl",
-        "models/gang_groove/gang_1_blu.mdl",
-        "models/gang_chem/gang_groove_chem_blu.mdl"
-    },
+    model = "models/bala/anarcho_p/anarcho_pirate.mdl",
     description = "La persona más baja del crimen\n\n- Un criminal que trabaja para el Mob Boss, quien dirige la familia del crimen.",
     weapons = {
         "lockpick",
@@ -243,7 +251,7 @@ TEAM_GANG = DarkRP.createJob("Criminal", {
 
 TEAM_FARMEROILEGAL = DarkRP.createJob("Farmero Ilegal", {
     color = Color(75, 75, 75, 255),
-    model = "models/player/hostage/hostage_04.mdl",
+    model = "models/industrial_uniforms/pm_industrial_uniform.mdl",
     description = "El farmero de polvo magico\n\n- Trabajas solo o para cualquier grupo criminal.\n- Puedes comprar materiales para hacer tus polvitos magicos.\n- Puedes ser contratado por el grupo de trabajo CRIMINALES.",
     weapons = {
         "lockpick",
@@ -277,9 +285,8 @@ TEAM_FARMEROCOCA = DarkRP.createJob("Farmero de Coca", {
 })
 */
 
---------------------------gubernamentales----------------------
-
-TEAM_CHIEF = DarkRP.createJob("Teniente Protección Civil", {
+--------------------------GOVIERNO----------------------
+TEAM_CHIEF = DarkRP.createJob("Teniente Policial", {
     color = Color(20, 20, 255, 255),
     model = "models/player/combine_soldier_prisonguard.mdl",
     description = "Líder de la unidad de Protección Civil.\n\n- Coordina la fuerza policial para hacer cumplir la ley en la ciudad.\n- Golpea a un jugador con el stunstick y puede que aprenda a obedecer la ley.\n- Como jefe de la policia, no necesitas un permiso para tirar abajo una puerta con el ariete.\n- Escribe /wanted <nombre> para alertar al público de la presencia de un delincuente.",
@@ -366,15 +373,9 @@ TEAM_POLICE = DarkRP.createJob("Policia", {
 TEAM_DISTURBE = DarkRP.createJob("Grupo Anti-Disturbios", {
     color = Color(25, 25, 170, 255),
     model = {
+
         "models/bloocobalt/player/l4d/riot_01.mdl",
-        "models/bloocobalt/player/l4d/riot_02.mdl",
-        "models/bloocobalt/player/l4d/riot_03.mdl",
-        "models/bloocobalt/player/l4d/riot_04.mdl",
-        "models/bloocobalt/player/l4d/riot_05.mdl",
-        "models/bloocobalt/player/l4d/riot_06.mdl",
-        "models/bloocobalt/player/l4d/riot_07.mdl",
-        "models/bloocobalt/player/l4d/riot_08.mdl",
-        "models/bloocobalt/player/l4d/riot_09.mdl"
+        "models/bloocobalt/player/l4d/riot_02.mdl"
     },
     description = "Cuerpo Anti-Disturbios\n\nEL USO INNECESARIO O NINGUNA SEÑAL CRIMINAL SERA SANCIONADO\n- Cuando haya golpe de estado o intentos de derrocar al gobierno, debes usar este job.\n- Cuando el alcalde pida que este el Grupo Anti-Disturbios debes usar este job.\n- Tienes el deber de controlar todos los disturbios en la ciudad.\n- Obedece las ordenes del alcalde para realizar tus actividades.\n- Golpea a un jugador con el bastón paralizante y puede que aprenda a obedecer la ley.\n- El ariete puede derribar la puerta de un criminal, con una orden de arresto.\n- El ariete también puede descongelar props congelados.\n- Escribe /wanted <nombre> para alertar al público de la presencia de un delincuente.",
     weapons = {
@@ -403,7 +404,8 @@ TEAM_DISTURBE = DarkRP.createJob("Grupo Anti-Disturbios", {
         ply:SetArmor(200)
     end
 })
----------------otros------------
+
+---------------OTROS------------
 TEAM_STAFF = DarkRP.createJob("STAFF", {
     color = Color(30, 30, 30, 255),
     model = {
@@ -431,6 +433,7 @@ TEAM_STAFF = DarkRP.createJob("STAFF", {
     customCheck = function(ply) return ply:IsUserGroup("mod") or ply:IsUserGroup("mod+")  or ply:IsUserGroup("modt") or ply:IsUserGroup("modt+")or ply:IsAdmin() end,
     CustomCheckFailMsg = "El pepe"
 })
+
 MaxPlayers = game.MaxPlayers()
 --[[---------------------------------------------------------------------------
 Define which team joining players spawn into and what team you change to if demoted
