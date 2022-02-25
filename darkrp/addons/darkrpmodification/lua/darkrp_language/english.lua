@@ -250,7 +250,7 @@ local my_language = {
     request = "<Petición>",
     group = "<Grupo>",
     demote = "<Degradación>",
-    ooc = "No-Rol",
+    ooc = "",
     radio_x = "<Radio %d>",
 
     talk = "hablar",

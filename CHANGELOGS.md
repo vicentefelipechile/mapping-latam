@@ -1,5 +1,8 @@
 Changelogs
 
+[v1.020]
+- Se cambio el "No-Rol".
+
 [v1.019]
 - Revertido el cambio al obtener dinero al matar NPCs.
 - Ahora solo se puede ser Anti-Disturbio cuando haya un toque de queda.
