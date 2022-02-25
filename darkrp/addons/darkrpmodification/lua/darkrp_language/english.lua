@@ -23,8 +23,8 @@ Make sure the convar gmod_language is set to your language code. You can do that
 
 local my_language = {
     -- Admin things
-    need_admin = "Necesita privilegios de administrador para usar %s.", --"You need admin privileges in order to be able to %s",
-    need_sadmin = "Necesita privilegios de super administrador para usar %s.", --"You need super admin privileges in order to be able to %s",
+    need_admin = "Necesitas privilegios de administrador para usar %s.", --"You need admin privileges in order to be able to %s",
+    need_sadmin = "Necesitas privilegios de super administrador para usar %s.", --"You need super admin privileges in order to be able to %s",
     no_privilege = "No tienes privilegios para hacer esta acción.", --"You don't have the right privileges to perform this action",
     no_jail_pos = "No hay posiciones de la carcel establecidas.", --"No jail position",
     invalid_x = "%s invalido. %s", --"Invalid %s! %s",
@@ -53,9 +53,9 @@ local my_language = {
     deducted_money = "Deducido %s",
     need_money = "Necesita %s",
 
-    payday_message = "Recibiste %s.",
-    payday_unemployed = "No recibiste salario por Esta desempleado.",
-    payday_missed = "No recibiste nada. Esta arrestado.",
+    payday_message = "Dia de pago. Recibiste %s.",
+    payday_unemployed = "No recibistes salario que esta desempleado.",
+    payday_missed = "No recibistes nada porque esta arrestado.",
 
     property_tax = "Impuesto de propiedad de %s",
     property_tax_cant_afford = "No pagaste impuestos. Tu propiedad a sido removido.",
@@ -83,7 +83,7 @@ local my_language = {
     warrant_ordered = "%s ordeno una orden para %s. Razón: %s",
     warrant_request = "%s pide una orden para %s\nRazón: %s",
     warrant_request2 = "Orden enviado al Alcalde %s!",
-    warrant_approved = "El Alcalde %s aprovo la orden.\nRazón: %s\nSolicitado por: %s",
+    warrant_approved = "Orden de busqueda aprovado para %s .\nRazón: %s\nSolicitado por: %s",
     warrant_approved2 = "Ahora puede buscar en su casa.",
     warrant_denied = "El Alcalde %s rechazo su petición del orden.",
     warrant_expired = "La orden para %s ha expirado.",
@@ -250,15 +250,15 @@ local my_language = {
     request = "<Petición>",
     group = "<Grupo>",
     demote = "<Degradación>",
-    ooc = "<No-Rol>",
+    ooc = "No-Rol",
     radio_x = "<Radio %d>",
 
     talk = "hablar",
     speak = "hablar",
 
-    speak_in_ooc = "Hablar en No-Rol",
-    perform_your_action = "Hacer tu acción",
-    talk_to_your_group = "Hablar en tu grupo",
+    speak_in_ooc = "hablar en No-Rol",
+    perform_your_action = "hacer acción",
+    talk_to_your_group = "hablar en grupo",
 
     channel_set_to_x = "Canal puesto a %s.",
     channel = "canal",
@@ -312,7 +312,7 @@ local my_language = {
     player_doesnt_exist = "El jugador no existe.",
     job_doesnt_exist = "El trabajo no existe.",
     must_be_alive_to_do_x = "Debes estar vivo para %s.",
-    banned_or_demoted = "Vetado/Degradado",
+    banned_or_demoted = "Baneado/Degradado",
     wait_with_that = "Espera con eso.",
     could_not_find = "No se pudo encontrar %s",
     f3tovote = "Preciona F3 para votar",
@@ -329,7 +329,7 @@ local my_language = {
     demote_vote_started = "%s empezo una votación de degradar a %s",
     demote_vote_text = "Razón:\n%s", -- '%s' is the reason here
     cant_demote_self = "No puede degradarte a ti mismo.",
-    i_want_to_demote_you = "Te quiero demotear. Razón: %s",
+    i_want_to_demote_you = "Te quiero degradar con razón de %s",
     tried_to_avoid_demotion = "Intentastes escapar de la degradación. Fallastes y has sido degradado.", -- naughty boy!
     lockdown_started = "Toque de queda.",
     lockdown_ended = "Toque de queda acabada.",
@@ -357,7 +357,7 @@ local my_language = {
     too_long = "Muy largo.",
     too_short = "Muy corto.",
 
-    dead_in_jail = "Ahora estar muerto hasta que tu tiempo de carcel termine.",
+    dead_in_jail = "Ahora esta muerto hasta que tu tiempo de carcel termine.",
     died_in_jail = "%s murio en carcel.",
 
     credits_for = "CREDITOS PARA %s\n",
@@ -392,7 +392,7 @@ local my_language = {
     you_set_x_name = "You set %s's name to %s",
     x_set_your_name = "%s set your name to %s",
 
-    someone_stole_steam_name = "Alguien esta usando tu nombre de Steam como su nombre de Roleplay asi que te damos un '1' despues de tu nombre.", -- Uh oh
+    someone_stole_steam_name = "Alguien esta usando tu nombre de Steam como su nombre en el roleplay asi que le dimos un '1' despues de tu nombre.", -- Uh oh
     already_taken = "Ya tomado.",
 
     job_doesnt_require_vote_currently = "Este trabajo no necesita una votación a este momento.",

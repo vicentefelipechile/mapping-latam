@@ -1,5 +1,11 @@
 Changelogs
 
+[v1.018]
+- Cambio de algunas frases del DarkRP.
+- Desabilitado el poder obtener dinero al matar NPCs.
+- Desabilitado el uso de /sleep.
+- Desabilitado el sonido de muerte por defecto de Half-Life 2.
+
 [v1.017]
 - Se arreglo que el playermodel del **Teniente Policial** no se mostraba correctamente
 

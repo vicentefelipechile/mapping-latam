@@ -4,6 +4,20 @@ if SERVER then
 end
 
 -- Hooks
+-- Desactivar sonido de muerte default de HL2
+hook.Add("PlayerDeathSound", "NoHL2DeathSound", function (ply)
+	return true
+end)
+
+-- Desactivar /sleep debido a la gente usandolo incorrectamente
+hook.Add("canSleep", "NoSleep", function (ply, force)
+	return false, DarkRP.getPhrase("locked")
+end)
+
+-- Desactivar el hecho de que la gente gane dinero por matar NPCs
+hook.Add("canEarnNPCKillPay", "NoNPCKillCash", function (ply, npc)
+	return false
+end)
 
 -- Desactiva el Suicidio
 hook.Add( "CanPlayerSuicide", "AllowOwnerSuicide", function( ply )
@@ -56,7 +70,7 @@ end )
 hook.Add( "PlayerCanPickupWeapon", "NoVipUsers", function( ply, weapon )
 	if ply:IsAdmin() or ply:IsUserGroup("vip") or ply:IsUserGroup("mod+") or ply:IsUserGroup("modt+") then
 		return true
-	elseif weapon:GetClass() == ( "weapon_vip_deagle_bornbeast" or "weapon_vip_m4a1_beast" or "weapon_vip_ak47_beast" ) then
+	elseif weapon:GetClass() == ( "weapon_deagle_bornbeast" or "weapon_m4a1_beast" or "weapon_ak47_beast" ) then
 		return false
 	end
 end )
