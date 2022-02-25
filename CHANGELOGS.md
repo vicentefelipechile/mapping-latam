@@ -1,5 +1,12 @@
 Changelogs
 
+[v1.023]
+- Se implemento el sistema AFK, cuando pasen 7 minutos el jugador sera demoteado
+- Se aumento la cantidad de dinero inicial a 4500 (600)
+- Se redujo el tiempo de espera para comprar varios Shipments a 2 (3)
+- Se aumento el tiempo de respawn a 8 segundos (1)
+- Se removio el tag del OOC
+
 [v1.022]
 - Se arreglo el job **Teniente Policial** que no podia acceder al **Armario policial**
 

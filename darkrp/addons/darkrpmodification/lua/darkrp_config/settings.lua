@@ -128,7 +128,7 @@ GM.Config.instantjob                    = false
 -- npcarrest - Enable/disable arresting npc's.
 GM.Config.npcarrest                     = true
 -- ooc - Whether or not OOC tags are enabled.
-GM.Config.ooc                           = true
+GM.Config.ooc                           = false
 -- propertytax - Enable/disable property tax.
 GM.Config.propertytax                   = false
 -- proppaying - Whether or not players should pay for spawning props.
@@ -255,7 +255,7 @@ GM.Config.propcost                      = 10
 -- quakechance - Chance of an earthquake happening.
 GM.Config.quakechance                   = 4000
 -- respawntime - Minimum amount of seconds a player has to wait before respawning.
-GM.Config.respawntime                   = 1
+GM.Config.respawntime                   = 8
 -- changejobtime - Minimum amount of seconds a player has to wait before changing job.
 GM.Config.changejobtime                 = 180
 -- runspeed - Sets the max running speed.
@@ -265,13 +265,13 @@ GM.Config.runspeedcp                    = 255
 -- searchtime - Number of seconds for which a search warrant is valid.
 GM.Config.searchtime                    = 30
 -- ShipmentSpawnTime - Antispam time between spawning shipments.
-GM.Config.ShipmentSpamTime              = 3
+GM.Config.ShipmentSpamTime              = 2
 -- shipmenttime - The number of seconds it takes for a shipment to spawn.
 GM.Config.shipmentspawntime             = 4
 -- startinghealth - the health when you spawn.
 GM.Config.startinghealth                = 100
 -- startingmoney - your wallet when you join for the first time.
-GM.Config.startingmoney                 = 600
+GM.Config.startingmoney                 = 4500
 -- stunstickdamage - amount of damage the stunstick will do to entities.
 -- When between 0 and 1, the damage is relative, where 1 takes the entire health of the entity.
 -- When above 1, the damage is absolute
@@ -593,9 +593,9 @@ GM.Config.hideTeamUnbuyable = true
 AFK module
 ---------------------------------------------------------------------------]]
 -- The time of inactivity before being demoted.
-GM.Config.afkdemotetime = 60000
+GM.Config.afkdemotetime = 420
 -- Prevent people from spamming AFK.
-GM.Config.AFKDelay = 120
+GM.Config.AFKDelay = 20
 
 --[[---------------------------------------------------------------------------
 Hitmenu module
