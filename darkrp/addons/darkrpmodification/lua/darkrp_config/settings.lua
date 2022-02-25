@@ -239,7 +239,7 @@ GM.Config.moneyRemoveTime               = 0
 -- mprintamount - Value of the money printed by the money printer.
 GM.Config.mprintamount                  = 400
 -- normalsalary - Sets the starting salary for newly joined players.
-GM.Config.normalsalary                  = 75
+GM.Config.normalsalary                  = 125
 -- npckillpay - Sets the money given for each NPC kill.
 GM.Config.npckillpay                    = 10
 -- paydelay - Sets how long it takes before people get salary.

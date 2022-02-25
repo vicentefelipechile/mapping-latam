@@ -1,5 +1,9 @@
 Changelogs
 
+[v1.015]
+- Se añadio la configuracion del addon zeros_pizzamaker
+- Se aumento el sueldo general de los jobs a 125 (75)
+
 [v1.014]
 - Se aumento la cantidad de Radios de musica que puede vender el job Locutor de radio
 
