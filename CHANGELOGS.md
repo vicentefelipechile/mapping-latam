@@ -1,5 +1,8 @@
 Changelogs
 
+[v1.025]
+- Se arreglo error del ooc
+
 [v1.024b]
 - Errores ortograficos y de formato
 

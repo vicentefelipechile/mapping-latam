@@ -128,7 +128,7 @@ GM.Config.instantjob                    = false
 -- npcarrest - Enable/disable arresting npc's.
 GM.Config.npcarrest                     = true
 -- ooc - Whether or not OOC tags are enabled.
-GM.Config.ooc                           = false
+GM.Config.ooc                           = true
 -- propertytax - Enable/disable property tax.
 GM.Config.propertytax                   = false
 -- proppaying - Whether or not players should pay for spawning props.
