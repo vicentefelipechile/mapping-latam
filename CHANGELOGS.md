@@ -1,5 +1,8 @@
 Changelogs
 
+[v1.022]
+- Se arreglo el job **Teniente Policial** que no podia acceder al **Armario policial**
+
 [v1.021]
 - Se añadio traducción del F4
 - Se añadio una nueva categoria llamada **Otros - Criminal**

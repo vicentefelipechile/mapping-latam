@@ -7,7 +7,7 @@ CH_Armory_Locker.Config.GovernmentTeams = { -- These are your government teams. 
 	"Policia",
 	"Alcalde",
 	"Grupo Anti-Disturbios",
-	"Teniente Protección Civil"
+	"Teniente Policial"
 }
 
 CH_Armory_Locker.Config.AllowedTeams = { -- These are the teams that are allowed to rob the armory.
