@@ -1,5 +1,9 @@
 Changelogs
 
+[v1.026]
+- Se actualizo el archivo **reglas.html**
+- Se actualizo la configuración del server (**server.cfg**)
+
 [v1.025]
 - Se arreglo error del ooc
 
