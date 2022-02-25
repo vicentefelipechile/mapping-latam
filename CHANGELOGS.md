@@ -1,5 +1,8 @@
 Changelogs
 
+[v1.017]
+- Se arreglo que el playermodel del **Teniente Policial** no se mostraba correctamente
+
 [v1.016]
 - Se cambio el playermodel del job **Vagabundo** (models/jessev92/player/l4d/m9-hunter.mdl)
 - Se cambio el playermodel del job **Criminal** (models/bala/anarcho_p/anarcho_pirate.mdl)

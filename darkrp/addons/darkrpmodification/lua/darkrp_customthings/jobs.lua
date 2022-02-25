@@ -288,7 +288,7 @@ TEAM_FARMEROCOCA = DarkRP.createJob("Farmero de Coca", {
 --------------------------GOVIERNO----------------------
 TEAM_CHIEF = DarkRP.createJob("Teniente Policial", {
     color = Color(20, 20, 255, 255),
-    model = "models/player/combine_soldier_prisonguard.mdl",
+    model = "models/bloocobalt/science/jusmc_07.mdl",
     description = "Líder de la unidad de Protección Civil.\n\n- Coordina la fuerza policial para hacer cumplir la ley en la ciudad.\n- Golpea a un jugador con el stunstick y puede que aprenda a obedecer la ley.\n- Como jefe de la policia, no necesitas un permiso para tirar abajo una puerta con el ariete.\n- Escribe /wanted <nombre> para alertar al público de la presencia de un delincuente.",
     weapons = {
         "bb_glock_cp",
