@@ -1,5 +1,10 @@
 Changelogs
 
+[v1.027]
+- Se arreglo un error que generaba que los usuarios pudieran duplicar entidades del addon **ch_farming**
+- Se incluyo un archivo con el parche que lo arregla (**entities/ch_farming_fix/init.lua**)
+- Se actualizo la configuración del server (**server.cfg**)
+
 [v1.026]
 - Se actualizo el archivo **reglas.html**
 - Se actualizo la configuración del server (**server.cfg**)
