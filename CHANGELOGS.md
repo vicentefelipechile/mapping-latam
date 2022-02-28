@@ -1,5 +1,8 @@
 Changelogs
 
+[v1.030]
+- Se arreglo un error de versión de la pagina **darkrp.html**
+
 [v1.029]
 - Se actualizo la pagina **darkrp.html**
 - Se añadio el font de la pagina **darkrp.html**
