@@ -1,196 +1,151 @@
 <html lang="es-CL">
 <head>
-	<title>Reglas DarkRP</title>
-	<link rel="icon" href="https://i.imgur.com/gd8S8OU.png">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Oswald" rel="stylesheet">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-	<meta property="og:title" content="Reglas del DarkRP" />
-	<meta property="og:type" content="website" />
-	<meta property="og:image" content="https://i.imgur.com/gd8S8OU.png" />
-	<meta property="og:description" content="Aqui podras encontrar las reglas del DarkRP de Mapping Latam" />
-	<meta name="theme-color" content="#FF0000">
-
 	<style>
+		@font-face {
+			font-family: "Oswald";
+			src: url(fonts/Oswald-Regular.ttf);
+			color: white;
+		}
+
 		h1 {
-		font-family: "Oswald", serif;
-		font-weight: 300;
-		font-size: 48;
-		color: white;
-		text-shadow: 4px 4px 8px #969696;
-		text-align: center;
-	}
+			font-family: "Oswald", serif;
+			font-weight: 300;
+			font-size: 48;
+			color: white;
+			text-shadow: 4px 4px 8px #969696;
+			text-align: center;
+		}
 
-	h2 {
-		font-family: "Oswald", serif;
-		font-weight: 2;
-		font-size: 36;
-		color: white;
-		text-align: left;
-		padding: 0 5%;
-	}
+		h2 {
+			font-family: "Oswald", serif;
+			font-weight: 2;
+			font-size: 36;
+			color: white;
+			text-align: left;
+			padding: 0 5%;
+		}
 
-	h2.center {
-		font-family: "Oswald", serif;
-		font-weight: 2;
-		font-size: 56;
-		color: white;
-		text-align: center;
-		padding: 0 5%;
-	}
+		h2.center {
+			font-family: "Oswald", serif;
+			font-weight: 2;
+			font-size: 56;
+			color: white;
+			text-align: center;
+			padding: 0 5%;
+		}
 
+		h3 {
+			font-family: "Oswald", serif;
+			font-weight: 3;
+			font-size: 24;
+			color: white;
+			text-align: left;
+			padding: 0 7%;
+		}
 
-	h3 {
-		font-family: "Oswald", serif;
-		font-weight: 3;
-		font-size: 24;
-		color: white;
-		text-align: left;
-		padding: 0 7%;
-	}
+		h3.center {
+			font-family: "Oswald", serif;
+			font-weight: 3;
+			font-size: 48;
+			color: white;
+			text-align: center;
+		}
 
+		h3.center2 {
+			font-family: "Oswald", serif;
+			font-weight: 3;
+			font-size: 28;
+			color: white;
+			text-align: center;
+			margin-top: -36px;
+			padding-bottom: 48px;
+		}
 
-	h3.center {
-		font-family: "Oswald", serif;
-		font-weight: 3;
-		font-size: 48;
-		color: white;
-		text-align: center;
-	}
+		h4 {
+			font-family: "Oswald", serif;
+			font-weight: 3;
+			font-size: 22;
+			color: white;
+			text-align: left;
+			padding: 0 7%;
+		}
 
-	h3.center2 {
-		font-family: "Oswald", serif;
-		font-weight: 3;
-		font-size: 28;
-		color: white;
-		text-align: center;
-		margin-top: -36px;
-		padding-bottom: 48px;
-	}
+		p {
+			font-family: "Oswald", serif;
+			font-weight: 3;
+			font-size: 18;
+			color: white;
+			text-align: left;
+			padding: 0 7%;
+		}
 
-	h4 {
-		font-family: "Oswald", serif;
-		font-weight: 3;
-		font-size: 22;
-		color: white;
-		text-align: left;
-		padding: 0 7%;
-	}
+		ul.a {
+			font-family: "Oswald", serif;
+			font-weight: 3;
+			list-style-type: circle;
+			color: white;
+		}
 
-	p {
-		font-family: "Oswald", serif;
-		font-weight: 3;
-		font-size: 18;
-		color: white;
-		text-align: left;
-		padding: 0 7%;
-	}
+		ul.b {
+			font-family: "Oswald", serif;
+			font-weight: 3;
+			list-style-type: decimal;
+			color: white;
+		}
 
-	ul.a {
-		font-family: "Oswald", serif;
-		font-weight: 3;
-		list-style-type: circle;
-		color: white;
-	}
+		a {
+			font-size:  32;
+			color: white;
+		}
 
-	ul.b {
-		font-family: "Oswald", serif;
-		font-weight: 3;
-		list-style-type: decimal;
-		color: white;
-	}
+		a.a {
+			font-size:  24;
+			color: white;
+		}
 
-	a {
-		font-size:  32;
-		color: white;
-	}
+		b {
+			text-shadow: 0 0 3px #c55c, 0 0 6px #c55c, 0 0 6px #c55c, 0 0 6px #c55c, 0 0 6px #c55c;
+			font-weight: 1;
+		}
 
-	a.a {
-		font-size:  24;
-		color: white;
-	}
+		b.a {
+			text-shadow: 0 0 3px #5c5a, 0 0 6px #5c5a, 0 0 6px #5c5a, 0 0 6px #5c5a;
+			font-weight: 1;
+		}
 
-	b {
-		text-shadow: 0 0 3px #c55c, 0 0 6px #c55c, 0 0 6px #c55c, 0 0 6px #c55c, 0 0 6px #c55c;
-		font-weight: 1;
-	}
+		b.b {
+			text-shadow: 0 0 3px #cc5a, 0 0 10px #cc5a, 0 0 10px #cc5a, 0 0 10px #cc5a;
+			font-weight: 1;
+		}
 
-	b.a {
-		text-shadow: 0 0 3px #5c5a, 0 0 6px #5c5a, 0 0 6px #5c5a, 0 0 6px #5c5a;
-		font-weight: 1;
-	}
+		b.c {
+			text-shadow: 0 0 3px rgb(255, 0, 0), 0 0 10px rgb(255, 153, 0), 0 0 10px rgb(255, 102, 0), 0 0 10px rgb(255, 102, 0);
+			font-weight: 2;
+		}
 
-	b.b {
-		text-shadow: 0 0 3px #cc5a, 0 0 10px #cc5a, 0 0 10px #cc5a, 0 0 10px #cc5a;
-		font-weight: 1;
-	}
+		b.d {
+			text-shadow: 0 0 3px rgb(255, 0, 0), 0 0 10px rgb(255, 0, 0), 0 0 10px rgb(255, 0, 0), 0 0 10px rgb(255, 0, 0);
+			font-weight: 2;
+		}
 
-	b.c {
-		text-shadow: 0 0 3px rgb(255, 0, 0), 0 0 10px rgb(255, 153, 0), 0 0 10px rgb(255, 102, 0), 0 0 10px rgb(255, 102, 0);
-		font-weight: 2;
-	}
+		body {
+			background: url("https://objectstorage.sa-santiago-1.oraclecloud.com/n/ax3wb7lnslga/b/fastdl/o/img/background.png") 100%;
+			background-position: center center;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
 
-	b.d {
-		text-shadow: 0 0 3px rgb(255, 0, 0), 0 0 10px rgb(255, 0, 0), 0 0 10px rgb(255, 0, 0), 0 0 10px rgb(255, 0, 0);
-		font-weight: 2;
-	}
-
-	body {
-		background: url("https://objectstorage.sa-santiago-1.oraclecloud.com/n/ax3wb7lnslga/b/fastdl/o/img/background.png") 100%;
-		background-position: center center;
-		background-attachment: fixed;
-		background-repeat: no-repeat;
-		background-size: 150% 100%;
-	}
-
-	header {
-		background: url("https://objectstorage.sa-santiago-1.oraclecloud.com/n/ax3wb7lnslga/b/fastdl/o/img/mp_extended.png");
-		background-position: center bottom;
-		padding-bottom: 10px;
-		padding-top: 1px;
-		margin-left: -8px;
-		margin-right: -8px;
-		margin-top: -8px;
-		text-align: center;
-		top: 0;
-		box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;    position: sticky;
-	}
-
-	.rowimg {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-	}
-	
-	.columnimg1 {
-		width: auto;
-		text-align: center
-
-	}
-	.columnimg2 {
-		width: auto;
-		text-align: center
-
-	}
-	.columnimg3 {
-		width: auto;
-		text-align: center
-	}
-
-
-	.imghow {
-		margin: 5px;
-		width: 355px;
-
-	}
-
-	html {
-		scroll-behavior: smooth;
-	}
-	</style
+		header {
+			background: url("https://objectstorage.sa-santiago-1.oraclecloud.com/n/ax3wb7lnslga/b/fastdl/o/img/mp_extended.png");
+			background-position: center bottom;
+			padding-bottom: 10px;
+			padding-top: 1px;
+			margin-top: -8px;
+			text-align: center;
+		}
+	</style>
 </head>
 <body>
 	<header>
@@ -200,7 +155,7 @@
 	<h2 class="center">Atajos de Teclado y Comandos</h2>
 	<h3 class="center2">Estos son los comandos y atajos de teclados del servidor.</h3>
 	<h4>
-		<ul id="Preguntas_Respuestas_comandos" class="a">Lista de comandos disponibles (funciona tanto como !comando como /comando):<br>
+		<ul class="a">Lista de comandos disponibles (funciona tanto como !comando como /comando):<br>
 			- !help <b class="a"> Te proporciona este mismo MOTD para leer las reglas y comandos</b><br>
 			- !ayuda <b class="a"> Te proporciona este mismo MOTD para leer las reglas y comandos</b><br>
 			- !reglas <b class="a"> Te proporciona este mismo MOTD para leer las reglas y comandos</b><br>
@@ -215,18 +170,18 @@
 			- !gas <b class="b"> Abre el menu de administración (Solo Staff)</b>
 		</ul>
 		<ul>Lista de comandos para el DarkRP (Funciona generalmente con / )<br>
-			<b class="center">Comunicación</b>:<br>
+			<b >Comunicación</b>:<br>
 			- /advert <i>Mensaje</i> <b class="a"> - Envia un mensaje de Roleplay, tales como Mug, Asalto, Advertencia, etc.</b><br>
 			- /a <i>Mensaje</i> <b class="a"> - Envia un mensaje general a todo el mundo</b><br>
 			- // <i>Mensaje</i> <b class="a"> - Envia un mensaje general a todo el mundo</b><br>
 			- /ooc <i>Mensaje</i> <b class="a"> - Envia un mensaje general a todo el mundo</b><br>
 			- /y <i>Mensaje</i> <b class="a"> - Envia un mensaje gritando para que la gente a tu alrededor pueda escuchar</b><br>
 			- /pm <i>Persona Mensaje</i> <b class="a"> - Envia un mensaje a una persona en especifico</b><br>
-			<b class="center">Economia</b>:<br>
+			<b >Economia</b>:<br>
 			- /dropmoney <i>Cantidad</i> <b class="a"> - Puedes tirar dinero al suelo</b><br>
 			- /give <i>Cantidad</i> <b class="a"> - Puedes darle dinero a la persona que estas viendo actualmente (Debes estar bien cerca)</b><br>
 			- /cheque <i>Persona Cantidad</i> <b class="a"> - Puedes crear un cheque para que la persona que especificaste solo pueda tomar el dinero</b><br>
-			<b class="center">Roleplay</b>:<br>
+			<b >Roleplay</b>:<br>
 			- /rpname <i>Nombre</i> <b class="a"> - Puedes cambiar tu nombre de Rol (El nombre se mantiene despues de desconectarse)</b><br>
 			- /job <i>Nombre</i> <b class="a"> - Puedes cambiar el nombre de tu Job pero manteniendo el job actual</b><br>
 			- /demote <i>Nombre Razon</i> <b class="a"> - Crea un voto para remover el job de una persona que esta usando actualmente</b><br>
@@ -234,7 +189,7 @@
 			- /sellalldoors <b class="a"> - Vende todas tus puertas que actualmente tengas</b><br>
 			- /requesthit <b class="a"> - Pide una orden de Hit para matar a alguien (Debes estar mirando al sicario bien de cerca)</b><br>
 			- /requestlicense <b class="a"> - Pide una licencia de armas (Debes estar mirando a un policia bien de cerca)</b><br>
-			<b class="center">Jobs</b>:<br>
+			<b >Jobs</b>:<br>
 			- /broadcast <i>Mensaje</i> <b class="b"> - (Alcalde)</b><b class="a"> Da un anuncio importante como Alcalde</b><br>
 			- /lockdown <b class="b"> - (Alcalde)</b><b class="a"> Establece un toque de queda para obligar a los ciudadanos a ir a sus casas</b><br>
 			- /unlockdown <b class="b"> - (Alcalde)</b><b class="a"> Elimina el toque de queda</b><br>
@@ -248,7 +203,7 @@
 			- /givelicense <b class="b"> - (Policias)</b> <b class="a"> Dale una licencia de armas a una persona que estes mirando (Debes estar bien cerca)</b><br>
 			- /hitprice <i>Numero</i> <b class="b"> - (Sicario)</b> <b class="a"> Fija un precio de cobro para la gente que te quiera pedir hit</b>
 		</ul>
-		<ul id="Preguntas_Respuestas_atajos" class="a">Lista del teclado o atajos del teclado:<br>
+		<ul class="a">Lista del teclado o atajos del teclado:<br>
 			<b class="a">F2 - Puedes comprar puertas</b><br>
 			<b class="a">F3 - Activa el mouse por encima de la pantalla</b><br>
 			<b class="a">F4 - Abre el menu para comprar cosas y objetos</b><br>
@@ -258,12 +213,12 @@
 		</ul>
 	</h4>
 	</b>
-	<br id="Reglas">
-	<h2 class="center">Reglas Básicas (<b class="d">RB</b>)</h2>
-	<h3 class="center2">Dentro del servidor hay unas cuantas reglas que debes saber antes de comenzar a jugar:</h3>
+	<br>
+	<h2 >Reglas Básicas (<b class="d">RB</b>)</h2>
+	<h3 >Dentro del servidor hay unas cuantas reglas que debes saber antes de comenzar a jugar:</h3>
 	<h4>
 		<ul>
-			<li id="Reglas_Abuso_de_exploits"><b class="d">RB-A</b> - <b class="c">Esta prohibido abusar de exploits</b>, en caso de que encuentres uno, reportalo y no se lo digas a los demas.<br>
+			<li><b class="d">RB-A</b> - <b class="c">Esta prohibido abusar de exploits</b>, en caso de que encuentres uno, reportalo y no se lo digas a los demas.<br>
 			- Pregunta: <i>¿Hasta que punto se considera exploit?</i><br>
 			Respuesta: Explot es considerado algo que pueda destruir la economia del servidor <i>(Ejemplo: descubrir que al vender X item te da mas dinero que de lo normal)</i> o tambien algo que pueda reducir el rendimiento del servidor/generar lag a un punto donde se vuelve molesto jugar e incluso perjudicial <i>(Ejemplo: Hacer que X objeto genere lag, ocasionando un aumento en la latencia/lag del servidor que de lo normal).</i><br>
 			Esto no se limita a los ejemplos mencionados anteriormente, tambien los exploits pueden ser:
@@ -281,7 +236,7 @@
 			<b>No obstante</b>, si descubres varios bugs y decides solo reportar 1, se te sancionara por ocultar exploits del servidor, aun si no lo has hecho o no hiciste de manera intencional.
 			</li>
 			<br>
-			<li id="Reglas_Toxicidad"><b class="d">RB-B</b> - <b class="c">Esta prohibido la toxicidad dentro del servidor</b><br>
+			<li><b class="d">RB-B</b> - <b class="c">Esta prohibido la toxicidad dentro del servidor</b><br>
 			- Pregunta: <i>¿Hasta que punto se considera que alguien esta siendo o es toxico?</i><br>
 			Respuesta: La toxicidad llega ha ser cuando una persona empieza a hablar de manera agresiva e insultar a cualquiera que se le encuentre con comentarios fuertes o xenofobos <i>(Ejemplo: Insultar a alguien por su religión, por su partido politico, por el pais donde vive, por la edad que tiene, por la voz que tiene, por la forma en como juega, por que tan nuevo es en el juego, por sus gustos, entre otras 175 cosas mas)</i>, esto se penaliza peor que si encuentras un exploit ya que nosotros queremos una comunidad donde todos se puedan integrar.<br>
 			Si te limitas a hablar con la gente que consideras que son buena onda y no meterte en problemas con gente toxica, tienes pocas probabilidades de que puedas pasar un mal rato, pero nunca son 0.<br>
@@ -295,19 +250,19 @@
 			Si no te metes problemas con alguien, estaras bien.
 			</li>
 			<br>
-			<li id="Reglas_Construccion"><b class="d">RB-C</b> - <b class="c">Asegurate de decir que estas construyendo</b><br>
+			<li><b class="d">RB-C</b> - <b class="c">Asegurate de decir que estas construyendo</b><br>
 			- Pregunta: <i>¿A que se refieren con decir que estamos construyendo?</i><br>
 			Respuesta: Cuando estas jugando DarkRP y deseas construir una casa o una tienda de armas, debes crear un cartel con la herramienta <b class="a">3D2D Textscreen</b><i>(Debajo de la sección <b class="b">Construcción</b> en las herramientas de la Toolgun)</i> que diga con letra grande: <b class="a">En construcción</b> o <b class="a">In building</b>, si hay una falta ortografica como una <b>S</b> mal colocada, no se toma encuenta dado que se entiende que se esta construyendo.<br>
 			Esto no significa que puedes tener todo el tiempo del mundo para construir tu casa/tienda, tienes un tiempo limite de <b>10 Minutos</b>, despues de este tiempo, la gente puede robarte o cumplir su rol aun si tienes el cartel colocado.<br>
 			Borrarlo y volver a colocarlo no significa que se haya reiniciado el tiempo de construcción.
 			</li>
 			<br>
-			<li id="Reglas_Purga"><b class="d">RB-D</b> - <b class="c">Esta prohibido crear una purga comunitaria</b><br>
+			<li><b class="d">RB-D</b> - <b class="c">Esta prohibido crear una purga comunitaria</b><br>
 			- Pregunta: <i>¿A que se refieren con crear una purga comunitaria?</i><br>
 			Respuesta: En muchos servidores DarkRP se celebra lo que se denomina <b>Purga</b> que es basicamente un momento de RDM Masivo, cualquiera que intente crear una purga comunitaria, que significa que entre los mismos usuarios acuerdan o que el alcalde diga que se declara purga, sera baneado por <b>1 Dia</b> por intentar realizar RDM Masivo no permitido.
 			</li>
 			<br>
-			<li id="Reglas_Desbaneo"><b class="d">RB-E</b> - <b class="c">No pidas desbaneo a otra persona</b><br>
+			<li><b class="d">RB-E</b> - <b class="c">No pidas desbaneo a otra persona</b><br>
 			- Pregunta: <i>Quiero apelar el baneo de un amigo mio/persona ¿Como lo hago?</i><br>
 			Respuesta: No puedes, si lo intentas tu tambien recibiras sanción por apelar desban de otra persona con tus manos, la persona baneada debe apelarla, no tu.<br>
 			Si se te encuentra manifestando o molesto del ban de una persona dentro de la comunidad/servidor/etc. y exiges que lo desbaneen con medios como:<br>
@@ -323,7 +278,7 @@
 			Tu recibiras baneo de <b>1 Semana</b> por romper esta regla.
 			</li>
 			<br>
-			<li id="Reglas_Atrapar"><b class="d">RB-F</b> - <b class="c">No bloquearas el paso a la gente o atrapar a la gente</b><br>
+			<li><b class="d">RB-F</b> - <b class="c">No bloquearas el paso a la gente o atrapar a la gente</b><br>
 			- Pregunta: <i>¿A que se refieren con bloquear el paso?</i><br>
 			Respuesta: No puedes bloquearle el paso con demas personas a una persona (Diamante prisonero como le dicen), esto lo que haces es molestar y evitar que la persona cumpla su rol, un ejemplo es cuando atrapan a proposito a una persona entre 4 personas, 4 personas alrededor y 1 persona al medio que esta atrapado.<br>
 			Esto tambien aplica con los duplicadores, advanced duplicator y otros medios para atrapar a una persona con props.<br>
@@ -332,8 +287,8 @@
 		</ul>
 	</h4>
 	<br id="Reglas_DarkRP_Construccion">
-	<h2 class="center">Reglas de construcción (<b class="d">RC</b>)</h2>
-	<h3 class="center2">Aqui estaran descritas todas las reglas de construcción para evitar problemas dentro del servidor:</h3>
+	<h2 >Reglas de construcción (<b class="d">RC</b>)</h2>
+	<h3 >Aqui estaran descritas todas las reglas de construcción para evitar problemas dentro del servidor:</h3>
 	<h4>
 		<ul>
 			<li><b class="d">RC-A</b> - <b class="c">Prohibido el Prop Climb</b><br>Prop climb es cuando usas props en el aire o sin tocar el suelo para llegar a lugares que no sean accesibles, como ir al techo de un lugar sin escaleras, hacer un puente flotante entre 2 casas, otro ejemplo: https://youtu.be/dG4vmhCTTBU. (Esta arregla aplica tambien a los controles territoriales de bandas).</li>
@@ -374,26 +329,18 @@
 		<br>
 		Aqui estaran algunos ejemplos de como debe ser la base que van a construir:
 		<br>
-			<div class="rowimg">
-				<div class="columnimg1">
-					<h1>Bases que deben tomar en cuenta:</h1>
-					<img class="imghow" src="https://i.imgur.com/8ak922t.png" alt="6">
-				</div>
-			</div>
-			<div class="rowimg">
-				<div class="columnimg2">
-				  <h1>Bases que estan <b>MAL</b>:</h1>
-				  <img class="imghow" src="https://i.imgur.com/FGpG0gC.png" alt="1">
-				  <img class="imghow" src="https://i.imgur.com/WmlICmN.png" alt="2">
-				  <img class="imghow" src="https://i.imgur.com/lk5pDqZ.png" alt="3">
-				</div>
-			</div>
-			<div class="rowimg">
-				<div class="columnimg3">
-					<img class="imghow" src="https://i.imgur.com/t3LIJnN.png" alt="4">
-					<img class="imghow" src="https://i.imgur.com/bfSO2nW.png" alt="5">
-				</div>
-			</div>
+			<h1>Bases que deben tomar en cuenta:</h1>
+			<center>
+				<img src="https://i.imgur.com/8ak922t.png">
+			</center>
+			<h1>Bases que estan <b>MAL</b>:</h1>
+			<center>
+				<img src="https://i.imgur.com/FGpG0gC.png">
+				<img src="https://i.imgur.com/WmlICmN.png">
+				<img src="https://i.imgur.com/lk5pDqZ.png">
+				<img src="https://i.imgur.com/t3LIJnN.png">
+				<img src="https://i.imgur.com/bfSO2nW.png">
+			</center>
 		</ul>
 		<br>
 		Romper cualquiera de las reglas anteriores, se castiga con las siguientes sanciones dependiendo de que tan grave sea:
@@ -412,26 +359,26 @@
 		</ul>
 	</h4>
 
-	<br id="Reglas_DarkRP">
-	<h2 class="center">Reglas de Roleplay</h2>
-	<h2 id="Reglas_DarkRP_RDM">Random DeathMatch (<b class="d">RDM</b>)</h2>
+	<br>
+	<h2 >Reglas de Roleplay</h2>
+	<h2>Random DeathMatch (<b class="d">RDM</b>)</h2>
 	<h3 >El Random DeathMatch, consiste en matar de manera al azar a cualquier jugador sin razon alguna.<br>
 	Las siguientes sanciones son las que deberán aplicar si se cumplen ciertos requisitos:</h3>
 	<h4>
-		<ul id="Reglas_DarkRP_RDM_no_intencional" class="a">
+		<ul class="a">
 			<li><b class="d">RDM-A</b> - <b class="c">Matar de manera no intencional (Por accidente):</b><br>
 			En casos como estos solo <b>recibirá un jail de 1 minuto</b> y una breve explicación de lo que es el DarkRP para evitar que rompa las reglas nuevamente.
 			</li>
 			<br>
-			<li id="Reglas_DarkRP_RDM_intencional"><b class="d">RDM-B</b> - <b class="c">Matar de manera intencional (Cuando sabe que no esta permitido o lo hace varias veces):</b><br>
+			<li><b class="d">RDM-B</b> - <b class="c">Matar de manera intencional (Cuando sabe que no esta permitido o lo hace varias veces):</b><br>
 			En este caso si se sabe que la persona nueva se le dijo que no se puede matar sin razón alguna y no hace caso, <b>se le aplica jail de 2 minutos</b>.
 			</li>
 			<br>
-			<li id="Reglas_DarkRP_RDM_desconectado"><b class="d">RDM-C</b> - <b class="c">Matar y luego desconectarse/escapar:</b><br>
+			<li><b class="d">RDM-C</b> - <b class="c">Matar y luego desconectarse/escapar:</b><br>
 			En este caso la persona desconectada recibe un <b>Baneo de 1 Dia o mas, Razon: Desconectarse despues de RDM</b>
 			</li>
 			<br>
-			<li id="Reglas_DarkRP_RDM_Reportar_RDM_sinpruebas"><b class="d">RDM-D</b> - <b class="c">Reportar RDM sin evidencia y/o pruebas:</b><br>
+			<li><b class="d">RDM-D</b> - <b class="c">Reportar RDM sin evidencia y/o pruebas:</b><br>
 			Si la persona fue reportada por <b>RDM</b> y <b>no tiene pruebas</b>, el staff debería hacer una investigación mínima entre los logs para ver si lo que dice es verdad, estas son las sanciones si se cumplen ciertos requisitos:
 			</li>
 			<ul class="a">
@@ -441,7 +388,7 @@
 				<b class="a"><i>Ninguna sanción</i></b></li>
 			</ul>
 			<br>
-			<li id="Reglas_DarkRP_RDM_Reportar_RDM_conpruebas"><b class="d">RDM-E</b> - <b class="c">Reportar RDM con evidencia y/o pruebas</b><br>
+			<li><b class="d">RDM-E</b> - <b class="c">Reportar RDM con evidencia y/o pruebas</b><br>
 			Si la persona fue reportada por <b>RDM</b> y <b>tiene pruebas</b>, el staff debe realizar un vistazo en las evidencias que adjunto, estas son las sanciones si se cumplen ciertos requisitos:
 			</li>
 			<ul class="a">
@@ -461,7 +408,7 @@
 			Eso lamentablemente sucede en la vida real y es algo inevitable.
 			</li>
 			<br>
-			<li id="Reglas_DarkRP_RDM_Masivo"><b class="d">RDM-G</b> - <b class="c">RDM Masivo</b><br>
+			<li><b class="d">RDM-G</b> - <b class="c">RDM Masivo</b><br>
 			En caso de haber hecho RDM MASIVO <i>(Incluyendo NPCs)</i> las siguientes sanciones serán aplicadas:
 				<ul class="b">
 					<li>Haber matado a 2 personas:<br></li>- Jail de <b>3 minutos</b>
@@ -477,7 +424,7 @@
 			<i>PD. 2: Desconectarse durante <b>Jail</b> se castiga con baneo de 12 horas a 2 días (Elección del moderador o administrador)</i>
 			</li>
 			<br>
-			<li id="Reglas_DarkRP_RDM_Masivo_excepciones"><b class="d">RDM-H</b> - <b class="c">Excepciones del RDM Masivo</b><br>
+			<li><b class="d">RDM-H</b> - <b class="c">Excepciones del RDM Masivo</b><br>
 			Existe una serie de condiciones para que el <b>RDM Masivo</b> este permitido a nivel <b>Roleplay</b>, estos son las condiciones que se deben cumplir:
 				<ul>
 					<li>El alcalde crea un toque de queda que obliga a todos a quedarse en sus casas o serán fusilados (Asesinados).</li>
@@ -485,7 +432,7 @@
 					<li>Ya no hay toque de queda, pero aun esta el <b>RDM Masivo</b>: Esto se puede extender si la batalla que esta sucediendo actualmente la gente esta resistiéndose bastante, eso si, si ves a alguien que ha muerto y a vuelto a la batalla o RDM Masivo para ayudar a sus compañeros, repórtalo, eso es considerado romper NLR porque la persona recuerda que hay un RDM Masivo sucediendo y vuelve para volver a matar. Aun si vuelve y los compañeros le explican la situación para volver a la batalla, aun así recibirá el castigo romper NLR</li>
 					<li>Me han matado cuando estaba muy lejos de un tiroteo o de un <b>RDM Masivo</b>: Esto tampoco aplica aun si estabas en una zona que considerabas Segura de mirar ya que aun así corres el riesgo de que te maten aun si no has hecho nada o tampoco te acercaste.</li>
 				</ul>
-			<br id="Reglas_DarkRP_RDM_Masivo_roleplay">
+			<br>
 			Eso si, cuando se menciona a nivel de <b>Roleplay</b>, significa que el <b>RDM Masivo esta permitido dentro de la escena/lugar donde se desarrolla la guerra</b>, esto quiere decir que si hay disparos/guerra en frente de la comisaria, dentro de toda el área cerca de la comisaria esta declarado un <b>RDM Masivo</b>, esto significa que cualquiera que se encuentre matando en frente del spawn y/o raideando en un área que no sea cercana a esta, será sancionado.
 			<br>
 			Esto significa que si encuentran matando una persona en un área lejana a donde esta pasando el <b>RDM Masivo</b>, será castigado debido porque no es el lugar para estar matando y mucho menos una excusa para matar sin razón en un área donde no esta pasando nada.
@@ -493,7 +440,7 @@
 			Eso si, no pueden llevar el <b>RDM Masivo</b> cercano al spawn o en frente el spawn porque eso ya es considerado spawnkill no intencional o en casos, spawnkill intencional.
 			</li>
 			<br>
-			<li id="Reglas_DarkRP_RDM_Masivo_roleplay_castigo"><b class="d">RDM-I</b> - <b class="c">En caso de no acatar el nivel Roleplay del RDM Masivo</b><br>
+			<li><b class="d">RDM-I</b> - <b class="c">En caso de no acatar el nivel Roleplay del RDM Masivo</b><br>
 			Estos son los castigos por no acatar de manera correcta el <b>RDM Masivo</b> que se desarrolla (todo esto es elección del moderador o administrador):
 				<ul>
 					<li>Matar sin razón a <b>2 personas</b> en un lugar donde no esta el RDM Masivo:</li>
@@ -514,28 +461,18 @@
 						</ul>
 				</ul>
 			</li>
-			<!-- <br>
-			 <li id="Reglas_DarkRP_RDM_Masivo_situaciones"><i>Casos que podrían suceder en un <b>RDM Masivo</b></i><br>
-			Las siguientes situaciones son las que <b>NO tienen sanción</b> o no son necesarias de atender debido al evento del <b>RDM Masivo</b> que puede estar pasando:
-				<ul>
-					<br><li><i>Me han matado cuando pasaba cerca de un tiroteo o de un <b>RDM Masivo</b></i><br>Esto no aplica sanción porque el alcalde declaro hace rato un toque de queda/lockdown que decía que cualquiera que estuviera fuera de sus casas, serian asesinados.</li>
-					<br><li><i>Me han matado cuando estaba muy lejos de un tiroteo o de un <b>RDM Masivo</b></i><br>Esto tampoco aplica aun si estabas en una zona que considerabas Segura de mirar ya que aun así corres el riesgo de que te maten aun si no has hecho nada o tampoco te acercaste.</li>
-					<br><li><i>Ya no hay toque de queda, pero aun esta el <b>RDM Masivo</b></i><br>Esto se puede extender si la batalla que esta sucediendo actualmente la gente esta resistiéndose bastante, eso si, si ves a alguien que ha muerto y a vuelto a la batalla o <b>RDM Masivo</b> para ayudar a sus compañeros, repórtalo, eso es considerado <b>romper NLR</b> porque la persona recuerda que hay un <b>RDM Masivo</b> sucediendo y vuelve para volver a matar.<br>Aun si vuelve y los compañeros le explican la situación para volver a la batalla, aun así recibirá el castigo <b>romper NLR</b>.</li>
-				</ul>
-			</li> 
-			<br> -->
 			<br>
-			<li id="Reglas_DarkRP_RDM_Masivo_finalizado"><b class="d">RDM-J</b> - <b class="c">Fin de RDM Masivo</b><br>
+			<li><b class="d">RDM-J</b> - <b class="c">Fin de RDM Masivo</b><br>
 			El RDM Masivo se declara por terminado cuando una de las 2 partes <i>(Policías y Criminales)</i> se rinde o se quedan sin personas <i>(Se mueren durante la batalla)</i>, cuando sea "Seguro" caminar por las calles, el alcalde tiene permitido <i>(No esta obligado)</i> a dar un anuncio diciendo que ya pueden salir de sus casas o que termino el toque de queda/lockdown <i>(En caso de que aun haya toque de queda)</i>.
 			</li> </br>
 		</ul>
 	</h4>
-	<br><br id="Reglas_DarkRP_NLR">
+	<br><br>
 	<h2>New Life Rule (<b class="d">NLR</b>)</h2>
 	<h3>Esta regla es parte del Roleplay del DarkRP, consiste básicamente en que no recuerdas nada de tu vida anterior cuando te mueres o te matan.</h3>
 	<h4>
 		<ul class="a">
-			<li id="Reglas_DarkRP_NLR_restricciones"><b class="d">NLR-A</b> - <b class="c">Casos que rompen la regla del NLR</b><br>
+			<li><b class="d">NLR-A</b> - <b class="c">Casos que rompen la regla del NLR</b><br>
 			<br>
 			1. Esto significa que si te matan <i>(En caso de que fuera dentro del Roleplay)</i>, no puedes recordar que esa persona te mato o decirle a un policía o alguien mas que X persona te mato y deseas repórtalo, eso seria <b>romper la regla del NLR</b> porque recuerdas que en tu vida anterior que esa persona te mato.
 			<br>
@@ -548,7 +485,7 @@
 			<br>
 			4. Otro caso que rompes regla del NLR es cuando vuelves reiteradas veces al mismo lugar mucho, morir por primera vez y volver <i>Casualmente</i> al mismo lugar esta bien, volver 2 veces ya es considerado NLR por volver demasiadas veces al mismo lugar, independiente si <i>Pasabas casualmente</i> por ese lugar.
 			</li>
-			<br><br id="Reglas_DarkRP_NLR_permitido">
+			<br><br>
 			<li><b class="d">NLR-B</b> - <b class="c">Casos que NO rompen la regla del NLR</b><br>
 			Si te mueres, <b class="a">aun puedes recordar que tenias una casa en cierto lugar del pueblo/mapa, esto tampoco rompe la regla del NLR si vuelves a tu casa en raid</b>, pero la gente que aun te esta raideando te puede matar para eliminar testigos, asique no te puedes quejar de que te mataron sin razón porque tu mismo te estas arriesgando a que te maten.<br>
 			Si te mueres aun puedes recordar que trabajo tenias y quien era el presidente, pero solo limítate a esto, <b>mencionar que encontraste algo sospechoso o que viste algo de tu vida pasada, es romper la regla del NLR</b>, también recuerdas quienes eran tus compañeros de la Party y quienes eran tus compañeros, pero esto no significa que puedas romper las reglas de Casos que rompen la regla del NLR.<br>
@@ -572,10 +509,10 @@
 			</li>
 		</ul>
 	</h4>
-	<br><br id="Reglas_DarkRP_Raids">
+	<br><br>
 	<h2>Raids y Counter-Raid (<b class="d">RAID</b>)</h2>
 	<h3>Los raids son básicamente entrar a robar a una casa y sacar algo de ganancia, es la descripción mas simple que existe asique mejor pasaremos a las reglas que consiste <i>(Estas reglas van con intención de raidear una casa, para raidear a la comisaria o realizar golpe de estado, revisen mas abajo)</i>.</h3>
-	<h4 id="Reglas_DarkRP_Raids_Castigos">
+	<h4>
 		<ul class="a">
 			Castigos
 			<li>Si se ha roto 1 o 2 reglas, se penaliza con <b>1 o 2 minutos de Jail</b>.</li>
@@ -588,7 +525,7 @@
 					<li>Si rompió 10 reglas, se penaliza con 4 días de ban.</li>
 				</ul>
 			</li>
-			<br id="Reglas_DarkRP_Raids_Raiders">
+			<br>
 			<li><b class="d">RAID-A</b> - <b class="c">Reglas para Raiders:</b><br>
 				<ul class="b">
 					<li>Una vez que hayas terminado de raidear, si tuviste éxito debes esperar 8 Minutos antes de volver a raidear y no puedes raidear a la misma persona 2 veces.</li>
@@ -599,7 +536,7 @@
 					<li>No pueden poner props para llegar de manera mas rápida a la casa, por ejemplo: colocar una escalera para saltarse una puerta que esta colocada con el propósito de parar a los raiders, en otras palabras, abstenerse de colocar cualquier prop durante un raid.</li>
 				</ul>
 			</li>
-			<br id="Reglas_DarkRP_Raids_Propietario">
+			<br>
 			<li><b class="d">RAID-B</b> - <b class="c">Reglas de construcción de la víctima del raid:</b><br>
 				<ul class="b">
 					<li>Puedes defender tu casa con cualquier arma independiente del trabajo que tengas.</li>
@@ -616,7 +553,7 @@
 					<li>No puedes crear una fading door directamente a un lado de la puerta normal, esto genera problemas para raidear y generalmente llegan a quedar atrapados sin moverse.</li>
 				</ul>
 			</li>
-			<br id="Reglas_DarkRP_Raids_CounterRaid">
+			<br>
 			<li><b class="d">RAID-C</b> - <b class="c">Counter-Raid:</b class="c"><br>
 				<ul class="b">
 					<li>Si eres policía o parte de la Party de la persona que están raideando y están fuera de la casa, pueden colocar /advert Counter raid.</li>
@@ -626,8 +563,8 @@
 					<li>Si están haciendo raid a la comisaría/golpe de estado y eres policía, no es necesario tener que colocar /advert Counter Raid.</li>
 				</ul>
 			</li>
-			<br id="Reglas_DarkRP_Raids_Comisaria">
-			<li><b class="d">RAID-D</b> - <b class="c">Raid a la comisaría/Golpe de Estado:</b><br id="Reglas_DarkRP_Raids_Comisaria_Criminales">
+			<br>
+			<li><b class="d">RAID-D</b> - <b class="c">Raid a la comisaría/Golpe de Estado:</b><br>
 				Grupo de Criminales:
 				<ul class="b">
 					<li>Para iniciar un golpe de estado, el líder criminal le debe declarar la guerra al gobierno con <b class="b">/advert Golpe de estado - Preparación</b> y esperar 5 Minutos para realizar el Golpe de Estado/Raid a la comisaria.</li>
@@ -648,7 +585,7 @@
 					<li>Si fracasaron en el raid a comisaria/golpe de estado, <b>deben esperar 10 Minutos antes de volver a realizar un golpe de estado</b>, <b class="b">esto se aplica a ambos lideres criminales</b>.</li>
 				</ul>
 			</li>
-			<br id="Reglas_DarkRP_Raids_Comisaria_Gobierno">
+			<br>
 			<li><b class="d">RAID-E</b> - <b class="c">Policías y el alcalde (Gobierno)</b><br>
 				<ul class="a">
 					<li>Cuando se haga el <b class="a">/advert Golpe de estado - Preparación</b>, <b>el alcalde tiene la obligación de refugiarse dentro de la comisaria</b>, esto aplica también para los policías que estén actualmente.</li>
@@ -678,16 +615,16 @@
 		3- Kick + Warn
 	</h3>
 	<br><br>
-	<h2 id="Reglas_CombatArrest">Combat-Arrest (<b class="d">CA</b>)</h2>
+	<h2>Combat-Arrest (<b class="d">CA</b>)</h2>
 	<h3>Esta regla del Combat-Arrest consiste en que durante un enfrenamiento entre Criminales y Policias, no puedes arriesgar tu vida para arrestar a una persona.<br>
 	Esto entra en la categoria del FearRP debido a que arriesgas tu vida solamente para que la persona sea arrestada.<br>
 	<br>
 	Castigos por no acatar Combat-Arrest:<br>
 	1- 3 Minutos (180 Segundos)<br>
-	2- 8 Minutos (480 Segundos) + Warn.<br>
-	3- Kick + Warn.</h3>
+	2- 8 Minutos (480 Segundos) + Warn<br>
+	3- Kick + Warn</h3>
 	<br><br>
-	<h2 id="Reglas_TDQ">Toque de Queda (<b class="d">TQ</b>)</h2>
+	<h2>Toque de Queda (<b class="d">TQ</b>)</h2>
 	<h3>El toque de queda consiste en un evento en que todos los jugadores deben ir a sus casas, mientras que el gobierno intenta hacer que todos vayan a sus casas o parecidos.<br>
 	Claro que hay ciertas reglas que seguir antes de intentar acatar las leyes:<br>
 	<ul>
@@ -699,7 +636,7 @@
 		Castigos por no cumplir estas reglas:<br>
 		1- Jail de 5 Minutos (300 Segundos) + Warn.<br>
 		2- Kick (Razon: Romper reglas de RDM) <i>Esto aplica para el alcalde.</i><br>
-		3- Baneo de 1 Dia.<br>
+		3- Baneo de 1 Dia<br>
 	</ul>
 	</h3>
 	<br><br>
@@ -731,8 +668,41 @@
 		<li><b class="d">RTC-D</b> - Deben asegurar que no hayan personas viviendo en el territorio a reclamar, en caso de que lo hayan, deben cobrarle una comisión/interes por dejarlo vivir en su territorio.</li>
 		<li><b class="d">RTC-E</b> - Solo pueden vivir en el territorio los que pertenezcan al grupo de jobs <b>Criminales</b>, existen excepciones de jobs como <b class="a">Locutor de radio</b>, del cual pueden contratarlo para su uso.</li>
 	</h3>
-	<br id="Reglas_MP_Jobs">
-	<h2 class="center">Reglas de los Jobs</h2>
+	<br><br>
+	<h2>Regla del robo a la Armeria Policial (<b class="d">RAP</b>)</h2>
+	<h3>Tienes que cumplir los siguientes criterios y no romper las siguientes reglas para evitar sanciones.
+		<br>Reglas del grupo de job <b>Criminales</b>
+		<ul>
+			<li><b class="d">RAP-A</b> - Por cada robo, tienes o tienen que esperar 10 minutos para volver a robarlo.</li>
+			<li><b class="d">RAP-B</b> - Deben avisar con: <b>/advert Raideo a la Armeria Policial.</b></li>
+			<li><b class="d">RAP-C</b> - Tienen que estar fuera de la comisaria al momento de tirar /advert</li>
+			<li><b class="d">RAP-D</b> - Una vez terminado o acaban de robar la Armeria Policial, <b>TIENEN</b> que salir de la comisaria.</li>
+			<li><b class="d">RAP-E</b> - No pueden tomar demasiado tiempo en robar la armeria o sino se considerara FailRP por no acatar su rol de robar la armeria. (Max: 7 minutos)</li>
+			<li><b class="d">RAP-F</b> - Si acaba de terminar un <b>Raid a Comisaria</b>, deben esperar 10 minutos antes de robar la armeria policial.</li>
+			<li><b class="d">RAP-G</b> - Durante un <b>Raid a Comisaria</b> pueden robar la Armeria Policial.</li>
+		</ul>
+		Reglas del grupo de job <b>Gobierno</b>
+		<ul>
+			<li><b class="d">RAP-H</b> - Cuando alguien este robando la Armeria Policial, deben matar a todos los ladrones que esten robando la armeria.</li>
+			<li><b class="d">RAP-I</b> - Los se consideran ladrones, son aquellos que esten <b>DENTRO</b> de la armeria <b>DETRAS</b> de la puerta principal de entrada.</li>
+		</ul>Castigos por no cumplir estas reglas:<br>
+		1- Jail de 4 Minutos (240 Segundos) + Advertencia Verbal.<br>
+		2- Jail de 6 Minutos + Warneo (Razon: Romper regla RAP-X)<br>
+		3- Baneo de 2 Horas (Razon: Romper regla RAP-x)
+	</h3>
+	<br><br>
+	<h2>Reglas de las Macanas (<b class="d">RM</b>)</h2>
+	<h3>Estas reglas aplican aplican para el grupo de job <b>Gobierno</b>
+	<ul>
+		<li><b class="d">RM-A</b> - No puedes pegar sin razon a una persona, esto se considerara RDM</li>
+		<li><b class="d">RM-B</b> - Debes utilizarlo en caso de tiroteos o cuando la persona tiene un arma</li>
+	</ul>Castigos por no cumplir estas reglas:<br>
+		1- Jail de 4 Minutos (240 Segundos) + Advertencia Verbal.<br>
+		2- Jail de 6 Minutos + Warneo (Razon: Romper regla RM-X)<br>
+	</h3>
+	<br>
+	<br>
+	<h2 >Reglas de los Jobs</h2>
 	<h3>Grupo de Jobs/Trabajos: <b class="c">Ciudadanos</b> (<b class="d">JCIU</b>)</h3>
 	<h4>
 		<ul>

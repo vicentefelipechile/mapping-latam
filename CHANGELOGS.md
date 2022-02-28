@@ -1,5 +1,9 @@
 Changelogs
 
+[v1.029]
+- Se actualizo la pagina **darkrp.html**
+- Se añadio el font de la pagina **darkrp.html**
+
 [v1.028]
 - Se elimino codigo extra
 - Se añadio la lista de props y props restringidos del **wiremod** (lua/wire)
