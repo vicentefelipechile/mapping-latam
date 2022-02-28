@@ -212,9 +212,9 @@ weapon "m9k_winchester73".ViewModelFOV = 90
 weapon "m9k_winchester73".SelectiveFire = false
 
 -- ACR
-weapon "m9k_acr".Primary.Damage = 15
+-- weapon "m9k_acr".Primary.Damage = 15
 -- weapon "m9k_acr".Primary.Spread = .4
-weapon "m9k_acr".Primary.RPM = 500
+-- weapon "m9k_acr".Primary.RPM = 500
 weapon "m9k_acr".Primary.ClipSize = 25
 weapon "m9k_acr".ViewModelFOV = 90
 weapon "m9k_acr".SelectiveFire = false
@@ -231,9 +231,9 @@ weapon "m9k_auga3".Primary.RPM = 1000
 weapon "m9k_auga3".ViewModelFOV = 90
 
 -- Winchester doom
-weapon "m9k_1897winchester".Primary.Damage = 9
-weapon "m9k_1897winchester".Primary.RPM = 50
-weapon "m9k_1897winchester".ViewModelFOV = 90
+-- weapon "m9k_1897winchester".Primary.Damage = 9
+-- weapon "m9k_1897winchester".Primary.RPM = 50
+-- weapon "m9k_1897winchester".ViewModelFOV = 90
 
 -- SPAS
 weapon "m9k_spas12".Primary.Damage = 3
@@ -268,10 +268,10 @@ weapon "m9k_glock18_extclip".Primary.RPM = 900
 weapon "m9k_glock18_extclip".ViewModelFOV = 90
 
 -- M14
-weapon "m9k_m14sp".Primary.Damage = 10
-weapon "m9k_m14sp".Primary.RPM = 750
-weapon "m9k_m14sp".Primary.ClipSize = 8
-weapon "m9k_m14sp".ViewModelFOV = 90
+-- weapon "m9k_m14sp".Primary.Damage = 10
+-- weapon "m9k_m14sp".Primary.RPM = 750
+-- weapon "m9k_m14sp".Primary.ClipSize = 8
+-- weapon "m9k_m14sp".ViewModelFOV = 90
 
 --mossberg590
 weapon "m9k_mossberg590".Primary.Damage = 7

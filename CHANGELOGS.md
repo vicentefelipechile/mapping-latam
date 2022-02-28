@@ -1,5 +1,10 @@
 Changelogs
 
+[v1.028]
+- Se elimino codigo extra
+- Se añadio la lista de props y props restringidos del **wiremod** (lua/wire)
+- Se añadio configuracion a **server.cfg**
+
 [v1.027]
 - Se arreglo un error que generaba que los usuarios pudieran duplicar entidades del addon **ch_farming**
 - Se incluyo un archivo con el parche que lo arregla (**entities/ch_farming_fix/init.lua**)
