@@ -1,5 +1,8 @@
 Changelogs
 
+[v1.034]
+- Se actualizo una configuración del **server.cfg** (toolmode_allow_wire_damage_detector 0)
+
 [v1.033]
 - Añadido toda la configuración del Wiremod (Desactivación total del codigo de muchas herramientas y restricciones)
 - Se actualizo la configuración del server (**server.cfg**)
