@@ -60,11 +60,11 @@ list.Set( "WireScreenModels", "models/cheeze/pcb/pcb7.mdl", true )
 -- list.Set( "WireScreenModels", "models/props/cs_militia/reload_bullet_tray.mdl", true )
 -- list.Set( "WireScreenModels", "models/props_lab/workspace002.mdl", true )
 -- list.Set( "WireScreenModels", "models/props_lab/reciever01b.mdl", true )
---list.Set( "WireScreenModels", "models/blacknecro/ledboard60.mdl", true ) --broken
+-- list.Set( "WireScreenModels", "models/blacknecro/ledboard60.mdl", true ) --broken
 -- list.Set( "WireScreenModels", "models/props_wasteland/controlroom_monitor001b.mdl", true )
 --TF2 Billboards
-list.Set( "WireScreenModels", "models/props_mining/billboard001.mdl", true )
-list.Set( "WireScreenModels", "models/props_mining/billboard002.mdl", true )
+-- list.Set( "WireScreenModels", "models/props_mining/billboard001.mdl", true )
+-- list.Set( "WireScreenModels", "models/props_mining/billboard002.mdl", true )
 
 --PHX3
 list.Set( "WireScreenModels", "models/hunter/plates/plate1x1.mdl", true )

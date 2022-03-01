@@ -1,5 +1,9 @@
 Changelogs
 
+[v1.033]
+- Añadido toda la configuración del Wiremod (Desactivación total del codigo de muchas herramientas y restricciones)
+- Se actualizo la configuración del server (**server.cfg**)
+
 [v1.032]
 - Añadido las sanciones por inclumplir las **reglas de Construcción Wiremod**
 
