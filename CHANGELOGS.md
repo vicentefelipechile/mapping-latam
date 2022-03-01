@@ -1,5 +1,8 @@
 Changelogs
 
+[v1.032]
+- Añadido las sanciones por inclumplir las **reglas de Construcción Wiremod**
+
 [v1.031]
 - Se actualizaron las reglas de construcción Wiremod
 - Se actualizaron las reglas del job **Armero** y **Armero Clandestino**
