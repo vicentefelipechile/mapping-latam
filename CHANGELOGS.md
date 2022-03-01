@@ -1,5 +1,9 @@
 Changelogs
 
+[v1.035]
+- Se añadio la herramienta Wiremod **Wire**
+- Actualizado la configuración del server (**server.cfg**)
+
 [v1.034]
 - Se actualizo una configuración del **server.cfg** (toolmode_allow_wire_damage_detector 0)
 
