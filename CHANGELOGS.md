@@ -2,7 +2,7 @@ Changelogs
 
 [v1.031]
 - Se actualizaron las reglas de construcción Wiremod
-- Se actualizaron las reglas del job **Armero** y **Armero Clandestino**
+- Se actualizaron las reglas del job [**Armero**](https://github.com/SuperCALIENTITO/mapping-latam/commit/526ece1ac117e4c8083121fba21a5ab73b0f2038#diff-b0a35dfdac93b512b909746059ae2b82e81c9ab4a31e43d5fbfd5c11590161efR754) y [**Armero Clandestino**](https://github.com/SuperCALIENTITO/mapping-latam/commit/526ece1ac117e4c8083121fba21a5ab73b0f2038#diff-b0a35dfdac93b512b909746059ae2b82e81c9ab4a31e43d5fbfd5c11590161efR898)
 - Se actualizo los archivos **darkrp.html** y **reglas.html**
 - Se incluyeron 2 archivos **img/wire1.png** e **img/wire2.png**
 - Se incluyeron la versión raw de los 2 archivos mencionados anteriormente (pdn)
