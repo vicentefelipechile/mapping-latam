@@ -1,5 +1,12 @@
 Changelogs
 
+[v1.031]
+- Se actualizaron las reglas de construcción Wiremod
+- Se actualizaron las reglas del job **Armero** y **Armero Clandestino**
+- Se actualizo los archivos **darkrp.html** y **reglas.html**
+- Se incluyeron 2 archivos **img/wire1.png** e **img/wire2.png**
+- Se incluyeron la versión raw de los 2 archivos mencionados anteriormente (pdn)
+
 [v1.030]
 - Se arreglo un error de versión de la pagina **darkrp.html**
 
