@@ -1,5 +1,8 @@
 Changelogs
 
+[v1.036]
+- Prueba de Key PGP
+
 [v1.035]
 - Se añadio la herramienta Wiremod **Wire**
 - Actualizado la configuración del server (**server.cfg**)
