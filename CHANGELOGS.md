@@ -1,13 +1,16 @@
 Changelogs
 
+[v1.039]
+- Prueba de key GPG
+
 [v1.038]
-- Prueba de key PGP
+- Prueba de key GPG
 
 [v1.037]
-- Prueba de key PGP
+- Prueba de key GPG
 
 [v1.036]
-- Prueba de Key PGP
+- Prueba de Key GPG
 
 [v1.035]
 - Se añadio la herramienta Wiremod **Wire**
