@@ -1,5 +1,8 @@
 Changelogs
 
+[v1.037]
+- Prueba de key PGP
+
 [v1.036]
 - Prueba de Key PGP
 
