@@ -1,5 +1,8 @@
 Changelogs
 
+[v1.040]
+- Prueba de key GPG
+
 [v1.039]
 - Prueba de key GPG
 
