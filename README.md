@@ -8,5 +8,5 @@ https://discord.gg/2pMzDXZQxJ
 - [**Lugent**](https://github.com/Lugent)
 - [**chomp**](https://github.com/feliS317)
 - [**eckholtN**](https://github.com/eckholtN)
-- [**Macpato**](https://github.com/macpato231)
+- ~[**Macpato**](https://github.com/macpato231)~ Retirado del proyecto
 - [**Slow35**](https://github.com/Slow35)
