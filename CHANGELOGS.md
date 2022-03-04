@@ -1,5 +1,9 @@
 Changelogs
 
+[v1.041]
+- Pruena de key GPG
+- Se añadio la lista de reproducción del addon **Streamradio**
+
 [v1.040]
 - Prueba de key GPG
 
