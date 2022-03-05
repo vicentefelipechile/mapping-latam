@@ -1,7 +1,13 @@
 Changelogs
 
+[v1.042]
+- Se elimino el menu de ayuda del F1
+- Se elimino el modulo de Sleep definitivamente
+- Se corrigio el codigo que limitaba el outfitter
+- Se aumento el limite de props a 120 (50)
+
 [v1.041]
-- Pruena de key GPG
+- Prueba de key GPG
 - Se añadio la lista de reproducción del addon **Streamradio**
 
 [v1.040]

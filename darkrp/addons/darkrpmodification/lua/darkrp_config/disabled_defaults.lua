@@ -23,17 +23,17 @@ In some cases some external addons may overwrite one of the modules below and wi
 In these few cases it will be pretty obvious when you expect something to happen and nothing does.
 ---------------------------------------------------------------------------]]
 DarkRP.disabledDefaults["modules"] = {
-    ["afk"]              = true,
+    ["afk"]              = false,
     ["chatsounds"]       = false,
     ["events"]           = false,
     ["fpp"]              = false,
-    ["f1menu"]           = false,
+    ["f1menu"]           = true,
     ["f4menu"]           = false,
     ["hitmenu"]          = false,
     ["hud"]              = false,
     ["hungermod"]        = true,
     ["playerscale"]      = false,
-    ["sleep"]            = false,
+    ["sleep"]            = true,
     ["fadmin"]           = false,
     ["animations"]       = false,
     ["chatindicator"]    = false,
