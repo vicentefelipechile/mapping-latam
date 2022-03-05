@@ -1,5 +1,8 @@
 Changelogs
 
+[v1.044]
+- Se corrigio la dirección (path) de la lista de reproducción del addon **Streamradio**
+
 [v1.043]
 - Se añadio la herramienta wire **sensor**
 - Se añadio la herramienta wire **target_finder**
