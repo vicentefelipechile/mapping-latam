@@ -1,5 +1,10 @@
 Changelogs
 
+[v1.043]
+- Se añadio la herramienta wire **sensor**
+- Se añadio la herramienta wire **target_finder**
+- Se actualizo configuración a **server.cfg**
+
 [v1.042]
 - Se elimino el menu de ayuda del F1
 - Se elimino el modulo de Sleep definitivamente
