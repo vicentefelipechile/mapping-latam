@@ -1,5 +1,9 @@
 Changelogs
 
+[v1.046]
+- Se restringieron mas modulos de la herramienta wire **expression2**
+- Se actualizo la configuración a **server.cfg**
+
 [v1.045]
 - Se añadio la herramienta wire **expression2**
 
