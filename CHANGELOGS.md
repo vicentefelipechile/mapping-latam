@@ -1,5 +1,8 @@
 Changelogs
 
+[v1.045]
+- Se añadio la herramienta wire **expression2**
+
 [v1.044]
 - Se corrigio la dirección (path) de la lista de reproducción del addon **Streamradio**
 
