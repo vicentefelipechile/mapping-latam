@@ -6,7 +6,7 @@ https://discord.gg/2pMzDXZQxJ
 ## Gente involucrada en el proyecto
 
 - [**Lugent**](https://github.com/Lugent)
-- [**chomp**](https://github.com/feliS317)
-- [**eckholtN**](https://github.com/eckholtN)
+- ~[**chomp**](https://github.com/feliS317)~ Retirado del proyecto
+- ~[**eckholtN**](https://github.com/eckholtN)~ Retirado del proyecto
 - ~[**Macpato**](https://github.com/macpato231)~ Retirado del proyecto
 - [**Slow35**](https://github.com/Slow35)
