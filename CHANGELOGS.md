@@ -1,5 +1,8 @@
 Changelogs
 
+[v1.047]
+- Se añadio la lista de reproducción del addon **Streamradio**
+
 [v1.046]
 - Se restringieron mas modulos de la herramienta wire **expression2**
 - Se actualizo la configuración a **server.cfg**
