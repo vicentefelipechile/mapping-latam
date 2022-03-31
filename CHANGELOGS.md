@@ -1,5 +1,8 @@
 Changelogs
 
+[v1.056]
+- Se actualizaron las reglas
+
 [v1.055]
 - Se actualizo el archivo **darkrp_simple.html**
 
