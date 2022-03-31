@@ -1,5 +1,8 @@
 Changelogs
 
+[v1.051]
+- Se actualizo el archivo **css/reglas.css**
+
 [v1.050]
 - Se hizo una copia de la configuración previa del DarkRP con fines preservativos
 
