@@ -1,0 +1,190 @@
+h1 {
+	font-family: "Oswald", serif;
+	font-weight: 300;
+	font-size: 48;
+	color: white;
+	text-shadow: 4px 4px 8px #969696;
+	text-align: center;
+}
+
+h1.b {
+	font-family: "Oswald", serif;
+	font-weight: 300;
+	font-size: 32;
+	color: white;
+	text-shadow: 4px 4px 8px #969696;
+	text-align: center;
+}
+
+h2 {
+	font-family: "Oswald", serif;
+	font-weight: 2;
+	font-size: 36;
+	color: white;
+	text-align: left;
+	padding: 0 5%;
+}
+
+h2.center {
+	font-family: "Oswald", serif;
+	font-weight: 2;
+	font-size: 56;
+	color: white;
+	text-align: center;
+	padding: 0 5%;
+}
+
+h2.center2 {
+	font-family: "Oswald", serif;
+	font-weight: 2;
+	font-size: 56;
+	color: white;
+	text-align: center;
+	padding: 0 5%;
+}
+
+h3 {
+	font-family: "Oswald", serif;
+	font-weight: 3;
+	font-size: 24;
+	color: white;
+	text-align: left;
+	padding: 0 7%;
+}
+
+h3.center {
+	font-family: "Oswald", serif;
+	font-weight: 3;
+	font-size: 48;
+	color: white;
+	text-align: center;
+}
+
+h3.center2 {
+	font-family: "Oswald", serif;
+	font-weight: 3;
+	font-size: 28;
+	color: white;
+	text-align: center;
+	margin-top: -36px;
+	padding-bottom: 48px;
+}
+
+h4 {
+	font-family: "Oswald", serif;
+	font-weight: 3;
+	font-size: 22;
+	color: white;
+	text-align: left;
+	padding: 0 7%;
+}
+
+p {
+	font-family: "Oswald", serif;
+	font-weight: 3;
+	font-size: 18;
+	color: white;
+	text-align: left;
+	padding: 0 7%;
+}
+
+ul.a {
+	font-family: "Oswald", serif;
+	font-weight: 3;
+	list-style-type: circle;
+	color: white;
+}
+
+ul.b {
+	font-family: "Oswald", serif;
+	font-weight: 3;
+	list-style-type: decimal;
+	color: white;
+}
+
+a {
+	font-size:  32;
+	color: white;
+}
+
+a.a {
+	font-size:  24;
+	color: white;
+}
+
+b {
+	text-shadow: 0 0 3px #c55c, 0 0 6px #c55c, 0 0 6px #c55c, 0 0 6px #c55c, 0 0 6px #c55c;
+	font-weight: 1;
+}
+
+b.a {
+	text-shadow: 0 0 3px #5c5a, 0 0 6px #5c5a, 0 0 6px #5c5a, 0 0 6px #5c5a;
+	font-weight: 1;
+}
+
+b.b {
+	text-shadow: 0 0 3px #cc5a, 0 0 10px #cc5a, 0 0 10px #cc5a, 0 0 10px #cc5a;
+	font-weight: 1;
+}
+
+b.c {
+	text-shadow: 0 0 3px rgb(255, 0, 0), 0 0 10px rgb(255, 153, 0), 0 0 10px rgb(255, 102, 0), 0 0 10px rgb(255, 102, 0);
+	font-weight: 2;
+}
+
+b.d {
+	text-shadow: 0 0 3px rgb(255, 0, 0), 0 0 10px rgb(255, 0, 0), 0 0 10px rgb(255, 0, 0), 0 0 10px rgb(255, 0, 0);
+	font-weight: 2;
+}
+
+body {
+	background: url("https://objectstorage.sa-santiago-1.oraclecloud.com/n/ax3wb7lnslga/b/fastdl/o/img/background.png") 100%;
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+header {
+	background: url("https://objectstorage.sa-santiago-1.oraclecloud.com/n/ax3wb7lnslga/b/fastdl/o/img/mp_extended.png");
+	background-position: center bottom;
+	padding-bottom: 10px;
+	padding-top: 1px;
+	margin-left: -8px;
+	margin-right: -8px;
+	margin-top: -8px;
+	text-align: center;
+	top: 0;
+	box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;    position: sticky;
+}
+
+.rowimg {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.columnimg1 {
+	width: auto;
+	text-align: center
+}
+
+.columnimg2 {
+	width: auto;
+	text-align: center
+}
+
+.columnimg3 {
+	width: auto;
+	text-align: center
+}
+
+.imghow {
+	margin: 5px;
+	width: 355px;
+}
+
+html {
+	scroll-behavior: smooth;
+}

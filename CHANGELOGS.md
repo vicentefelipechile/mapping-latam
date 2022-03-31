@@ -1,5 +1,8 @@
 Changelogs
 
+[v1.050]
+- Se hizo una copia de la configuración previa del DarkRP con fines preservativos
+
 [v1.049]
 - Se actualizaron las reglas
 
