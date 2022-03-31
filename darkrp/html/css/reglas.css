@@ -7,6 +7,15 @@ h1 {
 	text-align: center;
 }
 
+h1.b {
+	font-family: "Oswald", serif;
+	font-weight: 300;
+	font-size: 32;
+	color: white;
+	text-shadow: 4px 4px 8px #969696;
+	text-align: center;
+}
+
 h2 {
 	font-family: "Oswald", serif;
 	font-weight: 2;
@@ -17,6 +26,15 @@ h2 {
 }
 
 h2.center {
+	font-family: "Oswald", serif;
+	font-weight: 2;
+	font-size: 56;
+	color: white;
+	text-align: center;
+	padding: 0 5%;
+}
+
+h2.center2 {
 	font-family: "Oswald", serif;
 	font-weight: 2;
 	font-size: 56;
@@ -124,7 +142,7 @@ body {
 	background-position: center center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-size: 150% 100%;
+	background-size: 100% 100%;
 }
 
 header {

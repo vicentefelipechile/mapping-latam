@@ -1,5 +1,9 @@
 Changelogs
 
+[v1.048]
+- Se actualizo el archivo **css/reglas.css**
+- Se actualizaron las reglas
+
 [v1.047]
 - Se añadio la lista de reproducción del addon **Streamradio**
 
