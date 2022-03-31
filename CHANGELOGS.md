@@ -1,5 +1,8 @@
 Changelogs
 
+[v1.049]
+- Se actualizaron las reglas
+
 [v1.048]
 - Se actualizo el archivo **css/reglas.css**
 - Se actualizaron las reglas
