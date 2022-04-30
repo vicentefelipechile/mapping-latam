@@ -51,10 +51,12 @@ img {
 	text-shadow:
 		0 0 0.125em hsl(0, 10%, 80%),
 		0 0 0.45em currentColor;
-
 	box-shadow: 0 0 0.2em 0 var(--clr-white);
 
 	position: relative;
+
+	transition-duration: 200ms;
+	transition-timing-function: ease;
 }
 
 .title::before {
@@ -68,7 +70,11 @@ img {
 
 	transform: perspective(1em) rotateX(20deg) scale(1, 0.3);
 	filter: blur(1em);
-	opacity: 0.7;
+	opacity: 0.65;
+}
+
+.title:hover {
+	box-shadow: 0 0 0.4em 0 var(--clr-white);
 }
 
 .header {
