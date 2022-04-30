@@ -1,5 +1,8 @@
 Changelogs
 
+[v1.065]
+- Se actualizo el archivo **css/sandbox.css**
+
 [v1.064]
 - Se actualizo el archivo **sandbox_simple.html**
 
@@ -13,7 +16,7 @@ Changelogs
 [v1.061]
 - Se añadieron reglas de Sandbox entre los archivos
 - Se añadio el archivo **sandbox_simple.html**
-- Se añadio el archivo **css/sandbox.css.html**
+- Se añadio el archivo **css/sandbox.css**
 
 [v1.060]
 - Se actualizaron las reglas
