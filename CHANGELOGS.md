@@ -1,5 +1,8 @@
 Changelogs
 
+[v1.067]
+- Se actualizo el archivo **css/sandbox.css**
+
 [v1.066]
 - Se actualizo el archivo **css/sandbox.css**
 
