@@ -1,6 +1,10 @@
 Changelogs
 
-[1.061]
+[v1.062]
+- Se actualizaron las reglas de Sandbox
+- Se añadio el archivo **img/background_fade2.png**
+
+[v1.061]
 - Se añadieron reglas de Sandbox entre los archivos
 - Se añadio el archivo **sandbox_simple.html**
 - Se añadio el archivo **css/sandbox.css.html**
