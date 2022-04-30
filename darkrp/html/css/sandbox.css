@@ -2,9 +2,14 @@
 	--clr-white: hsl(0 0% 100%);
 }
 
+@font-face {
+	font-family: 'OswaldAlt';
+	src: url("../fonts/Oswald-ExtraLight.ttf");
+}
+
 * {
-	font-family: "Oswald", serif;
-	font-weight: 2;
+	font-family: 'OswaldAlt', Oswald, sans-serif;
+	font-weight: 1;
 	color: white;
 }
 
