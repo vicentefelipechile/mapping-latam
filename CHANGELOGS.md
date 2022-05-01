@@ -1,5 +1,9 @@
 Changelogs
 
+[v1.069]
+- Se actualizo el archivo **sandbox_simple.html**
+- Se actualizo el archivo **darkrp_simple.html**
+
 [v1.068]
 - Se actualizo el archivo **css/sandbox.css**
 
