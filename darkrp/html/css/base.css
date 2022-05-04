@@ -26,6 +26,7 @@ p, ul {
 	padding-right: 7%;
 	padding-left: 7%;
 	font-size: 25px;
+	list-style-type: decimal;
 }
 
 html {
@@ -34,6 +35,10 @@ html {
 
 img {
 	border: 5px solid #555;
+}
+
+.center {
+	font-size: 30px;
 }
 
 .center-big {

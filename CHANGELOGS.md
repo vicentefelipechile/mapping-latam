@@ -1,5 +1,11 @@
 Changelogs
 
+[v1.071]
+- Se actualizo el archivo **darkrp_simple.html**
+- Se actualizo el archivo **css/base.css**
+
+
+
 [v1.070]
 - Se actualizo el archivo **sandbox_simple.html**
 - Se actualizo el archivo **darkrp_simple.html**
