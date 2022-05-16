@@ -1,5 +1,8 @@
 Changelogs
 
+[v1.074]
+- Se añadio el archivo **ttt_simple.html**
+
 [v1.073]
 - Se actualizo el archivo **sandbox_simple.html**
 - Se actualizo el archivo **darkrp_simple.html**
