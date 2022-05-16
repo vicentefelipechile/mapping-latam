@@ -1,5 +1,9 @@
 Changelogs
 
+[v1.076]
+- Se añadio el archivo **ttt.html**
+- Se actualizo el archivo **css/base.css**
+
 [v1.075]
 - Se actualizo el archivo **ttt_simple.html**
 

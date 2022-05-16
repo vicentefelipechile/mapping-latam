@@ -16,6 +16,7 @@
 
 body {
 	background: url("../img/background_fade2.png") 100%;
+	background-color: rgb(3, 19, 48);
 	background-position: center center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -90,6 +91,7 @@ img {
 
 .header {
 	background: url("../img/mp_extended.png");
+	background-color: rgb(3, 30, 82);
 	background-position: center bottom;
 	padding-bottom: 10px;
 	padding-top: 1px;
