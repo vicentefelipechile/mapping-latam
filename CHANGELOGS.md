@@ -1,5 +1,13 @@
 Changelogs
 
+[v1.082]
+- Se removio el archivo **demote.lua** y su contenido fue agregado a **alcalde.lua**
+- se removio el archivo **sv_pac3.lua**
+- Se removio codigo sin usar para prevenir entrar a los vehiculos
+- Optimización minima de codigo
+- Se añadio una configuración que añade una base de datos para bloquear ciertas acciones del usuario
+- Se añadio el Jeep como vehiculo comprable en el F4
+
 [v1.081]
 - Se actualizo el archivo **ttt_simple.html**
 
