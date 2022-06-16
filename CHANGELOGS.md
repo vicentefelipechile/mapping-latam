@@ -1,5 +1,21 @@
 Changelogs
 
+[v1.083]
+- Se actualizo el archivo **ttt_simple.html**
+- Se añadio el archivo **ttt_light.html**
+- El archivo **ttt_light.html** tiene un peso reducido del 30% del archivo original
+- Se actualizo el hook que actualizaba la información (Nombre) del usuario
+- Se añadio un hook que añade una base de datos sobre si el usuario esta baneado en:
+  - Entrar a un vehiculo
+  - Usar la tienda
+  - Hablar por global
+  - Ser un sicario/hitman
+  - Ser un policia
+- Se añadio una tabla de rangos en **lua/autorun/hooks.lua**
+- Se actualizo el Hook de los sprays
+- Limpieza minima en el archivo **lua/autorun/hooks.lua**
+- Se añadio un codigo que verifica si el usuario que esta comprando el auto, esta baneado de "Entrar a un vehiculo"
+
 [v1.082]
 - Se removio el archivo **demote.lua** y su contenido fue agregado a **alcalde.lua**
 - se removio el archivo **sv_pac3.lua**

@@ -1,7 +1,14 @@
--- Convar para eventos u otras cosas
-if SERVER then
-	CreateConVar("mappinglatam_allowvehicles", 0, FCVAR_NONE, "Permite que los jugadores", 0, 1)
-end
+-- default allowed ranks
+local rank = {
+	"superadmin",
+	"admin",
+	"mod",
+	"modt",
+	"mod+",
+	"modt+",
+	"vip"
+}
+
 
 -- Hooks
 -- Desactivar sonido de muerte default de HL2
@@ -15,12 +22,12 @@ hook.Add("canSleep", "NoSleep", function(ply, force)
 end)
 
 -- Desactiva el Suicidio
-hook.Add( "CanPlayerSuicide", "AllowOwnerSuicide",function( ply )
+hook.Add( "CanPlayerSuicide", "AllowOwnerSuicide",function(ply)
 	return ply:IsSuperAdmin()
 end )
 
 -- Desactiva el tomar la camara con la physgun
-hook.Add( "PhysgunPickup", "AllowPlayerPickup",function( ply, ent )
+hook.Add( "PhysgunPickup", "AllowPlayerPickup",function(ply, ent)
 	if ent:GetClass() == "gmod_cameraprop" then
 		if ply:IsSuperAdmin() then
 			return true
@@ -41,10 +48,9 @@ end)
 
 -- Habilita el sprays solo a los vips y admins
 hook.Add( "PlayerSpray", "DisablePlayerSpray", function(ply)
-	if ply:IsAdmin() or ply:IsUserGroup("vip") or ply:IsUserGroup("mod+") or ply:IsUserGroup("modt+") then
+	-- check if the user is in the rank table
+	if not table.HasValue(rank, ply:GetUserGroup()) then
 		return false
-	else
-		return true
 	end
 end)
 

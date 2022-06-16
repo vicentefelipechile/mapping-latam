@@ -23,10 +23,13 @@ DarkRP.createVehicle({
         -- check if the user is banned from using a vehicle
         -- asking to the database darkrp_player_data
         -- inside of isbanned_vehicle
+        -- the isbanned_vehicle is a bolean value
         -- if the user is banned, return false
         -- if the user is not banned, return true
         local check = sql.QueryValue("SELECT isbanned_vehicle FROM darkrp_player_data WHERE steamid = " .. sql.SQLStr(ply:SteamID()) .. ";")
-
+        if check == "1" then
+            return false
+        end
     end,
 	label = Label_to_show_in_F4_menu,
     distance = 85,
