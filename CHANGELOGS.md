@@ -1,5 +1,9 @@
 Changelogs
 
+[v1.084]
+- Se añadio el archivo **sandbox_light.html**
+- Se añadio el archivo **css/base_light.css**
+
 [v1.083]
 - Se actualizo el archivo **ttt_simple.html**
 - Se añadio el archivo **ttt_light.html**
