@@ -26,6 +26,15 @@ p, ul {
 	list-style-type: decimal;
 }
 
+a {
+	cursor: pointer;
+	font-style: initial;
+}
+
+.a {
+	list-style-type: disc;
+}
+
 html {
 	scroll-behavior: smooth;
 }

@@ -1,5 +1,10 @@
 Changelogs
 
+[v1.086]
+- Se añadio el archivo **index.html**
+- Se actualizo el archivo **css/base.css**
+
+
 [v1.085]
 - Se actualizo el archivo **css/base.css**
 - Se actualizo el archivo **darkrp_simple.html**
