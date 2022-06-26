@@ -1,5 +1,9 @@
 # Changelogs
 
+### [v1.093]
+- Se actualizo el archivo README en **data/streamradio/playlists**
+- Se añadio el archivo **data/streamradio/playlists/musica_custom_json.txt**
+
 ### [v1.092]
 - Se añadio el archivo **data/streamradio/playlists/musica_custom_json.txt**
 - Se añadio un archivo README en **data/streamradio/playlists**
