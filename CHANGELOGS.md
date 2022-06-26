@@ -1,5 +1,8 @@
 # Changelogs
 
+### [v1.099]
+- Se añadieron reglas para los aportes de este repositorio en **REGLAS.md**
+
 ### [V1.098]
 - Se añadio imagenes para la wiki **(html/img/wiki)**
 
