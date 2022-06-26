@@ -1,5 +1,8 @@
 # Changelogs
 
+### [V1.098]
+- Se añadio imagenes para la wiki **(html/img/wiki)**
+
 ### [V1.097]
 - Se añadio imagenes para la wiki **(html/img/wiki)**
 
