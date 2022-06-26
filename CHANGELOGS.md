@@ -1,5 +1,8 @@
 # Changelogs
 
+### [v1.101]
+- Se actualizaron las reglas para los aportes de este repositorio en **REGLAS.md**
+
 ### [v1.100]
 - Se añadio el archivo **favicon.ico**
 

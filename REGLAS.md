@@ -23,9 +23,12 @@ Los archivos que no se tienen permitidos realizar cambios son los siguientes:
     mapping-latam/darkrp/html/css/base.css
     mapping-latam/darkrp/html/index.html
     
+    mapping-latam/CHANGELOGS.md
     mapping-latam/CNAME
     mapping-latam/README.md
+    mapping-latam/REGLAS.md
     mapping-latam/_config.yml
+    mapping-latam/favicon.ico
 
 # Cosas prohibidas
 
