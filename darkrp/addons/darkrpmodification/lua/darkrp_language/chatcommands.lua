@@ -28,11 +28,11 @@ Make sure the convar gmod_language is set to your language code. You can do that
 ---------------------------------------------------------------------------]]
 
 local descriptions = {
-    ["/"]                     = "Global server chat.",
-    ["a"]                     = "Global server chat.",
-    ["addjailpos"]            = "Add a jail position where you're standing.",
-    ["addlaw"]                = "Add a law to the laws board.",
-    ["addowner"]              = "Invite someone to co-own the door you're looking at.",
+    ["/"]                     = "Chat Global.",
+    ["a"]                     = "Chat Global.",
+    ["addjailpos"]            = "Añade un punto de spawn para el Jail.",
+    ["addlaw"]                = "Añade una ley en la lista de leyes del panel.",
+    ["addowner"]              = "Invita a alguien a ser co-dueño de la puerta que estes mirando.",
     ["addspawn"]              = "Add a spawn position for some job (use the command name of the job as argument)",
     ["addzombie"]             = "Add a zombie spawn pos.",
     ["advert"]                = "Advertise something to everyone in the server.",
