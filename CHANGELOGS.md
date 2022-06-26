@@ -1,5 +1,8 @@
 # Changelogs
 
+### [v1.094 - Vicentefelipe]
+- Se añadio una pequeña traducción a los comandos de DarkRP
+
 ### [v1.093]
 - Se actualizo el archivo README en **data/streamradio/playlists**
 - Se añadio el archivo **data/streamradio/playlists/musica_custom_json.txt**
