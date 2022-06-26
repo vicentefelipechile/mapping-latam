@@ -1,5 +1,8 @@
 # Changelogs
 
+### [V1.095]
+- Se añadio imagenes para la wiki **(html/img/wiki)**
+
 ### [v1.094 - Vicentefelipe]
 - Se añadio una pequeña traducción a los comandos de DarkRP
 
