@@ -1,0 +1,4 @@
+[
+	{"name":"Artista - Nombre de la musica","url":"https://www.example.com/link_permanente_a_la_musica.mp3"}
+]
+
