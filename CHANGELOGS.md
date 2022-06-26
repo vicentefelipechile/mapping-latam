@@ -1,5 +1,8 @@
 Changelogs
 
+[v1.088]
+- Se añadieron archivos del logo y banner de Mapping Latam (html/img/mp)
+
 [v1.087]
 - Se actualizo el archivo **index.html**
 
