@@ -1,5 +1,8 @@
 # Changelogs
 
+### [V1.090]
+- Se añadio imagenes para la wiki **(html/img/wiki)**
+
 ### [v1.089]
 - Se añadio el archivo **data/streamradio/playlists/musica_json_readable.txt**
 - Se modifico el formato de los Changelogs
