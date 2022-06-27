@@ -12,16 +12,14 @@ Esto es sencillo de hacer, solo debes poner en el titulo de los cambios lo sigui
 # Archivos prohibidos
 
 Los archivos que no se tienen permitidos realizar cambios son los siguientes:
-
-    mapping-latam/darkrp_legacy
     
     mapping-latam/darkrp/data/streamradio/playlists/README.md
     mapping-latam/darkrp/data/streamradio/playlists/musica_custom_json.txt
     mapping-latam/darkrp/data/streamradio/playlists/musica_json.txt
     mapping-latam/darkrp/data/streamradio/playlists/musica_json_readable.txt
     
-    mapping-latam/darkrp/html/css/base.css
-    mapping-latam/darkrp/html/index.html
+    mapping-latam/html/css/base.css
+    mapping-latam/html/README.md
     
     mapping-latam/CHANGELOGS.md
     mapping-latam/CNAME

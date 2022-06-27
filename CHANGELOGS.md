@@ -1,5 +1,8 @@
 # Changelogs
 
+### [v1.111]
+- Se actualizaron las reglas para los aportes de este repositorio en **REGLAS.md**
+
 ### [v1.110]
 - Reestructuración profunda del repositorio
 
