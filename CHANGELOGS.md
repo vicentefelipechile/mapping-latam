@@ -1,5 +1,8 @@
 # Changelogs
 
+### [v1.109]
+- Reestructuración profunda del repositorio, ahora se mostrara la configuración de sandbox y los archivos html se mostraran en una carpeta aparte
+
 ### [v1.108]
 - Se arreglo el link que redireccionaba a [darkrp_getentitytype.lua](https://github.com/SuperCALIENTITO/mapping-latam/blob/main/darkrp/addons/darkrpmodification/lua/weapons/gmod_tool/stools/darkrp_getentitytype.lua)
 
