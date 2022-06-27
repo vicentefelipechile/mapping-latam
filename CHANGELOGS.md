@@ -1,7 +1,10 @@
 # Changelogs
 
+### [v1.108]
+- Se arreglo el link que redireccionaba a [darkrp_getentitytype.lua](https://github.com/SuperCALIENTITO/mapping-latam/blob/main/darkrp/addons/darkrpmodification/lua/weapons/gmod_tool/stools/darkrp_getentitytype.lua)
+
 ### [v1.107]
-- Se añadio una herramienta que permite mostrar el tipo de entidad de una entidad. [darkrp_getentitytype.lua](https://github.com/SuperCALIENTITO/mapping-latam/blob/main/darkrp/addons/darkrpmodification/lua/weapons/gmod_tool/stools)
+- Se añadio una herramienta que permite mostrar el tipo de entidad de una entidad. [darkrp_getentitytype.lua](https://github.com/SuperCALIENTITO/mapping-latam/blob/main/darkrp/addons/darkrpmodification/lua/weapons/gmod_tool/stools/darkrp_getentitytype.lua)
 
 ### [v1.106]
 - Se actualizo el sistema anti-rol. [anti-rol.lua](https://github.com/SuperCALIENTITO/mapping-latam/blob/main/darkrp/addons/darkrpmodification/lua/autorun/anti-rol.lua)
