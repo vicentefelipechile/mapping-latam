@@ -1,5 +1,8 @@
 # Changelogs
 
+### [v1.104]
+- Se actualizo el archivo **html/README.md**
+
 ### [v1.103]
 - Se actualizo el archivo **html/README.md**
 
