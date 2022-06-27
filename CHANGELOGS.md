@@ -1,5 +1,13 @@
 # Changelogs
 
+### [v1.102]
+- Se reemplazo el archivo **index.html** por **README.md**
+- Se actualizo el archivo **darkrp.html**
+- Se añadio el archivo **darkrp_light.html**
+- Se actualizo el archivo **darkrp_simple.html**
+- Se actualizo el archivo **sandbox.html**
+- Se actualizo el archivo **sandbox_simple.html**
+
 ### [v1.101]
 - Se actualizaron las reglas para los aportes de este repositorio en **REGLAS.md**
 
