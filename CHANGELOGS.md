@@ -1,5 +1,8 @@
 # Changelogs
 
+### [v1.110]
+- Reestructuración profunda del repositorio
+
 ### [v1.109]
 - Reestructuración profunda del repositorio, ahora se mostrara la configuración de sandbox y los archivos html se mostraran en una carpeta aparte
 
