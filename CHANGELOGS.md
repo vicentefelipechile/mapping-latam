@@ -1,7 +1,10 @@
 # Changelogs
 
+### [v1.106]
+- Se actualizo el sistema anti-rol. [anti-rol.lua](https://github.com/SuperCALIENTITO/mapping-latam/blob/main/darkrp/addons/darkrpmodification/lua/autorun/anti-rol.lua)
+
 ### [v1.105]
-- Se añadio un sistema anti-rol que evita el spawn de props y vehiculos durante combates. [anti-rol.lua](https://github.com/SuperCALIENTITO/mapping-latam/blob/main/darkrp/addons/darkrpmodification/lua/autorun/anti-rol.lua)
+- Se añadio un sistema anti-rol que evita el spawn de props y vehiculos durante combates. [anti-rol.lua](https://github.com/SuperCALIENTITO/mapping-latam/blob/0faceeb5343fb4967216a4826e56f926ce172f26/darkrp/addons/darkrpmodification/lua/autorun/anti-rol.lua)
 
 ### [v1.104]
 - Se actualizo el archivo **html/README.md**
