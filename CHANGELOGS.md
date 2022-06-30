@@ -1,5 +1,8 @@
 # Changelogs
 
+### [v1.112]
+- Se añadio 1 emoji nuevo al repositorio. [dong.png](https://github.com/SuperCALIENTITO/mapping-latam/blob/main/sandbox/materials/mp_emojis/dong.png)
+
 ### [v1.111]
 - Se actualizaron las reglas para los aportes de este repositorio en **REGLAS.md**
 
