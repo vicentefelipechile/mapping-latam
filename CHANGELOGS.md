@@ -1,5 +1,8 @@
 # Changelogs
 
+### [V1.113]
+- Se añadio la imagen de mes de junio del logo de Mapping Latam. [mp_junio.png](https://github.com/SuperCALIENTITO/mapping-latam/blob/main/html/img/mp/mp_junio.png)
+
 ### [v1.112]
 - Se añadio 1 emoji nuevo al repositorio. [dong.png](https://github.com/SuperCALIENTITO/mapping-latam/blob/main/sandbox/materials/mp_emojis/dong.png)
 
