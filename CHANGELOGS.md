@@ -1,5 +1,8 @@
 # Changelogs
 
+### [v1.114]
+- Se actualizo el archivo **data/streamradio/playlists/musica_json.txt**
+
 ### [V1.113]
 - Se añadio la imagen de mes de junio del logo de Mapping Latam. [mp_junio.png](https://github.com/SuperCALIENTITO/mapping-latam/blob/main/html/img/mp/mp_junio.png)
 
