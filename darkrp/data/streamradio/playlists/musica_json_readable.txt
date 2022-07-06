@@ -92,6 +92,10 @@
         "url": "https://viso.mapping-latam.cl/music/Black_Eyed_Peas_I_Gotta_Feeling.mp3"
     },
     {
+        "name": "Bruno Mars ft. AJR Marry Your Karma",
+        "url": "https://viso.mapping-latam.cl/music/Bruno_Mars_ft._AJR_Marry_Your_Karma.mp3"
+    },
+    {
         "name": "BTS Dynamite (Eugene Tsai Remix ft. Cody Dear)",
         "url": "https://viso.mapping-latam.cl/music/BTS_Dynamite_(Eugene_Tsai_Remix_ft._Cody_Dear).mp3"
     },
@@ -386,6 +390,62 @@
     {
         "name": "The Chainsmokers ft. Halsey Closer (Justin Caruso Remix)",
         "url": "https://viso.mapping-latam.cl/music/The_Chainsmokers_ft._Halsey_Closer_(Justin_Caruso_Remix).mp3"
+    },
+    {
+        "name": "The Score Believe",
+        "url": "https://viso.mapping-latam.cl/music/The_Score_Believe.mp3"
+    },
+    {
+        "name": "The Score Born For This",
+        "url": "https://viso.mapping-latam.cl/music/The_Score_Born_For_This.mp3"
+    },
+    {
+        "name": "The Score Enemies",
+        "url": "https://viso.mapping-latam.cl/music/The_Score_Enemies.mp3"
+    },
+    {
+        "name": "The Score Glory",
+        "url": "https://viso.mapping-latam.cl/music/The_Score_Glory.mp3"
+    },
+    {
+        "name": "The Score Legend",
+        "url": "https://viso.mapping-latam.cl/music/The_Score_Legend.mp3"
+    },
+    {
+        "name": "The Score Only One",
+        "url": "https://viso.mapping-latam.cl/music/The_Score_Only_One.mp3"
+    },
+    {
+        "name": "The Score Revolution",
+        "url": "https://viso.mapping-latam.cl/music/The_Score_Revolution.mp3"
+    },
+    {
+        "name": "The Score Shakedown",
+        "url": "https://viso.mapping-latam.cl/music/The_Score_Shakedown.mp3"
+    },
+    {
+        "name": "The Score Stronger",
+        "url": "https://viso.mapping-latam.cl/music/The_Score_Stronger.mp3"
+    },
+    {
+        "name": "The Score The Champion",
+        "url": "https://viso.mapping-latam.cl/music/The_Score_The_Champion.mp3"
+    },
+    {
+        "name": "The Score The Fear",
+        "url": "https://viso.mapping-latam.cl/music/The_Score_The_Fear.mp3"
+    },
+    {
+        "name": "The Score Tightrope",
+        "url": "https://viso.mapping-latam.cl/music/The_Score_Tightrope.mp3"
+    },
+    {
+        "name": "The Score Unstoppable",
+        "url": "https://viso.mapping-latam.cl/music/The_Score_Unstoppable.mp3"
+    },
+    {
+        "name": "The Score Who I Am",
+        "url": "https://viso.mapping-latam.cl/music/The_Score_Who_I_Am.mp3"
     },
     {
         "name": "The Synth Wars",
