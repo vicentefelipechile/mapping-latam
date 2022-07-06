@@ -320,8 +320,8 @@
         "url": "https://viso.mapping-latam.cl/music/Porter_Robinson_&_Madeon_Shelter.mp3"
     },
     {
-        "name": "Porter Robinson & Madeon Shelter  The Movie",
-        "url": "https://viso.mapping-latam.cl/music/Porter_Robinson_&_Madeon_Shelter__The_Movie.mp3"
+        "name": "Porter Robinson & Madeon Shelter The Movie",
+        "url": "https://viso.mapping-latam.cl/music/Porter_Robinson_&_Madeon_Shelter_The_Movie.mp3"
     },
     {
         "name": "Project X Pursuit Of Happiness (Steve Aoki Remix)",
@@ -420,10 +420,6 @@
         "url": "https://viso.mapping-latam.cl/music/Turbo_Summer_of_'99.mp3"
     },
     {
-        "name": "twenty one pilots - Ride",
-        "url": "https://viso.mapping-latam.cl/music/twenty_one_pilots_-_Ride.mp3"
-    },
-    {
         "name": "twenty one pilots House of Gold",
         "url": "https://viso.mapping-latam.cl/music/twenty_one_pilots_House_of_Gold.mp3"
     },
@@ -448,12 +444,20 @@
         "url": "https://viso.mapping-latam.cl/music/Walk_The_Moon_Shut_Up_And_Dance_(Sebastian_Wibe_Remix).mp3"
     },
     {
+        "name": "Witch Doctor Cartoons Hardstyle",
+        "url": "https://viso.mapping-latam.cl/music/Witch_Doctor_Cartoons_Hardstyle.mp3"
+    },
+    {
         "name": "WORLD ORDER HAVE A NICE DAY",
         "url": "https://viso.mapping-latam.cl/music/WORLD_ORDER_HAVE_A_NICE_DAY.mp3"
     },
     {
         "name": "WORLD ORDER HAVE A NICE DAY (Shibuya Version)",
         "url": "https://viso.mapping-latam.cl/music/WORLD_ORDER_HAVE_A_NICE_DAY_(Shibuya_Version).mp3"
+    },
+    {
+        "name": "Young Rising Sons Turnin",
+        "url": "https://viso.mapping-latam.cl/music/Young_Rising_Sons_Turnin.mp3"
     },
     {
         "name": "Yuka Iguchi Platinum Disco (Remix)",
