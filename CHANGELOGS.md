@@ -1,5 +1,9 @@
 # Changelogs
 
+### [v1.115]
+- Se actualizo el archivo **data/streamradio/playlists/musica_json.txt**
+- Se actualizo el archivo **data/streamradio/playlists/musica_json_readable.txt**
+
 ### [v1.114]
 - Se actualizo el archivo **data/streamradio/playlists/musica_json.txt**
 
