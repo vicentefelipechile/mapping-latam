@@ -1,5 +1,9 @@
 # Changelogs
 
+### [v1.116]
+- Se actualizo el archivo [musica_json.txt](https://github.com/SuperCALIENTITO/mapping-latam/blob/main/darkrp/data/streamradio/playlists/musica_json.txt)
+- Se actualizo el archivo [musica_json_readable.txt](https://github.com/SuperCALIENTITO/mapping-latam/blob/main/darkrp/data/streamradio/playlists/musica_json_readable.txt)
+
 ### [v1.115]
 - Se actualizo el archivo **data/streamradio/playlists/musica_json.txt**
 - Se actualizo el archivo **data/streamradio/playlists/musica_json_readable.txt**

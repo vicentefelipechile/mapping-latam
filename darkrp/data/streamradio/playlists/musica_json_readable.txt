@@ -284,6 +284,10 @@
         "url": "https://viso.mapping-latam.cl/music/Pac_Step_(5_Minutes)_Pac-Man_CE_2_DX+_Music.mp3"
     },
     {
+        "name": "Panic! at the Disco Dancings Not a Crime",
+        "url": "https://viso.mapping-latam.cl/music/Panic!_at_the_Disco_Dancings_Not_a_Crime.mp3"
+    },
+    {
         "name": "Pharrell Williams Happy (Official Video)",
         "url": "https://viso.mapping-latam.cl/music/Pharrell_Williams_Happy_(Official_Video).mp3"
     },
@@ -414,6 +418,18 @@
     {
         "name": "Turbo Summer of '99",
         "url": "https://viso.mapping-latam.cl/music/Turbo_Summer_of_'99.mp3"
+    },
+    {
+        "name": "twenty one pilots - Ride",
+        "url": "https://viso.mapping-latam.cl/music/twenty_one_pilots_-_Ride.mp3"
+    },
+    {
+        "name": "twenty one pilots House of Gold",
+        "url": "https://viso.mapping-latam.cl/music/twenty_one_pilots_House_of_Gold.mp3"
+    },
+    {
+        "name": "twenty one pilots Ride",
+        "url": "https://viso.mapping-latam.cl/music/twenty_one_pilots_Ride.mp3"
     },
     {
         "name": "Vengaboys Boom Boom Boom Boom!! (Prezioso x Alyon & Mylian Hardstyle Bootleg)",
