@@ -88,6 +88,10 @@
         "url": "https://viso.mapping-latam.cl/music/A_Day_To_Remember_Homesick_(Acoustic).mp3"
     },
     {
+        "name": "Bastille Pompeii",
+        "url": "https://viso.mapping-latam.cl/music/Bastille_Pompeii.mp3"
+    },
+    {
         "name": "Black Eyed Peas I Gotta Feeling",
         "url": "https://viso.mapping-latam.cl/music/Black_Eyed_Peas_I_Gotta_Feeling.mp3"
     },
@@ -144,6 +148,10 @@
         "url": "https://viso.mapping-latam.cl/music/Imagine_Dragons_Demons_(Dzeko_&_Torres_Sunset_Remix).mp3"
     },
     {
+        "name": "Imagine Dragons Enemy",
+        "url": "https://viso.mapping-latam.cl/music/Imagine_Dragons_Enemy.mp3"
+    },
+    {
         "name": "Imagine Dragons ill Make It Up To You",
         "url": "https://viso.mapping-latam.cl/music/Imagine_Dragons_ill_Make_It_Up_To_You.mp3"
     },
@@ -198,6 +206,10 @@
     {
         "name": "K'NAAN Wavin' Flag (Spanglish Mix)",
         "url": "https://viso.mapping-latam.cl/music/K'NAAN_Wavin'_Flag_(Spanglish_Mix).mp3"
+    },
+    {
+        "name": "Laktos is Calling vs Somebody That I Used To Know",
+        "url": "https://viso.mapping-latam.cl/music/Laktos_is_Calling_vs_Somebody_That_I_Used_To_Know.mp3"
     },
     {
         "name": "Laszlo Supernova",
@@ -270,6 +282,14 @@
     {
         "name": "Miki Matsubara Stay With Me (Synthwave remix)",
         "url": "https://viso.mapping-latam.cl/music/Miki_Matsubara_Stay_With_Me_(Synthwave_remix).mp3"
+    },
+    {
+        "name": "MULTI BGM STUDIO A Cyber World",
+        "url": "https://viso.mapping-latam.cl/music/MULTI_BGM_STUDIO_A_Cyber_World.mp3"
+    },
+    {
+        "name": "MULTI BGM STUDIO A Cyber World (Instruments)",
+        "url": "https://viso.mapping-latam.cl/music/MULTI_BGM_STUDIO_A_Cyber_World_(Instruments).mp3"
     },
     {
         "name": "My Chemical Romance Welcome To The Black Parade (Official Video)",
@@ -392,6 +412,10 @@
         "url": "https://viso.mapping-latam.cl/music/The_Chainsmokers_ft._Halsey_Closer_(Justin_Caruso_Remix).mp3"
     },
     {
+        "name": "The Mandalorian OST Main Theme",
+        "url": "https://viso.mapping-latam.cl/music/The_Mandalorian_OST_Main_Theme.mp3"
+    },
+    {
         "name": "The Score Believe",
         "url": "https://viso.mapping-latam.cl/music/The_Score_Believe.mp3"
     },
@@ -494,6 +518,18 @@
     {
         "name": "Vengaboys Boom Boom Boom Boom (Kandy Bootleg)",
         "url": "https://viso.mapping-latam.cl/music/Vengaboys_Boom_Boom_Boom_Boom_(Kandy_Bootleg).mp3"
+    },
+    {
+        "name": "VGR A Cybers World",
+        "url": "https://viso.mapping-latam.cl/music/VGR_A_Cybers_World.mp3"
+    },
+    {
+        "name": "Vistas Eighteen",
+        "url": "https://viso.mapping-latam.cl/music/Vistas_Eighteen.mp3"
+    },
+    {
+        "name": "Vistas Start Again",
+        "url": "https://viso.mapping-latam.cl/music/Vistas_Start_Again.mp3"
     },
     {
         "name": "Voyage Beyond",

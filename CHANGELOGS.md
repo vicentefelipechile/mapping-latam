@@ -1,8 +1,12 @@
 # Changelogs
 
-### [v1.118]
+### [v1.119]
 - Se actualizo el archivo [musica_json.txt](https://github.com/SuperCALIENTITO/mapping-latam/blob/main/darkrp/data/streamradio/playlists/musica_json.txt)
 - Se actualizo el archivo [musica_json_readable.txt](https://github.com/SuperCALIENTITO/mapping-latam/blob/main/darkrp/data/streamradio/playlists/musica_json_readable.txt)
+
+### [v1.118]
+- Se actualizo el archivo [musica_json.txt](https://github.com/SuperCALIENTITO/mapping-latam/blob/efd5a1bf8e5725db26d9652fe872f8a8797e37d7/darkrp/data/streamradio/playlists/musica_json.txt)
+- Se actualizo el archivo [musica_json_readable.txt](https://github.com/SuperCALIENTITO/mapping-latam/blob/efd5a1bf8e5725db26d9652fe872f8a8797e37d7/darkrp/data/streamradio/playlists/musica_json_readable.txt)
 
 ### [v1.117]
 - Se actualizo el archivo [musica_json.txt](https://github.com/SuperCALIENTITO/mapping-latam/blob/4e30e6e029483efe387068e589df6a53f05b7d07/darkrp/data/streamradio/playlists/musica_json.txt)
