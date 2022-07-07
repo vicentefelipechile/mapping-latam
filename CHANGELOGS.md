@@ -1,5 +1,8 @@
 # Changelogs
 
+### [v1.120]
+- Se añadio el archivo [gm_unigrass_beach.png](https://github.mapping-latam.cl/html/img/maps/gm_unigrass_beach.png)
+
 ### [v1.119]
 - Se actualizo el archivo [musica_json.txt](https://github.com/SuperCALIENTITO/mapping-latam/blob/main/darkrp/data/streamradio/playlists/musica_json.txt)
 - Se actualizo el archivo [musica_json_readable.txt](https://github.com/SuperCALIENTITO/mapping-latam/blob/main/darkrp/data/streamradio/playlists/musica_json_readable.txt)
