@@ -124,6 +124,10 @@
         "url": "https://viso.mapping-latam.cl/music/ELO_Mr._Blue_Sky.mp3"
     },
     {
+        "name": "Fall Out Boy I Wanna Be Like You The Monkey Song",
+        "url": "https://viso.mapping-latam.cl/music/Fall_Out_Boy_I_Wanna_Be_Like_You_The_Monkey_Song.mp3"
+    },
+    {
         "name": "Hey Kids!!",
         "url": "https://viso.mapping-latam.cl/music/Hey_Kids!!.mp3"
     },
@@ -198,6 +202,10 @@
     {
         "name": "Imagine Dragons Yesterday",
         "url": "https://viso.mapping-latam.cl/music/Imagine_Dragons_Yesterday.mp3"
+    },
+    {
+        "name": "John Martin Anywhere For You",
+        "url": "https://viso.mapping-latam.cl/music/John_Martin_Anywhere_For_You.mp3"
     },
     {
         "name": "K'NAAN Wavin' Flag",
