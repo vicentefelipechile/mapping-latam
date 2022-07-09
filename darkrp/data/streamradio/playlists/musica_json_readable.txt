@@ -96,6 +96,14 @@
         "url": "https://viso.mapping-latam.cl/music/Black_Eyed_Peas_I_Gotta_Feeling.mp3"
     },
     {
+        "name": "Bob Esponja Gary Come Home",
+        "url": "https://viso.mapping-latam.cl/music/Bob_Esponja_Gary_Come_Home.mp3"
+    },
+    {
+        "name": "Bob Esponja Gary Vuelve a Casa",
+        "url": "https://viso.mapping-latam.cl/music/Bob_Esponja_Gary_Vuelve_a_Casa.mp3"
+    },
+    {
         "name": "Bruno Mars ft. AJR Marry Your Karma",
         "url": "https://viso.mapping-latam.cl/music/Bruno_Mars_ft._AJR_Marry_Your_Karma.mp3"
     },
