@@ -1,7 +1,10 @@
 # Changelogs
 
+### [v1.127]
+- Se corrigio error ortografico
+
 ### [v1.126]
-- Se añadio el archivo [gm_unigrass.png](https://github.mapping-latam.cl/html/img/maps/gm_unigrass_backrooms.png).
+- Se añadio el archivo [gm_unigrass_backrooms.png](https://github.mapping-latam.cl/html/img/maps/gm_unigrass_backrooms.png).
 - Se corrigio pequeño error ortografico
 
 ### [v1.125]
