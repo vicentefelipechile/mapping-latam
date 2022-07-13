@@ -20,6 +20,7 @@ Los archivos que no se tienen permitidos realizar cambios son los siguientes:
     
     mapping-latam/html/css/base.css
     mapping-latam/html/README.md
+    mapping-latam/html/index.py
     
     mapping-latam/CHANGELOGS.md
     mapping-latam/CNAME

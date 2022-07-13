@@ -1,5 +1,11 @@
 # Changelogs
 
+### [v1.128]
+- Se actualizo la pagina [html](https://github.mapping-latam.cl/html/).
+- Se añadio el archivo [html/index.py](https://github.com/SuperCALIENTITO/mapping-latam/blob/main/html/index.py)
+- Se removio el archivo **.gitignore**
+- Se actualizaron las [reglas](https://github.mapping-latam.cl/REGLAS.html)
+
 ### [v1.127]
 - Se corrigio error ortografico
 
