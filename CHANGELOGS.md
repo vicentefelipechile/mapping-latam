@@ -1,7 +1,11 @@
 # Changelogs
 
+### [v1.126]
+- Se añadio el archivo [gm_unigrass.png](https://github.mapping-latam.cl/html/img/maps/gm_unigrass_backrooms.png).
+- Se corrigio pequeño error ortografico
+
 ### [v1.125]
-- Se añadio el archivo [gm_unigrass.png](https://github.mapping-latam.cl/html/img/maps/gmod13_hotels_classic.png)
+- Se añadio el archivo [gm_unigrass.png](https://github.mapping-latam.cl/html/img/maps/gmod13_hotels_classic.png).
 
 ### [v1.124]
 - Se añadieron mas imagenes de [mapas](https://github.com/SuperCALIENTITO/mapping-latam/tree/main/html/img/maps).
