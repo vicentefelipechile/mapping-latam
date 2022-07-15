@@ -22,7 +22,6 @@ Los archivos que no se tienen permitidos realizar cambios son los siguientes:
     mapping-latam/html/README.md
     mapping-latam/html/index.py
     
-    mapping-latam/CHANGELOGS.md
     mapping-latam/CNAME
     mapping-latam/README.md
     mapping-latam/REGLAS.md

@@ -1,5 +1,8 @@
 # Changelogs
 
+### [v1.130]
+- Se actualizaron las [reglas](https://github.mapping-latam.cl/REGLAS.html)
+
 ### [v1.129]
 - Se actualizaron las [reglas](https://github.mapping-latam.cl/REGLAS.html)
 - Se removio el archivo **.gitignore**
