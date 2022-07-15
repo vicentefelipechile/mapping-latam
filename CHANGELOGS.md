@@ -1,5 +1,9 @@
 # Changelogs
 
+### [v1.129]
+- Se actualizaron las [reglas](https://github.mapping-latam.cl/REGLAS.html)
+- Se removio el archivo **.gitignore**
+
 ### [v1.128]
 - Se actualizo la pagina [html](https://github.mapping-latam.cl/html/).
 - Se añadio el archivo [html/index.py](https://github.com/SuperCALIENTITO/mapping-latam/blob/main/html/index.py)
