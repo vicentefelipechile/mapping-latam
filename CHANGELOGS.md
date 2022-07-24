@@ -1,5 +1,12 @@
 # Changelogs
 
+### [v1.131]
+- Se elimino el archivo [alcalde.lua](https://github.com/SuperCALIENTITO/mapping-latam/blob/229f8c29237f407a3a3d01864d2f27907e2e62be/darkrp/addons/darkrpmodification/lua/autorun/alcalde.lua)
+- Se elimino el archivo [anti-rol.lua](https://github.com/SuperCALIENTITO/mapping-latam/blob/229f8c29237f407a3a3d01864d2f27907e2e62be/darkrp/addons/darkrpmodification/lua/autorun/anti-rol.lua)
+- Se elimino el archivo [autorun_config.lua](https://github.com/SuperCALIENTITO/mapping-latam/blob/229f8c29237f407a3a3d01864d2f27907e2e62be/darkrp/addons/darkrpmodification/lua/autorun/autorun_config.lua)
+- Se elimino el archivo [hooks.lua](https://github.com/SuperCALIENTITO/mapping-latam/blob/229f8c29237f407a3a3d01864d2f27907e2e62be/darkrp/addons/darkrpmodification/lua/autorun/hooks.lua)
+- Se elimino el archivo [sv_stats.lua](https://github.com/SuperCALIENTITO/mapping-latam/blob/229f8c29237f407a3a3d01864d2f27907e2e62be/sandbox/addons/stats/lua/autorun/sv_stats.lua)
+
 ### [v1.130]
 - Se actualizaron las [reglas](https://github.mapping-latam.cl/REGLAS.html)
 
