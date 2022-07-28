@@ -1,5 +1,10 @@
 # Changelogs
 
+### [v1.134]
+- Se actualizo el archivo [sandbox.html](https://github.mapping-latam.cl/html/sandbox.html)
+- Se actualizo el archivo [sandbox_light.html](https://github.mapping-latam.cl/html/sandbox_light.html)
+- Se actualizo el archivo [sandbox_simple.html](https://github.mapping-latam.cl/html/sandbox_simple.html)
+
 ### [v1.133]
 - Se indexaron las imagenes de los mapas
 
