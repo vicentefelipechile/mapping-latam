@@ -1,5 +1,12 @@
 # Changelogs
 
+### [v1.132]
+- Se actualizo el archivo [sandbox.html](https://github.mapping-latam.cl/html/sandbox.html)
+- Se actualizo el archivo [sandbox_light.html](https://github.mapping-latam.cl/html/sandbox_light.html)
+- Se actualizo el archivo [sandbox_simple.html](https://github.mapping-latam.cl/html/sandbox_simple.html)
+- Se añadieron mas imagenes de mapas
+- Se añadio un addon que previene que los jugadores se coloquen mas de 200 de vida
+
 ### [v1.131]
 - Se elimino el archivo [alcalde.lua](https://github.com/SuperCALIENTITO/mapping-latam/blob/229f8c29237f407a3a3d01864d2f27907e2e62be/darkrp/addons/darkrpmodification/lua/autorun/alcalde.lua)
 - Se elimino el archivo [anti-rol.lua](https://github.com/SuperCALIENTITO/mapping-latam/blob/229f8c29237f407a3a3d01864d2f27907e2e62be/darkrp/addons/darkrpmodification/lua/autorun/anti-rol.lua)
