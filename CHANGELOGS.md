@@ -1,5 +1,11 @@
 # Changelogs
 
+### [v1.137]
+- Se actualizo el archivo [base.css](https://github.mapping-latam.cl/html/css/base.css)
+- Se actualizo el archivo [darkrp.html](https://github.mapping-latam.cl/html/darkrp.html)
+- Se actualizo el archivo [darkrp_light.html](https://github.mapping-latam.cl/html/darkrp_light.html)
+- Se actualizo el archivo [darkrp_simple.html](https://github.mapping-latam.cl/html/darkrp_simple.html)
+
 ### [v1.136]
 - Se actualizo el archivo [musica_json.txt](https://github.com/SuperCALIENTITO/mapping-latam/blob/main/darkrp/data/streamradio/playlists/musica_json.txt)
 - Se actualizo el archivo [musica_json_readable.txt](https://github.com/SuperCALIENTITO/mapping-latam/blob/main/darkrp/data/streamradio/playlists/musica_json_readable.txt)
