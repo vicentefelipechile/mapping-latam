@@ -380,6 +380,10 @@
         "url": "https://viso.mapping-latam.cl/music/Romos_Magic_Touch.mp3"
     },
     {
+        "name": "Saint Motel Preach",
+        "url": "https://viso.mapping-latam.cl/music/Saint_Motel_Preach.mp3"
+    },
+    {
         "name": "Sebastian Ingrosso & Alesso ft. Ryan Tedder Calling",
         "url": "https://viso.mapping-latam.cl/music/Sebastian_Ingrosso_&_Alesso_ft._Ryan_Tedder_Calling.mp3"
     },
@@ -538,6 +542,10 @@
     {
         "name": "VGR A Cybers World",
         "url": "https://viso.mapping-latam.cl/music/VGR_A_Cybers_World.mp3"
+    },
+    {
+        "name": "Vistas Calm",
+        "url": "https://viso.mapping-latam.cl/music/Vistas_Calm.mp3"
     },
     {
         "name": "Vistas Eighteen",

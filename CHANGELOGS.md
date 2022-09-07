@@ -1,5 +1,33 @@
 # Changelogs
 
+### [v1.137]
+- Se actualizo el archivo [base.css](https://github.mapping-latam.cl/html/css/base.css)
+- Se actualizo el archivo [darkrp.html](https://github.mapping-latam.cl/html/darkrp.html)
+- Se actualizo el archivo [darkrp_light.html](https://github.mapping-latam.cl/html/darkrp_light.html)
+- Se actualizo el archivo [darkrp_simple.html](https://github.mapping-latam.cl/html/darkrp_simple.html)
+
+### [v1.136]
+- Se actualizo el archivo [musica_json.txt](https://github.com/SuperCALIENTITO/mapping-latam/blob/main/darkrp/data/streamradio/playlists/musica_json.txt)
+- Se actualizo el archivo [musica_json_readable.txt](https://github.com/SuperCALIENTITO/mapping-latam/blob/main/darkrp/data/streamradio/playlists/musica_json_readable.txt)
+
+### [v1.135]
+- Se actualizo el archivo [sandbox_simple.html](https://github.mapping-latam.cl/html/sandbox_simple.html)
+
+### [v1.134]
+- Se actualizo el archivo [sandbox.html](https://github.mapping-latam.cl/html/sandbox.html)
+- Se actualizo el archivo [sandbox_light.html](https://github.mapping-latam.cl/html/sandbox_light.html)
+- Se actualizo el archivo [sandbox_simple.html](https://github.mapping-latam.cl/html/sandbox_simple.html)
+
+### [v1.133]
+- Se indexaron las imagenes de los mapas
+
+### [v1.132]
+- Se actualizo el archivo [sandbox.html](https://github.mapping-latam.cl/html/sandbox.html)
+- Se actualizo el archivo [sandbox_light.html](https://github.mapping-latam.cl/html/sandbox_light.html)
+- Se actualizo el archivo [sandbox_simple.html](https://github.mapping-latam.cl/html/sandbox_simple.html)
+- Se añadieron mas imagenes de mapas
+- Se añadio un addon que previene que los jugadores se coloquen mas de 200 de vida
+
 ### [v1.131]
 - Se elimino el archivo [alcalde.lua](https://github.com/SuperCALIENTITO/mapping-latam/blob/229f8c29237f407a3a3d01864d2f27907e2e62be/darkrp/addons/darkrpmodification/lua/autorun/alcalde.lua)
 - Se elimino el archivo [anti-rol.lua](https://github.com/SuperCALIENTITO/mapping-latam/blob/229f8c29237f407a3a3d01864d2f27907e2e62be/darkrp/addons/darkrpmodification/lua/autorun/anti-rol.lua)
@@ -34,8 +62,8 @@
 - Se añadieron mas imagenes de [mapas](https://github.com/SuperCALIENTITO/mapping-latam/tree/main/html/img/maps).
 
 ### [v1.123]
-- Se actualizo el archivo [musica_json.txt](https://github.com/SuperCALIENTITO/mapping-latam/blob/main/darkrp/data/streamradio/playlists/musica_json.txt)
-- Se actualizo el archivo [musica_json_readable.txt](https://github.com/SuperCALIENTITO/mapping-latam/blob/main/darkrp/data/streamradio/playlists/musica_json_readable.txt)
+- Se actualizo el archivo [musica_json.txt](https://github.com/SuperCALIENTITO/mapping-latam/blob/d7fe4837fb8c482798806416fe21fe33b30b4ce3/darkrp/data/streamradio/playlists/musica_json.txt)
+- Se actualizo el archivo [musica_json_readable.txt](https://github.com/SuperCALIENTITO/mapping-latam/blob/d7fe4837fb8c482798806416fe21fe33b30b4ce3/darkrp/data/streamradio/playlists/musica_json_readable.txt)
 
 ### [v1.122]
 - Se actualizo el archivo [musica_json.txt](https://github.com/SuperCALIENTITO/mapping-latam/blob/4198c31ade4cb3927e2db2c6766e26cffd751ae8/darkrp/data/streamradio/playlists/musica_json.txt)

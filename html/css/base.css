@@ -53,6 +53,12 @@ img {
 	font-size: 50px;
 }
 
+.center-sub {
+	padding-top: 2px;
+	text-align: center;
+	font-size: 30px;
+}
+
 .title {
 	font-size: 40px;
 
