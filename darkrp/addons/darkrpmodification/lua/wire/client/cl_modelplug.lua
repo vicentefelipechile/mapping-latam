@@ -1,90 +1,24 @@
---Msg("=== Loading Wire Model Packs ===\n")
-
 CreateConVar("cl_showmodeltextbox", "0")
 
---[[
--- Loads and converts model lists from the old WireModelPacks format
-do
-	local converted = {}
+list.Set("WireScreenModels", "models/props/cs_office/tv_plasma.mdl", true)
+list.Set("WireScreenModels", "models/blacknecro/tv_plasma_4_3.mdl", true)
+list.Set("WireScreenModels", "models/props/cs_office/computer_monitor.mdl", true)
+list.Set("WireScreenModels", "models/kobilica/wiremonitorbig.mdl", true)
+list.Set("WireScreenModels", "models/kobilica/wiremonitorsmall.mdl", true)
+-- list.Set("WireScreenModels", "models/props/cs_assault/Billboard.mdl", true)
+list.Set("WireScreenModels", "models/cheeze/pcb/pcb4.mdl", true)
+list.Set("WireScreenModels", "models/cheeze/pcb/pcb6.mdl", true)
+list.Set("WireScreenModels", "models/cheeze/pcb/pcb5.mdl", true)
+list.Set("WireScreenModels", "models/cheeze/pcb/pcb7.mdl", true)
+list.Set("WireScreenModels", "models/hunter/plates/plate1x1.mdl", true)
+list.Set("WireScreenModels", "models/hunter/plates/plate05x05.mdl", true)
 
+list.Set("WireNoGPULibScreenModels", "models/props_lab/monitor01b.mdl", true)
+list.Set("WireNoGPULibScreenModels", "models/props/cs_office/tv_plasma.mdl", true)
+list.Set("WireNoGPULibScreenModels", "models/props/cs_office/computer_monitor.mdl", true)
+list.Set("WireNoGPULibScreenModels", "models/kobilica/wiremonitorbig.mdl", true)
+list.Set("WireNoGPULibScreenModels", "models/kobilica/wiremonitorsmall.mdl", true)
 
-	MsgN("WM: Loading models...")
-	for _,filename in ipairs( file.Find("WireModelPacks/*", "DATA") ) do
-	--for _,filename in ipairs{"bull_buttons.txt","bull_modelpack.txt","cheeze_buttons2.txt","default.txt","expression2.txt","wire_model_pack_1.txt","wire_model_pack_1plus.txt"} do
-		filename = "WireModelPacks/"..filename
-		print("Loading from WireModelPacks/"..filename)
-		local f = file.Read(filename, "DATA")
-		if f then
-			converted[#converted+1] = "-- Converted from "..filename
-			local packtbl = util.KeyValuesToTable(f)
-			for name,entry in pairs(packtbl) do
-				print(string.format("\tLoaded model %s => %s", name, entry.model))
-				local categorytable = string.Explode(",", entry.categories or "none") or { "none" }
-				for _,cat in pairs(categorytable) do
-					list.Set( "Wire_"..cat.."_Models", entry.model, true )
-					converted[#converted+1] = string.format('list.Set("Wire_%s_Models", "%s", true)', cat, entry.model)
-				end
-			end
-			converted[#converted+1] = ""
-		else
-			print("Error opening "..filename)
-		end
-	end
-	MsgN("End loading models")
-
-	file.Write("converted.txt", table.concat(converted, "\n"))
-end
-]]
-
---
---	Add some more options to the stools
---
-
---screens with a GPULib setup
--- list.Set( "WireScreenModels", "models/props_lab/monitor01b.mdl", true )
--- list.Set( "WireScreenModels", "models/props_c17/tv_monitor01.mdl", true )
-list.Set( "WireScreenModels", "models/props/cs_office/tv_plasma.mdl", true )
-list.Set( "WireScreenModels", "models/blacknecro/tv_plasma_4_3.mdl", true )
-list.Set( "WireScreenModels", "models/props/cs_office/computer_monitor.mdl", true )
-list.Set( "WireScreenModels", "models/kobilica/wiremonitorbig.mdl", true )
-list.Set( "WireScreenModels", "models/kobilica/wiremonitorsmall.mdl", true )
--- list.Set( "WireScreenModels", "models/props/cs_assault/Billboard.mdl", true )
-list.Set( "WireScreenModels", "models/cheeze/pcb/pcb4.mdl", true )
-list.Set( "WireScreenModels", "models/cheeze/pcb/pcb6.mdl", true )
-list.Set( "WireScreenModels", "models/cheeze/pcb/pcb5.mdl", true )
-list.Set( "WireScreenModels", "models/cheeze/pcb/pcb7.mdl", true )
--- list.Set( "WireScreenModels", "models/cheeze/pcb/pcb8.mdl", true )
--- list.Set( "WireScreenModels", "models/cheeze/pcb2/pcb8.mdl", true )
--- list.Set( "WireScreenModels", "models/props_lab/monitor01a.mdl", true )
--- list.Set( "WireScreenModels", "models/props_lab/monitor02.mdl", true )
--- list.Set( "WireScreenModels", "models/props/cs_militia/reload_bullet_tray.mdl", true )
--- list.Set( "WireScreenModels", "models/props_lab/workspace002.mdl", true )
--- list.Set( "WireScreenModels", "models/props_lab/reciever01b.mdl", true )
--- list.Set( "WireScreenModels", "models/blacknecro/ledboard60.mdl", true ) --broken
--- list.Set( "WireScreenModels", "models/props_wasteland/controlroom_monitor001b.mdl", true )
---TF2 Billboards
--- list.Set( "WireScreenModels", "models/props_mining/billboard001.mdl", true )
--- list.Set( "WireScreenModels", "models/props_mining/billboard002.mdl", true )
-
---PHX3
-list.Set( "WireScreenModels", "models/hunter/plates/plate1x1.mdl", true )
--- list.Set( "WireScreenModels", "models/hunter/plates/plate2x2.mdl", true )
--- list.Set( "WireScreenModels", "models/hunter/plates/plate4x4.mdl", true )
--- list.Set( "WireScreenModels", "models/hunter/plates/plate8x8.mdl", true )
-list.Set( "WireScreenModels", "models/hunter/plates/plate05x05.mdl", true )
--- list.Set( "WireScreenModels", "models/hunter/blocks/cube1x1x1.mdl", true )
-
---screens that are transparent
--- list.Set( "WireScreenModels", "models/props_phx/construct/windows/window1x1.mdl", true )
-
---screens with out a GPULib setup (for the tools wire_panel and wire_screen)
-list.Set( "WireNoGPULibScreenModels", "models/props_lab/monitor01b.mdl", true )
-list.Set( "WireNoGPULibScreenModels", "models/props/cs_office/tv_plasma.mdl", true )
-list.Set( "WireNoGPULibScreenModels", "models/props/cs_office/computer_monitor.mdl", true )
-list.Set( "WireNoGPULibScreenModels", "models/kobilica/wiremonitorbig.mdl", true )
-list.Set( "WireNoGPULibScreenModels", "models/kobilica/wiremonitorsmall.mdl", true )
-
---sounds
 local WireSounds = {
 	["Warning"] = "common/warning.wav",
 	["Talk"] = "common/talk.wav",
@@ -110,8 +44,6 @@ for k,v in pairs(WireSounds) do
 	list.Set("WireSounds",k,{wire_soundemitter_sound=v});
 end
 
-
---some extra wheels that wired wheels have
 local wastelandwheels = {
 	"models/props_wasteland/wheel01a.mdl",
 	"models/props_wasteland/wheel02a.mdl",
@@ -120,12 +52,10 @@ local wastelandwheels = {
 }
 for k,v in pairs(wastelandwheels) do
 	if file.Exists(v,"GAME") then
-	list.Set( "WheelModels", v, { wheel_rx = 90, wheel_ry = 0, wheel_rz = 90} )
+	list.Set("WheelModels", v, { wheel_rx = 90, wheel_ry = 0, wheel_rz = 90} )
 	end
 end
 
-
---Cheeze's Buttons Pack
 local CheezesButtons = {
 	"models/cheeze/buttons/button_arm.mdl",
 	"models/cheeze/buttons/button_clear.mdl",
@@ -141,8 +71,8 @@ local CheezesButtons = {
 }
 for k,v in ipairs(CheezesButtons) do
 	if file.Exists(v,"GAME") then
-		list.Set( "ButtonModels", v, {} )
-		list.Set( "Wire_button_Models", v, true )
+		list.Set("ButtonModels", v, {} )
+		list.Set("Wire_button_Models", v, true)
 	end
 end
 local CheezesSmallButtons = {
@@ -159,8 +89,8 @@ local CheezesSmallButtons = {
 }
 for k,v in ipairs(CheezesSmallButtons) do
 	if file.Exists(v,"GAME") then
-		list.Set( "ButtonModels", v, {} )
-		list.Set( "Wire_button_small_Models", v, true )
+		list.Set("ButtonModels", v, {} )
+		list.Set("Wire_button_small_Models", v, true)
 	end
 end
 
@@ -217,7 +147,6 @@ local Buttons = {
 	"models/cheeze/buttons2/multiply.mdl",
 	"models/cheeze/buttons2/7.mdl",
 	"models/cheeze/buttons2/9.mdl",
-	--animated buttons from here
 	"models/props_lab/freightelevatorbutton.mdl",
 	"models/props/switch001.mdl",
 	"models/props_combine/combinebutton.mdl",
@@ -238,7 +167,7 @@ local Buttons = {
 }
 for k,v in ipairs(Buttons) do
 	if file.Exists(v,"GAME") then
-		list.Set( "Wire_button_Models", v, true )
+		list.Set("Wire_button_Models", v, true)
 	end
 end
 
@@ -279,7 +208,7 @@ local JaanusThrusters = {
 }
 for k,v in pairs(JaanusThrusters) do
 	if file.Exists(v,"GAME") then
-		list.Set( "ThrusterModels", v, true )
+		list.Set("ThrusterModels", v, true)
 	end
 end
 
@@ -324,7 +253,7 @@ local explosivemodels = {
 	"models/props_junk/wood_pallet001a.mdl",
 }
 for k,v in pairs(explosivemodels) do
-	if file.Exists(v,"GAME") then list.Set( "Wire_Explosive_Models", v, true ) end
+	if file.Exists(v,"GAME") then list.Set("Wire_Explosive_Models", v, true) end
 end
 
 for k,v in pairs({
@@ -335,7 +264,7 @@ for k,v in pairs({
 		"models/props_c17/fountain_01.mdl"
 	}) do
 	if file.Exists(v,"GAME") then
-		list.Set( "Wire_Gimbal_Models", v, true )
+		list.Set("Wire_Gimbal_Models", v, true)
 	end
 end
 
@@ -350,7 +279,7 @@ local valuemodels = {
 	-- "models/cheeze/wires/nano_value.mdl", -- This guy doesn't have a normal sized one in that folder
 }
 for k,v in pairs(valuemodels) do
-	if file.Exists(v,"GAME") then list.Set( "Wire_Value_Models", v, true ) end
+	if file.Exists(v,"GAME") then list.Set("Wire_Value_Models", v, true) end
 end
 
 local teleportermodels = {
@@ -371,7 +300,7 @@ local teleportermodels = {
 	"models/props_wasteland/laundry_washer003.mdl"
 }
 for k,v in pairs(teleportermodels) do
-	if file.Exists(v,"GAME") then list.Set( "WireTeleporterModels", v, true ) end
+	if file.Exists(v,"GAME") then list.Set("WireTeleporterModels", v, true) end
 end
 
 local turretmodels = {
@@ -383,7 +312,7 @@ local turretmodels = {
 	"models/weapons/w_shot_m3super90.mdl"
 }
 for k,v in pairs(turretmodels) do
-	if file.Exists(v,"GAME") then list.Set( "WireTurretModels", v, true ) end
+	if file.Exists(v,"GAME") then list.Set("WireTurretModels", v, true) end
 end
 
 local satellitedish_models = {
@@ -392,7 +321,7 @@ local satellitedish_models = {
 }
 for k,v in pairs(satellitedish_models) do
 	if file.Exists(v,"GAME") then
-		list.Set( "Wire_satellitedish_Models", v, true )
+		list.Set("Wire_satellitedish_Models", v, true)
 	end
 end
 
@@ -400,52 +329,52 @@ end
 --MsgN("\tBeer's Model pack")
 
 --Keyboard
-list.Set( "Wire_Keyboard_Models", "models/beer/wiremod/keyboard.mdl", true )
-list.Set( "Wire_Keyboard_Models", "models/jaanus/wiretool/wiretool_input.mdl", true )
-list.Set( "Wire_Keyboard_Models", "models/props/kb_mouse/keyboard.mdl", true )
-list.Set( "Wire_Keyboard_Models", "models/props_c17/computer01_keyboard.mdl", true )
+list.Set("Wire_Keyboard_Models", "models/beer/wiremod/keyboard.mdl", true)
+list.Set("Wire_Keyboard_Models", "models/jaanus/wiretool/wiretool_input.mdl", true)
+list.Set("Wire_Keyboard_Models", "models/props/kb_mouse/keyboard.mdl", true)
+list.Set("Wire_Keyboard_Models", "models/props_c17/computer01_keyboard.mdl", true)
 
 --Hydraulic
-list.Set( "Wire_Hydraulic_Models", "models/beer/wiremod/hydraulic.mdl", true )
-list.Set( "Wire_Hydraulic_Models", "models/jaanus/wiretool/wiretool_siren.mdl", true )
+list.Set("Wire_Hydraulic_Models", "models/beer/wiremod/hydraulic.mdl", true)
+list.Set("Wire_Hydraulic_Models", "models/jaanus/wiretool/wiretool_siren.mdl", true)
 
 --GPS
-list.Set( "Wire_GPS_Models", "models/beer/wiremod/gps.mdl", true )
-list.Set( "Wire_GPS_Models", "models/jaanus/wiretool/wiretool_speed.mdl", true )
+list.Set("Wire_GPS_Models", "models/beer/wiremod/gps.mdl", true)
+list.Set("Wire_GPS_Models", "models/jaanus/wiretool/wiretool_speed.mdl", true)
 
 --Numpad
-list.Set( "Wire_Numpad_Models", "models/beer/wiremod/numpad.mdl", true )
-list.Set( "Wire_Numpad_Models", "models/jaanus/wiretool/wiretool_input.mdl", true )
-list.Set( "Wire_Numpad_Models", "models/jaanus/wiretool/wiretool_output.mdl", true )
+list.Set("Wire_Numpad_Models", "models/beer/wiremod/numpad.mdl", true)
+list.Set("Wire_Numpad_Models", "models/jaanus/wiretool/wiretool_input.mdl", true)
+list.Set("Wire_Numpad_Models", "models/jaanus/wiretool/wiretool_output.mdl", true)
 
 --Water Sensor
-list.Set( "Wire_WaterSensor_Models", "models/beer/wiremod/watersensor.mdl", true )
-list.Set( "Wire_WaterSensor_Models", "models/jaanus/wiretool/wiretool_range.mdl", true )
+list.Set("Wire_WaterSensor_Models", "models/beer/wiremod/watersensor.mdl", true)
+list.Set("Wire_WaterSensor_Models", "models/jaanus/wiretool/wiretool_range.mdl", true)
 
 --Target Finder
-list.Set( "Wire_TargetFinder_Models", "models/beer/wiremod/targetfinder.mdl", true )
-list.Set( "Wire_TargetFinder_Models", "models/props_lab/powerbox02d.mdl", true )
+list.Set("Wire_TargetFinder_Models", "models/beer/wiremod/targetfinder.mdl", true)
+list.Set("Wire_TargetFinder_Models", "models/props_lab/powerbox02d.mdl", true)
 
-list.Set( "Wire_Forcer_Models", "models/jaanus/wiretool/wiretool_grabber_forcer.mdl", true )
-list.Set( "Wire_Forcer_Models", "models/jaanus/wiretool/wiretool_siren.mdl", true )
+list.Set("Wire_Forcer_Models", "models/jaanus/wiretool/wiretool_grabber_forcer.mdl", true)
+list.Set("Wire_Forcer_Models", "models/jaanus/wiretool/wiretool_siren.mdl", true)
 
 --Misc Tools (Entity Marker, Eye Pod, GpuLib Switcher, ect...)
-list.Set( "Wire_Misc_Tools_Models", "models/jaanus/wiretool/wiretool_range.mdl", true )
-list.Set( "Wire_Misc_Tools_Models", "models/jaanus/wiretool/wiretool_siren.mdl", true )
-list.Set( "Wire_Misc_Tools_Models", "models/props_lab/powerbox02d.mdl", true )
+list.Set("Wire_Misc_Tools_Models", "models/jaanus/wiretool/wiretool_range.mdl", true)
+list.Set("Wire_Misc_Tools_Models", "models/jaanus/wiretool/wiretool_siren.mdl", true)
+list.Set("Wire_Misc_Tools_Models", "models/props_lab/powerbox02d.mdl", true)
 
 --Laser Tools (Ranger, User, etc)
-list.Set( "Wire_Laser_Tools_Models", "models/jaanus/wiretool/wiretool_range.mdl", true )
-list.Set( "Wire_Laser_Tools_Models", "models/jaanus/wiretool/wiretool_siren.mdl", true )
-list.Set( "Wire_Laser_Tools_Models", "models/jaanus/wiretool/wiretool_beamcaster.mdl", true )
+list.Set("Wire_Laser_Tools_Models", "models/jaanus/wiretool/wiretool_range.mdl", true)
+list.Set("Wire_Laser_Tools_Models", "models/jaanus/wiretool/wiretool_siren.mdl", true)
+list.Set("Wire_Laser_Tools_Models", "models/jaanus/wiretool/wiretool_beamcaster.mdl", true)
 
-list.Set( "Wire_Socket_Models", "models/props_lab/tpplugholder_single.mdl", true )
-list.Set( "Wire_Socket_Models", "models/bull/various/usb_socket.mdl", true )
-list.Set( "Wire_Socket_Models", "models/hammy/pci_slot.mdl", true )
-list.Set( "Wire_Socket_Models", "models/wingf0x/isasocket.mdl", true )
-list.Set( "Wire_Socket_Models", "models/wingf0x/altisasocket.mdl", true )
-list.Set( "Wire_Socket_Models", "models/wingf0x/ethernetsocket.mdl", true )
-list.Set( "Wire_Socket_Models", "models/wingf0x/hdmisocket.mdl", true )
+list.Set("Wire_Socket_Models", "models/props_lab/tpplugholder_single.mdl", true)
+list.Set("Wire_Socket_Models", "models/bull/various/usb_socket.mdl", true)
+list.Set("Wire_Socket_Models", "models/hammy/pci_slot.mdl", true)
+list.Set("Wire_Socket_Models", "models/wingf0x/isasocket.mdl", true)
+list.Set("Wire_Socket_Models", "models/wingf0x/altisasocket.mdl", true)
+list.Set("Wire_Socket_Models", "models/wingf0x/ethernetsocket.mdl", true)
+list.Set("Wire_Socket_Models", "models/wingf0x/hdmisocket.mdl", true)
 
 -- Converted from WireModelPacks/wire_model_pack_1plus.txt
 list.Set("Wire_radio_Models", "models/props_lab/reciever01b.mdl", true)
