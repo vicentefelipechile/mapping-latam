@@ -32,6 +32,8 @@
 * [img/kos4.png](https://github.mapping-latam.cl/html/img/kos4.png)
 * [img/kos5.pdn](https://github.mapping-latam.cl/html/img/kos5.pdn)
 * [img/kos5.png](https://github.mapping-latam.cl/html/img/kos5.png)
+* [img/kos6.pdn](https://github.mapping-latam.cl/html/img/kos6.pdn)
+* [img/kos6.png](https://github.mapping-latam.cl/html/img/kos6.png)
 * [img/mp_extended.png](https://github.mapping-latam.cl/html/img/mp_extended.png)
 * [img/mp_extended_fade.png](https://github.mapping-latam.cl/html/img/mp_extended_fade.png)
 * [img/propclimb1.pdn](https://github.mapping-latam.cl/html/img/propclimb1.pdn)
