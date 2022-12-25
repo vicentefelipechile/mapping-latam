@@ -30,7 +30,7 @@ function ENT:AcceptInput(name, activator, caller)
 			local GotMeth = EML.Meth.Salesman.GotMeth
 			local GotMeth_Sound = EML.Meth.Salesman.GotMeth_Sound
 
-			if ( caller:GetNWInt("meth.amount") == 0 )
+			if ( caller:GetNWInt("meth.amount") == 0 ) then
 
 				net.Start("EML.SendToCL")
 					net.WriteString( NoMeth[ math.random(1, #NoMeth) ] )
