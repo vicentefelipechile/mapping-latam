@@ -19,8 +19,8 @@ if SERVER then
             file.CreateDir("eml/methbuyer/".. map(), "DATA")
         end
 
-        for k, v in pairs(file.Find("eml/methbuyer/".. map() .. "/*.txt", "DATA")) do
-            local methPosFile = file.Read("eml/methbuyer/" .. map() .. "/" .. v, "DATA")
+        for _, File in pairs(file.Find("eml/methbuyer/".. map() .. "/*.txt", "DATA")) do
+            local methPosFile = file.Read("eml/methbuyer/" .. map() .. "/" .. File, "DATA")
         
             local spawnNumber = string.Explode(";", methPosFile)
             
