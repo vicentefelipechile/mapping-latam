@@ -6,6 +6,7 @@ function ENT:Initialize()
 	self:SetModel("models/props_c17/canister01a.mdl")
 	self:PhysicsInit(SOLID_VPHYSICS)
 	
+	self:SetCollisionGroup(COLLISION_GROUP_PASSABLE_DOOR)
 	self:SetMoveType(MOVETYPE_VPHYSICS)
 	self:SetSolid(SOLID_VPHYSICS)
 	

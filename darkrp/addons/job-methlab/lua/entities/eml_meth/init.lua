@@ -9,6 +9,7 @@ function ENT:Initialize()
 	self:SetMaterial("models/shiny")
 	self:SetColor(Color(1, 241, 249, 255))	
 	
+	self:SetCollisionGroup(COLLISION_GROUP_PASSABLE_DOOR)
 	self:SetMoveType(MOVETYPE_VPHYSICS)
 	self:SetSolid(SOLID_VPHYSICS)
 	

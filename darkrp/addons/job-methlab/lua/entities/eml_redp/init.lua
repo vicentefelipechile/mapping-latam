@@ -9,6 +9,7 @@ function ENT:Initialize()
 	self:SetMaterial("models/props_pipes/GutterMetal01a")
 	self:SetColor(Color(255, 0, 0, 255))	
 	
+	self:SetCollisionGroup(COLLISION_GROUP_PASSABLE_DOOR)
 	self:SetMoveType(MOVETYPE_VPHYSICS)
 	self:SetSolid(SOLID_VPHYSICS)
 	

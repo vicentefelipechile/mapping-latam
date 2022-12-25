@@ -6,20 +6,10 @@ function ENT:Initialize()
 	self:SetModel("models/props_c17/metalPot001a.mdl")
 	self:PhysicsInit(SOLID_VPHYSICS)
 	
+	self:SetCollisionGroup(COLLISION_GROUP_PASSABLE_DOOR)
 	self:SetMoveType(MOVETYPE_VPHYSICS)
 	self:SetSolid(SOLID_VPHYSICS)
 
-	--[[
-	local visProp = ents.Create("prop_physics")
-	visProp:SetModel("models/props_phx/wheels/magnetic_med_base.mdl")
-	visProp:SetPos(self:GetPos()+self:GetUp()*6)
-	visProp:SetAngles(self:GetAngles()+Angle(180, 0, 0))
-	visProp:SetParent(self)
-	visProp:SetMaterial("models/shadertest/predator")
-	visProp:SetModelScale(0.925, 0)
-	visProp:Spawn()
-	
-	]]--
 	self:SetNWInt("distance", EML.DrawDistance)
 	self:SetNWInt("macid", 0)	
 	self:SetNWInt("sulfur", 0)

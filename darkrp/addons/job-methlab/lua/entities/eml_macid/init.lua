@@ -5,7 +5,8 @@ include("shared.lua")
 function ENT:Initialize()
 	self:SetModel("models/props_junk/garbage_plasticbottle001a.mdl")
 	self:PhysicsInit(SOLID_VPHYSICS)
-	
+
+	self:SetCollisionGroup(COLLISION_GROUP_PASSABLE_DOOR)
 	self:SetMoveType(MOVETYPE_VPHYSICS)
 	self:SetSolid(SOLID_VPHYSICS)
 	
