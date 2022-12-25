@@ -1,4 +1,4 @@
-include("shared.lua");
+include("shared.lua")
 
 surface.CreateFont("methFontAddicted", {
 	font = "Arial",
@@ -15,28 +15,25 @@ surface.CreateFont("methFontAddicted", {
 	shadow = false,
 	additive = false,
 	outline = false,
-});
+})
 
 function ENT:Initialize()	
 
-end;
+end
 
 function ENT:Draw()
-	self:DrawModel();
+	self:DrawModel()
 	
 	local pos = self:GetPos()
 	local ang = self:GetAngles()
 
 	
-	ang:RotateAroundAxis(ang:Up(), 90);
-	ang:RotateAroundAxis(ang:Forward(), 90);	
-	if LocalPlayer():GetPos():Distance(self:GetPos()) < EML_DrawDistance then
+	ang:RotateAroundAxis(ang:Up(), 90)
+	ang:RotateAroundAxis(ang:Forward(), 90)	
+	if LocalPlayer():GetPos():Distance(self:GetPos()) < EML.DrawDistance then
 		cam.Start3D2D(pos + ang:Up(), Angle(0, LocalPlayer():EyeAngles().y-90, 90), 0.25)
-				draw.SimpleTextOutlined(EML_Meth_Salesman_Name, "methFontAddicted", 0, -48, EML_Meth_Salesman_Name_Color, TEXT_ALIGN_CENTER, TEXT_ALIGN_LEFT, 1, Color(25, 25, 25, 100));			
+				draw.SimpleTextOutlined(EML.Meth.Salesman.Name, "methFontAddicted", 0, -48, EML.Meth.Salesman.Name_Color, TEXT_ALIGN_CENTER, TEXT_ALIGN_LEFT, 1, Color(25, 25, 25, 100))			
 		cam.End3D2D()	
-	end;
-end;
-
--- maxAmount = 60
--- amount = x
+	end
+end
 
