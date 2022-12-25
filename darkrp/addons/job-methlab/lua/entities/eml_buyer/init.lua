@@ -47,7 +47,7 @@ function ENT:AcceptInput(name, activator, caller)
 
 				for i=1, amount do
 
-					money = money + ( amount * math.Round( math.random(EML.Meth.ValueMin, EML.Meth.ValueMax) ) )
+					money = money + math.Round( math.random(EML.Meth.ValueMin, EML.Meth.ValueMax) )
 
 				end
 
