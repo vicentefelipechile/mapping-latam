@@ -45,7 +45,7 @@ function ENT:Use(activator, caller)
 
 			hook.Call("EML.PlayerPickupMeth", nil, caller, self:GetNWInt("amount"), activator:GetNWInt("meth.amount"))
 
-			net.Start("EML.SendToCV")
+			net.Start("EML.SendToCL")
 				net.WriteString("Has recogido " .. self:GetNWInt("amount") .. " libras de meta." )
 			net.Send(activator)
 

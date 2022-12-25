@@ -15,12 +15,12 @@ if SERVER then
             file.CreateDir("eml", "DATA")
         end
         
-        if not file.IsDir("eml/methbuyer/" .. map(), "DATA") then
-            file.CreateDir("eml/methbuyer/".. map(), "DATA")
+        if not file.IsDir("eml/" .. map(), "DATA") then
+            file.CreateDir("eml/".. map(), "DATA")
         end
 
-        for _, File in pairs(file.Find("eml/methbuyer/".. map() .. "/*.txt", "DATA")) do
-            local methPosFile = file.Read("eml/methbuyer/" .. map() .. "/" .. File, "DATA")
+        for _, File in pairs(file.Find("eml/".. map() .. "/*.txt", "DATA")) do
+            local methPosFile = file.Read("eml/" .. map() .. "/" .. File, "DATA")
         
             local spawnNumber = string.Explode(";", methPosFile)
             
@@ -36,9 +36,11 @@ if SERVER then
     timer.Simple(1, spawnBuyer)
 
     net.Receive("EML.setpos", function(_, ply)
+        if not ply:IsAdmin() then return end
+
         local fileMethName = net.ReadString()
             
-        if file.Exists( "eml/methbuyer/".. map() .."/meth_".. fileMethName ..".txt", "DATA") then 
+        if file.Exists( "eml/".. map() .."/meth_".. fileMethName ..".txt", "DATA") then 
 
             net.Start("EML.SendToCL")
                 net.WriteString("This name is alredy in use, choose another one or remove this one by typing 'methbuyer_remove " .. fileMethName .. "' in console.")
@@ -50,7 +52,7 @@ if SERVER then
         local methVector = string.Explode(" ", tostring(ply:GetEyeTrace().HitPos))
         local methAngles = string.Explode(" ", tostring(ply:GetAngles() + Angle(0, -180, 0)))
             
-        file.Write("eml/methbuyer/".. map() .."/meth_".. fileMethName ..".txt", ""..(methVector[1])..";"..(methVector[2])..";"..(methVector[3])..";"..(methAngles[1])..";"..(methAngles[2])..";"..(methAngles[3]).."", "DATA")
+        file.Write("eml/".. map() .."/meth_".. fileMethName ..".txt", ""..(methVector[1])..";"..(methVector[2])..";"..(methVector[3])..";"..(methAngles[1])..";"..(methAngles[2])..";"..(methAngles[3]).."", "DATA")
 
         net.Start("EML.SendToCL")
             net.WriteString("New pos for the Meth Addicted NPC has been set. Restart your server!")
@@ -59,11 +61,13 @@ if SERVER then
     end)
 
     net.Receive("EML.remove", function(_, ply)
+        if not ply:IsAdmin() then return end
+
         local fileMethName = net.ReadString()
             
-        if file.Exists("eml/methbuyer/".. map() .."/meth_" .. fileMethName .. ".txt", "DATA") then
+        if file.Exists("eml/".. map() .."/meth_" .. fileMethName .. ".txt", "DATA") then
 
-            file.Delete("eml/methbuyer/".. map() .."/meth_" .. fileMethName .. ".txt")
+            file.Delete("eml/".. map() .. "/meth_" .. fileMethName .. ".txt")
 
             net.Start("EML.SendToCL")
                 net.WriteString("This NPC has been removed. Restart your server!")
@@ -111,7 +115,7 @@ else
             return
         end
 
-        net.Start("EML.setpos")
+        net.Start("EML.remove")
             net.WriteString(fileMethName)
         net.SendToServer()
     end)
