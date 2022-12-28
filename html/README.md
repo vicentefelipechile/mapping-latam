@@ -857,6 +857,8 @@
 * [img/mp/mp_blank.png](https://github.mapping-latam.cl/html/img/mp/mp_blank.png)
 * [img/mp/mp_blank_b.png](https://github.mapping-latam.cl/html/img/mp/mp_blank_b.png)
 * [img/mp/mp_blurryface.png](https://github.mapping-latam.cl/html/img/mp/mp_blurryface.png)
+* [img/mp/mp_dance.pdn](https://github.mapping-latam.cl/html/img/mp/mp_dance.pdn)
+* [img/mp/mp_dance.png](https://github.mapping-latam.cl/html/img/mp/mp_dance.png)
 * [img/mp/mp_extended.pdn](https://github.mapping-latam.cl/html/img/mp/mp_extended.pdn)
 * [img/mp/mp_extended.png](https://github.mapping-latam.cl/html/img/mp/mp_extended.png)
 * [img/mp/mp_extended1.png](https://github.mapping-latam.cl/html/img/mp/mp_extended1.png)
