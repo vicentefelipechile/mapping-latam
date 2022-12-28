@@ -850,6 +850,8 @@
 * [img/mp/mp_alesso.png](https://github.mapping-latam.cl/html/img/mp/mp_alesso.png)
 * [img/mp/mp_alpha.png](https://github.mapping-latam.cl/html/img/mp/mp_alpha.png)
 * [img/mp/mp_alt.png](https://github.mapping-latam.cl/html/img/mp/mp_alt.png)
+* [img/mp/mp_atlas.pdn](https://github.mapping-latam.cl/html/img/mp/mp_atlas.pdn)
+* [img/mp/mp_atlas.png](https://github.mapping-latam.cl/html/img/mp/mp_atlas.png)
 * [img/mp/mp_b.png](https://github.mapping-latam.cl/html/img/mp/mp_b.png)
 * [img/mp/mp_banner.pdn](https://github.mapping-latam.cl/html/img/mp/mp_banner.pdn)
 * [img/mp/mp_banner1.png](https://github.mapping-latam.cl/html/img/mp/mp_banner1.png)
