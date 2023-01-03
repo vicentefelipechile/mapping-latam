@@ -89,6 +89,7 @@
 * [img/mp/mp_darkrp_banner1_alpha.png](https://github.mapping-latam.cl/html/img/mp/mp_darkrp_banner1_alpha.png)
 * [img/mp/mp_darkrp_banner2.pdn](https://github.mapping-latam.cl/html/img/mp/mp_darkrp_banner2.pdn)
 * [img/mp/mp_darkrp_banner2.png](https://github.mapping-latam.cl/html/img/mp/mp_darkrp_banner2.png)
+* [img/mp/mp_darkrp_banner2_alpha.png](https://github.mapping-latam.cl/html/img/mp/mp_darkrp_banner2_alpha.png)
 * [img/mp/mp_extended.pdn](https://github.mapping-latam.cl/html/img/mp/mp_extended.pdn)
 * [img/mp/mp_extended.png](https://github.mapping-latam.cl/html/img/mp/mp_extended.png)
 * [img/mp/mp_extended1.png](https://github.mapping-latam.cl/html/img/mp/mp_extended1.png)
