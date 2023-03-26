@@ -109,6 +109,8 @@
 * [img/mp/mp_gmod.png](https://github.mapping-latam.cl/html/img/mp/mp_gmod.png)
 * [img/mp/mp_gpt.pdn](https://github.mapping-latam.cl/html/img/mp/mp_gpt.pdn)
 * [img/mp/mp_gpt.png](https://github.mapping-latam.cl/html/img/mp/mp_gpt.png)
+* [img/mp/mp_gpt2.pdn](https://github.mapping-latam.cl/html/img/mp/mp_gpt2.pdn)
+* [img/mp/mp_gpt2.png](https://github.mapping-latam.cl/html/img/mp/mp_gpt2.png)
 * [img/mp/mp_icon.pdn](https://github.mapping-latam.cl/html/img/mp/mp_icon.pdn)
 * [img/mp/mp_icon.png](https://github.mapping-latam.cl/html/img/mp/mp_icon.png)
 * [img/mp/mp_junio.png](https://github.mapping-latam.cl/html/img/mp/mp_junio.png)
