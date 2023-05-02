@@ -129,5 +129,7 @@ EML.Gas.ExplosionType = 0
 -- Removes when out of gas.
 EML.Gas.Remove = true
 
-AddCSLuaFile("eml_init.lua")
+if SERVER then
+    AddCSLuaFile("eml_init.lua")
+end
 include("eml_init.lua")

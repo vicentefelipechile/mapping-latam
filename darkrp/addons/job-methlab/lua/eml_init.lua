@@ -33,7 +33,9 @@ if SERVER then
             methBuyer:Spawn()
         end
     end
-    timer.Simple(1, spawnBuyer)
+    hook.Add("PostGamemodeLoaded", "MethLab", function()
+        timer.Simple(10, spawnBuyer)
+    end)
 
     net.Receive("EML.setpos", function(_, ply)
         if not ply:IsAdmin() then return end
