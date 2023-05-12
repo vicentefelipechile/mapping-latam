@@ -29,22 +29,32 @@ header = """# Reglas de diferentes categorias
 # -------------------- IMG URL -----------------------
 # ----------------------------------------------------
 
-files = []
-for file in os.listdir("img"):
-    if file.endswith(".png") or file.endswith(".jpg") or file.endswith(".jpeg") or file.endswith(".rar") or file.endswith(".pdn"):
-        files.append("img/"+file)
-for it in os.scandir("img"):
-    if it.is_dir():
-        for file in os.listdir(it.path):
-            if file.endswith(".png") or file.endswith(".jpg") or file.endswith(".jpeg") or file.endswith(".rar") or file.endswith(".pdn"):
-                file_path = it.path+"/"+file
-                files.append(file_path.replace("\\","/"))
+# Extensión de archivos de imagen válidos
+extensiones_validas = (".jpeg", ".png", ".jpg", ".pdn")
+
+# Lista para almacenar las rutas completas de los archivos encontrados
+rutas_archivos = []
+
+# Recorrer todos los archivos de la carpeta y sus subcarpetas
+for root, dirs, files in os.walk("img/", topdown=True):
+    for archivo in files:
+        # Obtener la extensión del archivo
+        extension = os.path.splitext(archivo)[1]
+        # Si la extensión es una de las válidas, agregar la ruta completa a la lista
+        if extension.lower() in extensiones_validas:
+            ruta_completa = os.path.join(root, archivo)
+            rutas_archivos.append(ruta_completa)
+
+# Generar el archivo con las URLs de las imágenes
 
 # ----------------------------------------------------
 # ------------------- File Indexer -------------------
 # ----------------------------------------------------
 
-with open("README.md", "w") as f:
-    f.write(header)
-    for i in files:
-        f.write("* ["+i+"]("+prefix+i+")\n")
+with open("README.md", "w") as archivo_urls:
+    archivo_urls.write(header)
+    for ruta in rutas_archivos:
+        ruta = ruta.replace("\\", "/")
+        url = prefix + ruta
+        # Escribir la URL en el archivo
+        archivo_urls.write("* [{}]({})\n".format(ruta, url))
