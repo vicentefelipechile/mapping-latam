@@ -155,6 +155,7 @@
 * [img/ranks/arg_fa/fa7.png](https://github.mapping-latam.cl/html/img/ranks/arg_fa/fa7.png)
 * [img/ranks/arg_fa/fa8.png](https://github.mapping-latam.cl/html/img/ranks/arg_fa/fa8.png)
 * [img/ranks/arg_fa/fa9.png](https://github.mapping-latam.cl/html/img/ranks/arg_fa/fa9.png)
+* [img/ranks/arg_fa/logo.png](https://github.mapping-latam.cl/html/img/ranks/arg_fa/logo.png)
 * [img/ranks/cl_carab/pni01.png](https://github.mapping-latam.cl/html/img/ranks/cl_carab/pni01.png)
 * [img/ranks/cl_carab/pni02.png](https://github.mapping-latam.cl/html/img/ranks/cl_carab/pni02.png)
 * [img/ranks/cl_carab/pni03.png](https://github.mapping-latam.cl/html/img/ranks/cl_carab/pni03.png)
