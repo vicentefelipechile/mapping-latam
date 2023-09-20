@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture" "overlay/mappinglatam_overlay"
+	"$translucent" 1
+}
