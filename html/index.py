@@ -60,6 +60,10 @@ with open("README.md", "w") as archivo_urls:
         if ".png" not in ruta and ".jpg" not in ruta and ".jpeg" not in ruta:
             continue
 
+        # si en la ruta esta "minigame-tool" saltar
+        if "minigame-tool-assistant" in ruta:
+            continue
+
         ruta = ruta.replace("\\", "/")
         url = prefix + ruta
         
