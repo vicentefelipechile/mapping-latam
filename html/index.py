@@ -72,7 +72,7 @@ with open("README.md", "w") as archivo_urls:
 
         url = prefix + ruta
         
-        archivo_urls.write("* ![{}]({})\n".format(ruta, url))
+        archivo_urls.write("* ![{}]({})\n".format(ruta, url.replace(" ", "%20")))
     
     archivo_urls.write("\n---\n\n# Archivos miscelaneos\n\n")
 
@@ -85,4 +85,4 @@ with open("README.md", "w") as archivo_urls:
 
         url = prefix + ruta
         
-        archivo_urls.write("* [{}]({})\n".format(ruta, url))
+        archivo_urls.write("* [{}]({})\n".format(ruta, url.replace(" ", "%20")))
