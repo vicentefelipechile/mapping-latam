@@ -21,7 +21,7 @@ header = """# Reglas de diferentes categorias
 * [Trouble in Terrorist Town (Archivo portable)](https://github.mapping-latam.cl/html/ttt_simple.html)
 * [Trouble in Terrorist Town (Archivo portable y liviano)](https://github.mapping-latam.cl/html/ttt_light.html)
 
-# Archivos miscelaneos
+# Imagenes
 
 """
 
@@ -74,7 +74,7 @@ with open("README.md", "w") as archivo_urls:
         
         archivo_urls.write("* ![{}]({})\n".format(ruta, url))
     
-    archivo_urls.write("\n---\n\n")
+    archivo_urls.write("\n---\n\n# Archivos miscelaneos\n\n")
 
     # Archivos no PNG o JPG
     for ruta in rutas_archivos:

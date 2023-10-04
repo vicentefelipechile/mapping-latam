@@ -10,7 +10,7 @@
 * [Trouble in Terrorist Town (Archivo portable)](https://github.mapping-latam.cl/html/ttt_simple.html)
 * [Trouble in Terrorist Town (Archivo portable y liviano)](https://github.mapping-latam.cl/html/ttt_light.html)
 
-# Archivos miscelaneos
+# Imagenes
 
 * ![img/background.png](https://github.mapping-latam.cl/html/img/background.png)
 * ![img/background_fade.png](https://github.mapping-latam.cl/html/img/background_fade.png)
@@ -186,6 +186,8 @@
 * ![img/ranks/cl_gendar/gendar9.png](https://github.mapping-latam.cl/html/img/ranks/cl_gendar/gendar9.png)
 
 ---
+
+# Archivos miscelaneos
 
 * [img/discord.pdn](https://github.mapping-latam.cl/html/img/discord.pdn)
 * [img/kos1.pdn](https://github.mapping-latam.cl/html/img/kos1.pdn)
