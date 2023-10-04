@@ -55,16 +55,21 @@ with open("README.md", "w") as archivo_urls:
     archivo_urls.write(header)
 
     # Archivos PNG o JPG
-
     for ruta in rutas_archivos:
+        ruta = ruta.replace("\\", "/")
+
         if ".png" not in ruta and ".jpg" not in ruta and ".jpeg" not in ruta:
             continue
 
-        # si en la ruta esta "minigame-tool" saltar
-        if "minigame-tool-assistant" in ruta:
+        if "minigame-tool-assistant/" in ruta:
             continue
 
-        ruta = ruta.replace("\\", "/")
+        if "steamcmd/" in ruta:
+            continue
+
+        if "wiki/" in ruta:
+            continue
+
         url = prefix + ruta
         
         archivo_urls.write("* ![{}]({})\n".format(ruta, url))
@@ -73,10 +78,11 @@ with open("README.md", "w") as archivo_urls:
 
     # Archivos no PNG o JPG
     for ruta in rutas_archivos:
+        ruta = ruta.replace("\\", "/")
+
         if ".png" in ruta or ".jpg" in ruta or ".jpeg" in ruta:
             continue
 
-        ruta = ruta.replace("\\", "/")
         url = prefix + ruta
         
         archivo_urls.write("* [{}]({})\n".format(ruta, url))
