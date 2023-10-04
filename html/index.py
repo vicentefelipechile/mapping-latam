@@ -53,8 +53,26 @@ for root, dirs, files in os.walk("img/", topdown=True):
 
 with open("README.md", "w") as archivo_urls:
     archivo_urls.write(header)
+
+    # Archivos PNG o JPG
+
     for ruta in rutas_archivos:
+        if ".png" not in ruta and ".jpg" not in ruta and ".jpeg" not in ruta:
+            continue
+
         ruta = ruta.replace("\\", "/")
         url = prefix + ruta
-        # Escribir la URL en el archivo
+        
+        archivo_urls.write("* ![{}]({})\n".format(ruta, url))
+    
+    archivo_urls.write("\n---\n\n")
+
+    # Archivos no PNG o JPG
+    for ruta in rutas_archivos:
+        if ".png" in ruta or ".jpg" in ruta or ".jpeg" in ruta:
+            continue
+
+        ruta = ruta.replace("\\", "/")
+        url = prefix + ruta
+        
         archivo_urls.write("* [{}]({})\n".format(ruta, url))
