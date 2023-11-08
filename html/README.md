@@ -118,6 +118,7 @@
 * ![img/mp/mp_latam.png](https://github.mapping-latam.cl/html/img/mp/mp_latam.png)
 * ![img/mp/mp_milky.png](https://github.mapping-latam.cl/html/img/mp/mp_milky.png)
 * ![img/mp/mp_oneshot.jpg](https://github.mapping-latam.cl/html/img/mp/mp_oneshot.jpg)
+* ![img/mp/mp_pipe.png](https://github.mapping-latam.cl/html/img/mp/mp_pipe.png)
 * ![img/mp/server-icon.png](https://github.mapping-latam.cl/html/img/mp/server-icon.png)
 * ![img/mp/vicentefelipechile_neon_city_in_background_e23bc2ef-9c9b-451a-8e15-12ef4a82350a.png](https://github.mapping-latam.cl/html/img/mp/vicentefelipechile_neon_city_in_background_e23bc2ef-9c9b-451a-8e15-12ef4a82350a.png)
 * ![img/mp/discord_logo/mp1.png](https://github.mapping-latam.cl/html/img/mp/discord_logo/mp1.png)
