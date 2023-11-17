@@ -113,6 +113,7 @@
 * ![img/mp/mp_gpt2.png](https://github.mapping-latam.cl/html/img/mp/mp_gpt2.png)
 * ![img/mp/mp_halloween.png](https://github.mapping-latam.cl/html/img/mp/mp_halloween.png)
 * ![img/mp/mp_halloween2.png](https://github.mapping-latam.cl/html/img/mp/mp_halloween2.png)
+* ![img/mp/mp_hasur.png](https://github.mapping-latam.cl/html/img/mp/mp_hasur.png)
 * ![img/mp/mp_icon.png](https://github.mapping-latam.cl/html/img/mp/mp_icon.png)
 * ![img/mp/mp_junio.png](https://github.mapping-latam.cl/html/img/mp/mp_junio.png)
 * ![img/mp/mp_latam.png](https://github.mapping-latam.cl/html/img/mp/mp_latam.png)
