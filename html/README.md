@@ -224,6 +224,7 @@
 * [img/mp/mp_2y.pdn](https://github.mapping-latam.cl/html/img/mp/mp_2y.pdn)
 * [img/mp/mp_80.pdn](https://github.mapping-latam.cl/html/img/mp/mp_80.pdn)
 * [img/mp/mp_alesso.pdn](https://github.mapping-latam.cl/html/img/mp/mp_alesso.pdn)
+* [img/mp/mp_alpha.pdn](https://github.mapping-latam.cl/html/img/mp/mp_alpha.pdn)
 * [img/mp/mp_atlas.pdn](https://github.mapping-latam.cl/html/img/mp/mp_atlas.pdn)
 * [img/mp/mp_banner.pdn](https://github.mapping-latam.cl/html/img/mp/mp_banner.pdn)
 * [img/mp/mp_box.pdn](https://github.mapping-latam.cl/html/img/mp/mp_box.pdn)
