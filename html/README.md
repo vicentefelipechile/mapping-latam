@@ -105,6 +105,7 @@
 * ![img/mp/mp_depresion.png](https://github.mapping-latam.cl/html/img/mp/mp_depresion.png)
 * ![img/mp/mp_diciembre2022.png](https://github.mapping-latam.cl/html/img/mp/mp_diciembre2022.png)
 * ![img/mp/mp_diciembre2023.png](https://github.mapping-latam.cl/html/img/mp/mp_diciembre2023.png)
+* ![img/mp/mp_diciembre2023_pipe.png](https://github.mapping-latam.cl/html/img/mp/mp_diciembre2023_pipe.png)
 * ![img/mp/mp_discord_banner1.png](https://github.mapping-latam.cl/html/img/mp/mp_discord_banner1.png)
 * ![img/mp/mp_discord_banner2.png](https://github.mapping-latam.cl/html/img/mp/mp_discord_banner2.png)
 * ![img/mp/mp_extended.png](https://github.mapping-latam.cl/html/img/mp/mp_extended.png)
