@@ -1,5 +1,0 @@
-[
-	{"name":"Artista - Nombre de la musica 1","url":"https://www.example.com/link_permanente_a_la_musica.mp3"},
-	{"name":"Artista - Nombre de la musica 2","url":"https://www.example.com/link_permanente_a_la_musica2.mp3"}
-]
-
