@@ -1,80 +1,168 @@
 <!DOCTYPE html>
-<html lang="es-CL">
+<html>
+
 <head>
-	<title>Reglas - Sandbox</title>
-	<link rel="icon" href="img/icono.png">
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title>Reglas del servidor de Sandbox</title>
+	<meta property="og:title" content="Reglas del servidor de Sandbox">
+    <meta property="og:image" content="https://raw.githubusercontent.com/vicentefelipechile/mapping-latam/main/html/img/html_logo.png">
+    <meta name="theme-color" content="#00BB11">
+    <style>
+        @font-face {
+            font-family: 'OswaldAlt';
+            src: url("./fonts/Oswald-ExtraLight.ttf");
+        }
 
-	<meta property="og:title" content="Reglas del Sandbox"/>
-	<meta property="og:type" content="website"/>
-	<meta property="og:image" content="img/icono.png"/>
-	<meta property="og:description" content="Aqui podras encontrar las reglas del Sandbox de Mapping Latam"/>
-	<meta name="theme-color" content="#FF0000">
+        * {
+            font-family: 'OswaldAlt', sans-serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
+            font-weight: 1;
+            font-size: 24px;
+            color: white;
+            cursor: default;
+        }
 
-	<link href="css/base.css" rel="stylesheet">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+        body {
+            background-color: black;
+            font-weight: 24;
+            background-image: url("https://raw.githubusercontent.com/vicentefelipechile/mapping-latam/main/html/img/background_fade2.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        header {
+            background: url("./img/mp_extended.png");
+            background-color: rgb(3, 30, 82);
+            background-position: center bottom;
+            padding-bottom: 10px;
+            padding-top: 1px;
+            margin-left: -8px;
+            margin-right: -8px;
+            margin-top: -8px;
+            text-align: center;
+            font-size: 24px;
+            top: 0;
+            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        img {
+            border: 6px solid darkblue;
+        }
+
+        .title {
+            font-size: 32px;
+            margin-top: 32px;
+        }
+
+        .big-text {
+            margin-top: 64px;
+            font-size: 40px;
+        }
+
+        .container {
+            margin-top: 64px;
+            padding-left: 24px;
+            padding-right: 24px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: calc(100% * (2 / 3));
+            height: calc(100% - 150px);
+            overflow-y: scroll;
+        }
+
+        .line {
+            height: 2px;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .center-img {
+            text-align: center;
+        }
+        
+        ::-webkit-scrollbar {
+            width: 20px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: #222;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: darkblue;
+        }
+    </style>
 </head>
+
 <body>
-	<header class="header">
-		<h1>Ayuda - Sandbox</h1>
-	</header>
-	<h2 class="center-big">Reglas Basicas</h2>
-	<h3>
-		<p class="title">No hacer Spawnkill</p>
-		<p>No matar a nadie desde dentro del spawn y desde fuera del spawn.</p>
+    <header>
+		<h1>Reglas del servidor de Sandbox</h1>
+    </header>
 
-		<center>
-			<img src="img/sandbox01.png" alt="Jugador matando a un jugador dentro del spawn">
-			<img src="img/sandbox02.png" alt="Jugador matando desde dentro del spawn a un jugador">
-		</center>
-
-		<p class="title">No hacer Prop Kill/Push</p>
-		<p>Empujar o molestar con props o incluso matando con una fuerza gravitacional contra el jugador afectado (en otras palabras lo mataste con un prop).</p>
-		
-		<center>
-			<img src="img/sandbox03.png">
-			<img src="img/sandbox04.png">
-		</center>
-
-		<p class="title">No hacer trampa en PVP</p>
-		<p>Evitar hacer trampa en PVP, esto no se refiere exactamente a uso de exploits y hacks, tambien se refiere a</p>
+    <div class="container">
+		<h2 class="big-text">Informacion importante <div class="line"></div></h2>
+		<div>La siguiente informacion resume muchas cosas del servidor</div>
 		<ul>
-			<li>Utilizar mecanicas que te den ventajas sobre los demas</li>
-			<li>Generar tu vida de forma que sea dificil o imposible de matarte</li>
-			<li>Utilizar avatars con una hitbox que no coincide y derivados</li>
+			<li>Si estas en pvp, significa que quieres matar y que te maten, si te quejas porque te mataron, tu mismo te haces responsable por estar en !pvp</li>
+		</ul>
+
+		<h2 class="big-text">No hacer Spawnkill<div class="line"></div></h2>
+		<div>No mates a nadie dentro o fuera del spawn.</div>
+        <br>
+
+        <div class="center-img">
+			<img src="https://raw.githubusercontent.com/vicentefelipechile/mapping-latam/main/html/img/sandbox01.png" alt="Jugador matando un jugador dentro del spawn">
+			<img src="https://raw.githubusercontent.com/vicentefelipechile/mapping-latam/main/html/img/sandbox02.png" alt="Jugador matando un jugador de dentro del spawn">
+        </div>
+
+		<h2 class="big-text">No hacer Prop Kill/Push<div class="line"></div></h2>
+		<div>Empujar o molestar con props o incluso matar con una fuerza gravitacional contra el jugador afectado (en otras palabras, lo mataste con un prop).</div>
+        <br>
+
+        <div class="center-img">
+            <img src="https://raw.githubusercontent.com/vicentefelipechile/mapping-latam/main/html/img/sandbox03.png">
+            <img src="https://raw.githubusercontent.com/vicentefelipechile/mapping-latam/main/html/img/sandbox04.png">
+        </div>
+
+		<h2 class="big-text">No hacer trampa en el PVP<div class="line"></div></h2>
+		<div>Evita hacer trampa en el PVP, esto no se refiere exactamente al uso de exploits y hacks</div>
+		<div>Las siguientes situaciones estan consideradas pero no limitadas a:</div>
+        <ul>
+			<li>Usar mecánicas que te dan ventajas sobre los demás</li>
+			<li>Generar tu vida de forma que sea difícil o imposible matarte</li>
+			<li>Usar avatares con una hitbox que no corresponde y derivados</li>
+        </ul>
+        <br>
+
+        <div class="center-img">
+            <img src="https://raw.githubusercontent.com/vicentefelipechile/mapping-latam/main/html/img/sandbox05.png">
+        </div>
+
+		<div>No busques rebuscar o interpretar la información, es claro lo que se está diciendo.</div>
+
+		<h2 class="big-text">No intentes crashear el servidor<div class="line"></div></h2>
+		<div>No se necesita mucha explicación sobre lo que se trata, consiste en realizar acciones que hagan que el rendimiento del servidor sea menor, en otras palabras, genere lag.</div>
+
+		<h2 class="big-text">No comentarios anti-religiosos<div class="line"></div></h2>
+		<div>Evita el odio a la religión.</div>
+
+		<h2 class="big-text">Sin toxicidad<div class="line"></div></h2>
+		<div>Esta considero pero no limitado la toxicidad a:</div>
+
+		<ul>
+			<li>Insultar a alguien sin motivo o "porque no te gusta esa persona".</li>
+			<li>Excusas como "Fue una broma" serán ignoradas.</li>
+			<li>Acosar a alguien que acaba de entrar al servidor por primera vez con insultos/palabrotas.</li>
 		</ul>
 		
-		<center>
-			<img src="img/sandbox05.png">
-		</center>
-
-		<p>No le busquen reojo o interpreten la información, es claro lo que se dice. <br>
-		PD: Los "!perks" son lo unico valido para el PVP.</p>
-
-		<p class="title">No intentar crashear el servidor</p>
-		<p>No hace falta mucha explicación de que se trata, consiste en realizar acciones que hagan que el rendimiento del servidor sea menor, en otras palabras genere lag.<br>
-		cualquier intento de hacerlo conlleva sanciones.</p>
-
-		<p class="title">No comentarios anti-religiosos</p>
-		<p>Evitar el odio hacia la religión.</p>
-
-		<p class="title">No toxicidad</p>
-		<p>Se considerada toxicidad cuando:</p>
-		<ul>
-			<li>Hablas con palabras fuertes (ctm, wn, etc.) de manera explicita sin razón alguna.</li>
-			<li>Empiezas a insultar a alguien sin razon alguna o "Por que te cae mal".</li>
-			<li>Excusas como 'Es joda/broma' se consideran si o si ser Toxico.</li>
-			<li>Acosar con insultos/groserías a alguien que acaba de entrar al servidor por primera vez.</li>
-		</ul>
-		
-		<p class="title">Prohibido la suplantación de identidad</p>
-		<p>Esta extrictamente prohibido hacerse pasar por otra persona, esto incluye:</p>
-		<ul>
-			<li>Usar la misma foto de perfil o una muy parecida.</li>
-			<li>Usar el mismo nombre o uno similar.</li>
-			<li>Actuar como la misma persona.</li>
-		</ul>
-	</h3>
+        <br><br><br><br>
+    </div>
 </body>
+
 </html>
