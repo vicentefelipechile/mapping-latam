@@ -1,14 +1,13 @@
 # Reglas de diferentes categorias
 
 * [DarkRP](https://github.mapping-latam.cl/html/darkrp.html)
-* [DarkRP (Archivo portable)](https://github.mapping-latam.cl/html/darkrp_simple.html)
-* [DarkRP (Archivo portable y liviano)](https://github.mapping-latam.cl/html/darkrp_light.html)
+* [DarkRP (Liviano)](https://github.mapping-latam.cl/html/darkrp_light.html)
 * [Sandbox](https://github.mapping-latam.cl/html/sandbox.html)
-* [Sandbox (Archivo portable)](https://github.mapping-latam.cl/html/sandbox_simple.html)
-* [Sandbox (Archivo portable y liviano)](https://github.mapping-latam.cl/html/sandbox_light.html)
+* [Sandbox (Liviano)](https://github.mapping-latam.cl/html/sandbox_light.html)
+* [Sandbox Brasil](https://github.mapping-latam.cl/html/sandboxbr.html)
+* [Sandbox Brasil (Liviano)](https://github.mapping-latam.cl/html/sandboxbr_light.html)
 * [Trouble in Terrorist Town](https://github.mapping-latam.cl/html/ttt.html)
-* [Trouble in Terrorist Town (Archivo portable)](https://github.mapping-latam.cl/html/ttt_simple.html)
-* [Trouble in Terrorist Town (Archivo portable y liviano)](https://github.mapping-latam.cl/html/ttt_light.html)
+* [Trouble in Terrorist Town (Archivo portable)](https://github.mapping-latam.cl/html/ttt_light.html)
 
 # Imagenes
 
