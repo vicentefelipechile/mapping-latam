@@ -21,6 +21,7 @@
 * ![img/ejemplo4.png](https://github.mapping-latam.cl/html/img/ejemplo4.png)
 * ![img/ejemplo5.png](https://github.mapping-latam.cl/html/img/ejemplo5.png)
 * ![img/ejemplo6.png](https://github.mapping-latam.cl/html/img/ejemplo6.png)
+* ![img/html_logo.png](https://github.mapping-latam.cl/html/img/html_logo.png)
 * ![img/icono.png](https://github.mapping-latam.cl/html/img/icono.png)
 * ![img/kos1.png](https://github.mapping-latam.cl/html/img/kos1.png)
 * ![img/kos2.png](https://github.mapping-latam.cl/html/img/kos2.png)
@@ -204,6 +205,7 @@
 # Archivos miscelaneos
 
 * [img/discord.pdn](https://github.mapping-latam.cl/html/img/discord.pdn)
+* [img/html_logo.pdn](https://github.mapping-latam.cl/html/img/html_logo.pdn)
 * [img/kos1.pdn](https://github.mapping-latam.cl/html/img/kos1.pdn)
 * [img/kos2.pdn](https://github.mapping-latam.cl/html/img/kos2.pdn)
 * [img/kos3.pdn](https://github.mapping-latam.cl/html/img/kos3.pdn)
