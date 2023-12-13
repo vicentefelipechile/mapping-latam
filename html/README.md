@@ -4,10 +4,19 @@
 * [DarkRP (Liviano)](https://github.mapping-latam.cl/html/darkrp_light.html)
 * [Sandbox](https://github.mapping-latam.cl/html/sandbox.html)
 * [Sandbox (Liviano)](https://github.mapping-latam.cl/html/sandbox_light.html)
-* [Sandbox Brasil](https://github.mapping-latam.cl/html/sandboxbr.html)
-* [Sandbox Brasil (Liviano)](https://github.mapping-latam.cl/html/sandboxbr_light.html)
 * [Trouble in Terrorist Town](https://github.mapping-latam.cl/html/ttt.html)
 * [Trouble in Terrorist Town (Archivo portable)](https://github.mapping-latam.cl/html/ttt_light.html)
+
+---
+
+# Reglas de juegos alternativos
+
+* [FalloutRP](https://github.mapping-latam.cl/html/falloutrp.html)
+* [FalloutRP (Liviano)](https://github.mapping-latam.cl/html/falloutrp_light.html)
+* [Sandbox Brasil](https://github.mapping-latam.cl/html/sandboxbr.html)
+* [Sandbox Brasil (Liviano)](https://github.mapping-latam.cl/html/sandboxbr_light.html)
+
+---
 
 # Imagenes
 
@@ -200,6 +209,8 @@
 * ![img/ranks/cl_gendar/gendar7.png](https://github.mapping-latam.cl/html/img/ranks/cl_gendar/gendar7.png)
 * ![img/ranks/cl_gendar/gendar8.png](https://github.mapping-latam.cl/html/img/ranks/cl_gendar/gendar8.png)
 * ![img/ranks/cl_gendar/gendar9.png](https://github.mapping-latam.cl/html/img/ranks/cl_gendar/gendar9.png)
+* ![img/slider/header1.jpg](https://github.mapping-latam.cl/html/img/slider/header1.jpg)
+* ![img/slider/header2.jpg](https://github.mapping-latam.cl/html/img/slider/header2.jpg)
 
 ---
 
@@ -269,3 +280,5 @@
 * [img/ranks/arg_fa/fa14.pdn](https://github.mapping-latam.cl/html/img/ranks/arg_fa/fa14.pdn)
 * [img/ranks/arg_fa/fa17.pdn](https://github.mapping-latam.cl/html/img/ranks/arg_fa/fa17.pdn)
 * [img/ranks/arg_fa/fa20.pdn](https://github.mapping-latam.cl/html/img/ranks/arg_fa/fa20.pdn)
+* [img/slider/header1.pdn](https://github.mapping-latam.cl/html/img/slider/header1.pdn)
+* [img/slider/header2.pdn](https://github.mapping-latam.cl/html/img/slider/header2.pdn)
