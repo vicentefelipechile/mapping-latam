@@ -21,6 +21,7 @@
 # Imagenes
 
 * ![img/background.png](https://github.mapping-latam.cl/html/img/background.png)
+* ![img/background_2021.jpg](https://github.mapping-latam.cl/html/img/background_2021.jpg)
 * ![img/background_fade.png](https://github.mapping-latam.cl/html/img/background_fade.png)
 * ![img/background_fade2.png](https://github.mapping-latam.cl/html/img/background_fade2.png)
 * ![img/discord.png](https://github.mapping-latam.cl/html/img/discord.png)
@@ -129,6 +130,8 @@
 * ![img/mp/mp_diciembre2022.png](https://github.mapping-latam.cl/html/img/mp/mp_diciembre2022.png)
 * ![img/mp/mp_diciembre2023.png](https://github.mapping-latam.cl/html/img/mp/mp_diciembre2023.png)
 * ![img/mp/mp_diciembre2023_lixgoodman.png](https://github.mapping-latam.cl/html/img/mp/mp_diciembre2023_lixgoodman.png)
+* ![img/mp/mp_diciembre2023_lixgoodman2.png](https://github.mapping-latam.cl/html/img/mp/mp_diciembre2023_lixgoodman2.png)
+* ![img/mp/mp_diciembre2023_lixgoodman2_alt.jpg](https://github.mapping-latam.cl/html/img/mp/mp_diciembre2023_lixgoodman2_alt.jpg)
 * ![img/mp/mp_diciembre2023_pipe.png](https://github.mapping-latam.cl/html/img/mp/mp_diciembre2023_pipe.png)
 * ![img/mp/mp_discord_banner1.png](https://github.mapping-latam.cl/html/img/mp/mp_discord_banner1.png)
 * ![img/mp/mp_discord_banner2.png](https://github.mapping-latam.cl/html/img/mp/mp_discord_banner2.png)
