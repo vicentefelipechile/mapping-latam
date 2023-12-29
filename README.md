@@ -1,12 +1,27 @@
-# Mapping Latam
-Estas son las configuraciones publicas del servidor.
-Actualmente solo los moderadores del servidor pueden trabajar ayudando este repositorio, si deseas ayudar en algo o sugerir algun cambio, puedes hacerlo en el siguiente enlace que te llevara al canal de sugerencias:
-https://discord.gg/2pMzDXZQxJ
+# Reglas de diferentes categorias
 
-## Gente involucrada en el proyecto
+* [DarkRP](https://github.mapping-latam.cl/html/darkrp.html)
+* [DarkRP (Liviano)](https://github.mapping-latam.cl/html/darkrp_light.html)
+* [Sandbox](https://github.mapping-latam.cl/html/sandbox.html)
+* [Sandbox (Liviano)](https://github.mapping-latam.cl/html/sandbox_light.html)
+* [Trouble in Terrorist Town](https://github.mapping-latam.cl/html/ttt.html)
+* [Trouble in Terrorist Town (Archivo portable)](https://github.mapping-latam.cl/html/ttt_light.html)
 
-- [**Lugent**](https://github.com/Lugent)
-- ~[**chomp**](https://github.com/feliS317)~ Retirado del proyecto
-- ~[**eckholtN**](https://github.com/eckholtN)~ Retirado del proyecto
-- ~[**Macpato**](https://github.com/macpato231)~ Retirado del proyecto
-- [**Slow35**](https://github.com/Slow35)
+---
+
+# Reglas de juegos alternativos
+
+* [FalloutRP](https://github.mapping-latam.cl/html/falloutrp.html)
+* [FalloutRP (Liviano)](https://github.mapping-latam.cl/html/falloutrp_light.html)
+* [Sandbox Brasil](https://github.mapping-latam.cl/html/sandboxbr.html)
+* [Sandbox Brasil (Liviano)](https://github.mapping-latam.cl/html/sandboxbr_light.html)
+
+---
+
+# Imagenes
+
+
+---
+
+# Archivos miscelaneos
+
