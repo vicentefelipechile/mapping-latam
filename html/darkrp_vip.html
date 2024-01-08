@@ -23,6 +23,10 @@
             cursor: default;
         }
 
+        a {
+            cursor: pointer;
+        }
+
         body {
             background-color: black;
             font-weight: 24;
@@ -53,9 +57,13 @@
         }
 
         img {
-            border: 6px solid darkblue;
-            width: 30%;
+            border: 4px solid darkblue;
+            width: 40%;
             height: auto;
+        }
+
+        .cursor {
+            cursor: pointer;
         }
 
         .title {
@@ -98,6 +106,26 @@
             background-color: black;
             white-space: pre;
         }
+
+        .image-text {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .left-image {
+            align-self: flex-start;
+        }
+
+        .left-image img {
+            width: 10em;
+            margin-right: 16px;
+            box-sizing: border-box;
+        }
+
+        .right-text {
+            align-self: flex-start;
+        }
         
         ::-webkit-scrollbar {
             width: 20px;
@@ -121,15 +149,87 @@
     <div class="container">
 
 		<h2 class="big-text">Precio <div class="line"></div></h2>
-		<div>El precio del VIP basico es de <a class="terminal"> 3.000 CLP </a> </div>
-		<ul>
-			<li>Solo el grupo de trabajo "Criminales" puede hacer raideos y robar.</li>
-            <li>Paredes Oneway</li>
-			<li>Los vendedores de armas NO pueden mentir.</li>
-			<li>Los policias PUEDEN comprar casas, excepto durante su rol como policia.</li>
-			<li>Las Keypads deben estar en un lugar visible junto a su respectiva puerta.</li>
-		</ul>
+		<div>El precio del VIP basico es de <a class="terminal"> 3.000 CLP </a> y el precio del VIP pro es de <a class="terminal"> 6.000 CLP </a>, aceptamos los siguientes metodos de pagos:</div>
 
+        <ul>
+            <li>Bancoestado (Contacta directamente a <a href="https://steamcommunity.com/id/vicentefelipechile">vicentefelipechile</a>)</li>
+            <li>Mercado Pago</li>
+        </ul>
+
+        <div>Puedes pagar por Mercado pago las siguientes opciones:</div>
+        <br>
+
+        <div class="center-img">
+            <a href="https://mpago.la/19duq3n"><img class="cursor" src="img/mercadopago_3000clp.png"></a>
+            <a href="https://mpago.la/2Vevczh"><img class="cursor" src="img/mercadopago_6000clp.png"></a>
+        </div>
+
+
+        <h2 class="big-text">Beneficios VIP Basico<div class="line"></div></h2>
+        <div>Los beneficios del VIP son los siguientes:</div>
+
+        <ul>
+            <li>+200% en todos los salarios de los jobs</li>
+            <li>2x puntos del Brick ganados pasivamente en el servidor</li>
+            <li>2x de experiencia en los niveles</li>
+            <li>16 slots en el inventario (Originalmente: 8)</li>
+            <li>$500.000 de bono</li>
+        </ul>
+
+        <h2 class="big-text">Trabajos VIP<div class="line"></div></h2>
+
+        <div class="image-text">
+            <div class="left-image">
+                <img src="img/darkrp/job_hacker.png">
+            </div>
+            <div class="right-text">
+                <h2>Hacker</h2>
+                <div>El trabajo de Hacker es de un <a class="terminal"> Criminal </a>, puede utilizar su computadora para hackear las estaciones de banco y utilizar herramientas como un dron que se puede controlar de manera remota y estallar.
+                </div>
+            </div>
+        </div>
+
+        <br>
+        
+        <div class="image-text">
+            <div class="left-image">
+                <img src="img/darkrp/job_agenteespecial.png">
+            </div>
+            <div class="right-text">
+                <h2>Agente Especial</h2>
+                <div>El trabajo de Agente especial es del <a class="terminal"> Gobierno </a>, como agente especial del gobierno, tienes mas poder que los policias normales, pero aun sigues bajo las ordenes del Teniente. Puedes sacar armas exclusivas de la armeria.
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="image-text">
+            <div class="left-image">
+                <img src="img/darkrp/job_medicocombate.png">
+            </div>
+            <div class="right-text">
+                <h2>Medico de Combate</h2>
+                <div>El trabajo del Medico de Combate es del <a class="terminal"> Gobierno </a>, como medico de combate, tu especialidad es prestar atencion medica a los policias bajo ataque, puedes comprar cajas de primeros auxilios que traen botiquines.
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="image-text">
+            <div class="left-image">
+                <img src="img/darkrp/job_rebeldetactico.png">
+            </div>
+            <div class="right-text">
+                <h2>Rebelde Tactico</h2>
+                <div>El trabajo del Rebelde Tactico es de un <a class="terminal"> Criminal </a>, como rebelde tactico, tu especialidad es el combate, puedes comprar armas exclusivas de la armeria y puedes comprar un chaleco antibalas.
+                </div>
+            </div>
+        </div>
+
+
+        <br><br><br><br>
     </div>
 </body>
 
