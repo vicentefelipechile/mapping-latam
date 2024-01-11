@@ -80,6 +80,14 @@
             overflow-y: scroll;
         }
 
+        .terminal {
+            color: rgb(228, 228, 228);
+            font-size: 24px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
+            background-color: black;
+            white-space: pre;
+        }
+
         .line {
             height: 2px;
             width: 100%;
@@ -111,15 +119,23 @@
 
     <div class="container">
 
-		<h2 class="big-text">Informacion importante <div class="line"></div></h2>
+		<h2 class="big-text">Reglas Extras de RP <div class="line"></div></h2>
 		<div>La siguiente informacion aclaran varias dudas sobre el servidor</div>
 		<ul>
 			<li>Solo el grupo de trabajo "Criminales" puede hacer raideos y robar.</li>
-            <li>Paredes Oneway</li>
 			<li>Los vendedores de armas NO pueden mentir.</li>
 			<li>Los policias PUEDEN comprar casas, excepto durante su rol como policia.</li>
 			<li>Las Keypads deben estar en un lugar visible junto a su respectiva puerta.</li>
+            <li>El Alcalde no puede ser asesinado por Hit</li>
 		</ul>
+
+        <h2 class="big-text">Policias<div class="line"></div></h2>
+        <div>Las siguientes reglas son en realidad leyes por defecto que los policias deben seguir cuando no exista un alcalde al mando.</div>
+        <ul>
+            <li>Persona con armas ilegales sera <a class="terminal"> ARRESTADO </a></li>
+            <li>Persona que golpee o dispare al policia sera <a class="terminal"> ARRESTADO </a></li>
+            <li>Si se escuchan sonidos y se sospecha de alguna actividad ilegal, la casa sera <a class="terminal"> ALLANADA </a></li>
+        </ul>
 
 		<h2 class="big-text">RDM<div class="line"></div></h2>
 		<div>El RDM o Random Death Match es matar a alguien sin razon alguna.</div>
@@ -172,12 +188,15 @@
             <li>Ninguna proteccion para la gente que intente raidearte</li>
             <li>Agacharse para entrar a tu base</li>
             <li>Usar una puerta exclusiva para ti y tus amigos para entrar facilmente a tu base</li>
+            <li>Las puertas no estan visualmente definidas</li>
+            <li>Paredes Oneway</li>
         </ul>
         <br>
         <div>Ejemplos visuales de construccion:</div>
         <br>
         <div class="center-img">
             <img src="https://raw.githubusercontent.com/vicentefelipechile/mapping-latam/main/html/img/ejemplo1.png">
+            <br><br>
             <img src="https://raw.githubusercontent.com/vicentefelipechile/mapping-latam/main/html/img/ejemplo2.png">
             <img src="https://raw.githubusercontent.com/vicentefelipechile/mapping-latam/main/html/img/ejemplo3.png">
             <img src="https://raw.githubusercontent.com/vicentefelipechile/mapping-latam/main/html/img/ejemplo4.png">
