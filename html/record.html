@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/icono.png">
+    <title>Grabadora de video web</title>
+    <!-- Codigo -->
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        if (!navigator.mediaDevices || !navigator.mediaDevices.getDisplayMedia) {
+            alert("Tu navegador no soporta la grabación de pantalla")
+            return
+        }
+
+        const frame = document.querySelector("#frame-rate")
+        const frameNumber = document.querySelector("#frame-number");
+
+        frame.addEventListener("input", () => {
+            frameNumber.innerHTML = frame.value;
+        })
+
+        const $form = document.querySelector("#format-form")
+
+        $form.addEventListener("submit", async (event) => {
+            event.preventDefault()
+
+            const audioEnabled = document.querySelector("#audio-format").checked
+            const videoFormat = document.querySelector("#video-format").value
+            const frameValue = document.querySelector("#frame-rate").value
+
+            const media = await navigator.mediaDevices.getDisplayMedia({
+                video: { frameRate: { ideal: frameValue } },
+                audio: audioEnabled
+            })
+
+            const mimeType = audioEnabled 
+                ? `video/webm;codecs=${videoFormat},opus`
+                : `video/webm;codecs=${videoFormat}`
+
+            const mediarecorder = new MediaRecorder(media, { mimeType })
+            mediarecorder.start()
+
+            const [video] = media.getVideoTracks()
+            video.addEventListener("ended", () => {
+                mediarecorder.stop()
+            })
+
+            mediarecorder.addEventListener("dataavailable", (e) => {
+                const link = document.createElement("a")
+                link.href = URL.createObjectURL(e.data)
+                const currentDate = new Date().toISOString().replace(/[-:]/g, "-").replace("T", " ").split(".")[0];
+                link.download = `${currentDate} - ${videoFormat}.webm`;
+                link.click()
+            })
+        })
+    })
+    </script>
+
+    <!-- Estilos -->
+    <style>
+        * {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            /* Crear un efecto gradiente de azul oscuro, azul y negro */
+            height: 100vh;
+            background: linear-gradient(45deg, rgb(31, 31, 32), rgb(42, 63, 66), black);
+        }
+
+        button {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 24px;
+            color: black;
+        }
+
+        select, option {
+            color: black;
+        }
+
+        .container {
+            /* Centrar el contenedor en ambos ejes y darle una altura del 100% - 4em */
+            display: grid;
+            place-content: center;
+            height: calc(100vh - 4em);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Parametros
+        - Sonido activado
+        - Formato webm
+        -->
+        <form id="format-form">
+            <hr>
+            <label for="audio-format">Sonido activado:</label>
+            <input type="checkbox" id="audio-format" name="audio-format" checked>
+            <br><br>
+            <label for="video-format">Formato de video:</label>
+            <select id="video-format" name="video-format">
+                <option value="h264">H.264</option>
+                <option value="vp8">VP8</option>
+                <option value="vp9">VP9</option>
+                <option value="av1">AV1</option>
+            </select>
+            <br><br>
+            <label for="frame-rate">Tasa de fotogramas:</label>
+            <br>
+            <input type="range" id="frame-rate" name="frame-rate" min="1" max="60" value="30">
+            <a id="frame-number">30</a>
+            <br><hr>
+            <button type="submit">Grabar</button>
+            <br>
+            <button disabled="disabled">Detener</button>
+        </form>
+    </div>
+</body>
+</html>
