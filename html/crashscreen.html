@@ -1,0 +1,80 @@
+<html>
+<head>
+    <title>Crash Screen</title>
+    <style>
+        body {
+            background-image: url('./img/background_noblur.png');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+        }
+
+        .header {
+            background-color: #11191bc9;
+            width: 100%;
+            height: 100px;
+
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            padding-left: 30px;
+        }
+
+        img {
+            height: 50px;
+        }
+
+        .footer {
+            background-color: #11191bc9;
+            width: 100%;
+            height: 80px;
+
+            bottom: 0;
+            position: absolute;
+        }
+
+        .displaytext {
+            color: white;
+            
+            position: absolute;
+            top: calc(50% - 60px);
+            left: 8%;
+
+            width: 200px;
+            text-align: left;
+            line-height: 1.35;
+
+            background: #11191bc9;
+            padding: 20px;
+
+            font-family: Tahoma, Verdana, sans-serif;
+            font-size: 10px;
+            font-weight: normal;
+            
+        }
+
+        @media screen and (min-width: 1000px){
+            .displaytext {
+                width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="./img/mp_logo_white.png">
+            </div>
+        </div>
+
+        <div class="displaytext">
+            <h1>Pues asi termina todo, el servidor ha crasheado.</h1>
+        </div>
+
+        <div class="footer">
+        </div>
+    </div>
+</html>
