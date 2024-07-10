@@ -1,133 +1,150 @@
 <html>
 <head>
     <title>Crash Screen</title>
-    <style>
-        body {
-            background-image: url('./img/background_noblur.png');
-            background-size: cover;
-            background-position: center;
-            margin: 0;
-        }
 
-        .header {
-            background-color: #11191bc9;
-            width: 100%;
-            height: 100px;
+<style>
+* {
+    font-family: Tahoma, Verdana, sans-serif;
+}
 
-            display: flex;
-            align-items: center;
-        }
+.button-style {
+    background-color: #11191bc9;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
 
-        .logo {
-            padding-left: 30px;
-        }
+    display: flex;
+    align-items: center;
+}
 
-        img {
-            height: 50px;
-        }
+body {
+    background-image: url('./img/background_noblur.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
 
-        .footer {
-            background-color: #11191bc9;
-            width: 100%;
-            height: 80px;
+.header {
+    background-color: #11191bc9;
+    width: 100%;
+    height: 100px;
 
-            bottom: 0;
-            position: absolute;
-        }
+    display: flex;
+    align-items: center;
+}
 
-        .displaytext {
-            color: white;
-            
-            position: absolute;
-            top: calc(50% - 60px);
-            left: 8%;
+.logo {
+    padding-left: 30px;
+}
 
-            width: 200px;
-            text-align: left;
-            line-height: 1.35;
+img {
+    height: 50px;
+}
 
-            background: #11191bc9;
-            padding: 20px;
+.footer {
+    background-color: #11191bc9;
+    width: 100%;
+    height: 80px;
 
-            font-family: Tahoma, Verdana, sans-serif;
-            font-size: 10px;
-            font-weight: normal;
-        }
+    bottom: 0;
+    position: absolute;
+}
 
-        .buttons {
-            position: absolute;
-            top: calc(50% - 130px);
-            right: 8%;
+.displaytext {
+    color: white;
+    
+    position: absolute;
+    top: calc(50% - 60px);
+    left: 8%;
 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+    width: 200px;
+    text-align: left;
+    line-height: 1.35;
 
-        .button {
-            background-color: #11191bc9;
-            color: white;
-            border: 1px solid white;
-            padding: 10px;
-            margin: 5px;
-            cursor: pointer;
+    background: #11191bc9;
+    padding: 20px;
 
-            display: flex;
-            align-items: center;
+    font-size: 10px;
+    font-weight: normal;
+}
 
-            width: 200px;
-        }
+.buttons {
+    position: absolute;
+    top: calc(50% - 130px);
+    right: 8%;
 
-        .button-onlytext {
-            background-color: #11191bc9;
-            color: white;
-            border: 1px solid white;
-            padding: 10px;
-            margin: 5px;
-            cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-            display: flex;
-            align-items: center;
+.button {
+    width: 200px;
+}
 
-            width: 400px;
-        }
+.button-onlytext {
+    width: 400px;
+}
 
-        .button-img {
-            border-radius: 10%;
-        }
+.button-img {
+    border-radius: 10%;
+}
 
-        .button-text {
-            margin-left: 10px;
-            font-family: Tahoma, Verdana, sans-serif;
-        }
+.button-text {
+    margin-left: 10px;
+}
 
-        @media only screen and (max-width: 1000px) {
-            .displaytext {
-                width: 100px;
-                font-size: 8px;
-            }
+.footer {
+    display: flex;
+    align-items: center;
+}
 
-            .header {
-                height: 50px;
-            }
+.closepanel-button {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
 
-            img {
-                height: 30px;
-            }
+.closepanel {
+    margin-left: 30px;
+}
 
-            .footer {
-                height: 30px;
-            }
+@media only screen and (max-width: 1000px) {
+    .displaytext {
+        width: 100px;
+        font-size: 8px;
+    }
 
-            .button {
-                width: 150px;
-            }
+    .header {
+        height: 50px;
+    }
 
-            .button-onlytext {
-                width: 300px;
-            }
-        }
-    </style>
+    img {
+        height: 30px;
+    }
+
+    .footer {
+        height: 30px;
+    }
+
+    .button {
+        width: 150px;
+    }
+
+    .button-onlytext {
+        width: 300px;
+    }
+
+    .closepanel {
+        margin-left: 10px;
+        font-size: 12px;
+        padding: 5px;
+    }
+}
+</style>
+
 </head>
 <body>
     <div class="container">
@@ -142,24 +159,29 @@
         </div>
 
         <div class="buttons">
-            <div class="button-onlytext">
+            <div class="button-style button-onlytext">
                 <div class="button-text">Prueba en jugar en estos servidores o intenta denuevo</div>
             </div>
-            <div class="button" onclick="gmod.connect()">
+            <div class="button-style button" onclick="gmod.connect()">
                 <img class="button-img" src="./img/thirdparty/fct.png">
                 <div class="button-text">Fideos con tuco</div>
             </div>
-            <div class="button" onclick="connect_to_nova()">
+            <div class="button-style button" onclick="connect_to_nova()">
                 <img class="button-img" src="./img/thirdparty/nova.png">
                 <div class="button-text">Nova Gaming</div>
             </div>
-            <div class="button" onclick="connect_to_mp()">
+            <div class="button-style button" onclick="connect_to_mp()">
                 <img class="button-img" src="./img/mp/mp.png">
                 <div class="button-text">Volver a intentar</div>
             </div>
         </div>
 
         <div class="footer">
+            <div class="button-style closepanel">
+                <div class="closepanel-button" onclick="closepanel()">
+                    Cerrar panel
+                </div>
+            </div>
         </div>
     </div>
 

@@ -8,7 +8,7 @@ import os
 # ------------------ Definitions ---------------------
 # ----------------------------------------------------
 
-prefix = "https://github.mapping-latam.cl/html/"
+prefix = "https://vicentefelipechile.github.io/mapping-latam/html/"
 header = """# Reglas de diferentes categorias
 
 * [DarkRP](https://github.mapping-latam.cl/html/darkrp.html)
