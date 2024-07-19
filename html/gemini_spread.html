@@ -1,0 +1,130 @@
+<head>
+    <style>
+        body {
+            background-color: rgb(2, 41, 51);
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .gemini-container {
+            /* Display */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: space-evenly;
+
+            /* Size */
+            width: 100%;
+            height: 100%;
+        }
+
+        .gemini-square {
+            width: 12px;
+            height: 12px;
+            border-radius: 3px;
+            background-color: white;
+            margin: 2px;
+
+            /* Fading effect to gemini square when changing color */
+            transition: background-color 0.36s;
+        }
+    </style>
+</head>
+<body>
+    <div class="gemini-container">
+        <div class="gemini-square"></div>
+    </div>
+
+    <script>
+        const Range = (min, max) => Math.floor(Math.random() * (max - min + 1) + min)
+
+        // Ranges
+        let CustomPercentage = 10
+
+        // Calculate the number of squares needed to fill the screen in width and height
+        let width = Math.floor(window.innerWidth / 16)
+        let height = Math.min( Math.floor(window.innerHeight / 18), 10)
+    
+        function RandomizeColors() {
+            let squares = document.querySelectorAll(".gemini-square")
+            for (let i = 0; i < squares.length; i++) {
+                let square = squares[i]
+                square.style.backgroundColor = `rgb(${Range(20, 30)}, ${Range(50, 80)}, ${Range(60, 110)})`
+            }
+        }
+
+        function GenerateSquares() {
+            // Clear the container
+            document.querySelector(".gemini-container").innerHTML = ""
+
+            // Create the squares
+            for (let i = 0; i < width; i++) {
+                for (let j = 0; j < height; j++) {
+                    let square = document.createElement("div")
+                    square.classList.add("gemini-square")
+                    document.querySelector(".gemini-container").appendChild(square)
+                }
+            }
+
+            RandomizeColors()
+        }
+
+
+        function GenerateHighlight(Percentage) {
+            let Amount = Math.floor((width * height) * (Percentage / 100))
+
+            let squares = document.querySelectorAll(".gemini-square")
+            for (let i = 0; i < Amount; i++) {
+                let square = squares[Range(0, squares.length - 1)]
+                square.style.backgroundColor = `rgb(${Range(10, 60)}, ${Range(210, 235)}, ${Range(30, 90)})`
+            }
+        }
+
+        function GenerateMediumHighlight(Percentage) {
+            let Amount = Math.floor((width * height) * (Percentage / 100))
+
+            let squares = document.querySelectorAll(".gemini-square")
+            for (let i = 0; i < Amount; i++) {
+                let square = squares[Range(0, squares.length - 1)]
+                square.style.backgroundColor = `rgb(${Range(10, 60)}, ${Range(100, 140)}, ${Range(30, 50)})`
+            }
+        }
+
+        GenerateSquares()
+        GenerateHighlight(CustomPercentage)
+
+        // Refresh on press R
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "r") {
+                RandomizeColors()
+                GenerateHighlight(CustomPercentage)
+                GenerateMediumHighlight(CustomPercentage * 0.4)
+            }
+        })
+
+        // on press D or right arrow, increase the highlight
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "d" || event.key === "ArrowRight") {
+                CustomPercentage += 5
+
+                CustomPercentage = Math.min(CustomPercentage, 100)
+                RandomizeColors()
+                GenerateHighlight(CustomPercentage)
+                GenerateMediumHighlight(CustomPercentage * 0.4)
+            }
+        })
+
+        // on press A or left arrow, decrease the highlight
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "a" || event.key === "ArrowLeft") {
+                CustomPercentage -= 5
+
+                CustomPercentage = Math.max(CustomPercentage, 0)
+                RandomizeColors()
+                GenerateHighlight(CustomPercentage)
+                GenerateMediumHighlight(CustomPercentage * 0.4)
+            }
+        })
+    </script>
+</body>
