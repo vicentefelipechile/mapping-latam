@@ -43,7 +43,7 @@
         let CustomPercentage = 10
         let Temperature = 0.5
         let TopK = 30
-        let TopP = 1
+        let TopP = 0.5
 
         // Calculate the number of squares needed to fill the screen in width and height
         let width = Math.floor(window.innerWidth / 16)
@@ -108,6 +108,7 @@
                 for (let j = 0; j < height; j++) {
                     let square = document.createElement("div")
                     square.classList.add("gemini-square")
+                    square.style.backgroundColor = `rgb(10, 20, 40)`
                     document.querySelector(".gemini-container").appendChild(square)
                 }
             }
@@ -118,6 +119,9 @@
 
         function GenerateHighlight() {
             let Amount = Math.floor((width * height) * (TopK / 100) )
+            let AmountTopP = Math.floor((width * height) * (TopP / 100) )
+            let AmountNormal = Amount - AmountTopP
+            console.log(Amount, AmountTopP, AmountNormal)
 
             let squares = document.querySelectorAll(".gemini-square")
             for (let i = 0; i < Amount; i++) {
@@ -179,6 +183,14 @@
                 RandomizeColors()
                 GenerateHighlight()
             }
+        })
+
+        // On change the page size, recalculate the squares
+        window.addEventListener("resize", () => {
+            width = Math.floor(window.innerWidth / 16)
+            height = Math.min( Math.floor(window.innerHeight / 18), 10)
+            GenerateSquares()
+            GenerateHighlight()
         })
     </script>
 </body>

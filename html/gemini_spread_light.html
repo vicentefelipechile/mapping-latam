@@ -1,0 +1,26 @@
+<head><style>body{background-color:#022933;margin:0;overflow:hidden}.gemini-container{display:flex;flex-direction:row;flex-wrap:wrap;align-content:center;justify-content:space-evenly;width:100%;height:100%}.gemini-square{width:12px;height:12px;border-radius:3px;background-color:#fff;margin:2px;transition:background-color 0.36s}</style></head>
+<body><div class="gemini-container"></div>
+<script>
+const R=(mi,m)=>Math.floor(Math.random()*(m-mi+1)+mi)
+let P=10
+let W=Math.floor(window.innerWidth/16)
+let H=Math.min(Math.floor(window.innerHeight/18),10)
+function RandomizeColors(){let squares=document.querySelectorAll(".gemini-square")
+for(let i=0;i<squares.length;i++){let square=squares[i]
+square.style.backgroundColor=`rgb(${R(20, 30)}, ${R(50, 80)}, ${R(60, 110)})`}}
+function GenerateSquares(){document.querySelector(".gemini-container").innerHTML=""
+for(let i=0;i<W;i++){for(let j=0;j<H;j++){let square=document.createElement("div")
+square.classList.add("gemini-square")
+document.querySelector(".gemini-container").appendChild(square)}}
+RandomizeColors()}
+function GenerateHighlight(Percentage){let Amount=Math.floor((W*H)*(Percentage/100))
+let squares=document.querySelectorAll(".gemini-square")
+for(let i=0;i<Amount;i++){let square=squares[R(0,squares.length-1)]
+square.style.backgroundColor=`rgb(${R(10, 60)}, ${R(210, 235)}, ${R(30, 90)})`}}
+function GenerateMediumHighlight(Percentage){let Amount=Math.floor((W*H)*(Percentage/100))
+let squares=document.querySelectorAll(".gemini-square")
+for(let i=0;i<Amount;i++){let square=squares[R(0,squares.length-1)]
+square.style.backgroundColor=`rgb(${R(10, 60)}, ${R(100, 140)}, ${R(30, 50)})`}}
+GenerateSquares()
+GenerateHighlight(P)
+</script></body>
