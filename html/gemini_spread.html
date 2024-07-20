@@ -27,7 +27,7 @@
             margin: 2px;
 
             /* Fading effect to gemini square when changing color */
-            transition: background-color 0.36s;
+            transition: background-color 0.26s;
         }
     </style>
 </head>
@@ -41,16 +41,61 @@
 
         // Ranges
         let CustomPercentage = 10
+        let Temperature = 0.5
+        let TopK = 30
+        let TopP = 1
 
         // Calculate the number of squares needed to fill the screen in width and height
         let width = Math.floor(window.innerWidth / 16)
         let height = Math.min( Math.floor(window.innerHeight / 18), 10)
+
+        function GetTemperatureNumber() {
+            // Range between Temperature and 1
+            return Math.random() * (1 - Temperature) + Temperature
+        }
+
+        function GetTemperatureColor(Intensity) {
+            // Select the color based on the intensity
+            // Delta red between 10 and 60
+            // Delta green between 100 and 140
+            // Delta blue between 30 and 50
+            let r = Math.floor(10 + Intensity * 20)
+            let g = Math.floor(40 + Intensity * 30)
+            let b = Math.floor(60 + Intensity * 50)
+
+            return `rgb(${r}, ${g}, ${b})`
+        }
+
+        function GetTemperatureColor2(Intensity) { // This color is based on Temperature
+            // Select the color based on the intensity
+            // Delta red between 10 and 60
+            // Delta green between 235 to 210 (starts at 235 and goes down)
+            // Delta blue between 30 and 90
+            let r = Math.floor(30 - Intensity * 20)
+            let g = Math.floor(235 - Intensity * 25)
+            let b = Math.floor(90 - Intensity * 60)
+
+            return `rgb(${r}, ${g}, ${b})`
+        }
+
+        function GetTemperatureColor3(Intensity) { // This color is based on Top P
+            let r = Math.floor(30 - Intensity * 20)
+            let g = Math.floor(235 - Intensity * 100)
+            let b = Math.floor(90 - Intensity * 70)
+
+            return `rgb(${r}, ${g}, ${b})`
+        }
+
+
+
+
+        // Square functions
     
         function RandomizeColors() {
             let squares = document.querySelectorAll(".gemini-square")
             for (let i = 0; i < squares.length; i++) {
                 let square = squares[i]
-                square.style.backgroundColor = `rgb(${Range(20, 30)}, ${Range(50, 80)}, ${Range(60, 110)})`
+                square.style.backgroundColor = GetTemperatureColor(GetTemperatureNumber())
             }
         }
 
@@ -71,59 +116,68 @@
         }
 
 
-        function GenerateHighlight(Percentage) {
-            let Amount = Math.floor((width * height) * (Percentage / 100))
+        function GenerateHighlight() {
+            let Amount = Math.floor((width * height) * (TopK / 100) )
 
             let squares = document.querySelectorAll(".gemini-square")
             for (let i = 0; i < Amount; i++) {
                 let square = squares[Range(0, squares.length - 1)]
-                square.style.backgroundColor = `rgb(${Range(10, 60)}, ${Range(210, 235)}, ${Range(30, 90)})`
-            }
-        }
-
-        function GenerateMediumHighlight(Percentage) {
-            let Amount = Math.floor((width * height) * (Percentage / 100))
-
-            let squares = document.querySelectorAll(".gemini-square")
-            for (let i = 0; i < Amount; i++) {
-                let square = squares[Range(0, squares.length - 1)]
-                square.style.backgroundColor = `rgb(${Range(10, 60)}, ${Range(100, 140)}, ${Range(30, 50)})`
+                square.style.backgroundColor = GetTemperatureColor2(GetTemperatureNumber())
             }
         }
 
         GenerateSquares()
-        GenerateHighlight(CustomPercentage)
+        GenerateHighlight()
 
         // Refresh on press R
         document.addEventListener("keydown", (event) => {
             if (event.key === "r") {
                 RandomizeColors()
-                GenerateHighlight(CustomPercentage)
-                GenerateMediumHighlight(CustomPercentage * 0.4)
+                GenerateHighlight()
             }
         })
 
         // on press D or right arrow, increase the highlight
         document.addEventListener("keydown", (event) => {
             if (event.key === "d" || event.key === "ArrowRight") {
-                CustomPercentage += 5
+                TopK += 5
 
-                CustomPercentage = Math.min(CustomPercentage, 100)
+                TopK = Math.min(TopK, 100)
                 RandomizeColors()
-                GenerateHighlight(CustomPercentage)
-                GenerateMediumHighlight(CustomPercentage * 0.4)
+                GenerateHighlight()
             }
         })
 
         // on press A or left arrow, decrease the highlight
         document.addEventListener("keydown", (event) => {
             if (event.key === "a" || event.key === "ArrowLeft") {
-                CustomPercentage -= 5
+                TopK -= 5
 
-                CustomPercentage = Math.max(CustomPercentage, 0)
+                TopK = Math.max(TopK, 5)
                 RandomizeColors()
-                GenerateHighlight(CustomPercentage)
-                GenerateMediumHighlight(CustomPercentage * 0.4)
+                GenerateHighlight()
+            }
+        })
+
+        // on press W or up arrow, increase the temperature
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "w" || event.key === "ArrowUp") {
+                Temperature += 0.1
+
+                Temperature = Math.min(Temperature, 1)
+                RandomizeColors()
+                GenerateHighlight()
+            }
+        })
+
+        // on press S or down arrow, decrease the temperature
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "s" || event.key === "ArrowDown") {
+                Temperature -= 0.1
+
+                Temperature = Math.max(Temperature, 0)
+                RandomizeColors()
+                GenerateHighlight()
             }
         })
     </script>
