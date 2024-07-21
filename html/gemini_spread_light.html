@@ -1,26 +1,5 @@
 <head><style>body{background-color:#022933;margin:0;overflow:hidden}.gemini-container{display:flex;flex-direction:row;flex-wrap:wrap;align-content:center;justify-content:space-evenly;width:100%;height:100%}.gemini-square{width:12px;height:12px;border-radius:3px;background-color:#fff;margin:2px;transition:background-color 0.36s}</style></head>
 <body><div class="gemini-container"></div>
 <script>
-const R=(mi,m)=>Math.floor(Math.random()*(m-mi+1)+mi)
-let P=10
-let W=Math.floor(window.innerWidth/16)
-let H=Math.min(Math.floor(window.innerHeight/18),10)
-function RandomizeColors(){let squares=document.querySelectorAll(".gemini-square")
-for(let i=0;i<squares.length;i++){let square=squares[i]
-square.style.backgroundColor=`rgb(${R(20, 30)}, ${R(50, 80)}, ${R(60, 110)})`}}
-function GenerateSquares(){document.querySelector(".gemini-container").innerHTML=""
-for(let i=0;i<W;i++){for(let j=0;j<H;j++){let square=document.createElement("div")
-square.classList.add("gemini-square")
-document.querySelector(".gemini-container").appendChild(square)}}
-RandomizeColors()}
-function GenerateHighlight(Percentage){let Amount=Math.floor((W*H)*(Percentage/100))
-let squares=document.querySelectorAll(".gemini-square")
-for(let i=0;i<Amount;i++){let square=squares[R(0,squares.length-1)]
-square.style.backgroundColor=`rgb(${R(10, 60)}, ${R(210, 235)}, ${R(30, 90)})`}}
-function GenerateMediumHighlight(Percentage){let Amount=Math.floor((W*H)*(Percentage/100))
-let squares=document.querySelectorAll(".gemini-square")
-for(let i=0;i<Amount;i++){let square=squares[R(0,squares.length-1)]
-square.style.backgroundColor=`rgb(${R(10, 60)}, ${R(100, 140)}, ${R(30, 50)})`}}
-GenerateSquares()
-GenerateHighlight(P)
+const Range=(t,o)=>Math.floor(Math.random()*(o-t+1)+t);let T=.5,K=30,P=.5,W=Math.floor(window.innerWidth/16),H=Math.min(Math.floor(window.innerHeight/18),10);function GT(){return Math.random()*(1-T)+T}function G(t){return`rgb(${Math.floor(10+20*t)}, ${Math.floor(40+30*t)}, ${Math.floor(60+50*t)})`}function G2(t){return`rgb(${Math.floor(30-20*t)}, ${Math.floor(245-25*t)}, ${Math.floor(60-30*t)})`}function G3(t){return`rgb(${Math.floor(30-20*t)}, ${Math.floor(140-50*t)}, ${Math.floor(50-30*t)})`}function RC(){let t=document.querySelectorAll(".gemini-square");for(let o=0;o<t.length;o++){t[o].style.backgroundColor=G(GT())}}function GS(){document.querySelector(".gemini-container").innerHTML="";for(let t=0;t<W;t++)for(let t=0;t<H;t++){let t=document.createElement("div");t.classList.add("gemini-square"),t.style.backgroundColor="rgb(10, 20, 40)",document.querySelector(".gemini-container").appendChild(t)}RC()}function GH(){let t=Math.floor(W*H*(K/100)),o=Math.max(Math.floor(t*(1-P)),1),e=t-o,r=document.querySelectorAll(".gemini-square"),n=[];for(let t=0;t<o;t++){let t=r[Range(0,r.length-1)];t.style.backgroundColor=G2(GT()),n.push(t)}r=Array.from(r).filter((t=>!n.includes(t)));for(let t=0;t<e;t++){r[Range(0,r.length-1)].style.backgroundColor=G3(GT())}}GS(),GH(),SetTemperature=t=>{T=Math.min(1,Math.max(0,parseFloat(t))),RC(),GH()},SetTopK=t=>{K=Math.min(100,Math.max(0,parseInt(t))),RC(),GH()},SetTopP=t=>{P=Math.min(1,Math.max(0,parseFloat(t))),RC(),GH()};
 </script></body>

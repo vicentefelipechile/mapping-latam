@@ -72,16 +72,16 @@
             // Delta green between 235 to 210 (starts at 235 and goes down)
             // Delta blue between 30 and 90
             let r = Math.floor(30 - Intensity * 20)
-            let g = Math.floor(235 - Intensity * 25)
-            let b = Math.floor(90 - Intensity * 60)
+            let g = Math.floor(245 - Intensity * 25)
+            let b = Math.floor(60 - Intensity * 30)
 
             return `rgb(${r}, ${g}, ${b})`
         }
 
         function GetTemperatureColor3(Intensity) { // This color is based on Top P
             let r = Math.floor(30 - Intensity * 20)
-            let g = Math.floor(235 - Intensity * 100)
-            let b = Math.floor(90 - Intensity * 70)
+            let g = Math.floor(140 - Intensity * 50)
+            let b = Math.floor(50 - Intensity * 30)
 
             return `rgb(${r}, ${g}, ${b})`
         }
@@ -119,14 +119,25 @@
 
         function GenerateHighlight() {
             let Amount = Math.floor((width * height) * (TopK / 100) )
-            let AmountTopP = Math.floor((width * height) * (TopP / 100) )
-            let AmountNormal = Amount - AmountTopP
+            let AmountNormal = Math.max( Math.floor(Amount * (1 - TopP)), 1)
+            let AmountTopP = Amount - AmountNormal
             console.log(Amount, AmountTopP, AmountNormal)
 
             let squares = document.querySelectorAll(".gemini-square")
-            for (let i = 0; i < Amount; i++) {
-                let square = squares[Range(0, squares.length - 1)]
+            let usedsquares = []
+            for (let i = 0; i < AmountNormal; i++) {
+                let square = squares[ Range(0, squares.length - 1) ]
                 square.style.backgroundColor = GetTemperatureColor2(GetTemperatureNumber())
+
+                usedsquares.push(square)
+            }
+
+            // remove the used squares
+            squares = Array.from(squares).filter( (square) => !usedsquares.includes(square) )
+
+            for (let i = 0; i < AmountTopP; i++) {
+                let square = squares[ Range(0, squares.length - 1) ]
+                square.style.backgroundColor = GetTemperatureColor3(GetTemperatureNumber())
             }
         }
 
@@ -191,6 +202,28 @@
             height = Math.min( Math.floor(window.innerHeight / 18), 10)
             GenerateSquares()
             GenerateHighlight()
+        })
+
+        // On press Z, decrease the Top P
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "z") {
+                TopP -= 0.1
+
+                TopP = Math.max(TopP, 0)
+                RandomizeColors()
+                GenerateHighlight()
+            }
+        })
+
+        // On press X, increase the Top P
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "x") {
+                TopP += 0.1
+
+                TopP = Math.min(TopP, 1)
+                RandomizeColors()
+                GenerateHighlight()
+            }
         })
     </script>
 </body>
