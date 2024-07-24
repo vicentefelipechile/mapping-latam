@@ -12,7 +12,8 @@
             flex-direction: row;
             flex-wrap: wrap;
             align-content: center;
-            justify-content: space-evenly;
+            align-items: center;
+            justify-content: center;
 
             /* Size */
             width: 100%;
@@ -32,9 +33,7 @@
     </style>
 </head>
 <body>
-    <div class="gemini-container">
-        <div class="gemini-square"></div>
-    </div>
+    <div class="gemini-container"></div>
 
     <script>
         const Range = (min, max) => Math.floor(Math.random() * (max - min + 1) + min)
@@ -101,16 +100,18 @@
 
         function GenerateSquares() {
             // Clear the container
-            document.querySelector(".gemini-container").innerHTML = ""
+            const container = document.querySelector(".gemini-container")
+            container.innerHTML = ""
 
             // Create the squares
-            for (let i = 0; i < width; i++) {
-                for (let j = 0; j < height; j++) {
+            for (let i = 0; i < height; i++) {
+                for (let j = 0; j < width; j++) {
                     let square = document.createElement("div")
                     square.classList.add("gemini-square")
-                    square.style.backgroundColor = `rgb(10, 20, 40)`
-                    document.querySelector(".gemini-container").appendChild(square)
+                    container.appendChild(square)
                 }
+                let br = document.createElement("br")
+                container.appendChild(br)
             }
 
             RandomizeColors()
@@ -143,6 +144,24 @@
 
         GenerateSquares()
         GenerateHighlight()
+
+        function SetTemperature(V) {
+            Temperature = parseFloat(V)
+            RandomizeColors()
+            GenerateHighlight()
+        }
+
+        function SetTopK(V) {
+            TopK = parseInt(V)
+            RandomizeColors()
+            GenerateHighlight()
+        }
+
+        function SetTopP(V) {
+            TopP = parseFloat(V)
+            RandomizeColors()
+            GenerateHighlight()
+        }
 
         // Refresh on press R
         document.addEventListener("keydown", (event) => {
