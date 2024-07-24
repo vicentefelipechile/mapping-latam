@@ -36,7 +36,10 @@
     <div class="gemini-container"></div>
 
     <script>
-        const Range = (min, max) => Math.floor(Math.random() * (max - min + 1) + min)
+        const FL = Math.floor
+        const MI = Math.min
+        const MA = Math.max
+        const Range = (min, max) => FL(Math.random() * (max - min + 1) + min)
 
         // Ranges
         let CustomPercentage = 10
@@ -45,42 +48,35 @@
         let TopP = 0.5
 
         // Calculate the number of squares needed to fill the screen in width and height
-        let width = Math.floor(window.innerWidth / 16)
-        let height = Math.min( Math.floor(window.innerHeight / 18), 10)
+        let width = FL(window.innerWidth / 16)
+        let height = MI( FL(window.innerHeight / 18), 10)
 
         function GetTemperatureNumber() {
-            // Range between Temperature and 1
-            return Math.random() * (1 - Temperature) + Temperature
+            // Delta number between 0 to temperature
+            return Math.random() * Temperature
         }
 
         function GetTemperatureColor(Intensity) {
             // Select the color based on the intensity
-            // Delta red between 10 and 60
-            // Delta green between 100 and 140
-            // Delta blue between 30 and 50
-            let r = Math.floor(10 + Intensity * 20)
-            let g = Math.floor(40 + Intensity * 30)
-            let b = Math.floor(60 + Intensity * 50)
+            let r = FL(30 - Intensity * 10)
+            let g = FL(70 - Intensity * 40)
+            let b = FL(110 - Intensity * 60)
 
             return `rgb(${r}, ${g}, ${b})`
         }
 
         function GetTemperatureColor2(Intensity) { // This color is based on Temperature
-            // Select the color based on the intensity
-            // Delta red between 10 and 60
-            // Delta green between 235 to 210 (starts at 235 and goes down)
-            // Delta blue between 30 and 90
-            let r = Math.floor(30 - Intensity * 20)
-            let g = Math.floor(245 - Intensity * 25)
-            let b = Math.floor(60 - Intensity * 30)
+            let r = FL(30 - Intensity * 20)
+            let g = FL(245 - Intensity * 25)
+            let b = FL(60 - Intensity * 30)
 
             return `rgb(${r}, ${g}, ${b})`
         }
 
         function GetTemperatureColor3(Intensity) { // This color is based on Top P
-            let r = Math.floor(30 - Intensity * 20)
-            let g = Math.floor(140 - Intensity * 50)
-            let b = Math.floor(50 - Intensity * 30)
+            let r = FL(10 + Intensity * 20)
+            let g = FL(140 - Intensity * 50)
+            let b = FL(50 - Intensity * 30)
 
             return `rgb(${r}, ${g}, ${b})`
         }
@@ -111,7 +107,11 @@
                     container.appendChild(square)
                 }
                 let br = document.createElement("br")
+<<<<<<< HEAD
                 container.appendChild(br)
+=======
+                document.querySelector(".gemini-container").appendChild(br)
+>>>>>>> dac85589881816a295549a5be8ca629922779e03
             }
 
             RandomizeColors()
@@ -119,10 +119,9 @@
 
 
         function GenerateHighlight() {
-            let Amount = Math.floor((width * height) * (TopK / 100) )
-            let AmountNormal = Math.max( Math.floor(Amount * (1 - TopP)), 1)
-            let AmountTopP = Amount - AmountNormal
-            console.log(Amount, AmountTopP, AmountNormal)
+            let Amount = FL((width * height) * (TopK / 100) )
+            let AmountNormal = FL(Amount * TopP)
+            let AmountTopP = MA(Amount - AmountNormal, 1)
 
             let squares = document.querySelectorAll(".gemini-square")
             let usedsquares = []
@@ -145,71 +144,77 @@
         GenerateSquares()
         GenerateHighlight()
 
+<<<<<<< HEAD
         function SetTemperature(V) {
             Temperature = parseFloat(V)
+=======
+        function SetTemperature(T) {
+            Temperature = parseFloat(T)
+>>>>>>> dac85589881816a295549a5be8ca629922779e03
             RandomizeColors()
             GenerateHighlight()
         }
 
+<<<<<<< HEAD
         function SetTopK(V) {
             TopK = parseInt(V)
+=======
+        function SetTopK(T) {
+            TopK = parseInt(T)
+>>>>>>> dac85589881816a295549a5be8ca629922779e03
             RandomizeColors()
             GenerateHighlight()
         }
 
+<<<<<<< HEAD
         function SetTopP(V) {
             TopP = parseFloat(V)
+=======
+        function SetTopP(T) {
+            TopP = parseFloat(T)
+            RandomizeColors()
+            GenerateHighlight()
+        }
+
+        function SetResolution(NW, NH) {
+            width = FL(parseInt(NW)/16)
+            height = FL(parseInt(NH)/2)
+>>>>>>> dac85589881816a295549a5be8ca629922779e03
             RandomizeColors()
             GenerateHighlight()
         }
 
         // Refresh on press R
+        const YesKeys = {
+            "r": true,
+            "a": true,
+            "d": true,
+            "w": true,
+            "s": true,
+            "z": true,
+            "x": true,
+            "ArrowLeft": true,
+            "ArrowRight": true,
+            "ArrowUp": true,
+            "ArrowDown": true
+        }
         document.addEventListener("keydown", (event) => {
             if (event.key === "r") {
-                RandomizeColors()
-                GenerateHighlight()
+            } else if ( event.key === "a" || event.key === "ArrowLeft" ) {
+                TopK = Math.max(TopK - 5, 5)
+            } else if (event.key === "d" || event.key === "ArrowRight") {
+                TopK = MI(TopK + 5, 100)
+            } else if (event.key === "w" || event.key === "ArrowUp") {
+                Temperature = MI(Temperature + 0.1, 1)
+            } else if (event.key === "s" || event.key === "ArrowDown") {
+                Temperature = Math.max(Temperature - 0.1, 0)
+            } else if (event.key === "z" ) {
+                TopP = Math.max(TopP - 0.1, 0)
+            } else if (event.key === "x" ) {
+                TopP = MI(TopP + 0.1, 1)
             }
-        })
 
-        // on press D or right arrow, increase the highlight
-        document.addEventListener("keydown", (event) => {
-            if (event.key === "d" || event.key === "ArrowRight") {
-                TopK += 5
-
-                TopK = Math.min(TopK, 100)
-                RandomizeColors()
-                GenerateHighlight()
-            }
-        })
-
-        // on press A or left arrow, decrease the highlight
-        document.addEventListener("keydown", (event) => {
-            if (event.key === "a" || event.key === "ArrowLeft") {
-                TopK -= 5
-
-                TopK = Math.max(TopK, 5)
-                RandomizeColors()
-                GenerateHighlight()
-            }
-        })
-
-        // on press W or up arrow, increase the temperature
-        document.addEventListener("keydown", (event) => {
-            if (event.key === "w" || event.key === "ArrowUp") {
-                Temperature += 0.1
-
-                Temperature = Math.min(Temperature, 1)
-                RandomizeColors()
-                GenerateHighlight()
-            }
-        })
-
-        // on press S or down arrow, decrease the temperature
-        document.addEventListener("keydown", (event) => {
-            if (event.key === "s" || event.key === "ArrowDown") {
-                Temperature -= 0.1
-
-                Temperature = Math.max(Temperature, 0)
+            if (YesKeys[event.key]) {
                 RandomizeColors()
                 GenerateHighlight()
             }
@@ -217,32 +222,10 @@
 
         // On change the page size, recalculate the squares
         window.addEventListener("resize", () => {
-            width = Math.floor(window.innerWidth / 16)
-            height = Math.min( Math.floor(window.innerHeight / 18), 10)
+            width = FL(window.innerWidth / 16)
+            height = Math.min( FL(window.innerHeight / 18), 10)
             GenerateSquares()
             GenerateHighlight()
-        })
-
-        // On press Z, decrease the Top P
-        document.addEventListener("keydown", (event) => {
-            if (event.key === "z") {
-                TopP -= 0.1
-
-                TopP = Math.max(TopP, 0)
-                RandomizeColors()
-                GenerateHighlight()
-            }
-        })
-
-        // On press X, increase the Top P
-        document.addEventListener("keydown", (event) => {
-            if (event.key === "x") {
-                TopP += 0.1
-
-                TopP = Math.min(TopP, 1)
-                RandomizeColors()
-                GenerateHighlight()
-            }
         })
     </script>
 </body>
