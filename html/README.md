@@ -379,6 +379,7 @@
 * [img/darkrp/ejemplo4.pdn](https://vicentefelipechile.github.io/mapping-latam/html/img/darkrp/ejemplo4.pdn)
 * [img/darkrp/ejemplo5.pdn](https://vicentefelipechile.github.io/mapping-latam/html/img/darkrp/ejemplo5.pdn)
 * [img/darkrp/escape.pdn](https://vicentefelipechile.github.io/mapping-latam/html/img/darkrp/escape.pdn)
+* [img/darkrp/interfaz.pdn](https://vicentefelipechile.github.io/mapping-latam/html/img/darkrp/interfaz.pdn)
 * [img/darkrp/trabajos.pdn](https://vicentefelipechile.github.io/mapping-latam/html/img/darkrp/trabajos.pdn)
 * [img/darkrp/trabajos_2.pdn](https://vicentefelipechile.github.io/mapping-latam/html/img/darkrp/trabajos_2.pdn)
 * [img/dictadurarp/consejo1.pdn](https://vicentefelipechile.github.io/mapping-latam/html/img/dictadurarp/consejo1.pdn)
